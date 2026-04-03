@@ -18,7 +18,7 @@ export function Sidebar() {
   const handleDelete = async (e: React.MouseEvent, id: number) => {
     e.preventDefault();
     e.stopPropagation();
-    if (confirm("Are you sure you want to delete this chat?")) {
+    if (confirm("Delete this chat?")) {
       await deleteMutation.mutateAsync({ id });
       queryClient.invalidateQueries({ queryKey: ["/api/openai/conversations"] });
       if (activeId === id) {
@@ -32,7 +32,10 @@ export function Sidebar() {
       <div className="absolute top-4 left-4 z-50">
         <button
           onClick={() => setIsSidebarOpen(true)}
-          className="p-2 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 rounded-lg transition-colors"
+          className="p-2 rounded-lg transition-colors"
+          style={{ color: "#9a8f7e" }}
+          onMouseEnter={e => (e.currentTarget.style.color = "#f5f0e8")}
+          onMouseLeave={e => (e.currentTarget.style.color = "#9a8f7e")}
         >
           <LayoutPanelLeft size={20} />
         </button>
@@ -41,35 +44,69 @@ export function Sidebar() {
   }
 
   return (
-    <div className="flex h-full w-64 flex-col bg-[#09090B] border-r border-zinc-800/80 transition-all duration-300">
-      <div className="p-4 flex items-center justify-between">
-        <button
-          onClick={() => setIsSidebarOpen(false)}
-          className="p-2 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 rounded-lg transition-colors"
-        >
-          <LayoutPanelLeft size={20} />
-        </button>
+    <div
+      className="flex h-full w-64 flex-col border-r transition-all duration-300"
+      style={{ background: "#0d0d0d", borderColor: "#1e1a16" }}
+    >
+      {/* Brand Header */}
+      <div className="p-4 border-b" style={{ borderColor: "#1e1a16" }}>
+        <div className="flex items-center gap-3 mb-4">
+          <button
+            onClick={() => setIsSidebarOpen(false)}
+            className="p-1.5 rounded-lg transition-colors"
+            style={{ color: "#9a8f7e" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "#f5f0e8")}
+            onMouseLeave={e => (e.currentTarget.style.color = "#9a8f7e")}
+          >
+            <LayoutPanelLeft size={18} />
+          </button>
+          <div className="flex items-center gap-2 flex-1 min-w-0">
+            <div className="w-7 h-7 rounded-lg overflow-hidden border border-amber-500/30 flex-shrink-0">
+              <img src="/beefed-up-brand.png" alt="Beefed Up" className="w-full h-full object-cover scale-125" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-xs font-black tracking-wide truncate" style={{ color: "#e8a020" }}>MAGGIE</p>
+              <p className="text-[10px] truncate" style={{ color: "#6b6058" }}>Beefed Up Printing</p>
+            </div>
+          </div>
+        </div>
+
         <Link href="/">
-          <div className="flex flex-1 ml-2 items-center gap-2 rounded-lg bg-zinc-100 px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-white active:scale-[0.98] shadow-sm cursor-pointer">
+          <div
+            className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-semibold transition-all cursor-pointer border"
+            style={{ background: "#e8a020", color: "#0a0a0a", borderColor: "#e8a020" }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLDivElement).style.background = "#f0b030";
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLDivElement).style.background = "#e8a020";
+            }}
+          >
             <PlusCircle size={16} />
-            New chat
+            New Chat
           </div>
         </Link>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-3 pt-0 scrollbar-thin">
-        <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-3 px-2 mt-4">
+      {/* Conversation List */}
+      <div className="flex-1 overflow-y-auto p-3 scrollbar-thin">
+        <div
+          className="text-[10px] font-bold uppercase tracking-widest mb-3 px-2 mt-3"
+          style={{ color: "#4a4038" }}
+        >
           Chat History
         </div>
-        
+
         {isLoading ? (
           <div className="space-y-2 px-2">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="h-10 bg-zinc-800/50 rounded-lg animate-pulse" />
+              <div key={i} className="h-10 rounded-lg animate-pulse" style={{ background: "#1a1410" }} />
             ))}
           </div>
         ) : !conversations?.length ? (
-          <div className="px-2 text-sm text-zinc-500 italic">No conversations yet</div>
+          <div className="px-2 text-sm italic" style={{ color: "#4a4038" }}>
+            No chats yet — start one!
+          </div>
         ) : (
           <div className="space-y-1">
             {conversations.map((conv) => {
@@ -77,26 +114,38 @@ export function Sidebar() {
               return (
                 <Link key={conv.id} href={`/c/${conv.id}`}>
                   <div
-                    className={cn(
-                      "group relative flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-all duration-200",
-                      isActive
-                        ? "bg-zinc-800 text-zinc-100 shadow-sm font-medium"
-                        : "text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-200"
-                    )}
+                    className="group relative flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-all duration-200"
+                    style={{
+                      background: isActive ? "#1e1a14" : "transparent",
+                      color: isActive ? "#f5f0e8" : "#7a6f62",
+                      borderLeft: isActive ? "2px solid #e8a020" : "2px solid transparent",
+                    }}
+                    onMouseEnter={e => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLDivElement).style.background = "#141210";
+                        (e.currentTarget as HTMLDivElement).style.color = "#c8b89a";
+                      }
+                    }}
+                    onMouseLeave={e => {
+                      if (!isActive) {
+                        (e.currentTarget as HTMLDivElement).style.background = "transparent";
+                        (e.currentTarget as HTMLDivElement).style.color = "#7a6f62";
+                      }
+                    }}
                   >
-                    <MessageSquare size={16} className={isActive ? "text-zinc-100" : "text-zinc-500"} />
-                    <div className="flex-1 truncate">
+                    <MessageSquare size={15} style={{ color: isActive ? "#e8a020" : "#4a4038", flexShrink: 0 }} />
+                    <div className="flex-1 truncate text-xs font-medium">
                       {conv.title || "New Conversation"}
                     </div>
                     <button
                       onClick={(e) => handleDelete(e, conv.id)}
-                      className={cn(
-                        "opacity-0 transition-opacity hover:text-red-400 p-1 rounded-md hover:bg-zinc-700/50",
-                        "group-hover:opacity-100"
-                      )}
+                      className="opacity-0 group-hover:opacity-100 transition-opacity p-1 rounded"
+                      style={{ color: "#7a6f62" }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "#e85030")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "#7a6f62")}
                       title="Delete chat"
                     >
-                      <Trash2 size={14} />
+                      <Trash2 size={13} />
                     </button>
                   </div>
                 </Link>
@@ -104,6 +153,13 @@ export function Sidebar() {
             })}
           </div>
         )}
+      </div>
+
+      {/* Footer */}
+      <div className="p-4 border-t" style={{ borderColor: "#1e1a16" }}>
+        <p className="text-[10px] text-center font-bold uppercase tracking-widest" style={{ color: "#3a3028" }}>
+          Custom Designed Not Bought
+        </p>
       </div>
     </div>
   );

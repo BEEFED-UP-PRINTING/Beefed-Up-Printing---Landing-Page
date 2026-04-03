@@ -40,15 +40,21 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
   };
 
   return (
-    <div className="relative mx-auto max-w-3xl w-full p-4">
-      <div className="relative flex items-end rounded-2xl bg-zinc-900 border border-zinc-800 shadow-lg shadow-black/20 focus-within:ring-1 focus-within:ring-zinc-600 transition-all p-2">
+    <div className="relative mx-auto max-w-3xl w-full px-2 pb-2">
+      <div
+        className="relative flex items-end rounded-2xl border shadow-lg transition-all p-2"
+        style={{ background: "#141210", borderColor: "#2a2520" }}
+        onFocusCapture={e => (e.currentTarget.style.borderColor = "#e8a020")}
+        onBlurCapture={e => (e.currentTarget.style.borderColor = "#2a2520")}
+      >
         <textarea
           ref={textareaRef}
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Message Assistant..."
-          className="w-full max-h-[200px] min-h-[44px] resize-none bg-transparent px-3 py-3 text-zinc-100 placeholder:text-zinc-500 focus:outline-none scrollbar-thin"
+          placeholder="Ask Maggie anything..."
+          className="w-full max-h-[200px] min-h-[44px] resize-none bg-transparent px-3 py-3 focus:outline-none scrollbar-thin text-sm"
+          style={{ color: "#f5f0e8" }}
           rows={1}
           disabled={disabled}
         />
@@ -57,23 +63,31 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
             onClick={handleSubmit}
             disabled={!input.trim() || disabled}
             className={cn(
-              "flex h-9 w-9 items-center justify-center rounded-xl transition-all duration-200",
-              input.trim() && !disabled
-                ? "bg-zinc-100 text-zinc-900 hover:bg-white shadow-sm hover:shadow active:scale-95"
-                : "bg-zinc-800 text-zinc-500 cursor-not-allowed"
+              "flex h-9 w-9 items-center justify-center rounded-xl transition-all duration-200 font-bold"
             )}
+            style={
+              input.trim() && !disabled
+                ? { background: "#e8a020", color: "#0a0a0a" }
+                : { background: "#1e1a14", color: "#4a4038", cursor: "not-allowed" }
+            }
+            onMouseEnter={e => {
+              if (input.trim() && !disabled) (e.currentTarget.style.background = "#f0b030");
+            }}
+            onMouseLeave={e => {
+              if (input.trim() && !disabled) (e.currentTarget.style.background = "#e8a020");
+            }}
           >
             {disabled ? (
-              <Loader2 size={18} className="animate-spin" />
+              <Loader2 size={17} className="animate-spin" />
             ) : (
-              <ArrowUp size={18} strokeWidth={2.5} />
+              <ArrowUp size={17} strokeWidth={2.5} />
             )}
           </button>
         </div>
       </div>
-      <div className="text-center mt-3">
-        <p className="text-[11px] text-zinc-500 font-medium">
-          Assistant can make mistakes. Consider verifying important information.
+      <div className="text-center mt-2">
+        <p className="text-[10px] font-medium" style={{ color: "#3a3028" }}>
+          Maggie · Beefed Up Printing AI · Sharp sharp, but verify the details yourself
         </p>
       </div>
     </div>
