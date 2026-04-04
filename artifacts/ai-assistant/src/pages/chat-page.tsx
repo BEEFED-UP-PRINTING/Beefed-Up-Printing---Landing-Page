@@ -34,13 +34,13 @@ export function ChatPage() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [conversation?.messages, isStreaming]);
 
-  const handleSend = async (content: string) => {
-    if (!content.trim()) return;
+  const handleSend = async (content: string, image?: string) => {
+    if (!content.trim() && !image) return;
 
     let targetId = activeId;
 
     if (!targetId) {
-      const title = content.length > 50 ? content.slice(0, 47) + "..." : content;
+      const title = content.length > 50 ? content.slice(0, 47) + "..." : content || "Image upload";
       const newConv = await createMutation.mutateAsync({ data: { title } });
       targetId = newConv.id;
       setLocation(`/c/${newConv.id}`);
@@ -48,7 +48,7 @@ export function ChatPage() {
     }
 
     if (targetId) {
-      await streamMessage(targetId, content);
+      await streamMessage(targetId, content, image);
     }
   };
 
@@ -126,7 +126,7 @@ export function ChatPage() {
               ) : (
                 <>
                   {conversation?.messages?.map((msg) => (
-                    <ChatMessage key={msg.id} role={msg.role} content={msg.content} />
+                    <ChatMessage key={msg.id} role={msg.role} content={msg.content} image={(msg as any).image} />
                   ))}
                   {isStreaming && (
                     <div className="flex justify-start px-4 py-6 md:px-6">

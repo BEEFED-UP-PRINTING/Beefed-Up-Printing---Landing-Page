@@ -1,14 +1,99 @@
 import { cn } from "@/lib/utils";
 import { MarkdownRenderer } from "./markdown-renderer";
-import { User } from "lucide-react";
+import { User, Volume2, VolumeX, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState, useRef } from "react";
 
 interface ChatMessageProps {
   role: "user" | "assistant" | string;
   content: string;
+  image?: string | null;
 }
 
-export function ChatMessage({ role, content }: ChatMessageProps) {
+function MaggieVoiceButton({ content }: { content: string }) {
+  const [state, setState] = useState<"idle" | "loading" | "playing">("idle");
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handleVoice = async () => {
+    // If already playing, stop it
+    if (state === "playing") {
+      audioRef.current?.pause();
+      if (audioRef.current) audioRef.current.currentTime = 0;
+      setState("idle");
+      return;
+    }
+
+    setState("loading");
+
+    try {
+      const response = await fetch("/api/openai/tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: content }),
+      });
+
+      if (!response.ok) throw new Error("TTS failed");
+
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+
+      const audio = new Audio(url);
+      audioRef.current = audio;
+
+      audio.onended = () => {
+        setState("idle");
+        URL.revokeObjectURL(url);
+      };
+
+      audio.onerror = () => {
+        setState("idle");
+        URL.revokeObjectURL(url);
+      };
+
+      setState("playing");
+      await audio.play();
+    } catch (err) {
+      console.error("Voice error:", err);
+      setState("idle");
+    }
+  };
+
+  return (
+    <button
+      onClick={handleVoice}
+      title={state === "playing" ? "Stop" : "Hear Maggie"}
+      className="mt-2 flex items-center gap-1.5 text-[11px] font-medium transition-all rounded-lg px-2.5 py-1.5 border"
+      style={{
+        color: state === "playing" ? "#e8a020" : "#6b6058",
+        borderColor: state === "playing" ? "#e8a020" : "#2a2520",
+        background: state === "playing" ? "rgba(232,160,32,0.08)" : "transparent",
+      }}
+      onMouseEnter={e => {
+        if (state !== "playing") {
+          (e.currentTarget).style.color = "#e8a020";
+          (e.currentTarget).style.borderColor = "#e8a020";
+        }
+      }}
+      onMouseLeave={e => {
+        if (state !== "playing") {
+          (e.currentTarget).style.color = "#6b6058";
+          (e.currentTarget).style.borderColor = "#2a2520";
+        }
+      }}
+    >
+      {state === "loading" ? (
+        <Loader2 size={12} className="animate-spin" />
+      ) : state === "playing" ? (
+        <VolumeX size={12} />
+      ) : (
+        <Volume2 size={12} />
+      )}
+      {state === "loading" ? "Loading..." : state === "playing" ? "Stop" : "Hear Maggie"}
+    </button>
+  );
+}
+
+export function ChatMessage({ role, content, image }: ChatMessageProps) {
   const isUser = role === "user";
 
   return (
@@ -62,16 +147,33 @@ export function ChatMessage({ role, content }: ChatMessageProps) {
               Maggie
             </p>
           )}
+
           {isUser ? (
-            <div
-              className="px-5 py-3.5 rounded-3xl rounded-tr-sm whitespace-pre-wrap leading-relaxed text-sm border"
-              style={{ background: "#1e1a14", color: "#f5f0e8", borderColor: "#2a2520" }}
-            >
-              {content}
+            <div className="flex flex-col items-end gap-2">
+              {image && (
+                <div className="rounded-2xl overflow-hidden border" style={{ borderColor: "#2a2520" }}>
+                  <img
+                    src={image}
+                    alt="Uploaded"
+                    className="max-h-60 max-w-xs rounded-2xl object-contain"
+                  />
+                </div>
+              )}
+              {content && (
+                <div
+                  className="px-5 py-3.5 rounded-3xl rounded-tr-sm whitespace-pre-wrap leading-relaxed text-sm border"
+                  style={{ background: "#1e1a14", color: "#f5f0e8", borderColor: "#2a2520" }}
+                >
+                  {content}
+                </div>
+              )}
             </div>
           ) : (
-            <div className="w-full" style={{ color: "#d8cfc4" }}>
-              <MarkdownRenderer content={content} />
+            <div className="w-full">
+              <div style={{ color: "#d8cfc4" }}>
+                <MarkdownRenderer content={content} />
+              </div>
+              {content && <MaggieVoiceButton content={content} />}
             </div>
           )}
         </div>

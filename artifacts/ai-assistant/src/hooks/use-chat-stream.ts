@@ -6,13 +6,12 @@ export function useChatStream() {
   const queryClient = useQueryClient();
   const [isStreaming, setIsStreaming] = useState(false);
 
-  const streamMessage = async (conversationId: number, content: string) => {
+  const streamMessage = async (conversationId: number, content: string, image?: string) => {
     setIsStreaming(true);
     const queryKey = getGetOpenaiConversationQueryKey(conversationId);
     const temporaryUserMessageId = Date.now();
     const temporaryAssistantMessageId = temporaryUserMessageId + 1;
 
-    // Optimistically update UI
     queryClient.setQueryData(queryKey, (old: any) => {
       if (!old) return old;
       return {
@@ -24,6 +23,7 @@ export function useChatStream() {
             conversationId,
             role: "user",
             content,
+            image: image ?? null,
             createdAt: new Date().toISOString(),
           },
           {
@@ -41,7 +41,7 @@ export function useChatStream() {
       const response = await fetch(`/api/openai/conversations/${conversationId}/messages`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content }),
+        body: JSON.stringify({ content, image: image ?? undefined }),
       });
 
       if (!response.ok) {
@@ -53,15 +53,13 @@ export function useChatStream() {
       if (!reader) throw new Error("No reader available");
 
       let buffer = "";
-      
+
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
-        
+
         buffer += decoder.decode(value, { stream: true });
         const lines = buffer.split('\n\n');
-        
-        // Keep the last partial chunk in the buffer
         buffer = lines.pop() || "";
 
         for (const line of lines) {
@@ -72,18 +70,17 @@ export function useChatStream() {
             try {
               const data = JSON.parse(dataStr);
               if (data.done) break;
-              
+
               if (data.content) {
-                // Append chunk to the assistant message in cache
                 queryClient.setQueryData(queryKey, (old: any) => {
                   if (!old) return old;
                   const newMessages = [...old.messages];
                   const lastMessage = newMessages[newMessages.length - 1];
-                  
+
                   if (lastMessage && lastMessage.role === "assistant") {
                     lastMessage.content += data.content;
                   }
-                  
+
                   return { ...old, messages: newMessages };
                 });
               }
@@ -97,7 +94,6 @@ export function useChatStream() {
       console.error("Streaming error:", error);
     } finally {
       setIsStreaming(false);
-      // Invalidate to fetch the final persisted state with real DB IDs
       await queryClient.invalidateQueries({ queryKey });
     }
   };
