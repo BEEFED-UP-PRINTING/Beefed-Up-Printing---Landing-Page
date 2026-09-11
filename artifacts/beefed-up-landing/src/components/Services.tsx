@@ -1,1 +1,113 @@
-aW1wb3J0IHsgbW90aW9uIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFNoaXJ0LCBMYXllcnMsIEZsYWcsIFRhZywgQm94IH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKCmNvbnN0IHNlcnZpY2VzID0gWwogIHsgCiAgICBpZDogInRzaGlydHMiLAogICAgdGl0bGU6ICJDdXN0b20gVC1TaGlydHMiLCAKICAgIGRlc2M6ICJQcmVtaXVtIHF1YWxpdHkgdGVlcyB3aXRoIGJ1bGxldHByb29mIHByaW50cyB0aGF0IHdvbid0IGZhZGUgb3IgY3JhY2sgb24gdGhlIGJsb2NrLiIsIAogICAgaWNvbjogU2hpcnQgCiAgfSwKICB7IAogICAgaWQ6ICJob29kaWVzIiwKICAgIHRpdGxlOiAiSG9vZGllcyAmIFN3ZWF0cyIsIAogICAgZGVzYzogIkhlYXZ5d2VpZ2h0IGZsZWVjZSBhbmQgaG9vZGllcyBkZXNpZ25lZCBmb3IgdGhlIHN0cmVldHMuIFRoaWNrLCB3YXJtLCBhbmQgbG91ZC4iLCAKICAgIGljb246IExheWVycyAKICB9LAogIHsgCiAgICBpZDogImNhcHMiLAogICAgdGl0bGU6ICJDYXBzICYgSGVhZHdlYXIiLCAKICAgIGRlc2M6ICJTbmFwYmFja3MsIGJlYW5pZXMsIGFuZCBidWNrZXQgaGF0cyBkZXRhaWxlZCB3aXRoIHByZWNpc2UgZW1icm9pZGVyeS4iLCAKICAgIGljb246IEJveCAKICB9LAogIHsgCiAgICBpZDogInN0aWNrZXJzIiwKICAgIHRpdGxlOiAiU3RpY2tlcnMgJiBEZWNhbHMiLCAKICAgIGRlc2M6ICJEaWUtY3V0IHZpbnlsIHN0aWNrZXJzIHRoYXQgbGFzdC4gU2xhcCB0aGVtIG9uIGEgYnVtcGVyLCBhIGRlY2ssIG9yIGEgd2FsbC4iLCAKICAgIGljb246IFRhZyAKICB9LAogIHsgCiAgICBpZDogImJhbm5lcnMiLAogICAgdGl0bGU6ICJCYW5uZXJzICYgU2lnbnMiLCAKICAgIGRlc2M6ICJHbyBiaWcuIEhpZ2ggdmlzaWJpbGl0eSBiYW5uZXJzIGZvciBldmVudHMsIGdpZ3MsIGFuZCBwb3AtdXAgc2hvcHMuIiwgCiAgICBpY29uOiBGbGFnIAogIH0sCl07Cgpjb25zdCBjYXJkVmFyaWFudHMgPSB7CiAgaGlkZGVuOiB7IG9wYWNpdHk6IDAsIHk6IDQwIH0sCiAgdmlzaWJsZTogKGk6IG51bWJlcikgPT4gKHsKICAgIG9wYWNpdHk6IDEsCiAgICB5OiAwLAogICAgdHJhbnNpdGlvbjogeyBkZWxheTogaSAqIDAuMSwgZHVyYXRpb246IDAuNSwgZWFzZTogImVhc2VPdXQiIH0KICB9KQp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gU2VydmljZXMoKSB7CiAgY29uc3QgaGFuZGxlU2VydmljZUNsaWNrID0gKHNlcnZpY2VJZDogc3RyaW5nKSA9PiB7CiAgICAvLyBOYXZpZ2F0ZSB0byBjb250YWN0IHNlY3Rpb24gYW5kIHdlIGNvdWxkIHByZWZpbGwgc3RhdGUsIAogICAgLy8gYnV0IGEgc2ltcGxlIHNjcm9sbCBpcyBiZXN0IGZvciB0aGlzIFVYIGZsb3cuCiAgICBjb25zdCBlbGVtZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNvbnRhY3QiKTsKICAgIGlmIChlbGVtZW50KSB7CiAgICAgIGVsZW1lbnQuc2Nyb2xsSW50b1ZpZXcoeyBiZWhhdmlvcjogInNtb290aCIgfSk7CiAgICAgIC8vIE1pbm9yIGRlbGF5IHRvIGFsbG93IHNjcm9sbCwgdGhlbiB0cnkgdG8gZm9jdXMgdGhlIHNlbGVjdAogICAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgICBjb25zdCBzZWxlY3QgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic2VydmljZS1zZWxlY3QiKSBhcyBIVE1MU2VsZWN0RWxlbWVudDsKICAgICAgICBpZiAoc2VsZWN0KSB7CiAgICAgICAgICBzZWxlY3QudmFsdWUgPSBzZXJ2aWNlSWQ7CiAgICAgICAgICBzZWxlY3QuZm9jdXMoKTsKICAgICAgICB9CiAgICAgIH0sIDgwMCk7CiAgICB9CiAgfTsKCiAgcmV0dXJuICgKICAgIDxzZWN0aW9uIGlkPSJzZXJ2aWNlcyIgY2xhc3NOYW1lPSJweS0yNCBiZy1ibGFjayByZWxhdGl2ZSI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy03eGwgbXgtYXV0byBweC02Ij4KICAgICAgICAKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItMTYgbWQ6bWItMjQgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC1wcmltYXJ5IGZvbnQtYm9sZCB0cmFja2luZy1bMC4yZW1dIHRleHQtc20gbWItNCI+VEhFIEFSU0VOQUw8L3NwYW4+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgdGV4dC01eGwgbWQ6dGV4dC02eGwgdGV4dC13aGl0ZSB1cHBlcmNhc2UiPgogICAgICAgICAgICBXaGF0IFdlIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5IGJvcmRlci1iLTQgYm9yZGVyLXByaW1hcnkgcGItMSI+RHJvcDwvc3Bhbj4KICAgICAgICAgIDwvaDI+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0yIGxnOmdyaWQtY29scy0zIGdhcC02IG1kOmdhcC04Ij4KICAgICAgICAgIHtzZXJ2aWNlcy5tYXAoKHNlcnZpY2UsIGluZGV4KSA9PiB7CiAgICAgICAgICAgIGNvbnN0IEljb24gPSBzZXJ2aWNlLmljb247CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgICAgIGtleT17c2VydmljZS50aXRsZX0KICAgICAgICAgICAgICAgIGN1c3RvbT17aW5kZXh9CiAgICAgICAgICAgICAgICB2YXJpYW50cz17Y2FyZFZhcmlhbnRzfQogICAgICAgICAgICAgICAgaW5pdGlhbD0iaGlkZGVuIgogICAgICAgICAgICAgICAgd2hpbGVJblZpZXc9InZpc2libGUiCiAgICAgICAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlLCBtYXJnaW46ICItNTBweCIgfX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZ3JvdXAgcmVsYXRpdmUgYmctemluYy05NTAgYm9yZGVyIGJvcmRlci16aW5jLTgwMCBwLTggdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwIGhvdmVyOmJvcmRlci1wcmltYXJ5IGhvdmVyOi10cmFuc2xhdGUteS0yIGhvdmVyLWJveC1nbG93IGZsZXggZmxleC1jb2wgaC1mdWxsIgogICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3LTE0IGgtMTQgYmctemluYy05MDAgYm9yZGVyIGJvcmRlci16aW5jLTgwMCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciB0ZXh0LXByaW1hcnkgbWItNiBncm91cC1ob3ZlcjpzY2FsZS0xMTAgZ3JvdXAtaG92ZXI6YmctcHJpbWFyeSBncm91cC1ob3Zlcjp0ZXh0LWJsYWNrIHRyYW5zaXRpb24tYWxsIj4KICAgICAgICAgICAgICAgICAgPEljb24gc2l6ZT17Mjh9IHN0cm9rZVdpZHRoPXsxLjV9IC8+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IHRleHQtMnhsIHRleHQtd2hpdGUgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGUgbWItMyI+CiAgICAgICAgICAgICAgICAgIHtzZXJ2aWNlLnRpdGxlfQogICAgICAgICAgICAgICAgPC9oMz4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC16aW5jLTQwMCBsZWFkaW5nLXJlbGF4ZWQgbWItOCBmbGV4LWdyb3ciPgogICAgICAgICAgICAgICAgICB7c2VydmljZS5kZXNjfQogICAgICAgICAgICAgICAgPC9wPgoKICAgICAgICAgICAgICAgIDxidXR0b24gCiAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IGhhbmRsZVNlcnZpY2VDbGljayhzZXJ2aWNlLmlkKX0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1ib2xkIHVwcGVyY2FzZSB0cmFja2luZy13aWRlc3QgdGV4dC1zbSB0ZXh0LXppbmMtNTAwIGdyb3VwLWhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWNvbG9ycyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBtdC1hdXRvIHctZml0IgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICBPcmRlciBOb3cgPHNwYW4gY2xhc3NOYW1lPSJncm91cC1ob3Zlcjp0cmFuc2xhdGUteC0xIHRyYW5zaXRpb24tdHJhbnNmb3JtIj7ihpI8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgICAgICk7CiAgICAgICAgICB9KX0KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L3NlY3Rpb24+CiAgKTsKfQo=
+import { motion } from "framer-motion";
+import { Shirt, Layers, Flag, Tag, Box } from "lucide-react";
+
+const services = [
+  { 
+    id: "tshirts",
+    title: "Custom T-Shirts", 
+    desc: "Premium quality tees with bulletproof prints that won't fade or crack on the block.", 
+    icon: Shirt 
+  },
+  { 
+    id: "hoodies",
+    title: "Hoodies & Sweats", 
+    desc: "Heavyweight fleece and hoodies designed for the streets. Thick, warm, and loud.", 
+    icon: Layers 
+  },
+  { 
+    id: "caps",
+    title: "Caps & Headwear", 
+    desc: "Snapbacks, beanies, and bucket hats detailed with precise embroidery.", 
+    icon: Box 
+  },
+  { 
+    id: "stickers",
+    title: "Stickers & Decals", 
+    desc: "Die-cut vinyl stickers that last. Slap them on a bumper, a deck, or a wall.", 
+    icon: Tag 
+  },
+  { 
+    id: "banners",
+    title: "Banners & Signs", 
+    desc: "Go big. High visibility banners for events, gigs, and pop-up shops.", 
+    icon: Flag 
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" }
+  })
+};
+
+export default function Services() {
+  const handleServiceClick = (serviceId: string) => {
+    // Navigate to contact section and we could prefill state, 
+    // but a simple scroll is best for this UX flow.
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      // Minor delay to allow scroll, then try to focus the select
+      setTimeout(() => {
+        const select = document.getElementById("service-select") as HTMLSelectElement;
+        if (select) {
+          select.value = serviceId;
+          select.focus();
+        }
+      }, 800);
+    }
+  };
+
+  return (
+    <section id="services" className="py-24 bg-black relative">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        <div className="mb-16 md:mb-24 flex flex-col items-center text-center">
+          <span className="font-sans text-primary font-bold tracking-[0.2em] text-sm mb-4">THE ARSENAL</span>
+          <h2 className="font-display text-5xl md:text-6xl text-white uppercase">
+            What We <span className="text-primary border-b-4 border-primary pb-1">Drop</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <motion.div
+                key={service.title}
+                custom={index}
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                className="group relative bg-zinc-950 border border-zinc-800 p-8 transition-all duration-300 hover:border-primary hover:-translate-y-2 hover-box-glow flex flex-col h-full"
+              >
+                <div className="w-14 h-14 bg-zinc-900 border border-zinc-800 flex items-center justify-center text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all">
+                  <Icon size={28} strokeWidth={1.5} />
+                </div>
+                
+                <h3 className="font-display text-2xl text-white uppercase tracking-wide mb-3">
+                  {service.title}
+                </h3>
+                
+                <p className="font-sans text-zinc-400 leading-relaxed mb-8 flex-grow">
+                  {service.desc}
+                </p>
+
+                <button 
+                  onClick={() => handleServiceClick(service.id)}
+                  className="font-display font-bold uppercase tracking-widest text-sm text-zinc-500 group-hover:text-primary transition-colors flex items-center gap-2 mt-auto w-fit"
+                >
+                  Order Now <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </button>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

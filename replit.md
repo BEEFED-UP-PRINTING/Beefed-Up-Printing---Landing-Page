@@ -1,1 +1,96 @@
-IyBXb3Jrc3BhY2UKCiMjIE92ZXJ2aWV3CgpwbnBtIHdvcmtzcGFjZSBtb25vcmVwbyB1c2luZyBUeXBlU2NyaXB0LiBFYWNoIHBhY2thZ2UgbWFuYWdlcyBpdHMgb3duIGRlcGVuZGVuY2llcy4KCiMjIFN0YWNrCgotICoqTW9ub3JlcG8gdG9vbCoqOiBwbnBtIHdvcmtzcGFjZXMKLSAqKk5vZGUuanMgdmVyc2lvbioqOiAyNAotICoqUGFja2FnZSBtYW5hZ2VyKio6IHBucG0KLSAqKlR5cGVTY3JpcHQgdmVyc2lvbioqOiA1LjkKLSAqKkFQSSBmcmFtZXdvcmsqKjogRXhwcmVzcyA1Ci0gKipEYXRhYmFzZSoqOiBQb3N0Z3JlU1FMICsgRHJpenpsZSBPUk0KLSAqKlZhbGlkYXRpb24qKjogWm9kIChgem9kL3Y0YCksIGBkcml6emxlLXpvZGAKLSAqKkFQSSBjb2RlZ2VuKio6IE9ydmFsIChmcm9tIE9wZW5BUEkgc3BlYykKLSAqKkJ1aWxkKio6IGVzYnVpbGQgKENKUyBidW5kbGUpCgojIyBTdHJ1Y3R1cmUKCmBgYHRleHQKYXJ0aWZhY3RzLW1vbm9yZXBvLwrilJzilIDilIAgYXJ0aWZhY3RzLyAgICAgICAgICAgICAgIyBEZXBsb3lhYmxlIGFwcGxpY2F0aW9ucwrilIIgICDilJTilIDilIAgYXBpLXNlcnZlci8gICAgICAgICAjIEV4cHJlc3MgQVBJIHNlcnZlcgrilJzilIDilIAgbGliLyAgICAgICAgICAgICAgICAgICAgIyBTaGFyZWQgbGlicmFyaWVzCuKUgiAgIOKUnOKUgOKUgCBhcGktc3BlYy8gICAgICAgICAgICMgT3BlbkFQSSBzcGVjICsgT3J2YWwgY29kZWdlbiBjb25maWcK4pSCICAg4pSc4pSA4pSAIGFwaS1jbGllbnQtcmVhY3QvICAgIyBHZW5lcmF0ZWQgUmVhY3QgUXVlcnkgaG9va3MK4pSCICAg4pSc4pSA4pSAIGFwaS16b2QvICAgICAgICAgICAgIyBHZW5lcmF0ZWQgWm9kIHNjaGVtYXMgZnJvbSBPcGVuQVBJCuKUgiAgIOKUlOKUgOKUgCBkYi8gICAgICAgICAgICAgICAgICMgRHJpenpsZSBPUk0gc2NoZW1hICsgREIgY29ubmVjdGlvbgrilJzilIDilIAgc2NyaXB0cy8gICAgICAgICAgICAgICAgIyBVdGlsaXR5IHNjcmlwdHMgKHNpbmdsZSB3b3Jrc3BhY2UgcGFja2FnZSkK4pSCICAg4pSU4pSA4pSAIHNyYy8gICAgICAgICAgICAgICAgIyBJbmRpdmlkdWFsIC50cyBzY3JpcHRzLCBydW4gdmlhIGBwbnBtIC0tZmlsdGVyIEB3b3Jrc3BhY2Uvc2NyaXB0cyBydW4gPHNjcmlwdD5gCuKUnOKUgOKUgCBwbnBtLXdvcmtzcGFjZS55YW1sICAgICAjIHBucG0gd29ya3NwYWNlIChhcnRpZmFjdHMvKiwgbGliLyosIGxpYi9pbnRlZ3JhdGlvbnMvKiwgc2NyaXB0cykK4pSc4pSA4pSAIHRzY29uZmlnLmJhc2UuanNvbiAgICAgICMgU2hhcmVkIFRTIG9wdGlvbnMgKGNvbXBvc2l0ZSwgYnVuZGxlciByZXNvbHV0aW9uLCBlczIwMjIpCuKUnOKUgOKUgCB0c2NvbmZpZy5qc29uICAgICAgICAgICAjIFJvb3QgVFMgcHJvamVjdCByZWZlcmVuY2VzCuKUlOKUgOKUgCBwYWNrYWdlLmpzb24gICAgICAgICAgICAjIFJvb3QgcGFja2FnZSB3aXRoIGhvaXN0ZWQgZGV2RGVwcwpgYGAKCiMjIFR5cGVTY3JpcHQgJiBDb21wb3NpdGUgUHJvamVjdHMKCkV2ZXJ5IHBhY2thZ2UgZXh0ZW5kcyBgdHNjb25maWcuYmFzZS5qc29uYCB3aGljaCBzZXRzIGBjb21wb3NpdGU6IHRydWVgLiBUaGUgcm9vdCBgdHNjb25maWcuanNvbmAgbGlzdHMgYWxsIHBhY2thZ2VzIGFzIHByb2plY3QgcmVmZXJlbmNlcy4gVGhpcyBtZWFuczoKCi0gKipBbHdheXMgdHlwZWNoZWNrIGZyb20gdGhlIHJvb3QqKiDigJQgcnVuIGBwbnBtIHJ1biB0eXBlY2hlY2tgICh3aGljaCBydW5zIGB0c2MgLS1idWlsZCAtLWVtaXREZWNsYXJhdGlvbk9ubHlgKS4gVGhpcyBidWlsZHMgdGhlIGZ1bGwgZGVwZW5kZW5jeSBncmFwaCBzbyB0aGF0IGNyb3NzLXBhY2thZ2UgaW1wb3J0cyByZXNvbHZlIGNvcnJlY3RseS4gUnVubmluZyBgdHNjYCBpbnNpZGUgYSBzaW5nbGUgcGFja2FnZSB3aWxsIGZhaWwgaWYgaXRzIGRlcGVuZGVuY2llcyBoYXZlbid0IGJlZW4gYnVpbHQgeWV0LgotICoqYGVtaXREZWNsYXJhdGlvbk9ubHlgKiog4oCUIHdlIG9ubHkgZW1pdCBgLmQudHNgIGZpbGVzIGR1cmluZyB0eXBlY2hlY2s7IGFjdHVhbCBKUyBidW5kbGluZyBpcyBoYW5kbGVkIGJ5IGVzYnVpbGQvdHN4L3ZpdGUuLi5ldGMsIG5vdCBgdHNjYC4KLSAqKlByb2plY3QgcmVmZXJlbmNlcyoqIOKAlCB3aGVuIHBhY2thZ2UgQSBkZXBlbmRzIG9uIHBhY2thZ2UgQiwgQSdzIGB0c2NvbmZpZy5qc29uYCBtdXN0IGxpc3QgQiBpbiBpdHMgYHJlZmVyZW5jZXNgIGFycmF5LiBgdHNjIC0tYnVpbGRgIHVzZXMgdGhpcyB0byBkZXRlcm1pbmUgYnVpbGQgb3JkZXIgYW5kIHNraXAgdXAtdG8tZGF0ZSBwYWNrYWdlcy4KCiMjIFJvb3QgU2NyaXB0cwoKLSBgcG5wbSBydW4gYnVpbGRgIOKAlCBydW5zIGB0eXBlY2hlY2tgIGZpcnN0LCB0aGVuIHJlY3Vyc2l2ZWx5IHJ1bnMgYGJ1aWxkYCBpbiBhbGwgcGFja2FnZXMgdGhhdCBkZWZpbmUgaXQKLSBgcG5wbSBydW4gdHlwZWNoZWNrYCDigJQgcnVucyBgdHNjIC0tYnVpbGQgLS1lbWl0RGVjbGFyYXRpb25Pbmx5YCB1c2luZyBwcm9qZWN0IHJlZmVyZW5jZXMKCiMjIFBhY2thZ2VzCgojIyMgYGFydGlmYWN0cy9hcGktc2VydmVyYCAoYEB3b3Jrc3BhY2UvYXBpLXNlcnZlcmApCgpFeHByZXNzIDUgQVBJIHNlcnZlci4gUm91dGVzIGxpdmUgaW4gYHNyYy9yb3V0ZXMvYCBhbmQgdXNlIGBAd29ya3NwYWNlL2FwaS16b2RgIGZvciByZXF1ZXN0IGFuZCByZXNwb25zZSB2YWxpZGF0aW9uIGFuZCBgQHdvcmtzcGFjZS9kYmAgZm9yIHBlcnNpc3RlbmNlLgoKLSBFbnRyeTogYHNyYy9pbmRleC50c2Ag4oCUIHJlYWRzIGBQT1JUYCwgc3RhcnRzIEV4cHJlc3MKLSBBcHAgc2V0dXA6IGBzcmMvYXBwLnRzYCDigJQgbW91bnRzIENPUlMsIEpTT04vdXJsZW5jb2RlZCBwYXJzaW5nLCByb3V0ZXMgYXQgYC9hcGlgCi0gUm91dGVzOiBgc3JjL3JvdXRlcy9pbmRleC50c2AgbW91bnRzIHN1Yi1yb3V0ZXJzOyBgc3JjL3JvdXRlcy9oZWFsdGgudHNgIGV4cG9zZXMgYEdFVCAvaGVhbHRoYCAoZnVsbCBwYXRoOiBgL2FwaS9oZWFsdGhgKQotIERlcGVuZHMgb246IGBAd29ya3NwYWNlL2RiYCwgYEB3b3Jrc3BhY2UvYXBpLXpvZGAKLSBgcG5wbSAtLWZpbHRlciBAd29ya3NwYWNlL2FwaS1zZXJ2ZXIgcnVuIGRldmAg4oCUIHJ1biB0aGUgZGV2IHNlcnZlcgotIGBwbnBtIC0tZmlsdGVyIEB3b3Jrc3BhY2UvYXBpLXNlcnZlciBydW4gYnVpbGRgIOKAlCBwcm9kdWN0aW9uIGVzYnVpbGQgYnVuZGxlIChgZGlzdC9pbmRleC5janNgKQotIEJ1aWxkIGJ1bmRsZXMgYW4gYWxsb3dsaXN0IG9mIGRlcHMgKGV4cHJlc3MsIGNvcnMsIHBnLCBkcml6emxlLW9ybSwgem9kLCBldGMuKSBhbmQgZXh0ZXJuYWxpemVzIHRoZSByZXN0CgojIyMgYGxpYi9kYmAgKGBAd29ya3NwYWNlL2RiYCkKCkRhdGFiYXNlIGxheWVyIHVzaW5nIERyaXp6bGUgT1JNIHdpdGggUG9zdGdyZVNRTC4gRXhwb3J0cyBhIERyaXp6bGUgY2xpZW50IGluc3RhbmNlIGFuZCBzY2hlbWEgbW9kZWxzLgoKLSBgc3JjL2luZGV4LnRzYCDigJQgY3JlYXRlcyBhIGBQb29sYCArIERyaXp6bGUgaW5zdGFuY2UsIGV4cG9ydHMgc2NoZW1hCi0gYHNyYy9zY2hlbWEvaW5kZXgudHNgIOKAlCBiYXJyZWwgcmUtZXhwb3J0IG9mIGFsbCBtb2RlbHMKLSBgc3JjL3NjaGVtYS88bW9kZWxuYW1lPi50c2Ag4oCUIHRhYmxlIGRlZmluaXRpb25zIHdpdGggYGRyaXp6bGUtem9kYCBpbnNlcnQgc2NoZW1hcyAobm8gbW9kZWxzIGRlZmluaXRpb25zIGV4aXN0IHJpZ2h0IG5vdykKLSBgZHJpenpsZS5jb25maWcudHNgIOKAlCBEcml6emxlIEtpdCBjb25maWcgKHJlcXVpcmVzIGBEQVRBQkFTRV9VUkxgLCBhdXRvbWF0aWNhbGx5IHByb3ZpZGVkIGJ5IFJlcGxpdCkKLSBFeHBvcnRzOiBgLmAgKHBvb2wsIGRiLCBzY2hlbWEpLCBgLi9zY2hlbWFgIChzY2hlbWEgb25seSkKClByb2R1Y3Rpb24gbWlncmF0aW9ucyBhcmUgaGFuZGxlZCBieSBSZXBsaXQgd2hlbiBwdWJsaXNoaW5nLiBJbiBkZXZlbG9wbWVudCwgd2UganVzdCB1c2UgYHBucG0gLS1maWx0ZXIgQHdvcmtzcGFjZS9kYiBydW4gcHVzaGAsIGFuZCB3ZSBmYWxsYmFjayB0byBgcG5wbSAtLWZpbHRlciBAd29ya3NwYWNlL2RiIHJ1biBwdXNoLWZvcmNlYC4KCiMjIyBgbGliL2FwaS1zcGVjYCAoYEB3b3Jrc3BhY2UvYXBpLXNwZWNgKQoKT3ducyB0aGUgT3BlbkFQSSAzLjEgc3BlYyAoYG9wZW5hcGkueWFtbGApIGFuZCB0aGUgT3J2YWwgY29uZmlnIChgb3J2YWwuY29uZmlnLnRzYCkuIFJ1bm5pbmcgY29kZWdlbiBwcm9kdWNlcyBvdXRwdXQgaW50byB0d28gc2libGluZyBwYWNrYWdlczoKCjEuIGBsaWIvYXBpLWNsaWVudC1yZWFjdC9zcmMvZ2VuZXJhdGVkL2Ag4oCUIFJlYWN0IFF1ZXJ5IGhvb2tzICsgZmV0Y2ggY2xpZW50CjIuIGBsaWIvYXBpLXpvZC9zcmMvZ2VuZXJhdGVkL2Ag4oCUIFpvZCBzY2hlbWFzCgpSdW4gY29kZWdlbjogYHBucG0gLS1maWx0ZXIgQHdvcmtzcGFjZS9hcGktc3BlYyBydW4gY29kZWdlbmAKCiMjIyBgbGliL2FwaS16b2RgIChgQHdvcmtzcGFjZS9hcGktem9kYCkKCkdlbmVyYXRlZCBab2Qgc2NoZW1hcyBmcm9tIHRoZSBPcGVuQVBJIHNwZWMgKGUuZy4gYEhlYWx0aENoZWNrUmVzcG9uc2VgKS4gVXNlZCBieSBgYXBpLXNlcnZlcmAgZm9yIHJlc3BvbnNlIHZhbGlkYXRpb24uCgojIyMgYGxpYi9hcGktY2xpZW50LXJlYWN0YCAoYEB3b3Jrc3BhY2UvYXBpLWNsaWVudC1yZWFjdGApCgpHZW5lcmF0ZWQgUmVhY3QgUXVlcnkgaG9va3MgYW5kIGZldGNoIGNsaWVudCBmcm9tIHRoZSBPcGVuQVBJIHNwZWMgKGUuZy4gYHVzZUhlYWx0aENoZWNrYCwgYGhlYWx0aENoZWNrYCkuCgojIyMgYHNjcmlwdHNgIChgQHdvcmtzcGFjZS9zY3JpcHRzYCkKClV0aWxpdHkgc2NyaXB0cyBwYWNrYWdlLiBFYWNoIHNjcmlwdCBpcyBhIGAudHNgIGZpbGUgaW4gYHNyYy9gIHdpdGggYSBjb3JyZXNwb25kaW5nIG5wbSBzY3JpcHQgaW4gYHBhY2thZ2UuanNvbmAuIFJ1biBzY3JpcHRzIHZpYSBgcG5wbSAtLWZpbHRlciBAd29ya3NwYWNlL3NjcmlwdHMgcnVuIDxzY3JpcHQ+YC4gU2NyaXB0cyBjYW4gaW1wb3J0IGFueSB3b3Jrc3BhY2UgcGFja2FnZSAoZS5nLiwgYEB3b3Jrc3BhY2UvZGJgKSBieSBhZGRpbmcgaXQgYXMgYSBkZXBlbmRlbmN5IGluIGBzY3JpcHRzL3BhY2thZ2UuanNvbmAuCg==
+# Workspace
+
+## Overview
+
+pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+
+## Stack
+
+- **Monorepo tool**: pnpm workspaces
+- **Node.js version**: 24
+- **Package manager**: pnpm
+- **TypeScript version**: 5.9
+- **API framework**: Express 5
+- **Database**: PostgreSQL + Drizzle ORM
+- **Validation**: Zod (`zod/v4`), `drizzle-zod`
+- **API codegen**: Orval (from OpenAPI spec)
+- **Build**: esbuild (CJS bundle)
+
+## Structure
+
+```text
+artifacts-monorepo/
+├── artifacts/              # Deployable applications
+│   └── api-server/         # Express API server
+├── lib/                    # Shared libraries
+│   ├── api-spec/           # OpenAPI spec + Orval codegen config
+│   ├── api-client-react/   # Generated React Query hooks
+│   ├── api-zod/            # Generated Zod schemas from OpenAPI
+│   └── db/                 # Drizzle ORM schema + DB connection
+├── scripts/                # Utility scripts (single workspace package)
+│   └── src/                # Individual .ts scripts, run via `pnpm --filter @workspace/scripts run <script>`
+├── pnpm-workspace.yaml     # pnpm workspace (artifacts/*, lib/*, lib/integrations/*, scripts)
+├── tsconfig.base.json      # Shared TS options (composite, bundler resolution, es2022)
+├── tsconfig.json           # Root TS project references
+└── package.json            # Root package with hoisted devDeps
+```
+
+## TypeScript & Composite Projects
+
+Every package extends `tsconfig.base.json` which sets `composite: true`. The root `tsconfig.json` lists all packages as project references. This means:
+
+- **Always typecheck from the root** — run `pnpm run typecheck` (which runs `tsc --build --emitDeclarationOnly`). This builds the full dependency graph so that cross-package imports resolve correctly. Running `tsc` inside a single package will fail if its dependencies haven't been built yet.
+- **`emitDeclarationOnly`** — we only emit `.d.ts` files during typecheck; actual JS bundling is handled by esbuild/tsx/vite...etc, not `tsc`.
+- **Project references** — when package A depends on package B, A's `tsconfig.json` must list B in its `references` array. `tsc --build` uses this to determine build order and skip up-to-date packages.
+
+## Root Scripts
+
+- `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
+- `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
+
+## Packages
+
+### `artifacts/api-server` (`@workspace/api-server`)
+
+Express 5 API server. Routes live in `src/routes/` and use `@workspace/api-zod` for request and response validation and `@workspace/db` for persistence.
+
+- Entry: `src/index.ts` — reads `PORT`, starts Express
+- App setup: `src/app.ts` — mounts CORS, JSON/urlencoded parsing, routes at `/api`
+- Routes: `src/routes/index.ts` mounts sub-routers; `src/routes/health.ts` exposes `GET /health` (full path: `/api/health`)
+- Depends on: `@workspace/db`, `@workspace/api-zod`
+- `pnpm --filter @workspace/api-server run dev` — run the dev server
+- `pnpm --filter @workspace/api-server run build` — production esbuild bundle (`dist/index.cjs`)
+- Build bundles an allowlist of deps (express, cors, pg, drizzle-orm, zod, etc.) and externalizes the rest
+
+### `lib/db` (`@workspace/db`)
+
+Database layer using Drizzle ORM with PostgreSQL. Exports a Drizzle client instance and schema models.
+
+- `src/index.ts` — creates a `Pool` + Drizzle instance, exports schema
+- `src/schema/index.ts` — barrel re-export of all models
+- `src/schema/<modelname>.ts` — table definitions with `drizzle-zod` insert schemas (no models definitions exist right now)
+- `drizzle.config.ts` — Drizzle Kit config (requires `DATABASE_URL`, automatically provided by Replit)
+- Exports: `.` (pool, db, schema), `./schema` (schema only)
+
+Production migrations are handled by Replit when publishing. In development, we just use `pnpm --filter @workspace/db run push`, and we fallback to `pnpm --filter @workspace/db run push-force`.
+
+### `lib/api-spec` (`@workspace/api-spec`)
+
+Owns the OpenAPI 3.1 spec (`openapi.yaml`) and the Orval config (`orval.config.ts`). Running codegen produces output into two sibling packages:
+
+1. `lib/api-client-react/src/generated/` — React Query hooks + fetch client
+2. `lib/api-zod/src/generated/` — Zod schemas
+
+Run codegen: `pnpm --filter @workspace/api-spec run codegen`
+
+### `lib/api-zod` (`@workspace/api-zod`)
+
+Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used by `api-server` for response validation.
+
+### `lib/api-client-react` (`@workspace/api-client-react`)
+
+Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
+
+### `scripts` (`@workspace/scripts`)
+
+Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.

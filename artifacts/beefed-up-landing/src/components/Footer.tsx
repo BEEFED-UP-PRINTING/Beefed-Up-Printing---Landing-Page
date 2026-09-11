@@ -1,1 +1,86 @@
-aW1wb3J0IHsgSW5zdGFncmFtLCBGYWNlYm9vaywgTWFpbCwgTWFwUGluIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEZvb3RlcigpIHsKICByZXR1cm4gKAogICAgPGZvb3RlciBjbGFzc05hbWU9ImJnLWJsYWNrIGJvcmRlci10IGJvcmRlci16aW5jLTkwMCBweS0xMiBweC02Ij4KICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIGZsZXggZmxleC1jb2wgbWQ6ZmxleC1yb3cganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLWNlbnRlciBnYXAtOCI+CiAgICAgICAgCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIG1kOml0ZW1zLXN0YXJ0IGdhcC0yIj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LTN4bCB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHRleHQtd2hpdGUiPgogICAgICAgICAgICBCZWVmZWQgVXA8c3BhbiBjbGFzc05hbWU9InRleHQtcHJpbWFyeSI+Ljwvc3Bhbj4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtemluYy01MDAgdGV4dC1zbSB0cmFja2luZy13aWRlIHVwcGVyY2FzZSI+CiAgICAgICAgICAgIFN0cmVldCBDdWx0dXJlIFByZW1pdW0gTWVyY2gKICAgICAgICAgIDwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIG1kOml0ZW1zLWVuZCBnYXAtNCI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtNiI+CiAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiPgogICAgICAgICAgICAgIDxJbnN0YWdyYW0gc2l6ZT17MjR9IC8+CiAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNTAwIGhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgICAgPEZhY2Vib29rIHNpemU9ezI0fSAvPgogICAgICAgICAgICA8L2E+CiAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiPgogICAgICAgICAgICAgIDxNYWlsIHNpemU9ezI0fSAvPgogICAgICAgICAgICA8L2E+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtemluYy02MDAgdGV4dC14cyBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgIDxNYXBQaW4gc2l6ZT17MTR9IC8+IFBST1VETFkgU09VVEggQUZSSUNBTgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgoKICAgICAgPC9kaXY+CiAgICAgIAogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctN3hsIG14LWF1dG8gbXQtMTIgcHQtOCBib3JkZXItdCBib3JkZXItemluYy05MDAvNTAgZmxleCBmbGV4LWNvbCBtZDpmbGV4LXJvdyBqdXN0aWZ5LWJldHdlZW4gaXRlbXMtY2VudGVyIGdhcC00IHRleHQteHMgZm9udC1zYW5zIHRleHQtemluYy02MDAgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCI+CiAgICAgICAgPHA+JmNvcHk7IHtuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCl9IEJlZWZlZCBVcCBQcmludGluZy4gQWxsIFJpZ2h0cyBSZXNlcnZlZC48L3A+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTQiPgogICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3NOYW1lPSJob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiPlByaXZhY3k8L2E+CiAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzc05hbWU9ImhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWNvbG9ycyI+VGVybXM8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9mb290ZXI+CiAgKTsKfQo=
+import { Instagram, Facebook, Mail, MapPin, Music, Phone } from "lucide-react";
+
+const SOCIAL = {
+  instagram: "#",      // TODO: replace with https://instagram.com/beefedup
+  facebook: "#",        // TODO: replace with https://facebook.com/beefedup
+  tiktok: "#",          // TODO: replace with https://tiktok.com/@beefedup
+  email: "mailto:beefedupp@gmail.com",
+};
+
+export default function Footer() {
+  return (
+    <footer className="bg-black border-t border-zinc-900 py-12 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+
+        <div className="flex flex-col items-center md:items-start gap-2">
+          <span className="font-display font-bold text-3xl tracking-widest uppercase text-white">
+            Beefed Up<span className="text-primary">.</span>
+          </span>
+          <p className="font-sans text-zinc-500 text-sm tracking-wide uppercase">
+            Street Culture Premium Merch
+          </p>
+          <div className="flex items-center gap-3 mt-1 text-zinc-600 text-xs font-sans">
+            <Phone size={12} />
+            <span>+27 79 647 3406</span>
+            <span className="text-zinc-700">|</span>
+            <span>+27 76 354 9713</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center md:items-end gap-4">
+          <div className="flex gap-6">
+            <a
+              href={SOCIAL.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-primary transition-colors"
+              title="Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <a
+              href={SOCIAL.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-primary transition-colors"
+              title="Facebook"
+            >
+              <Facebook size={24} />
+            </a>
+            <a
+              href={SOCIAL.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-primary transition-colors"
+              title="TikTok"
+            >
+              {/* TikTok SVG */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+              </svg>
+            </a>
+            <a
+              href={SOCIAL.email}
+              className="text-zinc-500 hover:text-primary transition-colors"
+              title="Email"
+            >
+              <Mail size={24} />
+            </a>
+          </div>
+          <p className="font-sans text-zinc-600 text-xs flex items-center gap-2">
+            <MapPin size={14} /> PROUDLY SOUTH AFRICAN
+          </p>
+        </div>
+
+      </div>
+
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-900/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-zinc-600 uppercase tracking-widest">
+        <p>&copy; {new Date().getFullYear()} Beefed Up Printing. All Rights Reserved.</p>
+        <div className="flex gap-4">
+          <a href="#" className="hover:text-primary transition-colors">Privacy</a>
+          <a href="#" className="hover:text-primary transition-colors">Terms</a>
+        </div>
+      </div>
+    </footer>
+  );
+}

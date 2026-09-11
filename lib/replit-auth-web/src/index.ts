@@ -1,1 +1,2 @@
-ZXhwb3J0IHsgdXNlQXV0aCB9IGZyb20gIi4vdXNlLWF1dGgiOwpleHBvcnQgdHlwZSB7IEF1dGhVc2VyIH0gZnJvbSAiLi91c2UtYXV0aCI7Cg==
+export { useAuth } from "./use-auth";
+export type { AuthUser } from "./use-auth";

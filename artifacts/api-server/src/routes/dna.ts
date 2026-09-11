@@ -1,1 +1,155 @@
-aW1wb3J0IHsgUm91dGVyLCB0eXBlIElSb3V0ZXIsIHR5cGUgUmVxdWVzdCwgdHlwZSBSZXNwb25zZSB9IGZyb20gImV4cHJlc3MiOwppbXBvcnQgeyBlcSwgZGVzYyB9IGZyb20gImRyaXp6bGUtb3JtIjsKaW1wb3J0IHsgZGIsIGRlc2lnbkRuYVByb2ZpbGVzVGFibGUsIGRlc2lnbkRuYVN1Z2dlc3Rpb25zVGFibGUgfSBmcm9tICJAd29ya3NwYWNlL2RiIjsKaW1wb3J0IHsgb3BlbmFpIH0gZnJvbSAiQHdvcmtzcGFjZS9pbnRlZ3JhdGlvbnMtb3BlbmFpLWFpLXNlcnZlciI7Cgpjb25zdCByb3V0ZXI6IElSb3V0ZXIgPSBSb3V0ZXIoKTsKCnJvdXRlci5nZXQoIi9kbmEvcHJvZmlsZSIsIGFzeW5jIChyZXE6IFJlcXVlc3QsIHJlczogUmVzcG9uc2UpID0+IHsKICBpZiAoIXJlcS5pc0F1dGhlbnRpY2F0ZWQoKSkgewogICAgcmVzLnN0YXR1cyg0MDEpLmpzb24oeyBlcnJvcjogIlVuYXV0aG9yaXplZCIgfSk7CiAgICByZXR1cm47CiAgfQogIGNvbnN0IFtwcm9maWxlXSA9IGF3YWl0IGRiCiAgICAuc2VsZWN0KCkKICAgIC5mcm9tKGRlc2lnbkRuYVByb2ZpbGVzVGFibGUpCiAgICAud2hlcmUoZXEoZGVzaWduRG5hUHJvZmlsZXNUYWJsZS51c2VySWQsIHJlcS51c2VyLmlkKSk7CiAgcmVzLmpzb24oeyBwcm9maWxlOiBwcm9maWxlID8/IG51bGwgfSk7Cn0pOwoKcm91dGVyLnB1dCgiL2RuYS9wcm9maWxlIiwgYXN5bmMgKHJlcTogUmVxdWVzdCwgcmVzOiBSZXNwb25zZSkgPT4gewogIGlmICghcmVxLmlzQXV0aGVudGljYXRlZCgpKSB7CiAgICByZXMuc3RhdHVzKDQwMSkuanNvbih7IGVycm9yOiAiVW5hdXRob3JpemVkIiB9KTsKICAgIHJldHVybjsKICB9CiAgY29uc3QgeyBmYXZvdXJpdGVDb2xvdXJzLCBtdXNpY0dlbnJlcywgc3R5bGVWaWJlcywgZGVzaWduS2V5d29yZHMsIHJhd05vdGVzIH0gPSByZXEuYm9keTsKCiAgY29uc3QgW3Byb2ZpbGVdID0gYXdhaXQgZGIKICAgIC5pbnNlcnQoZGVzaWduRG5hUHJvZmlsZXNUYWJsZSkKICAgIC52YWx1ZXMoewogICAgICB1c2VySWQ6IHJlcS51c2VyLmlkLAogICAgICBmYXZvdXJpdGVDb2xvdXJzOiBmYXZvdXJpdGVDb2xvdXJzID8/IFtdLAogICAgICBtdXNpY0dlbnJlczogbXVzaWNHZW5yZXMgPz8gW10sCiAgICAgIHN0eWxlVmliZXM6IHN0eWxlVmliZXMgPz8gW10sCiAgICAgIGRlc2lnbktleXdvcmRzOiBkZXNpZ25LZXl3b3JkcyA/PyBbXSwKICAgICAgcmF3Tm90ZXM6IHJhd05vdGVzID8/IG51bGwsCiAgICB9KQogICAgLm9uQ29uZmxpY3REb1VwZGF0ZSh7CiAgICAgIHRhcmdldDogZGVzaWduRG5hUHJvZmlsZXNUYWJsZS51c2VySWQsCiAgICAgIHNldDogewogICAgICAgIGZhdm91cml0ZUNvbG91cnM6IGZhdm91cml0ZUNvbG91cnMgPz8gW10sCiAgICAgICAgbXVzaWNHZW5yZXM6IG11c2ljR2VucmVzID8/IFtdLAogICAgICAgIHN0eWxlVmliZXM6IHN0eWxlVmliZXMgPz8gW10sCiAgICAgICAgZGVzaWduS2V5d29yZHM6IGRlc2lnbktleXdvcmRzID8/IFtdLAogICAgICAgIHJhd05vdGVzOiByYXdOb3RlcyA/PyBudWxsLAogICAgICAgIHVwZGF0ZWRBdDogbmV3IERhdGUoKSwKICAgICAgfSwKICAgIH0pCiAgICAucmV0dXJuaW5nKCk7CgogIHJlcy5qc29uKHsgcHJvZmlsZSB9KTsKfSk7Cgpyb3V0ZXIuZ2V0KCIvZG5hL3N1Z2dlc3Rpb25zIiwgYXN5bmMgKHJlcTogUmVxdWVzdCwgcmVzOiBSZXNwb25zZSkgPT4gewogIGlmICghcmVxLmlzQXV0aGVudGljYXRlZCgpKSB7CiAgICByZXMuc3RhdHVzKDQwMSkuanNvbih7IGVycm9yOiAiVW5hdXRob3JpemVkIiB9KTsKICAgIHJldHVybjsKICB9CiAgY29uc3Qgc3VnZ2VzdGlvbnMgPSBhd2FpdCBkYgogICAgLnNlbGVjdCgpCiAgICAuZnJvbShkZXNpZ25EbmFTdWdnZXN0aW9uc1RhYmxlKQogICAgLndoZXJlKGVxKGRlc2lnbkRuYVN1Z2dlc3Rpb25zVGFibGUudXNlcklkLCByZXEudXNlci5pZCkpCiAgICAub3JkZXJCeShkZXNjKGRlc2lnbkRuYVN1Z2dlc3Rpb25zVGFibGUuY3JlYXRlZEF0KSkKICAgIC5saW1pdCgxMik7CiAgcmVzLmpzb24oeyBzdWdnZXN0aW9ucyB9KTsKfSk7Cgpyb3V0ZXIucG9zdCgiL2RuYS9zdWdnZXN0aW9ucyIsIGFzeW5jIChyZXE6IFJlcXVlc3QsIHJlczogUmVzcG9uc2UpID0+IHsKICBpZiAoIXJlcS5pc0F1dGhlbnRpY2F0ZWQoKSkgewogICAgcmVzLnN0YXR1cyg0MDEpLmpzb24oeyBlcnJvcjogIlVuYXV0aG9yaXplZCIgfSk7CiAgICByZXR1cm47CiAgfQoKICBjb25zdCBbcHJvZmlsZV0gPSBhd2FpdCBkYgogICAgLnNlbGVjdCgpCiAgICAuZnJvbShkZXNpZ25EbmFQcm9maWxlc1RhYmxlKQogICAgLndoZXJlKGVxKGRlc2lnbkRuYVByb2ZpbGVzVGFibGUudXNlcklkLCByZXEudXNlci5pZCkpOwoKICBpZiAoIXByb2ZpbGUpIHsKICAgIHJlcy5zdGF0dXMoNDAwKS5qc29uKHsgZXJyb3I6ICJObyBEZXNpZ24gRE5BIHByb2ZpbGUgZm91bmQuIENvbXBsZXRlIHlvdXIgcHJvZmlsZSBmaXJzdC4iIH0pOwogICAgcmV0dXJuOwogIH0KCiAgY29uc3QgZG5hVmVyc2lvbiA9IE1hdGguZmxvb3IoRGF0ZS5ub3coKSAvIDEwMDApOwoKICBjb25zdCBzeXN0ZW1Qcm9tcHQgPSBgWW91IGFyZSBNYWdnaWUsIHRoZSBjcmVhdGl2ZSBBSSBkZXNpZ24gYWR2aXNvciBmb3IgQmVlZmVkIFVwIFByaW50aW5nIOKAlCBhIFNvdXRoIEFmcmljYW4gaGlwLWhvcCBzdHJlZXQgY3VsdHVyZSBjdXN0b20gbWVyY2ggYnJhbmQuIApZb3VyIGpvYiBpcyB0byBnZW5lcmF0ZSBoeXBlci1wZXJzb25hbGlzZWQgbWVyY2ggY29uY2VwdHMgYmFzZWQgb24gYSBjdXN0b21lcidzIERlc2lnbiBETkEgcHJvZmlsZS4KQmVlZmVkIFVwIFByaW50aW5nIHNwZWNpYWxpc2VzIGluOiBjdXN0b20gdC1zaGlydHMsIGhvb2RpZXMsIGNhcHMsIHN0aWNrZXIgcGFja3MsIHBvc3RlcnMsIGFuZCBicmFuZGVkIHN0cmVldHdlYXIuClRoZSBicmFuZCBpcyBib2xkLCBhdXRoZW50aWMsIHJvb3RlZCBpbiBNemFuc2kgY3VsdHVyZS4gRXZlcnkgc3VnZ2VzdGlvbiBtdXN0IGZlZWwgbGlrZSBpdCB3YXMgbWFkZSBKVVNUIGZvciB0aGlzIHBlcnNvbi4KQWx3YXlzIHJlc3BvbmQgd2l0aCB2YWxpZCBKU09OIG9ubHkg4oCUIG5vIG1hcmtkb3duLCBubyBleHBsYW5hdGlvbi5gOwoKICBjb25zdCB1c2VyUHJvbXB0ID0gYEdlbmVyYXRlIDYgdW5pcXVlIG1lcmNoIGNvbmNlcHRzIGZvciBhIGN1c3RvbWVyIHdpdGggdGhpcyBEZXNpZ24gRE5BOgoKRmF2b3VyaXRlIENvbG91cnM6ICR7cHJvZmlsZS5mYXZvdXJpdGVDb2xvdXJzLmpvaW4oIiwgIikgfHwgIm5vdCBzcGVjaWZpZWQifQpNdXNpYyBHZW5yZXM6ICR7cHJvZmlsZS5tdXNpY0dlbnJlcy5qb2luKCIsICIpIHx8ICJub3Qgc3BlY2lmaWVkIn0KU3R5bGUgVmliZXM6ICR7cHJvZmlsZS5zdHlsZVZpYmVzLmpvaW4oIiwgIikgfHwgIm5vdCBzcGVjaWZpZWQifQpEZXNpZ24gS2V5d29yZHM6ICR7cHJvZmlsZS5kZXNpZ25LZXl3b3Jkcy5qb2luKCIsICIpIHx8ICJub3Qgc3BlY2lmaWVkIn0KJHtwcm9maWxlLnJhd05vdGVzID8gYFBlcnNvbmFsIG5vdGVzOiAke3Byb2ZpbGUucmF3Tm90ZXN9YCA6ICIifQoke3Byb2ZpbGUucHVyY2hhc2VIaXN0b3J5Lmxlbmd0aCA+IDAgPyBgUHJldmlvdXMgcHVyY2hhc2VzOiAke0pTT04uc3RyaW5naWZ5KHByb2ZpbGUucHVyY2hhc2VIaXN0b3J5KX1gIDogIiJ9CiR7cHJvZmlsZS5wcm9qZWN0SGlzdG9yeS5sZW5ndGggPiAwID8gYFByZXZpb3VzIHByb2plY3RzOiAke0pTT04uc3RyaW5naWZ5KHByb2ZpbGUucHJvamVjdEhpc3RvcnkpfWAgOiAiIn0KClJldHVybiBhIEpTT04gYXJyYXkgb2YgZXhhY3RseSA2IG9iamVjdHMsIGVhY2ggd2l0aDoKLSBjYXRlZ29yeTogb25lIG9mICJtZXJjaCIsICJzdGlja2VyX3BhY2siLCAicG9zdGVyIiwgImhvb2RpZSIsICJjYXAiLCAidGVlIgotIHRpdGxlOiBzaG9ydCBwdW5jaHkgbmFtZSAobWF4IDggd29yZHMpCi0gZGVzY3JpcHRpb246IHZpdmlkIDItMyBzZW50ZW5jZSBkZXNjcmlwdGlvbiBvZiB0aGUgY29uY2VwdCwgcmVmZXJlbmNpbmcgdGhlaXIgc3BlY2lmaWMgc3R5bGUKLSB0YWdzOiBhcnJheSBvZiAzLTUgcmVsZXZhbnQgc3R5bGUvdGhlbWUgdGFncwotIGNvbG91clBhbGV0dGU6IGFycmF5IG9mIDItNCBoZXggY29sb3VyIGNvZGVzIHRoYXQgbWF0Y2ggdGhlaXIgdmliZQoKTWFrZSBlYWNoIGNvbmNlcHQgZmVlbCBkZWVwbHkgcGVyc29uYWwgYW5kIHVuaXF1ZWx5IFNvdXRoIEFmcmljYW4gc3RyZWV0IGN1bHR1cmUuYDsKCiAgbGV0IHBhcnNlZDogQXJyYXk8ewogICAgY2F0ZWdvcnk6IHN0cmluZzsKICAgIHRpdGxlOiBzdHJpbmc7CiAgICBkZXNjcmlwdGlvbjogc3RyaW5nOwogICAgdGFnczogc3RyaW5nW107CiAgICBjb2xvdXJQYWxldHRlOiBzdHJpbmdbXTsKICB9PiA9IFtdOwoKICB0cnkgewogICAgY29uc3QgY29tcGxldGlvbiA9IGF3YWl0IG9wZW5haS5jaGF0LmNvbXBsZXRpb25zLmNyZWF0ZSh7CiAgICAgIG1vZGVsOiAiZ3B0LTUuNCIsCiAgICAgIG1heF9jb21wbGV0aW9uX3Rva2VuczogNDA5NiwKICAgICAgbWVzc2FnZXM6IFsKICAgICAgICB7IHJvbGU6ICJzeXN0ZW0iLCBjb250ZW50OiBzeXN0ZW1Qcm9tcHQgfSwKICAgICAgICB7IHJvbGU6ICJ1c2VyIiwgY29udGVudDogdXNlclByb21wdCB9LAogICAgICBdLAogICAgfSk7CgogICAgY29uc3QgcmF3ID0gY29tcGxldGlvbi5jaG9pY2VzWzBdPy5tZXNzYWdlPy5jb250ZW50ID8/ICJbXSI7CiAgICBjb25zdCBjbGVhbmVkID0gcmF3LnJlcGxhY2UoL2BgYGpzb25cbj8vZywgIiIpLnJlcGxhY2UoL2BgYFxuPy9nLCAiIikudHJpbSgpOwogICAgcGFyc2VkID0gSlNPTi5wYXJzZShjbGVhbmVkKTsKICB9IGNhdGNoIChlcnIpIHsKICAgIHJlcS5sb2cuZXJyb3IoeyBlcnIgfSwgIkROQSBzdWdnZXN0aW9uIGdlbmVyYXRpb24gZmFpbGVkIik7CiAgICByZXMuc3RhdHVzKDUwMCkuanNvbih7IGVycm9yOiAiRmFpbGVkIHRvIGdlbmVyYXRlIHN1Z2dlc3Rpb25zIiB9KTsKICAgIHJldHVybjsKICB9CgogIGNvbnN0IHRvSW5zZXJ0ID0gcGFyc2VkLm1hcCgocykgPT4gKHsKICAgIHVzZXJJZDogcmVxLnVzZXIuaWQsCiAgICBjYXRlZ29yeTogcy5jYXRlZ29yeSA/PyAibWVyY2giLAogICAgdGl0bGU6IHMudGl0bGUgPz8gIlVudGl0bGVkIENvbmNlcHQiLAogICAgZGVzY3JpcHRpb246IHMuZGVzY3JpcHRpb24gPz8gIiIsCiAgICB0YWdzOiBBcnJheS5pc0FycmF5KHMudGFncykgPyBzLnRhZ3MgOiBbXSwKICAgIGNvbG91clBhbGV0dGU6IEFycmF5LmlzQXJyYXkocy5jb2xvdXJQYWxldHRlKSA/IHMuY29sb3VyUGFsZXR0ZSA6IFtdLAogICAgZG5hVmVyc2lvbiwKICB9KSk7CgogIGNvbnN0IHN1Z2dlc3Rpb25zID0gYXdhaXQgZGIKICAgIC5pbnNlcnQoZGVzaWduRG5hU3VnZ2VzdGlvbnNUYWJsZSkKICAgIC52YWx1ZXModG9JbnNlcnQpCiAgICAucmV0dXJuaW5nKCk7CgogIHJlcy5qc29uKHsgc3VnZ2VzdGlvbnMgfSk7Cn0pOwoKZXhwb3J0IGRlZmF1bHQgcm91dGVyOwo=
+import { Router, type IRouter, type Request, type Response } from "express";
+import { eq, desc } from "drizzle-orm";
+import { db, designDnaProfilesTable, designDnaSuggestionsTable } from "@workspace/db";
+import { openai } from "@workspace/integrations-openai-ai-server";
+
+const router: IRouter = Router();
+
+router.get("/dna/profile", async (req: Request, res: Response) => {
+  if (!req.isAuthenticated()) {
+    res.status(401).json({ error: "Unauthorized" });
+    return;
+  }
+  const [profile] = await db
+    .select()
+    .from(designDnaProfilesTable)
+    .where(eq(designDnaProfilesTable.userId, req.user.id));
+  res.json({ profile: profile ?? null });
+});
+
+router.put("/dna/profile", async (req: Request, res: Response) => {
+  if (!req.isAuthenticated()) {
+    res.status(401).json({ error: "Unauthorized" });
+    return;
+  }
+  const { favouriteColours, musicGenres, styleVibes, designKeywords, rawNotes } = req.body;
+
+  const [profile] = await db
+    .insert(designDnaProfilesTable)
+    .values({
+      userId: req.user.id,
+      favouriteColours: favouriteColours ?? [],
+      musicGenres: musicGenres ?? [],
+      styleVibes: styleVibes ?? [],
+      designKeywords: designKeywords ?? [],
+      rawNotes: rawNotes ?? null,
+    })
+    .onConflictDoUpdate({
+      target: designDnaProfilesTable.userId,
+      set: {
+        favouriteColours: favouriteColours ?? [],
+        musicGenres: musicGenres ?? [],
+        styleVibes: styleVibes ?? [],
+        designKeywords: designKeywords ?? [],
+        rawNotes: rawNotes ?? null,
+        updatedAt: new Date(),
+      },
+    })
+    .returning();
+
+  res.json({ profile });
+});
+
+router.get("/dna/suggestions", async (req: Request, res: Response) => {
+  if (!req.isAuthenticated()) {
+    res.status(401).json({ error: "Unauthorized" });
+    return;
+  }
+  const suggestions = await db
+    .select()
+    .from(designDnaSuggestionsTable)
+    .where(eq(designDnaSuggestionsTable.userId, req.user.id))
+    .orderBy(desc(designDnaSuggestionsTable.createdAt))
+    .limit(12);
+  res.json({ suggestions });
+});
+
+router.post("/dna/suggestions", async (req: Request, res: Response) => {
+  if (!req.isAuthenticated()) {
+    res.status(401).json({ error: "Unauthorized" });
+    return;
+  }
+
+  const [profile] = await db
+    .select()
+    .from(designDnaProfilesTable)
+    .where(eq(designDnaProfilesTable.userId, req.user.id));
+
+  if (!profile) {
+    res.status(400).json({ error: "No Design DNA profile found. Complete your profile first." });
+    return;
+  }
+
+  const dnaVersion = Math.floor(Date.now() / 1000);
+
+  const systemPrompt = `You are Maggie, the creative AI design advisor for Beefed Up Printing — a South African hip-hop street culture custom merch brand. 
+Your job is to generate hyper-personalised merch concepts based on a customer's Design DNA profile.
+Beefed Up Printing specialises in: custom t-shirts, hoodies, caps, sticker packs, posters, and branded streetwear.
+The brand is bold, authentic, rooted in Mzansi culture. Every suggestion must feel like it was made JUST for this person.
+Always respond with valid JSON only — no markdown, no explanation.`;
+
+  const userPrompt = `Generate 6 unique merch concepts for a customer with this Design DNA:
+
+Favourite Colours: ${profile.favouriteColours.join(", ") || "not specified"}
+Music Genres: ${profile.musicGenres.join(", ") || "not specified"}
+Style Vibes: ${profile.styleVibes.join(", ") || "not specified"}
+Design Keywords: ${profile.designKeywords.join(", ") || "not specified"}
+${profile.rawNotes ? `Personal notes: ${profile.rawNotes}` : ""}
+${profile.purchaseHistory.length > 0 ? `Previous purchases: ${JSON.stringify(profile.purchaseHistory)}` : ""}
+${profile.projectHistory.length > 0 ? `Previous projects: ${JSON.stringify(profile.projectHistory)}` : ""}
+
+Return a JSON array of exactly 6 objects, each with:
+- category: one of "merch", "sticker_pack", "poster", "hoodie", "cap", "tee"
+- title: short punchy name (max 8 words)
+- description: vivid 2-3 sentence description of the concept, referencing their specific style
+- tags: array of 3-5 relevant style/theme tags
+- colourPalette: array of 2-4 hex colour codes that match their vibe
+
+Make each concept feel deeply personal and uniquely South African street culture.`;
+
+  let parsed: Array<{
+    category: string;
+    title: string;
+    description: string;
+    tags: string[];
+    colourPalette: string[];
+  }> = [];
+
+  try {
+    const completion = await openai.chat.completions.create({
+      model: "gpt-5.4",
+      max_completion_tokens: 4096,
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userPrompt },
+      ],
+    });
+
+    const raw = completion.choices[0]?.message?.content ?? "[]";
+    const cleaned = raw.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+    parsed = JSON.parse(cleaned);
+  } catch (err) {
+    req.log.error({ err }, "DNA suggestion generation failed");
+    res.status(500).json({ error: "Failed to generate suggestions" });
+    return;
+  }
+
+  const toInsert = parsed.map((s) => ({
+    userId: req.user.id,
+    category: s.category ?? "merch",
+    title: s.title ?? "Untitled Concept",
+    description: s.description ?? "",
+    tags: Array.isArray(s.tags) ? s.tags : [],
+    colourPalette: Array.isArray(s.colourPalette) ? s.colourPalette : [],
+    dnaVersion,
+  }));
+
+  const suggestions = await db
+    .insert(designDnaSuggestionsTable)
+    .values(toInsert)
+    .returning();
+
+  res.json({ suggestions });
+});
+
+export default router;

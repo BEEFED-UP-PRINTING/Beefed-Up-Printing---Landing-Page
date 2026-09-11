@@ -1,1 +1,124 @@
-aW1wb3J0IHsgdXNlRm9ybSB9IGZyb20gInJlYWN0LWhvb2stZm9ybSI7CmltcG9ydCB7IHpvZFJlc29sdmVyIH0gZnJvbSAiQGhvb2tmb3JtL3Jlc29sdmVycy96b2QiOwppbXBvcnQgeyBMb2FkZXIyIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IHVzZVN1Ym1pdENvbnRhY3QsIHR5cGUgQ29udGFjdElucHV0LCBjb250YWN0U2NoZW1hIH0gZnJvbSAiQC9ob29rcy91c2UtY29udGFjdCI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBDb250YWN0Rm9ybSgpIHsKICBjb25zdCB7IHJlZ2lzdGVyLCBoYW5kbGVTdWJtaXQsIGZvcm1TdGF0ZTogeyBlcnJvcnMgfSwgcmVzZXQgfSA9IHVzZUZvcm08Q29udGFjdElucHV0Pih7CiAgICByZXNvbHZlcjogem9kUmVzb2x2ZXIoY29udGFjdFNjaGVtYSkKICB9KTsKICAKICBjb25zdCB7IG11dGF0ZSwgaXNQZW5kaW5nIH0gPSB1c2VTdWJtaXRDb250YWN0KCk7CgogIGNvbnN0IG9uU3VibWl0ID0gKGRhdGE6IENvbnRhY3RJbnB1dCkgPT4gewogICAgbXV0YXRlKGRhdGEsIHsKICAgICAgb25TdWNjZXNzOiAoKSA9PiB7CiAgICAgICAgcmVzZXQoKTsKICAgICAgfQogICAgfSk7CiAgfTsKCiAgcmV0dXJuICgKICAgIDxzZWN0aW9uIGlkPSJjb250YWN0IiBjbGFzc05hbWU9InB5LTI0IG1kOnB5LTMyIGJnLXppbmMtOTUwIHJlbGF0aXZlIGJvcmRlci10IGJvcmRlci16aW5jLTkwMCI+CiAgICAgIHsvKiBSaWdodCBzaWRlIGdyYXBoaWNhbCBnbG93ICovfQogICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgcmlnaHQtMCB0b3AtMS8yIC10cmFuc2xhdGUteS0xLzIgdy05NiBoLTk2IGJnLXByaW1hcnkvNSByb3VuZGVkLWZ1bGwgYmx1ci1bMTUwcHhdIHBvaW50ZXItZXZlbnRzLW5vbmUiIC8+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctNHhsIG14LWF1dG8gcHgtNiI+CiAgICAgICAgPG1vdGlvbi5kaXYgCiAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDQwIH19CiAgICAgICAgICB3aGlsZUluVmlldz17eyBvcGFjaXR5OiAxLCB5OiAwIH19CiAgICAgICAgICB2aWV3cG9ydD17eyBvbmNlOiB0cnVlIH19CiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjYgfX0KICAgICAgICAgIGNsYXNzTmFtZT0iYm9yZGVyLTIgYm9yZGVyLXppbmMtODAwIGJnLWJsYWNrIHAtOCBtZDpwLTE0IHJlbGF0aXZlIHNoYWRvdy0yeGwiCiAgICAgICAgPgogICAgICAgICAgey8qIEluZHVzdHJpYWwgLyBHcml0dHkgQWNjZW50cyAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtMCBsZWZ0LTAgdy1mdWxsIGgtMSBiZy1ncmFkaWVudC10by1yIGZyb20tdHJhbnNwYXJlbnQgdmlhLXByaW1hcnkgdG8tdHJhbnNwYXJlbnQgb3BhY2l0eS01MCIgLz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSAtdG9wLTMgLWxlZnQtMyB3LTYgaC02IGJvcmRlci10LTIgYm9yZGVyLWwtMiBib3JkZXItcHJpbWFyeSIgLz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSAtYm90dG9tLTMgLXJpZ2h0LTMgdy02IGgtNiBib3JkZXItYi0yIGJvcmRlci1yLTIgYm9yZGVyLXByaW1hcnkiIC8+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTEwIj4KICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IHRleHQtNHhsIG1kOnRleHQtNXhsIHRleHQtd2hpdGUgdXBwZXJjYXNlIGxlYWRpbmctdGlnaHQiPgogICAgICAgICAgICAgIEdldCBBIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5Ij5RdW90ZTwvc3Bhbj4KICAgICAgICAgICAgPC9oMj4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC16aW5jLTQwMCBtdC0yIj5IaXQgdXMgdXAgd2l0aCB5b3VyIHJlcXVpcmVtZW50cyBhbmQgd2UnbGwgbGluayB1cC48L3A+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8Zm9ybSBvblN1Ym1pdD17aGFuZGxlU3VibWl0KG9uU3VibWl0KX0gY2xhc3NOYW1lPSJzcGFjZS15LTYiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBtZDpncmlkLWNvbHMtMiBnYXAtNiI+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImJsb2NrIGZvbnQtc2FucyB0ZXh0LXhzIHVwcGVyY2FzZSB0cmFja2luZy13aWRlc3QgdGV4dC16aW5jLTUwMCBtYi0yIj5OYW1lIC8gQ3JldzwvbGFiZWw+CiAgICAgICAgICAgICAgICA8aW5wdXQgCiAgICAgICAgICAgICAgICAgIHsuLi5yZWdpc3RlcigibmFtZSIpfSAKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgYmctemluYy05MDAgYm9yZGVyIGJvcmRlci16aW5jLTgwMCB0ZXh0LXdoaXRlIHB4LTQgcHktMy41IGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItcHJpbWFyeSBmb2N1czpyaW5nLTEgZm9jdXM6cmluZy1wcmltYXJ5IHRyYW5zaXRpb24tYWxsIGZvbnQtc2FucyBwbGFjZWhvbGRlcjp0ZXh0LXppbmMtNzAwIiAKICAgICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IldIQVQgRE8gV0UgQ0FMTCBZT1U/IiAKICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICB7ZXJyb3JzLm5hbWUgJiYgPHAgY2xhc3NOYW1lPSJ0ZXh0LXJlZC01MDAgdGV4dC14cyBtdC0xLjUiPntlcnJvcnMubmFtZS5tZXNzYWdlfTwvcD59CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICAgIDxsYWJlbCBjbGFzc05hbWU9ImJsb2NrIGZvbnQtc2FucyB0ZXh0LXhzIHVwcGVyY2FzZSB0cmFja2luZy13aWRlc3QgdGV4dC16aW5jLTUwMCBtYi0yIj5FbWFpbDwvbGFiZWw+CiAgICAgICAgICAgICAgICA8aW5wdXQgCiAgICAgICAgICAgICAgICAgIHsuLi5yZWdpc3RlcigiZW1haWwiKX0gCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXppbmMtOTAwIGJvcmRlciBib3JkZXItemluYy04MDAgdGV4dC13aGl0ZSBweC00IHB5LTMuNSBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXByaW1hcnkgZm9jdXM6cmluZy0xIGZvY3VzOnJpbmctcHJpbWFyeSB0cmFuc2l0aW9uLWFsbCBmb250LXNhbnMgcGxhY2Vob2xkZXI6dGV4dC16aW5jLTcwMCIgCiAgICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSJXSEVSRSBETyBXRSBTRU5EIFRIRSBJTlZPSUNFPyIgCiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAge2Vycm9ycy5lbWFpbCAmJiA8cCBjbGFzc05hbWU9InRleHQtcmVkLTUwMCB0ZXh0LXhzIG10LTEuNSI+e2Vycm9ycy5lbWFpbC5tZXNzYWdlfTwvcD59CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICA8bGFiZWwgY2xhc3NOYW1lPSJibG9jayBmb250LXNhbnMgdGV4dC14cyB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXN0IHRleHQtemluYy01MDAgbWItMiI+VGhlIE1lcmNoPC9sYWJlbD4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUiPgogICAgICAgICAgICAgICAgPHNlbGVjdCAKICAgICAgICAgICAgICAgICAgaWQ9InNlcnZpY2Utc2VsZWN0IgogICAgICAgICAgICAgICAgICB7Li4ucmVnaXN0ZXIoInNlcnZpY2UiKX0gCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXppbmMtOTAwIGJvcmRlciBib3JkZXItemluYy04MDAgdGV4dC13aGl0ZSBweC00IHB5LTMuNSBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXByaW1hcnkgZm9jdXM6cmluZy0xIGZvY3VzOnJpbmctcHJpbWFyeSB0cmFuc2l0aW9uLWFsbCBmb250LXNhbnMgYXBwZWFyYW5jZS1ub25lIgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIiPlNFTEVDVCBHRUFSPC9vcHRpb24+CiAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InRzaGlydHMiPkN1c3RvbSBULVNoaXJ0czwvb3B0aW9uPgogICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJob29kaWVzIj5Ib29kaWVzICYgU3dlYXRzPC9vcHRpb24+CiAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9ImNhcHMiPkNhcHMgJiBIZWFkd2Vhcjwvb3B0aW9uPgogICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJzdGlja2VycyI+U3RpY2tlcnMgJiBEZWNhbHM8L29wdGlvbj4KICAgICAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iYmFubmVycyI+QmFubmVycyAmIFNpZ25zPC9vcHRpb24+CiAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Im90aGVyIj5PdGhlciAvIEN1c3RvbSBIdXN0bGU8L29wdGlvbj4KICAgICAgICAgICAgICAgIDwvc2VsZWN0PgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LXktMCByaWdodC00IGZsZXggaXRlbXMtY2VudGVyIHBvaW50ZXItZXZlbnRzLW5vbmUgdGV4dC16aW5jLTUwMCI+CiAgICAgICAgICAgICAgICAgIOKWvAogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAge2Vycm9ycy5zZXJ2aWNlICYmIDxwIGNsYXNzTmFtZT0idGV4dC1yZWQtNTAwIHRleHQteHMgbXQtMS41Ij57ZXJyb3JzLnNlcnZpY2UubWVzc2FnZX08L3A+fQogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzTmFtZT0iYmxvY2sgZm9udC1zYW5zIHRleHQteHMgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCB0ZXh0LXppbmMtNTAwIG1iLTIiPlRoZSBEZXRhaWxzPC9sYWJlbD4KICAgICAgICAgICAgICA8dGV4dGFyZWEgCiAgICAgICAgICAgICAgICB7Li4ucmVnaXN0ZXIoIm1lc3NhZ2UiKX0gCiAgICAgICAgICAgICAgICByb3dzPXs1fSAKICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXppbmMtOTAwIGJvcmRlciBib3JkZXItemluYy04MDAgdGV4dC13aGl0ZSBweC00IHB5LTMuNSBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXByaW1hcnkgZm9jdXM6cmluZy0xIGZvY3VzOnJpbmctcHJpbWFyeSB0cmFuc2l0aW9uLWFsbCBmb250LXNhbnMgcmVzaXplLW5vbmUgcGxhY2Vob2xkZXI6dGV4dC16aW5jLTcwMCIgCiAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj0iVEVMTCBVUyBBQk9VVCBUSEUgVklTSU9OLCBRVUFOVElUSUVTLCBTSVpFUy4uLiIgCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICB7ZXJyb3JzLm1lc3NhZ2UgJiYgPHAgY2xhc3NOYW1lPSJ0ZXh0LXJlZC01MDAgdGV4dC14cyBtdC0xLjUiPntlcnJvcnMubWVzc2FnZS5tZXNzYWdlfTwvcD59CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGJ1dHRvbiAKICAgICAgICAgICAgICBkaXNhYmxlZD17aXNQZW5kaW5nfSAKICAgICAgICAgICAgICB0eXBlPSJzdWJtaXQiIAogICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGJnLXByaW1hcnkgdGV4dC1ibGFjayBmb250LWRpc3BsYXkgZm9udC1ib2xkIHRleHQteGwgdXBwZXJjYXNlIHB5LTUgbXQtNCBob3ZlcjpiZy13aGl0ZSBob3Zlcjp0ZXh0LWJsYWNrIHRyYW5zaXRpb24tYWxsIGJveC1nbG93IGhvdmVyOmJveC1nbG93IGZsZXgganVzdGlmeS1jZW50ZXIgaXRlbXMtY2VudGVyIGdhcC0zIGRpc2FibGVkOm9wYWNpdHktNzAgZGlzYWJsZWQ6Y3Vyc29yLW5vdC1hbGxvd2VkIGdyb3VwIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2lzUGVuZGluZyA/ICgKICAgICAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgICAgIDxMb2FkZXIyIGNsYXNzTmFtZT0iYW5pbWF0ZS1zcGluIiBzaXplPXsyNH0gLz4KICAgICAgICAgICAgICAgICAgUFJPQ0VTU0lORy4uLgogICAgICAgICAgICAgICAgPC8+CiAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgICAgIFNlbmQgSXQgPHNwYW4gY2xhc3NOYW1lPSJncm91cC1ob3Zlcjp0cmFuc2xhdGUteC0xIHRyYW5zaXRpb24tdHJhbnNmb3JtIj7ihpI8L3NwYW4+CiAgICAgICAgICAgICAgICA8Lz4KICAgICAgICAgICAgICApfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZm9ybT4KICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0K
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import { motion } from "framer-motion";
+import { useSubmitContact, type ContactInput, contactSchema } from "@/hooks/use-contact";
+
+export default function ContactForm() {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<ContactInput>({
+    resolver: zodResolver(contactSchema)
+  });
+  
+  const { mutate, isPending } = useSubmitContact();
+
+  const onSubmit = (data: ContactInput) => {
+    mutate(data, {
+      onSuccess: () => {
+        reset();
+      }
+    });
+  };
+
+  return (
+    <section id="contact" className="py-24 md:py-32 bg-zinc-950 relative border-t border-zinc-900">
+      {/* Right side graphical glow */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
+
+      <div className="max-w-4xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="border-2 border-zinc-800 bg-black p-8 md:p-14 relative shadow-2xl"
+        >
+          {/* Industrial / Gritty Accents */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+          <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-primary" />
+          <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-primary" />
+
+          <div className="mb-10">
+            <h2 className="font-display text-4xl md:text-5xl text-white uppercase leading-tight">
+              Get A <span className="text-primary">Quote</span>
+            </h2>
+            <p className="font-sans text-zinc-400 mt-2">Hit us up with your requirements and we'll link up.</p>
+          </div>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block font-sans text-xs uppercase tracking-widest text-zinc-500 mb-2">Name / Crew</label>
+                <input 
+                  {...register("name")} 
+                  className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-sans placeholder:text-zinc-700" 
+                  placeholder="WHAT DO WE CALL YOU?" 
+                />
+                {errors.name && <p className="text-red-500 text-xs mt-1.5">{errors.name.message}</p>}
+              </div>
+              <div>
+                <label className="block font-sans text-xs uppercase tracking-widest text-zinc-500 mb-2">Email</label>
+                <input 
+                  {...register("email")} 
+                  className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-sans placeholder:text-zinc-700" 
+                  placeholder="WHERE DO WE SEND THE INVOICE?" 
+                />
+                {errors.email && <p className="text-red-500 text-xs mt-1.5">{errors.email.message}</p>}
+              </div>
+            </div>
+
+            <div>
+              <label className="block font-sans text-xs uppercase tracking-widest text-zinc-500 mb-2">The Merch</label>
+              <div className="relative">
+                <select 
+                  id="service-select"
+                  {...register("service")} 
+                  className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-sans appearance-none"
+                >
+                  <option value="">SELECT GEAR</option>
+                  <option value="tshirts">Custom T-Shirts</option>
+                  <option value="hoodies">Hoodies & Sweats</option>
+                  <option value="caps">Caps & Headwear</option>
+                  <option value="stickers">Stickers & Decals</option>
+                  <option value="banners">Banners & Signs</option>
+                  <option value="other">Other / Custom Hustle</option>
+                </select>
+                <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-zinc-500">
+                  ▼
+                </div>
+              </div>
+              {errors.service && <p className="text-red-500 text-xs mt-1.5">{errors.service.message}</p>}
+            </div>
+
+            <div>
+              <label className="block font-sans text-xs uppercase tracking-widest text-zinc-500 mb-2">The Details</label>
+              <textarea 
+                {...register("message")} 
+                rows={5} 
+                className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3.5 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-sans resize-none placeholder:text-zinc-700" 
+                placeholder="TELL US ABOUT THE VISION, QUANTITIES, SIZES..." 
+              />
+              {errors.message && <p className="text-red-500 text-xs mt-1.5">{errors.message.message}</p>}
+            </div>
+
+            <button 
+              disabled={isPending} 
+              type="submit" 
+              className="w-full bg-primary text-black font-display font-bold text-xl uppercase py-5 mt-4 hover:bg-white hover:text-black transition-all box-glow hover:box-glow flex justify-center items-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed group"
+            >
+              {isPending ? (
+                <>
+                  <Loader2 className="animate-spin" size={24} />
+                  PROCESSING...
+                </>
+              ) : (
+                <>
+                  Send It <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </>
+              )}
+            </button>
+          </form>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

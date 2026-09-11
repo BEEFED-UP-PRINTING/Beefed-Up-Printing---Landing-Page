@@ -1,1 +1,127 @@
-aW1wb3J0IHsgbW90aW9uLCBBbmltYXRlUHJlc2VuY2UgfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgU3BhcmtsZXMsIFRhZywgUGFsZXR0ZSwgU2hvcHBpbmdCYWcgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwoKaW50ZXJmYWNlIFN1Z2dlc3Rpb24gewogIGlkOiBzdHJpbmc7CiAgY2F0ZWdvcnk6IHN0cmluZzsKICB0aXRsZTogc3RyaW5nOwogIGRlc2NyaXB0aW9uOiBzdHJpbmc7CiAgdGFnczogc3RyaW5nW107CiAgY29sb3VyUGFsZXR0ZTogc3RyaW5nW107CiAgY3JlYXRlZEF0OiBzdHJpbmc7Cn0KCmNvbnN0IENBVEVHT1JZX0xBQkVMUzogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHsKICBtZXJjaDogIk1lcmNoIERyb3AiLAogIHN0aWNrZXJfcGFjazogIlN0aWNrZXIgUGFjayIsCiAgcG9zdGVyOiAiUG9zdGVyIiwKICBob29kaWU6ICJIb29kaWUiLAogIGNhcDogIkNhcCIsCiAgdGVlOiAiVGVlIiwKfTsKCmNvbnN0IENBVEVHT1JZX0lDT05TOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogIG1lcmNoOiAi8J+noiIsCiAgc3RpY2tlcl9wYWNrOiAi8J+OqCIsCiAgcG9zdGVyOiAi8J+WvO+4jyIsCiAgaG9vZGllOiAi8J+npSIsCiAgY2FwOiAi8J+noiIsCiAgdGVlOiAi8J+RlSIsCn07CgppbnRlcmZhY2UgUHJvcHMgewogIHN1Z2dlc3Rpb25zOiBTdWdnZXN0aW9uW107CiAgbG9hZGluZzogYm9vbGVhbjsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRGVzaWduRE5BU3VnZ2VzdGlvbnMoeyBzdWdnZXN0aW9ucywgbG9hZGluZyB9OiBQcm9wcykgewogIGlmIChsb2FkaW5nKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0ic3BhY2UteS0zIj4KICAgICAgICB7WzEsIDIsIDNdLm1hcCgoaSkgPT4gKAogICAgICAgICAgPGRpdiBrZXk9e2l9IGNsYXNzTmFtZT0iYm9yZGVyIGJvcmRlci16aW5jLTgwMCBiZy16aW5jLTk1MC82MCBwLTQgYW5pbWF0ZS1wdWxzZSI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTMgdy0yMCBiZy16aW5jLTgwMCByb3VuZGVkIG1iLTIiIC8+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoLTQgdy0zLzQgYmctemluYy04MDAgcm91bmRlZCBtYi0yIiAvPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0xMCB3LWZ1bGwgYmctemluYy04MDAgcm91bmRlZCIgLz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICkpfQogICAgICA8L2Rpdj4KICAgICk7CiAgfQoKICBpZiAoc3VnZ2VzdGlvbnMubGVuZ3RoID09PSAwKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iYm9yZGVyIGJvcmRlci1kYXNoZWQgYm9yZGVyLXppbmMtODAwIHAtNiB0ZXh0LWNlbnRlciI+CiAgICAgICAgPFNwYXJrbGVzIHNpemU9ezI0fSBjbGFzc05hbWU9InRleHQtemluYy02MDAgbXgtYXV0byBtYi0yIiAvPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCB0ZXh0LXNtIGZvbnQtc2FucyI+Tm8gY29uY2VwdHMgeWV0LiBHZW5lcmF0ZSB5b3VyIGZpcnN0IGJhdGNoIGFib3ZlLjwvcD4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMiPgogICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy01MDAgdGV4dC14cyBmb250LXNhbnMgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIG1iLTMiPgogICAgICAgIEFJLUdlbmVyYXRlZCBDb25jZXB0cyDigJQgQmFzZWQgT24gWW91ciBETkEKICAgICAgPC9wPgogICAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICAgIHtzdWdnZXN0aW9ucy5zbGljZSgwLCA2KS5tYXAoKHMsIGkpID0+ICgKICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGtleT17cy5pZH0KICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiAxMiB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEsIHk6IDAgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkZWxheTogaSAqIDAuMDYgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJib3JkZXIgYm9yZGVyLXppbmMtODAwIGJnLXppbmMtOTUwLzYwIHAtNCBob3Zlcjpib3JkZXItemluYy03MDAgdHJhbnNpdGlvbi1jb2xvcnMgZ3JvdXAiCiAgICAgICAgICA+CiAgICAgICAgICAgIHsvKiBDYXRlZ29yeSBiYWRnZSAqL30KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBtYi0yIj4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHRleHQtcHJpbWFyeSI+CiAgICAgICAgICAgICAgICB7Q0FURUdPUllfSUNPTlNbcy5jYXRlZ29yeV0gPz8gIuKcpiJ9IHtDQVRFR09SWV9MQUJFTFNbcy5jYXRlZ29yeV0gPz8gcy5jYXRlZ29yeX0KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAge3MuY29sb3VyUGFsZXR0ZS5sZW5ndGggPiAwICYmICgKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0xIj4KICAgICAgICAgICAgICAgICAge3MuY29sb3VyUGFsZXR0ZS5zbGljZSgwLCA0KS5tYXAoKGhleCwgaWR4KSA9PiAoCiAgICAgICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgICAgIGtleT17aWR4fQogICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LTMuNSBoLTMuNSByb3VuZGVkLXNtIGJvcmRlciBib3JkZXItemluYy03MDAiCiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiBoZXggfX0KICAgICAgICAgICAgICAgICAgICAgIHRpdGxlPXtoZXh9CiAgICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApfQogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIHsvKiBUaXRsZSAqL30KICAgICAgICAgICAgPGg0IGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LXdoaXRlIHRleHQtc20gdHJhY2tpbmctd2lkZSBtYi0xLjUgZ3JvdXAtaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIj4KICAgICAgICAgICAgICB7cy50aXRsZX0KICAgICAgICAgICAgPC9oND4KCiAgICAgICAgICAgIHsvKiBEZXNjcmlwdGlvbiAqL30KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIHRleHQteHMgZm9udC1zYW5zIGxlYWRpbmctcmVsYXhlZCBtYi0zIj4KICAgICAgICAgICAgICB7cy5kZXNjcmlwdGlvbn0KICAgICAgICAgICAgPC9wPgoKICAgICAgICAgICAgey8qIFRhZ3MgKi99CiAgICAgICAgICAgIHtzLnRhZ3MubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICAgICAge3MudGFncy5tYXAoKHQpID0+ICgKICAgICAgICAgICAgICAgICAgPHNwYW4ga2V5PXt0fSBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtc2FucyB0ZXh0LXppbmMtNTAwIGJvcmRlciBib3JkZXItemluYy04MDAgcHgtMS41IHB5LTAuNSI+CiAgICAgICAgICAgICAgICAgICAgI3t0fQogICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKX0KCiAgICAgICAgICAgIHsvKiBPcmRlciBDVEEgKi99CiAgICAgICAgICAgIDxhCiAgICAgICAgICAgICAgaHJlZj0iI2NvbnRhY3QiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJtdC0zIGZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUgdGV4dC1bMTFweF0gZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHRleHQtemluYy02MDAgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPFNob3BwaW5nQmFnIHNpemU9ezExfSAvPiBPcmRlciBUaGlzIENvbmNlcHQKICAgICAgICAgICAgPC9hPgogICAgICAgICAgPC9tb3Rpb24uZGl2PgogICAgICAgICkpfQogICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgIDwvZGl2PgogICk7Cn0K
+import { motion, AnimatePresence } from "framer-motion";
+import { Sparkles, Tag, Palette, ShoppingBag } from "lucide-react";
+
+interface Suggestion {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  tags: string[];
+  colourPalette: string[];
+  createdAt: string;
+}
+
+const CATEGORY_LABELS: Record<string, string> = {
+  merch: "Merch Drop",
+  sticker_pack: "Sticker Pack",
+  poster: "Poster",
+  hoodie: "Hoodie",
+  cap: "Cap",
+  tee: "Tee",
+};
+
+const CATEGORY_ICONS: Record<string, string> = {
+  merch: "🧢",
+  sticker_pack: "🎨",
+  poster: "🖼️",
+  hoodie: "🧥",
+  cap: "🧢",
+  tee: "👕",
+};
+
+interface Props {
+  suggestions: Suggestion[];
+  loading: boolean;
+}
+
+export default function DesignDNASuggestions({ suggestions, loading }: Props) {
+  if (loading) {
+    return (
+      <div className="space-y-3">
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="border border-zinc-800 bg-zinc-950/60 p-4 animate-pulse">
+            <div className="h-3 w-20 bg-zinc-800 rounded mb-2" />
+            <div className="h-4 w-3/4 bg-zinc-800 rounded mb-2" />
+            <div className="h-10 w-full bg-zinc-800 rounded" />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (suggestions.length === 0) {
+    return (
+      <div className="border border-dashed border-zinc-800 p-6 text-center">
+        <Sparkles size={24} className="text-zinc-600 mx-auto mb-2" />
+        <p className="text-zinc-500 text-sm font-sans">No concepts yet. Generate your first batch above.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-3">
+      <p className="text-zinc-500 text-xs font-sans uppercase tracking-wider mb-3">
+        AI-Generated Concepts — Based On Your DNA
+      </p>
+      <AnimatePresence>
+        {suggestions.slice(0, 6).map((s, i) => (
+          <motion.div
+            key={s.id}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.06 }}
+            className="border border-zinc-800 bg-zinc-950/60 p-4 hover:border-zinc-700 transition-colors group"
+          >
+            {/* Category badge */}
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-display font-bold tracking-widest uppercase text-primary">
+                {CATEGORY_ICONS[s.category] ?? "✦"} {CATEGORY_LABELS[s.category] ?? s.category}
+              </span>
+              {s.colourPalette.length > 0 && (
+                <div className="flex gap-1">
+                  {s.colourPalette.slice(0, 4).map((hex, idx) => (
+                    <span
+                      key={idx}
+                      className="w-3.5 h-3.5 rounded-sm border border-zinc-700"
+                      style={{ background: hex }}
+                      title={hex}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Title */}
+            <h4 className="font-display font-bold text-white text-sm tracking-wide mb-1.5 group-hover:text-primary transition-colors">
+              {s.title}
+            </h4>
+
+            {/* Description */}
+            <p className="text-zinc-400 text-xs font-sans leading-relaxed mb-3">
+              {s.description}
+            </p>
+
+            {/* Tags */}
+            {s.tags.length > 0 && (
+              <div className="flex flex-wrap gap-1.5">
+                {s.tags.map((t) => (
+                  <span key={t} className="text-[10px] font-sans text-zinc-500 border border-zinc-800 px-1.5 py-0.5">
+                    #{t}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* Order CTA */}
+            <a
+              href="#contact"
+              className="mt-3 flex items-center gap-1.5 text-[11px] font-display font-bold tracking-widest uppercase text-zinc-600 hover:text-primary transition-colors"
+            >
+              <ShoppingBag size={11} /> Order This Concept
+            </a>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
+}

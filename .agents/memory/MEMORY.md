@@ -1,1 +1,1 @@
-LSBbQlVQIERlc2lnbiBETkEgZmVhdHVyZV0oZGVzaWduLWRuYS5tZCkg4oCUIEROQSBwcm9maWxlICsgQUkgc3VnZ2VzdGlvbiBzeXN0ZW0gd2lyZWQgdG8gT3BlbkFJOyByZXF1aXJlcyBhdXRoOyB0YWJsZXM6IGRlc2lnbl9kbmFfcHJvZmlsZXMsIGRlc2lnbl9kbmFfc3VnZ2VzdGlvbnMuCg==
+- [BUP Design DNA feature](design-dna.md) — DNA profile + AI suggestion system wired to OpenAI; requires auth; tables: design_dna_profiles, design_dna_suggestions.

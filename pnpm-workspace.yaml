@@ -1,1 +1,125 @@
-cGFja2FnZXM6CiAgLSBhcnRpZmFjdHMvKgogIC0gbGliLyoKICAtIGxpYi9pbnRlZ3JhdGlvbnMvKgogIC0gc2NyaXB0cwoKYXV0b0luc3RhbGxQZWVyczogZmFsc2UKCmNhdGFsb2c6CiAgJ0ByZXBsaXQvdml0ZS1wbHVnaW4tY2FydG9ncmFwaGVyJzogXjAuNS4xCiAgJ0ByZXBsaXQvdml0ZS1wbHVnaW4tZGV2LWJhbm5lcic6IF4wLjEuMQogICdAcmVwbGl0L3ZpdGUtcGx1Z2luLXJ1bnRpbWUtZXJyb3ItbW9kYWwnOiBeMC4wLjYKICAnQHRhaWx3aW5kY3NzL3ZpdGUnOiBeNC4xLjE0CiAgJ0B0YW5zdGFjay9yZWFjdC1xdWVyeSc6IF41LjkwLjIxCiAgJ0B0eXBlcy9ub2RlJzogXjI1LjMuMwogICdAdHlwZXMvcmVhY3QnOiBeMTkuMi4wCiAgJ0B0eXBlcy9yZWFjdC1kb20nOiBeMTkuMi4wCiAgJ0B2aXRlanMvcGx1Z2luLXJlYWN0JzogXjUuMC40CiAgY2xhc3MtdmFyaWFuY2UtYXV0aG9yaXR5OiBeMC43LjEKICBjbHN4OiAyLjEuMQogIGRyaXp6bGUtb3JtOiBeMC40NS4xCiAgZnJhbWVyLW1vdGlvbjogMTIuMzUuMQogIGx1Y2lkZS1yZWFjdDogMC41NDUuMAogIHJlYWN0OiAxOS4xLjAKICByZWFjdC1kb206IDE5LjEuMAogIHRhaWx3aW5kLW1lcmdlOiAzLjUuMAogIHRhaWx3aW5kY3NzOiBeNC4xLjE0CiAgdHN4OiBeNC4yMS4wCiAgdml0ZTogXjcuMy4wCiAgem9kOiAzLjI1Ljc2CgptaW5pbXVtUmVsZWFzZUFnZTogMTQ0MAoKbWluaW11bVJlbGVhc2VBZ2VFeGNsdWRlOgogIC0gJ0ByZXBsaXQvKicKICAtIHN0cmlwZS1yZXBsaXQtc3luYwoKb25seUJ1aWx0RGVwZW5kZW5jaWVzOgogIC0gJ0Bzd2MvY29yZScKICAtIGVzYnVpbGQKICAtIG1zdwogIC0gdW5ycy1yZXNvbHZlcgoKb3ZlcnJpZGVzOgogICdAZXNidWlsZC1raXQvZXNtLWxvYWRlcic6IG5wbTp0c3hAXjQuMjEuMAogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLWRhcndpbi1hcm02NCc6ICctJwogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLWRhcndpbi14NjQnOiAnLScKICAnQGV4cG8vbmdyb2stYmluPkBleHBvL25ncm9rLWJpbi1mcmVlYnNkLWlhMzInOiAnLScKICAnQGV4cG8vbmdyb2stYmluPkBleHBvL25ncm9rLWJpbi1mcmVlYnNkLXg2NCc6ICctJwogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLWxpbnV4LWFybSc6ICctJwogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLWxpbnV4LWFybTY0JzogJy0nCiAgJ0BleHBvL25ncm9rLWJpbj5AZXhwby9uZ3Jvay1iaW4tbGludXgtaWEzMic6ICctJwogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLXN1bm9zLXg2NCc6ICctJwogICdAZXhwby9uZ3Jvay1iaW4+QGV4cG8vbmdyb2stYmluLXdpbjMyLWlhMzInOiAnLScKICAnQGV4cG8vbmdyb2stYmluPkBleHBvL25ncm9rLWJpbi13aW4zMi14NjQnOiAnLScKICAnQHRhaWx3aW5kY3NzL294aWRlPkB0YWlsd2luZGNzcy9veGlkZS1hbmRyb2lkLWFybTY0JzogJy0nCiAgJ0B0YWlsd2luZGNzcy9veGlkZT5AdGFpbHdpbmRjc3Mvb3hpZGUtZGFyd2luLWFybTY0JzogJy0nCiAgJ0B0YWlsd2luZGNzcy9veGlkZT5AdGFpbHdpbmRjc3Mvb3hpZGUtZGFyd2luLXg2NCc6ICctJwogICdAdGFpbHdpbmRjc3Mvb3hpZGU+QHRhaWx3aW5kY3NzL294aWRlLWZyZWVic2QteDY0JzogJy0nCiAgJ0B0YWlsd2luZGNzcy9veGlkZT5AdGFpbHdpbmRjc3Mvb3hpZGUtbGludXgtYXJtLWdudWVhYmloZic6ICctJwogICdAdGFpbHdpbmRjc3Mvb3hpZGU+QHRhaWx3aW5kY3NzL294aWRlLWxpbnV4LWFybTY0LWdudSc6ICctJwogICdAdGFpbHdpbmRjc3Mvb3hpZGU+QHRhaWx3aW5kY3NzL294aWRlLWxpbnV4LWFybTY0LW11c2wnOiAnLScKICAnQHRhaWx3aW5kY3NzL294aWRlPkB0YWlsd2luZGNzcy9veGlkZS1saW51eC14NjQtbXVzbCc6ICctJwogICdAdGFpbHdpbmRjc3Mvb3hpZGU+QHRhaWx3aW5kY3NzL294aWRlLXdpbjMyLWFybTY0LW1zdmMnOiAnLScKICAnQHRhaWx3aW5kY3NzL294aWRlPkB0YWlsd2luZGNzcy9veGlkZS13aW4zMi14NjQtbXN2Yyc6ICctJwogIGVzYnVpbGQ6IDAuMjcuMwogIGVzYnVpbGQ+QGVzYnVpbGQvYWl4LXBwYzY0OiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2FuZHJvaWQtYXJtOiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2FuZHJvaWQtYXJtNjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvYW5kcm9pZC14NjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvZGFyd2luLWFybTY0OiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2Rhcndpbi14NjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvZnJlZWJzZC1hcm02NDogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9mcmVlYnNkLXg2NDogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9saW51eC1hcm06ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvbGludXgtYXJtNjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvbGludXgtaWEzMjogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9saW51eC1sb29uZzY0OiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2xpbnV4LW1pcHM2NGVsOiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2xpbnV4LXBwYzY0OiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL2xpbnV4LXJpc2N2NjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvbGludXgtczM5MHg6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvbmV0YnNkLWFybTY0OiAnLScKICBlc2J1aWxkPkBlc2J1aWxkL25ldGJzZC14NjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvb3BlbmJzZC1hcm02NDogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9vcGVuYnNkLXg2NDogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9vcGVuaGFybW9ueS1hcm02NDogJy0nCiAgZXNidWlsZD5AZXNidWlsZC9zdW5vcy14NjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvd2luMzItYXJtNjQ6ICctJwogIGVzYnVpbGQ+QGVzYnVpbGQvd2luMzItaWEzMjogJy0nCiAgZXNidWlsZD5AZXNidWlsZC93aW4zMi14NjQ6ICctJwogIGxpZ2h0bmluZ2Nzcz5saWdodG5pbmdjc3MtYW5kcm9pZC1hcm02NDogJy0nCiAgbGlnaHRuaW5nY3NzPmxpZ2h0bmluZ2Nzcy1kYXJ3aW4tYXJtNjQ6ICctJwogIGxpZ2h0bmluZ2Nzcz5saWdodG5pbmdjc3MtZGFyd2luLXg2NDogJy0nCiAgbGlnaHRuaW5nY3NzPmxpZ2h0bmluZ2Nzcy1mcmVlYnNkLXg2NDogJy0nCiAgbGlnaHRuaW5nY3NzPmxpZ2h0bmluZ2Nzcy1saW51eC1hcm0tZ251ZWFiaWhmOiAnLScKICBsaWdodG5pbmdjc3M+bGlnaHRuaW5nY3NzLWxpbnV4LWFybTY0LWdudTogJy0nCiAgbGlnaHRuaW5nY3NzPmxpZ2h0bmluZ2Nzcy1saW51eC1hcm02NC1tdXNsOiAnLScKICBsaWdodG5pbmdjc3M+bGlnaHRuaW5nY3NzLWxpbnV4LXg2NC1tdXNsOiAnLScKICBsaWdodG5pbmdjc3M+bGlnaHRuaW5nY3NzLXdpbjMyLWFybTY0LW1zdmM6ICctJwogIGxpZ2h0bmluZ2Nzcz5saWdodG5pbmdjc3Mtd2luMzIteDY0LW1zdmM6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1hbmRyb2lkLWFybS1lYWJpOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtYW5kcm9pZC1hcm02NDogJy0nCiAgcm9sbHVwPkByb2xsdXAvcm9sbHVwLWRhcndpbi1hcm02NDogJy0nCiAgcm9sbHVwPkByb2xsdXAvcm9sbHVwLWRhcndpbi14NjQ6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1mcmVlYnNkLWFybTY0OiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtZnJlZWJzZC14NjQ6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1hcm0tZ251ZWFiaWhmOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtbGludXgtYXJtLW11c2xlYWJpaGY6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1hcm02NC1nbnU6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1hcm02NC1tdXNsOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtbGludXgtbG9vbmc2NC1nbnU6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1sb29uZzY0LW11c2w6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1wcGM2NC1nbnU6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1wcGM2NC1tdXNsOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtbGludXgtcmlzY3Y2NC1nbnU6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1yaXNjdjY0LW11c2w6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC1zMzkweC1nbnU6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC1saW51eC14NjQtbXVzbDogJy0nCiAgcm9sbHVwPkByb2xsdXAvcm9sbHVwLW9wZW5ic2QteDY0OiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtb3Blbmhhcm1vbnktYXJtNjQ6ICctJwogIHJvbGx1cD5Acm9sbHVwL3JvbGx1cC13aW4zMi1hcm02NC1tc3ZjOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtd2luMzItaWEzMi1tc3ZjOiAnLScKICByb2xsdXA+QHJvbGx1cC9yb2xsdXAtd2luMzIteDY0LWdudTogJy0nCiAgcm9sbHVwPkByb2xsdXAvcm9sbHVwLXdpbjMyLXg2NC1tc3ZjOiAnLScK
+packages:
+  - artifacts/*
+  - lib/*
+  - lib/integrations/*
+  - scripts
+
+autoInstallPeers: false
+
+catalog:
+  '@replit/vite-plugin-cartographer': ^0.5.1
+  '@replit/vite-plugin-dev-banner': ^0.1.1
+  '@replit/vite-plugin-runtime-error-modal': ^0.0.6
+  '@tailwindcss/vite': ^4.1.14
+  '@tanstack/react-query': ^5.90.21
+  '@types/node': ^25.3.3
+  '@types/react': ^19.2.0
+  '@types/react-dom': ^19.2.0
+  '@vitejs/plugin-react': ^5.0.4
+  class-variance-authority: ^0.7.1
+  clsx: 2.1.1
+  drizzle-orm: ^0.45.1
+  framer-motion: 12.35.1
+  lucide-react: 0.545.0
+  react: 19.1.0
+  react-dom: 19.1.0
+  tailwind-merge: 3.5.0
+  tailwindcss: ^4.1.14
+  tsx: ^4.21.0
+  vite: ^7.3.0
+  zod: 3.25.76
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@replit/*'
+  - stripe-replit-sync
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - esbuild
+  - msw
+  - unrs-resolver
+
+overrides:
+  '@esbuild-kit/esm-loader': npm:tsx@^4.21.0
+  '@expo/ngrok-bin>@expo/ngrok-bin-darwin-arm64': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-darwin-x64': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-freebsd-ia32': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-freebsd-x64': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-linux-arm': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-linux-arm64': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-linux-ia32': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-sunos-x64': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-win32-ia32': '-'
+  '@expo/ngrok-bin>@expo/ngrok-bin-win32-x64': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-android-arm64': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-darwin-arm64': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-darwin-x64': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-freebsd-x64': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-linux-arm-gnueabihf': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-linux-arm64-gnu': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-linux-arm64-musl': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-linux-x64-musl': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-win32-arm64-msvc': '-'
+  '@tailwindcss/oxide>@tailwindcss/oxide-win32-x64-msvc': '-'
+  esbuild: 0.27.3
+  esbuild>@esbuild/aix-ppc64: '-'
+  esbuild>@esbuild/android-arm: '-'
+  esbuild>@esbuild/android-arm64: '-'
+  esbuild>@esbuild/android-x64: '-'
+  esbuild>@esbuild/darwin-arm64: '-'
+  esbuild>@esbuild/darwin-x64: '-'
+  esbuild>@esbuild/freebsd-arm64: '-'
+  esbuild>@esbuild/freebsd-x64: '-'
+  esbuild>@esbuild/linux-arm: '-'
+  esbuild>@esbuild/linux-arm64: '-'
+  esbuild>@esbuild/linux-ia32: '-'
+  esbuild>@esbuild/linux-loong64: '-'
+  esbuild>@esbuild/linux-mips64el: '-'
+  esbuild>@esbuild/linux-ppc64: '-'
+  esbuild>@esbuild/linux-riscv64: '-'
+  esbuild>@esbuild/linux-s390x: '-'
+  esbuild>@esbuild/netbsd-arm64: '-'
+  esbuild>@esbuild/netbsd-x64: '-'
+  esbuild>@esbuild/openbsd-arm64: '-'
+  esbuild>@esbuild/openbsd-x64: '-'
+  esbuild>@esbuild/openharmony-arm64: '-'
+  esbuild>@esbuild/sunos-x64: '-'
+  esbuild>@esbuild/win32-arm64: '-'
+  esbuild>@esbuild/win32-ia32: '-'
+  esbuild>@esbuild/win32-x64: '-'
+  lightningcss>lightningcss-android-arm64: '-'
+  lightningcss>lightningcss-darwin-arm64: '-'
+  lightningcss>lightningcss-darwin-x64: '-'
+  lightningcss>lightningcss-freebsd-x64: '-'
+  lightningcss>lightningcss-linux-arm-gnueabihf: '-'
+  lightningcss>lightningcss-linux-arm64-gnu: '-'
+  lightningcss>lightningcss-linux-arm64-musl: '-'
+  lightningcss>lightningcss-linux-x64-musl: '-'
+  lightningcss>lightningcss-win32-arm64-msvc: '-'
+  lightningcss>lightningcss-win32-x64-msvc: '-'
+  rollup>@rollup/rollup-android-arm-eabi: '-'
+  rollup>@rollup/rollup-android-arm64: '-'
+  rollup>@rollup/rollup-darwin-arm64: '-'
+  rollup>@rollup/rollup-darwin-x64: '-'
+  rollup>@rollup/rollup-freebsd-arm64: '-'
+  rollup>@rollup/rollup-freebsd-x64: '-'
+  rollup>@rollup/rollup-linux-arm-gnueabihf: '-'
+  rollup>@rollup/rollup-linux-arm-musleabihf: '-'
+  rollup>@rollup/rollup-linux-arm64-gnu: '-'
+  rollup>@rollup/rollup-linux-arm64-musl: '-'
+  rollup>@rollup/rollup-linux-loong64-gnu: '-'
+  rollup>@rollup/rollup-linux-loong64-musl: '-'
+  rollup>@rollup/rollup-linux-ppc64-gnu: '-'
+  rollup>@rollup/rollup-linux-ppc64-musl: '-'
+  rollup>@rollup/rollup-linux-riscv64-gnu: '-'
+  rollup>@rollup/rollup-linux-riscv64-musl: '-'
+  rollup>@rollup/rollup-linux-s390x-gnu: '-'
+  rollup>@rollup/rollup-linux-x64-musl: '-'
+  rollup>@rollup/rollup-openbsd-x64: '-'
+  rollup>@rollup/rollup-openharmony-arm64: '-'
+  rollup>@rollup/rollup-win32-arm64-msvc: '-'
+  rollup>@rollup/rollup-win32-ia32-msvc: '-'
+  rollup>@rollup/rollup-win32-x64-gnu: '-'
+  rollup>@rollup/rollup-win32-x64-msvc: '-'

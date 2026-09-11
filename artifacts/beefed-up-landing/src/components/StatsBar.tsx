@@ -1,1 +1,80 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAicmVhY3QiOwoKaW50ZXJmYWNlIFN0YXQgewogIHZhbHVlOiBudW1iZXI7CiAgc3VmZml4OiBzdHJpbmc7CiAgbGFiZWw6IHN0cmluZzsKfQoKY29uc3QgU1RBVFM6IFN0YXRbXSA9IFsKICB7IHZhbHVlOiAzMTIsIHN1ZmZpeDogIisiLCBsYWJlbDogIk9yZGVycyBjb21wbGV0ZWQiIH0sCiAgeyB2YWx1ZTogNDgsIHN1ZmZpeDogImgiLCBsYWJlbDogIkF2ZyB0dXJuYXJvdW5kIiB9LAogIHsgdmFsdWU6IDk4LCBzdWZmaXg6ICIlIiwgbGFiZWw6ICJTYXRpc2ZhY3Rpb24gcmF0ZSIgfSwKICB7IHZhbHVlOiA3LCBzdWZmaXg6ICIiLCBsYWJlbDogIlllYXJzIG9uIHRoZSBibG9jayIgfSwKXTsKCmZ1bmN0aW9uIHVzZUNvdW50VXAodGFyZ2V0OiBudW1iZXIsIGR1cmF0aW9uID0gMTYwMCwgc3RhcnRlZCA9IGZhbHNlKSB7CiAgY29uc3QgW2NvdW50LCBzZXRDb3VudF0gPSB1c2VTdGF0ZSgwKTsKICBjb25zdCByYWYgPSB1c2VSZWY8bnVtYmVyPigwKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmICghc3RhcnRlZCkgcmV0dXJuOwogICAgY29uc3Qgc3RhcnQgPSBwZXJmb3JtYW5jZS5ub3coKTsKICAgIGZ1bmN0aW9uIHRpY2sobm93OiBudW1iZXIpIHsKICAgICAgY29uc3QgcHJvZ3Jlc3MgPSBNYXRoLm1pbigobm93IC0gc3RhcnQpIC8gZHVyYXRpb24sIDEpOwogICAgICBjb25zdCBlYXNlZCA9IDEgLSBNYXRoLnBvdygxIC0gcHJvZ3Jlc3MsIDMpOwogICAgICBzZXRDb3VudChNYXRoLmZsb29yKGVhc2VkICogdGFyZ2V0KSk7CiAgICAgIGlmIChwcm9ncmVzcyA8IDEpIHJhZi5jdXJyZW50ID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKHRpY2spOwogICAgfQogICAgcmFmLmN1cnJlbnQgPSByZXF1ZXN0QW5pbWF0aW9uRnJhbWUodGljayk7CiAgICByZXR1cm4gKCkgPT4gY2FuY2VsQW5pbWF0aW9uRnJhbWUocmFmLmN1cnJlbnQpOwogIH0sIFt0YXJnZXQsIGR1cmF0aW9uLCBzdGFydGVkXSk7CgogIHJldHVybiBjb3VudDsKfQoKZnVuY3Rpb24gU3RhdEl0ZW0oeyBzdGF0LCBzdGFydGVkIH06IHsgc3RhdDogU3RhdDsgc3RhcnRlZDogYm9vbGVhbiB9KSB7CiAgY29uc3QgY291bnQgPSB1c2VDb3VudFVwKHN0YXQudmFsdWUsIDE0MDAsIHN0YXJ0ZWQpOwogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgdGV4dC1jZW50ZXIgcHgtNiBweS01IGJvcmRlci1yIGJvcmRlci16aW5jLTgwMCBsYXN0OmJvcmRlci1yLTAgZmxleC0xIG1pbi13LVsxMjBweF0iPgogICAgICA8c3BhbgogICAgICAgIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYmxhY2sgdGV4dC0zeGwgc206dGV4dC00eGwgdGV4dC13aGl0ZSBsZWFkaW5nLW5vbmUiCiAgICAgICAgc3R5bGU9e3sgdGV4dFNoYWRvdzogIjAgMCAyMHB4IHJnYmEoMjQ5LDExNSwyMiwwLjQpIiB9fQogICAgICA+CiAgICAgICAge2NvdW50fQogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5Ij57c3RhdC5zdWZmaXh9PC9zcGFuPgogICAgICA8L3NwYW4+CiAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCB0ZXh0LVsxMXB4XSBmb250LXNhbnMgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCBtdC0xLjUiPgogICAgICAgIHtzdGF0LmxhYmVsfQogICAgICA8L3NwYW4+CiAgICA8L2Rpdj4KICApOwp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBTdGF0c0JhcigpIHsKICBjb25zdCBbc3RhcnRlZCwgc2V0U3RhcnRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgcmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50PihudWxsKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IGVsID0gcmVmLmN1cnJlbnQ7CiAgICBpZiAoIWVsKSByZXR1cm47CiAgICBjb25zdCBvYnMgPSBuZXcgSW50ZXJzZWN0aW9uT2JzZXJ2ZXIoCiAgICAgIChbZW50cnldKSA9PiB7IGlmIChlbnRyeS5pc0ludGVyc2VjdGluZykgeyBzZXRTdGFydGVkKHRydWUpOyBvYnMuZGlzY29ubmVjdCgpOyB9IH0sCiAgICAgIHsgdGhyZXNob2xkOiAwLjMgfQogICAgKTsKICAgIG9icy5vYnNlcnZlKGVsKTsKICAgIHJldHVybiAoKSA9PiBvYnMuZGlzY29ubmVjdCgpOwogIH0sIFtdKTsKCiAgcmV0dXJuICgKICAgIDxkaXYgcmVmPXtyZWZ9IGNsYXNzTmFtZT0iYm9yZGVyLXkgYm9yZGVyLXppbmMtOTAwIGJnLXppbmMtOTUwLzYwIj4KICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTV4bCBteC1hdXRvIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgZGl2aWRlLXggZGl2aWRlLXppbmMtODAwIj4KICAgICAgICAgIHtTVEFUUy5tYXAoKHMpID0+ICgKICAgICAgICAgICAgPFN0YXRJdGVtIGtleT17cy5sYWJlbH0gc3RhdD17c30gc3RhcnRlZD17c3RhcnRlZH0gLz4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICk7Cn0K
+import { useEffect, useRef, useState } from "react";
+
+interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
+const STATS: Stat[] = [
+  { value: 312, suffix: "+", label: "Orders completed" },
+  { value: 48, suffix: "h", label: "Avg turnaround" },
+  { value: 98, suffix: "%", label: "Satisfaction rate" },
+  { value: 7, suffix: "", label: "Years on the block" },
+];
+
+function useCountUp(target: number, duration = 1600, started = false) {
+  const [count, setCount] = useState(0);
+  const raf = useRef<number>(0);
+
+  useEffect(() => {
+    if (!started) return;
+    const start = performance.now();
+    function tick(now: number) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) raf.current = requestAnimationFrame(tick);
+    }
+    raf.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf.current);
+  }, [target, duration, started]);
+
+  return count;
+}
+
+function StatItem({ stat, started }: { stat: Stat; started: boolean }) {
+  const count = useCountUp(stat.value, 1400, started);
+  return (
+    <div className="flex flex-col items-center text-center px-6 py-5 border-r border-zinc-800 last:border-r-0 flex-1 min-w-[120px]">
+      <span
+        className="font-display font-black text-3xl sm:text-4xl text-white leading-none"
+        style={{ textShadow: "0 0 20px rgba(249,115,22,0.4)" }}
+      >
+        {count}
+        <span className="text-primary">{stat.suffix}</span>
+      </span>
+      <span className="text-zinc-500 text-[11px] font-sans uppercase tracking-widest mt-1.5">
+        {stat.label}
+      </span>
+    </div>
+  );
+}
+
+export default function StatsBar() {
+  const [started, setStarted] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStarted(true); obs.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="border-y border-zinc-900 bg-zinc-950/60">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-wrap divide-x divide-zinc-800">
+          {STATS.map((s) => (
+            <StatItem key={s.label} stat={s} started={started} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

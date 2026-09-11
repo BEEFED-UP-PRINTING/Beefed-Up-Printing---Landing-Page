@@ -1,1 +1,99 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IG1vdGlvbiwgQW5pbWF0ZVByZXNlbmNlIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFgsIEV4dGVybmFsTGluayB9IGZyb20gImx1Y2lkZS1yZWFjdCI7Cgpjb25zdCBBU1NJU1RBTlRfVVJMID0gImh0dHBzOi8vcGVyc29uYWwtYWktYXNzaXN0YW50LmtlZWd6MTk4NC5yZXBsaXQuYXBwIjsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENoYXRCdWJibGUoKSB7CiAgY29uc3QgW29wZW4sIHNldE9wZW5dID0gdXNlU3RhdGUoZmFsc2UpOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7b3BlbiAmJiAoCiAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICBrZXk9ImNoYXQtcGFuZWwiCiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogNDAsIHNjYWxlOiAwLjk1IH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCwgc2NhbGU6IDEgfX0KICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCB5OiA0MCwgc2NhbGU6IDAuOTUgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyB0eXBlOiAic3ByaW5nIiwgc3RpZmZuZXNzOiAyODAsIGRhbXBpbmc6IDI2IH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTUwIG1kOmluc2V0LWF1dG8gbWQ6Ym90dG9tLTI0IG1kOmxlZnQtNiBmbGV4IGZsZXgtY29sIG92ZXJmbG93LWhpZGRlbiBiZy1ibGFjayBtZDpyb3VuZGVkLXhsIGJvcmRlci0yIGJvcmRlci1wcmltYXJ5IHNoYWRvdy1bMF8wXzQwcHhfcmdiYSgyNDksMTE1LDIyLDAuMzUpXSIKICAgICAgICAgICAgc3R5bGU9e3sgd2lkdGg6ICJtaW4oNDIwcHgsIGNhbGMoMTAwdncgLSAyNHB4KSkiLCBoZWlnaHQ6ICJtaW4oNjQwcHgsIGNhbGMoMTAwc3ZoIC0gMjRweCkpIiB9fQogICAgICAgICAgPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGJnLXppbmMtOTUwIHB4LTQgcHktMyBib3JkZXItYiBib3JkZXItemluYy04MDAgZmxleC1zaHJpbmstMCBwdC1bY2FsYyhlbnYoc2FmZS1hcmVhLWluc2V0LXRvcCkrMTJweCldIG1kOnB0LTMiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InctMiBoLTIgcm91bmRlZC1mdWxsIGJnLXByaW1hcnkgYW5pbWF0ZS1wdWxzZSIgLz4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgICAgIERlc2lnbiBBZHZpc29yCiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4KICAgICAgICAgICAgICAgIDxhCiAgICAgICAgICAgICAgICAgIGhyZWY9e0FTU0lTVEFOVF9VUkx9CiAgICAgICAgICAgICAgICAgIHRhcmdldD0iX2JsYW5rIgogICAgICAgICAgICAgICAgICByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgICAgIHRpdGxlPSJPcGVuIGluIG5ldyB0YWIiCiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIDxFeHRlcm5hbExpbmsgc2l6ZT17MTZ9IC8+CiAgICAgICAgICAgICAgICA8L2E+CiAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldE9wZW4oZmFsc2UpfQogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InRleHQtemluYy01MDAgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICAgICAgICBhcmlhLWxhYmVsPSJDbG9zZSBjaGF0IgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICA8WCBzaXplPXsxOH0gLz4KICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgIDxpZnJhbWUKICAgICAgICAgICAgICBzcmM9e0FTU0lTVEFOVF9VUkx9CiAgICAgICAgICAgICAgdGl0bGU9IkJlZWZlZCBVcCBEZXNpZ24gQWR2aXNvciIKICAgICAgICAgICAgICBjbGFzc05hbWU9ImZsZXgtMSB3LWZ1bGwgYmctemluYy05NTAiCiAgICAgICAgICAgICAgYWxsb3c9Im1pY3JvcGhvbmU7IGNsaXBib2FyZC13cml0ZSIKICAgICAgICAgICAgICBsb2FkaW5nPSJsYXp5IgogICAgICAgICAgICAvPgogICAgICAgICAgPC9tb3Rpb24uZGl2PgogICAgICAgICl9CiAgICAgIDwvQW5pbWF0ZVByZXNlbmNlPgoKICAgICAgPG1vdGlvbi5idXR0b24KICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKCh2KSA9PiAhdil9CiAgICAgICAgaW5pdGlhbD17eyB5OiA4MCwgb3BhY2l0eTogMCB9fQogICAgICAgIGFuaW1hdGU9e3sgeTogMCwgb3BhY2l0eTogMSB9fQogICAgICAgIHRyYW5zaXRpb249e3sgZGVsYXk6IDEuNCwgdHlwZTogInNwcmluZyIsIHN0aWZmbmVzczogMjAwLCBkYW1waW5nOiAyMiB9fQogICAgICAgIHdoaWxlSG92ZXI9e3sgc2NhbGU6IDEuMDggfX0KICAgICAgICB3aGlsZVRhcD17eyBzY2FsZTogMC45NCB9fQogICAgICAgIGFyaWEtbGFiZWw9e29wZW4gPyAiQ2xvc2UgRGVzaWduIEFkdmlzb3IiIDogIk9wZW4gRGVzaWduIEFkdmlzb3IifQogICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgYm90dG9tLTYgbGVmdC02IHotNTAgdy0xNCBoLTE0IHJvdW5kZWQtZnVsbCBiZy16aW5jLTk1MCBib3JkZXItMiBib3JkZXItcHJpbWFyeSBzaGFkb3ctWzBfMF8yNHB4X3JnYmEoMjQ5LDExNSwyMiwwLjQpXSBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBvdmVyZmxvdy1oaWRkZW4iCiAgICAgID4KICAgICAgICA8QW5pbWF0ZVByZXNlbmNlIG1vZGU9IndhaXQiPgogICAgICAgICAge29wZW4gPyAoCiAgICAgICAgICAgIDxtb3Rpb24uc3BhbgogICAgICAgICAgICAgIGtleT0ieCIKICAgICAgICAgICAgICBpbml0aWFsPXt7IHJvdGF0ZTogLTkwLCBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgICAgYW5pbWF0ZT17eyByb3RhdGU6IDAsIG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgICBleGl0PXt7IHJvdGF0ZTogOTAsIG9wYWNpdHk6IDAgfX0KICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjE4IH19CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8WCBzaXplPXsyMn0gLz4KICAgICAgICAgICAgPC9tb3Rpb24uc3Bhbj4KICAgICAgICAgICkgOiAoCiAgICAgICAgICAgIDxtb3Rpb24uc3BhbgogICAgICAgICAgICAgIGtleT0iYnVsbCIKICAgICAgICAgICAgICBpbml0aWFsPXt7IHNjYWxlOiAwLjYsIG9wYWNpdHk6IDAgfX0KICAgICAgICAgICAgICBhbmltYXRlPXt7IHNjYWxlOiAxLCBvcGFjaXR5OiAxIH19CiAgICAgICAgICAgICAgZXhpdD17eyBzY2FsZTogMC42LCBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC4xOCB9fQogICAgICAgICAgICAgIGNsYXNzTmFtZT0idGV4dC0yeGwgbGVhZGluZy1ub25lIHNlbGVjdC1ub25lIgogICAgICAgICAgICA+CiAgICAgICAgICAgICAg8J+QggogICAgICAgICAgICA8L21vdGlvbi5zcGFuPgogICAgICAgICAgKX0KICAgICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgICAgPC9tb3Rpb24uYnV0dG9uPgogICAgPC8+CiAgKTsKfQo=
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, ExternalLink } from "lucide-react";
+
+const ASSISTANT_URL = "https://personal-ai-assistant.keegz1984.replit.app";
+
+export default function ChatBubble() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="chat-panel"
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 40, scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 280, damping: 26 }}
+            className="fixed inset-0 z-50 md:inset-auto md:bottom-24 md:left-6 flex flex-col overflow-hidden bg-black md:rounded-xl border-2 border-primary shadow-[0_0_40px_rgba(249,115,22,0.35)]"
+            style={{ width: "min(420px, calc(100vw - 24px))", height: "min(640px, calc(100svh - 24px))" }}
+          >
+            <div className="flex items-center justify-between bg-zinc-950 px-4 py-3 border-b border-zinc-800 flex-shrink-0 pt-[calc(env(safe-area-inset-top)+12px)] md:pt-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                <span className="font-display font-bold text-sm tracking-widest uppercase text-white">
+                  Design Advisor
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <a
+                  href={ASSISTANT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                  title="Open in new tab"
+                >
+                  <ExternalLink size={16} />
+                </a>
+                <button
+                  onClick={() => setOpen(false)}
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                  aria-label="Close chat"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            <iframe
+              src={ASSISTANT_URL}
+              title="Beefed Up Design Advisor"
+              className="flex-1 w-full bg-zinc-950"
+              allow="microphone; clipboard-write"
+              loading="lazy"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <motion.button
+        onClick={() => setOpen((v) => !v)}
+        initial={{ y: 80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 1.4, type: "spring", stiffness: 200, damping: 22 }}
+        whileHover={{ scale: 1.08 }}
+        whileTap={{ scale: 0.94 }}
+        aria-label={open ? "Close Design Advisor" : "Open Design Advisor"}
+        className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-zinc-950 border-2 border-primary shadow-[0_0_24px_rgba(249,115,22,0.4)] flex items-center justify-center overflow-hidden"
+      >
+        <AnimatePresence mode="wait">
+          {open ? (
+            <motion.span
+              key="x"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              transition={{ duration: 0.18 }}
+              className="text-primary"
+            >
+              <X size={22} />
+            </motion.span>
+          ) : (
+            <motion.span
+              key="bull"
+              initial={{ scale: 0.6, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.6, opacity: 0 }}
+              transition={{ duration: 0.18 }}
+              className="text-2xl leading-none select-none"
+            >
+              🐂
+            </motion.span>
+          )}
+        </AnimatePresence>
+      </motion.button>
+    </>
+  );
+}

@@ -1,1 +1,139 @@
-aW1wb3J0IHBMaW1pdCBmcm9tICJwLWxpbWl0IjsKaW1wb3J0IHBSZXRyeSwgeyBBYm9ydEVycm9yIH0gZnJvbSAicC1yZXRyeSI7CgovKioKICogQmF0Y2ggUHJvY2Vzc2luZyBVdGlsaXRpZXMKICoKICogR2VuZXJpYyBiYXRjaCBwcm9jZXNzaW5nIHdpdGggYnVpbHQtaW4gcmF0ZSBsaW1pdGluZyBhbmQgYXV0b21hdGljIHJldHJpZXMuCiAqIFVzZSBmb3IgYW55IHRhc2sgdGhhdCByZXF1aXJlcyBwcm9jZXNzaW5nIG11bHRpcGxlIGl0ZW1zIHRocm91Z2ggYW4gTExNIG9yIGV4dGVybmFsIEFQSS4KICoKICogVVNBR0U6CiAqIGBgYHR5cGVzY3JpcHQKICogaW1wb3J0IHsgYmF0Y2hQcm9jZXNzIH0gZnJvbSAiQHdvcmtzcGFjZS9pbnRlZ3JhdGlvbnMtb3BlbmFpLWFpLXNlcnZlci9iYXRjaCI7CiAqIGltcG9ydCB7IG9wZW5haSB9IGZyb20gIkB3b3Jrc3BhY2UvaW50ZWdyYXRpb25zLW9wZW5haS1haS1zZXJ2ZXIiOwogKgogKiBjb25zdCByZXN1bHRzID0gYXdhaXQgYmF0Y2hQcm9jZXNzKAogKiAgIGFydHdvcmtzLAogKiAgIGFzeW5jIChhcnR3b3JrKSA9PiB7CiAqICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IG9wZW5haS5jaGF0LmNvbXBsZXRpb25zLmNyZWF0ZSh7CiAqICAgICAgIG1vZGVsOiAiZ3B0LTUuNCIsCiAqICAgICAgIG1lc3NhZ2VzOiBbeyByb2xlOiAidXNlciIsIGNvbnRlbnQ6IGBDYXRlZ29yaXplOiAke2FydHdvcmsubmFtZX1gIH1dLAogKiAgICAgICByZXNwb25zZV9mb3JtYXQ6IHsgdHlwZTogImpzb25fb2JqZWN0IiB9LAogKiAgICAgfSk7CiAqICAgICByZXR1cm4gSlNPTi5wYXJzZShyZXNwb25zZS5jaG9pY2VzWzBdPy5tZXNzYWdlPy5jb250ZW50IHx8ICJ7fSIpOwogKiAgIH0sCiAqICAgeyBjb25jdXJyZW5jeTogMiwgcmV0cmllczogNSB9CiAqICk7CiAqIGBgYAogKi8KCmV4cG9ydCBpbnRlcmZhY2UgQmF0Y2hPcHRpb25zIHsKICBjb25jdXJyZW5jeT86IG51bWJlcjsKICByZXRyaWVzPzogbnVtYmVyOwogIG1pblRpbWVvdXQ/OiBudW1iZXI7CiAgbWF4VGltZW91dD86IG51bWJlcjsKICBvblByb2dyZXNzPzogKGNvbXBsZXRlZDogbnVtYmVyLCB0b3RhbDogbnVtYmVyLCBpdGVtOiB1bmtub3duKSA9PiB2b2lkOwp9CgpleHBvcnQgZnVuY3Rpb24gaXNSYXRlTGltaXRFcnJvcihlcnJvcjogdW5rbm93bik6IGJvb2xlYW4gewogIGNvbnN0IGVycm9yTXNnID0gZXJyb3IgaW5zdGFuY2VvZiBFcnJvciA/IGVycm9yLm1lc3NhZ2UgOiBTdHJpbmcoZXJyb3IpOwogIHJldHVybiAoCiAgICBlcnJvck1zZy5pbmNsdWRlcygiNDI5IikgfHwKICAgIGVycm9yTXNnLmluY2x1ZGVzKCJSQVRFTElNSVRfRVhDRUVERUQiKSB8fAogICAgZXJyb3JNc2cudG9Mb3dlckNhc2UoKS5pbmNsdWRlcygicXVvdGEiKSB8fAogICAgZXJyb3JNc2cudG9Mb3dlckNhc2UoKS5pbmNsdWRlcygicmF0ZSBsaW1pdCIpCiAgKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGJhdGNoUHJvY2VzczxULCBSPigKICBpdGVtczogVFtdLAogIHByb2Nlc3NvcjogKGl0ZW06IFQsIGluZGV4OiBudW1iZXIpID0+IFByb21pc2U8Uj4sCiAgb3B0aW9uczogQmF0Y2hPcHRpb25zID0ge30KKTogUHJvbWlzZTxSW10+IHsKICBjb25zdCB7CiAgICBjb25jdXJyZW5jeSA9IDIsCiAgICByZXRyaWVzID0gNywKICAgIG1pblRpbWVvdXQgPSAyMDAwLAogICAgbWF4VGltZW91dCA9IDEyODAwMCwKICAgIG9uUHJvZ3Jlc3MsCiAgfSA9IG9wdGlvbnM7CgogIGNvbnN0IGxpbWl0ID0gcExpbWl0KGNvbmN1cnJlbmN5KTsKICBsZXQgY29tcGxldGVkID0gMDsKCiAgY29uc3QgcHJvbWlzZXMgPSBpdGVtcy5tYXAoKGl0ZW0sIGluZGV4KSA9PgogICAgbGltaXQoKCkgPT4KICAgICAgcFJldHJ5KAogICAgICAgIGFzeW5jICgpID0+IHsKICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgIGNvbnN0IHJlc3VsdCA9IGF3YWl0IHByb2Nlc3NvcihpdGVtLCBpbmRleCk7CiAgICAgICAgICAgIGNvbXBsZXRlZCsrOwogICAgICAgICAgICBvblByb2dyZXNzPy4oY29tcGxldGVkLCBpdGVtcy5sZW5ndGgsIGl0ZW0pOwogICAgICAgICAgICByZXR1cm4gcmVzdWx0OwogICAgICAgICAgfSBjYXRjaCAoZXJyb3I6IHVua25vd24pIHsKICAgICAgICAgICAgaWYgKGlzUmF0ZUxpbWl0RXJyb3IoZXJyb3IpKSB7CiAgICAgICAgICAgICAgdGhyb3cgZXJyb3I7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgdGhyb3cgbmV3IEFib3J0RXJyb3IoCiAgICAgICAgICAgICAgZXJyb3IgaW5zdGFuY2VvZiBFcnJvciA/IGVycm9yIDogbmV3IEVycm9yKFN0cmluZyhlcnJvcikpCiAgICAgICAgICAgICk7CiAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICB7IHJldHJpZXMsIG1pblRpbWVvdXQsIG1heFRpbWVvdXQsIGZhY3RvcjogMiB9CiAgICAgICkKICAgICkKICApOwoKICByZXR1cm4gUHJvbWlzZS5hbGwocHJvbWlzZXMpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gYmF0Y2hQcm9jZXNzV2l0aFNTRTxULCBSPigKICBpdGVtczogVFtdLAogIHByb2Nlc3NvcjogKGl0ZW06IFQsIGluZGV4OiBudW1iZXIpID0+IFByb21pc2U8Uj4sCiAgc2VuZEV2ZW50OiAoZXZlbnQ6IHsgdHlwZTogc3RyaW5nOyBba2V5OiBzdHJpbmddOiB1bmtub3duIH0pID0+IHZvaWQsCiAgb3B0aW9uczogT21pdDxCYXRjaE9wdGlvbnMsICJjb25jdXJyZW5jeSIgfCAib25Qcm9ncmVzcyI+ID0ge30KKTogUHJvbWlzZTxSW10+IHsKICBjb25zdCB7IHJldHJpZXMgPSA1LCBtaW5UaW1lb3V0ID0gMTAwMCwgbWF4VGltZW91dCA9IDE1MDAwIH0gPSBvcHRpb25zOwoKICBzZW5kRXZlbnQoeyB0eXBlOiAic3RhcnRlZCIsIHRvdGFsOiBpdGVtcy5sZW5ndGggfSk7CgogIGNvbnN0IHJlc3VsdHM6IFJbXSA9IFtdOwogIGxldCBlcnJvcnMgPSAwOwoKICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4IDwgaXRlbXMubGVuZ3RoOyBpbmRleCsrKSB7CiAgICBjb25zdCBpdGVtID0gaXRlbXNbaW5kZXhdOwogICAgc2VuZEV2ZW50KHsgdHlwZTogInByb2Nlc3NpbmciLCBpbmRleCwgaXRlbSB9KTsKCiAgICB0cnkgewogICAgICBjb25zdCByZXN1bHQgPSBhd2FpdCBwUmV0cnkoCiAgICAgICAgKCkgPT4gcHJvY2Vzc29yKGl0ZW0sIGluZGV4KSwKICAgICAgICB7CiAgICAgICAgICByZXRyaWVzLAogICAgICAgICAgbWluVGltZW91dCwKICAgICAgICAgIG1heFRpbWVvdXQsCiAgICAgICAgICBmYWN0b3I6IDIsCiAgICAgICAgICBvbkZhaWxlZEF0dGVtcHQ6IChlcnJvcikgPT4gewogICAgICAgICAgICBpZiAoIWlzUmF0ZUxpbWl0RXJyb3IoZXJyb3IpKSB7CiAgICAgICAgICAgICAgdGhyb3cgbmV3IEFib3J0RXJyb3IoCiAgICAgICAgICAgICAgICBlcnJvciBpbnN0YW5jZW9mIEVycm9yID8gZXJyb3IgOiBuZXcgRXJyb3IoU3RyaW5nKGVycm9yKSkKICAgICAgICAgICAgICApOwogICAgICAgICAgICB9CiAgICAgICAgICB9LAogICAgICAgIH0KICAgICAgKTsKICAgICAgcmVzdWx0cy5wdXNoKHJlc3VsdCk7CiAgICAgIHNlbmRFdmVudCh7IHR5cGU6ICJwcm9ncmVzcyIsIGluZGV4LCByZXN1bHQgfSk7CiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICBlcnJvcnMrKzsKICAgICAgcmVzdWx0cy5wdXNoKHVuZGVmaW5lZCBhcyBSKTsKICAgICAgc2VuZEV2ZW50KHsKICAgICAgICB0eXBlOiAicHJvZ3Jlc3MiLAogICAgICAgIGluZGV4LAogICAgICAgIGVycm9yOiBlcnJvciBpbnN0YW5jZW9mIEVycm9yID8gZXJyb3IubWVzc2FnZSA6ICJQcm9jZXNzaW5nIGZhaWxlZCIsCiAgICAgIH0pOwogICAgfQogIH0KCiAgc2VuZEV2ZW50KHsgdHlwZTogImNvbXBsZXRlIiwgcHJvY2Vzc2VkOiBpdGVtcy5sZW5ndGgsIGVycm9ycyB9KTsKICByZXR1cm4gcmVzdWx0czsKfQo=
+import pLimit from "p-limit";
+import pRetry, { AbortError } from "p-retry";
+
+/**
+ * Batch Processing Utilities
+ *
+ * Generic batch processing with built-in rate limiting and automatic retries.
+ * Use for any task that requires processing multiple items through an LLM or external API.
+ *
+ * USAGE:
+ * ```typescript
+ * import { batchProcess } from "@workspace/integrations-openai-ai-server/batch";
+ * import { openai } from "@workspace/integrations-openai-ai-server";
+ *
+ * const results = await batchProcess(
+ *   artworks,
+ *   async (artwork) => {
+ *     const response = await openai.chat.completions.create({
+ *       model: "gpt-5.4",
+ *       messages: [{ role: "user", content: `Categorize: ${artwork.name}` }],
+ *       response_format: { type: "json_object" },
+ *     });
+ *     return JSON.parse(response.choices[0]?.message?.content || "{}");
+ *   },
+ *   { concurrency: 2, retries: 5 }
+ * );
+ * ```
+ */
+
+export interface BatchOptions {
+  concurrency?: number;
+  retries?: number;
+  minTimeout?: number;
+  maxTimeout?: number;
+  onProgress?: (completed: number, total: number, item: unknown) => void;
+}
+
+export function isRateLimitError(error: unknown): boolean {
+  const errorMsg = error instanceof Error ? error.message : String(error);
+  return (
+    errorMsg.includes("429") ||
+    errorMsg.includes("RATELIMIT_EXCEEDED") ||
+    errorMsg.toLowerCase().includes("quota") ||
+    errorMsg.toLowerCase().includes("rate limit")
+  );
+}
+
+export async function batchProcess<T, R>(
+  items: T[],
+  processor: (item: T, index: number) => Promise<R>,
+  options: BatchOptions = {}
+): Promise<R[]> {
+  const {
+    concurrency = 2,
+    retries = 7,
+    minTimeout = 2000,
+    maxTimeout = 128000,
+    onProgress,
+  } = options;
+
+  const limit = pLimit(concurrency);
+  let completed = 0;
+
+  const promises = items.map((item, index) =>
+    limit(() =>
+      pRetry(
+        async () => {
+          try {
+            const result = await processor(item, index);
+            completed++;
+            onProgress?.(completed, items.length, item);
+            return result;
+          } catch (error: unknown) {
+            if (isRateLimitError(error)) {
+              throw error;
+            }
+            throw new AbortError(
+              error instanceof Error ? error : new Error(String(error))
+            );
+          }
+        },
+        { retries, minTimeout, maxTimeout, factor: 2 }
+      )
+    )
+  );
+
+  return Promise.all(promises);
+}
+
+export async function batchProcessWithSSE<T, R>(
+  items: T[],
+  processor: (item: T, index: number) => Promise<R>,
+  sendEvent: (event: { type: string; [key: string]: unknown }) => void,
+  options: Omit<BatchOptions, "concurrency" | "onProgress"> = {}
+): Promise<R[]> {
+  const { retries = 5, minTimeout = 1000, maxTimeout = 15000 } = options;
+
+  sendEvent({ type: "started", total: items.length });
+
+  const results: R[] = [];
+  let errors = 0;
+
+  for (let index = 0; index < items.length; index++) {
+    const item = items[index];
+    sendEvent({ type: "processing", index, item });
+
+    try {
+      const result = await pRetry(
+        () => processor(item, index),
+        {
+          retries,
+          minTimeout,
+          maxTimeout,
+          factor: 2,
+          onFailedAttempt: (error) => {
+            if (!isRateLimitError(error)) {
+              throw new AbortError(
+                error instanceof Error ? error : new Error(String(error))
+              );
+            }
+          },
+        }
+      );
+      results.push(result);
+      sendEvent({ type: "progress", index, result });
+    } catch (error) {
+      errors++;
+      results.push(undefined as R);
+      sendEvent({
+        type: "progress",
+        index,
+        error: error instanceof Error ? error.message : "Processing failed",
+      });
+    }
+  }
+
+  sendEvent({ type: "complete", processed: items.length, errors });
+  return results;
+}

@@ -1,1 +1,10 @@
-ewogICJleHRlbmRzIjogIi4uLy4uL3RzY29uZmlnLmJhc2UuanNvbiIsCiAgImNvbXBpbGVyT3B0aW9ucyI6IHsKICAgICJvdXREaXIiOiAiZGlzdCIsCiAgICAicm9vdERpciI6ICJzcmMiLAogICAgImpzeCI6ICJyZWFjdC1qc3giLAogICAgImxpYiI6IFsiZXNuZXh0IiwgImRvbSIsICJkb20uaXRlcmFibGUiXQogIH0sCiAgImluY2x1ZGUiOiBbInNyYyJdCn0K
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom", "dom.iterable"]
+  },
+  "include": ["src"]
+}

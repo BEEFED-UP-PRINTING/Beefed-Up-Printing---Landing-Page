@@ -1,1 +1,8 @@
-dXBsb2FkcyA9IFtdCmdlbmVyYXRlZCA9IFtdCgpbW291dHB1dHNdXQppZCA9ICJMbkNwbU91M0k2S0pIejlMcWs4LUQiCnVyaSA9ICJmaWxlOi8vYXR0YWNoZWRfYXNzZXRzL21hZ2dpZS1wd2EtZXhwb3J0LnppcCIKdHlwZSA9ICJ1bnNwZWNpZmllZCIKdGl0bGUgPSAiTWFnZ2llIFBXQSBGaWxlcyAoZG93bmxvYWQgJiBkcm9wIGludG8gaGVyIHByb2plY3QpIgo=
+uploads = []
+generated = []
+
+[[outputs]]
+id = "LnCpmOu3I6KJHz9Lqk8-D"
+uri = "file://attached_assets/maggie-pwa-export.zip"
+type = "unspecified"
+title = "Maggie PWA Files (download & drop into her project)"

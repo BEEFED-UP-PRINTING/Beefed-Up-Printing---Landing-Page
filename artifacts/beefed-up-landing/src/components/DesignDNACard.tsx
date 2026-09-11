@@ -1,1 +1,128 @@
-aW1wb3J0IHsgRG5hLCBFZGl0MiwgU3BhcmtsZXMsIFJlZnJlc2hDdyB9IGZyb20gImx1Y2lkZS1yZWFjdCI7CmltcG9ydCB7IG1vdGlvbiB9IGZyb20gImZyYW1lci1tb3Rpb24iOwoKaW50ZXJmYWNlIFByb2ZpbGUgewogIGlkOiBzdHJpbmc7CiAgZmF2b3VyaXRlQ29sb3Vyczogc3RyaW5nW107CiAgbXVzaWNHZW5yZXM6IHN0cmluZ1tdOwogIHN0eWxlVmliZXM6IHN0cmluZ1tdOwogIGRlc2lnbktleXdvcmRzOiBzdHJpbmdbXTsKICByYXdOb3Rlcz86IHN0cmluZyB8IG51bGw7CiAgdXBkYXRlZEF0OiBzdHJpbmc7Cn0KCmludGVyZmFjZSBQcm9wcyB7CiAgcHJvZmlsZTogUHJvZmlsZTsKICBvbkVkaXQ6ICgpID0+IHZvaWQ7CiAgb25HZW5lcmF0ZTogKCkgPT4gdm9pZDsKICBnZW5lcmF0aW5nOiBib29sZWFuOwp9Cgpjb25zdCBDT0xPVVJfTUFQOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogICJOZW9uIE9yYW5nZSI6ICIjZjk3MzE2IiwKICAiRWxlY3RyaWMgUmVkIjogIiNlZjQ0NDQiLAogICJHb2xkIjogIiNlYWIzMDgiLAogICJGb3Jlc3QgR3JlZW4iOiAiIzIyYzU1ZSIsCiAgIkljZSBCbHVlIjogIiMzOGJkZjgiLAogICJEZWVwIFB1cnBsZSI6ICIjYTg1NWY3IiwKICAiQ2hhbGsgV2hpdGUiOiAiI2Y0ZjRmNSIsCiAgIk1pZG5pZ2h0IEJsYWNrIjogIiMwOTA5MGIiLAogICJDaHJvbWUgU2lsdmVyIjogIiNhMWExYWEiLAogICJSdXN0IEJyb3duIjogIiM5MjQwMGUiLAp9OwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRGVzaWduRE5BQ2FyZCh7IHByb2ZpbGUsIG9uRWRpdCwgb25HZW5lcmF0ZSwgZ2VuZXJhdGluZyB9OiBQcm9wcykgewogIHJldHVybiAoCiAgICA8bW90aW9uLmRpdgogICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHk6IDE2IH19CiAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fQogICAgICBjbGFzc05hbWU9ImJvcmRlciBib3JkZXItemluYy04MDAgYmctemluYy05NTAvODAgcC01IgogICAgICBzdHlsZT17eyBib3hTaGFkb3c6ICIwIDAgMzBweCByZ2JhKDI0OSwxMTUsMjIsMC4wOCkiIH19CiAgICA+CiAgICAgIHsvKiBIZWFkZXIgKi99CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLXN0YXJ0IGp1c3RpZnktYmV0d2VlbiBtYi00Ij4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiPgogICAgICAgICAgPERuYSBzaXplPXsxOH0gY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkiIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LWJvbGQgdGV4dC1zbSB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHRleHQtd2hpdGUiPllvdXIgRGVzaWduIEROQTwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXtvbkVkaXR9CiAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xIHRleHQtemluYy01MDAgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIHRleHQteHMgZm9udC1zYW5zIgogICAgICAgID4KICAgICAgICAgIDxFZGl0MiBzaXplPXsxMn0gLz4gRWRpdAogICAgICAgIDwvYnV0dG9uPgogICAgICA8L2Rpdj4KCiAgICAgIHsvKiBDb2xvdXJzICovfQogICAgICB7cHJvZmlsZS5mYXZvdXJpdGVDb2xvdXJzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi0zIj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCB0ZXh0LXhzIGZvbnQtc2FucyBtYi0xLjUgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIj5Db2xvdXJzPC9wPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTEuNSBmbGV4LXdyYXAiPgogICAgICAgICAgICB7cHJvZmlsZS5mYXZvdXJpdGVDb2xvdXJzLm1hcCgoYykgPT4gKAogICAgICAgICAgICAgIDxzcGFuCiAgICAgICAgICAgICAgICBrZXk9e2N9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9InctNiBoLTYgcm91bmRlZC1zbSBib3JkZXIgYm9yZGVyLXppbmMtNzAwIGlubGluZS1ibG9jayIKICAgICAgICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IENPTE9VUl9NQVBbY10gPz8gIiM4ODgiIH19CiAgICAgICAgICAgICAgICB0aXRsZT17Y30KICAgICAgICAgICAgICAvPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAgey8qIE11c2ljICovfQogICAgICB7cHJvZmlsZS5tdXNpY0dlbnJlcy5sZW5ndGggPiAwICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItMyI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy01MDAgdGV4dC14cyBmb250LXNhbnMgbWItMS41IHVwcGVyY2FzZSB0cmFja2luZy13aWRlciI+TXVzaWM8L3A+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LXdyYXAgZ2FwLTEuNSI+CiAgICAgICAgICAgIHtwcm9maWxlLm11c2ljR2VucmVzLm1hcCgoZykgPT4gKAogICAgICAgICAgICAgIDxzcGFuIGtleT17Z30gY2xhc3NOYW1lPSJ0ZXh0LXhzIGZvbnQtZGlzcGxheSBmb250LWJvbGQgdHJhY2tpbmctd2lkZSB0ZXh0LXByaW1hcnkgYm9yZGVyIGJvcmRlci1wcmltYXJ5LzMwIGJnLXByaW1hcnkvNSBweC0yIHB5LTAuNSI+CiAgICAgICAgICAgICAgICB7Z30KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICl9CgogICAgICB7LyogVmliZXMgKi99CiAgICAgIHtwcm9maWxlLnN0eWxlVmliZXMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1iLTMiPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNTAwIHRleHQteHMgZm9udC1zYW5zIG1iLTEuNSB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXIiPlZpYmVzPC9wPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICB7cHJvZmlsZS5zdHlsZVZpYmVzLm1hcCgodikgPT4gKAogICAgICAgICAgICAgIDxzcGFuIGtleT17dn0gY2xhc3NOYW1lPSJ0ZXh0LXhzIGZvbnQtc2FucyB0ZXh0LXppbmMtMzAwIGJvcmRlciBib3JkZXItemluYy03MDAgcHgtMiBweS0wLjUiPgogICAgICAgICAgICAgICAge3Z9CiAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApfQoKICAgICAgey8qIEtleXdvcmRzICovfQogICAgICB7cHJvZmlsZS5kZXNpZ25LZXl3b3Jkcy5sZW5ndGggPiAwICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItNCI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy01MDAgdGV4dC14cyBmb250LXNhbnMgbWItMS41IHVwcGVyY2FzZSB0cmFja2luZy13aWRlciI+RGVzaWduIEVsZW1lbnRzPC9wPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0xLjUiPgogICAgICAgICAgICB7cHJvZmlsZS5kZXNpZ25LZXl3b3Jkcy5tYXAoKGspID0+ICgKICAgICAgICAgICAgICA8c3BhbiBrZXk9e2t9IGNsYXNzTmFtZT0idGV4dC14cyBmb250LXNhbnMgdGV4dC16aW5jLTQwMCBib3JkZXIgYm9yZGVyLXppbmMtODAwIHB4LTIgcHktMC41Ij4KICAgICAgICAgICAgICAgIHtrfQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgKX0KCiAgICAgIDxidXR0b24KICAgICAgICBvbkNsaWNrPXtvbkdlbmVyYXRlfQogICAgICAgIGRpc2FibGVkPXtnZW5lcmF0aW5nfQogICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIGJnLXByaW1hcnkgdGV4dC1ibGFjayBmb250LWRpc3BsYXkgZm9udC1ib2xkIHRleHQteHMgdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSBweS0yLjUgaG92ZXI6Ymctb3JhbmdlLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyBkaXNhYmxlZDpvcGFjaXR5LTYwIgogICAgICA+CiAgICAgICAge2dlbmVyYXRpbmcgPyAoCiAgICAgICAgICA8PjxSZWZyZXNoQ3cgc2l6ZT17MTR9IGNsYXNzTmFtZT0iYW5pbWF0ZS1zcGluIiAvPiBHZW5lcmF0aW5nLi4uPC8+CiAgICAgICAgKSA6ICgKICAgICAgICAgIDw+PFNwYXJrbGVzIHNpemU9ezE0fSAvPiBHZW5lcmF0ZSBOZXcgQ29uY2VwdHM8Lz4KICAgICAgICApfQogICAgICA8L2J1dHRvbj4KICAgIDwvbW90aW9uLmRpdj4KICApOwp9Cg==
+import { Dna, Edit2, Sparkles, RefreshCw } from "lucide-react";
+import { motion } from "framer-motion";
+
+interface Profile {
+  id: string;
+  favouriteColours: string[];
+  musicGenres: string[];
+  styleVibes: string[];
+  designKeywords: string[];
+  rawNotes?: string | null;
+  updatedAt: string;
+}
+
+interface Props {
+  profile: Profile;
+  onEdit: () => void;
+  onGenerate: () => void;
+  generating: boolean;
+}
+
+const COLOUR_MAP: Record<string, string> = {
+  "Neon Orange": "#f97316",
+  "Electric Red": "#ef4444",
+  "Gold": "#eab308",
+  "Forest Green": "#22c55e",
+  "Ice Blue": "#38bdf8",
+  "Deep Purple": "#a855f7",
+  "Chalk White": "#f4f4f5",
+  "Midnight Black": "#09090b",
+  "Chrome Silver": "#a1a1aa",
+  "Rust Brown": "#92400e",
+};
+
+export default function DesignDNACard({ profile, onEdit, onGenerate, generating }: Props) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="border border-zinc-800 bg-zinc-950/80 p-5"
+      style={{ boxShadow: "0 0 30px rgba(249,115,22,0.08)" }}
+    >
+      {/* Header */}
+      <div className="flex items-start justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <Dna size={18} className="text-primary" />
+          <span className="font-display font-bold text-sm tracking-widest uppercase text-white">Your Design DNA</span>
+        </div>
+        <button
+          onClick={onEdit}
+          className="flex items-center gap-1 text-zinc-500 hover:text-primary transition-colors text-xs font-sans"
+        >
+          <Edit2 size={12} /> Edit
+        </button>
+      </div>
+
+      {/* Colours */}
+      {profile.favouriteColours.length > 0 && (
+        <div className="mb-3">
+          <p className="text-zinc-500 text-xs font-sans mb-1.5 uppercase tracking-wider">Colours</p>
+          <div className="flex gap-1.5 flex-wrap">
+            {profile.favouriteColours.map((c) => (
+              <span
+                key={c}
+                className="w-6 h-6 rounded-sm border border-zinc-700 inline-block"
+                style={{ background: COLOUR_MAP[c] ?? "#888" }}
+                title={c}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Music */}
+      {profile.musicGenres.length > 0 && (
+        <div className="mb-3">
+          <p className="text-zinc-500 text-xs font-sans mb-1.5 uppercase tracking-wider">Music</p>
+          <div className="flex flex-wrap gap-1.5">
+            {profile.musicGenres.map((g) => (
+              <span key={g} className="text-xs font-display font-bold tracking-wide text-primary border border-primary/30 bg-primary/5 px-2 py-0.5">
+                {g}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Vibes */}
+      {profile.styleVibes.length > 0 && (
+        <div className="mb-3">
+          <p className="text-zinc-500 text-xs font-sans mb-1.5 uppercase tracking-wider">Vibes</p>
+          <div className="flex flex-wrap gap-1.5">
+            {profile.styleVibes.map((v) => (
+              <span key={v} className="text-xs font-sans text-zinc-300 border border-zinc-700 px-2 py-0.5">
+                {v}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Keywords */}
+      {profile.designKeywords.length > 0 && (
+        <div className="mb-4">
+          <p className="text-zinc-500 text-xs font-sans mb-1.5 uppercase tracking-wider">Design Elements</p>
+          <div className="flex flex-wrap gap-1.5">
+            {profile.designKeywords.map((k) => (
+              <span key={k} className="text-xs font-sans text-zinc-400 border border-zinc-800 px-2 py-0.5">
+                {k}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <button
+        onClick={onGenerate}
+        disabled={generating}
+        className="w-full flex items-center justify-center gap-2 bg-primary text-black font-display font-bold text-xs tracking-widest uppercase py-2.5 hover:bg-orange-400 transition-colors disabled:opacity-60"
+      >
+        {generating ? (
+          <><RefreshCw size={14} className="animate-spin" /> Generating...</>
+        ) : (
+          <><Sparkles size={14} /> Generate New Concepts</>
+        )}
+      </button>
+    </motion.div>
+  );
+}

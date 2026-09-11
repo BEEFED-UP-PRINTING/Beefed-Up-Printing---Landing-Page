@@ -1,1 +1,261 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IG1vdGlvbiwgQW5pbWF0ZVByZXNlbmNlIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFNob3BwaW5nQmFnIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKCmNvbnN0IEZJTFRFUlMgPSBbIkFsbCIsICJUZWVzIiwgIkhvb2RpZXMiLCAiQ2FwcyIsICJTdGlja2VycyIsICJQb3N0ZXJzIl0gYXMgY29uc3Q7CnR5cGUgRmlsdGVyID0gKHR5cGVvZiBGSUxURVJTKVtudW1iZXJdOwoKaW50ZXJmYWNlIFByb2plY3QgewogIGlkOiBudW1iZXI7CiAgY2F0ZWdvcnk6IEV4Y2x1ZGU8RmlsdGVyLCAiQWxsIj47CiAgdGl0bGU6IHN0cmluZzsKICBjbGllbnQ6IHN0cmluZzsKICBncmFkaWVudDogc3RyaW5nOwogIGFjY2VudDogc3RyaW5nOwogIHRhZzogc3RyaW5nOwogIHNwYW4/OiAid2lkZSIgfCAidGFsbCI7Cn0KCmNvbnN0IFBST0pFQ1RTOiBQcm9qZWN0W10gPSBbCiAgewogICAgaWQ6IDEsCiAgICBjYXRlZ29yeTogIlRlZXMiLAogICAgdGl0bGU6ICJTb3dldG8gRmluZXN0IERyb3AiLAogICAgY2xpZW50OiAiU2VsZi1pbml0aWF0ZWQiLAogICAgZ3JhZGllbnQ6ICJmcm9tLW9yYW5nZS05MDAvODAgdmlhLXppbmMtOTUwIHRvLXppbmMtOTUwIiwKICAgIGFjY2VudDogIiNmOTczMTYiLAogICAgdGFnOiAiU2NyZWVuIFByaW50IMK3IDEyMCB1bml0cyIsCiAgfSwKICB7CiAgICBpZDogMiwKICAgIGNhdGVnb3J5OiAiSG9vZGllcyIsCiAgICB0aXRsZTogIlRvd25zaGlwIFJveWFsdHkiLAogICAgY2xpZW50OiAiUHJpdmF0ZSBDbGllbnQiLAogICAgZ3JhZGllbnQ6ICJmcm9tLXJlZC05MDAvNzAgdmlhLXppbmMtOTUwIHRvLXppbmMtOTUwIiwKICAgIGFjY2VudDogIiNlZjQ0NDQiLAogICAgdGFnOiAiRFRGIFByaW50IMK3IDUwIHVuaXRzIiwKICAgIHNwYW46ICJ0YWxsIiwKICB9LAogIHsKICAgIGlkOiAzLAogICAgY2F0ZWdvcnk6ICJTdGlja2VycyIsCiAgICB0aXRsZTogIk16YW5zaSBQYWNrIFZvbC4xIiwKICAgIGNsaWVudDogIlJldGFpbCBEcm9wIiwKICAgIGdyYWRpZW50OiAiZnJvbS15ZWxsb3ctOTAwLzcwIHZpYS16aW5jLTk1MCB0by16aW5jLTk1MCIsCiAgICBhY2NlbnQ6ICIjZWFiMzA4IiwKICAgIHRhZzogIkRpZS1DdXQgwrcgNTAwIHBhY2tzIiwKICB9LAogIHsKICAgIGlkOiA0LAogICAgY2F0ZWdvcnk6ICJDYXBzIiwKICAgIHRpdGxlOiAiRHJpcCBTZWFzb24gNi1QYW5lbCIsCiAgICBjbGllbnQ6ICJCcmFuZCBDb2xsYWIiLAogICAgZ3JhZGllbnQ6ICJmcm9tLXB1cnBsZS05MDAvNzAgdmlhLXppbmMtOTUwIHRvLXppbmMtOTUwIiwKICAgIGFjY2VudDogIiNhODU1ZjciLAogICAgdGFnOiAiRW1icm9pZGVyeSDCtyA4MCB1bml0cyIsCiAgfSwKICB7CiAgICBpZDogNSwKICAgIGNhdGVnb3J5OiAiUG9zdGVycyIsCiAgICB0aXRsZTogIkFmcm8gRnV0dXJpc20gU2VyaWVzIiwKICAgIGNsaWVudDogIkdhbGxlcnkgRXZlbnQiLAogICAgZ3JhZGllbnQ6ICJmcm9tLXNreS05MDAvNzAgdmlhLXppbmMtOTUwIHRvLXppbmMtOTUwIiwKICAgIGFjY2VudDogIiMzOGJkZjgiLAogICAgdGFnOiAiQTIgR2xvc3MgwrcgMjAwIHByaW50cyIsCiAgICBzcGFuOiAid2lkZSIsCiAgfSwKICB7CiAgICBpZDogNiwKICAgIGNhdGVnb3J5OiAiVGVlcyIsCiAgICB0aXRsZTogIkh1c3RsZSBOZXZlciBTbGVlcHMiLAogICAgY2xpZW50OiAiU3RyZWV0IEJyYW5kIiwKICAgIGdyYWRpZW50OiAiZnJvbS1lbWVyYWxkLTkwMC82MCB2aWEtemluYy05NTAgdG8temluYy05NTAiLAogICAgYWNjZW50OiAiIzIyYzU1ZSIsCiAgICB0YWc6ICJTY3JlZW4gUHJpbnQgwrcgMjAwIHVuaXRzIiwKICB9LAogIHsKICAgIGlkOiA3LAogICAgY2F0ZWdvcnk6ICJIb29kaWVzIiwKICAgIHRpdGxlOiAiQmxvY2sgQnkgQmxvY2sgQ3JldyIsCiAgICBjbGllbnQ6ICJZb3V0aCBDb2xsZWN0aXZlIiwKICAgIGdyYWRpZW50OiAiZnJvbS1vcmFuZ2UtOTUwLzgwIHZpYS1yZWQtOTUwIHRvLXppbmMtOTUwIiwKICAgIGFjY2VudDogIiNmOTczMTYiLAogICAgdGFnOiAiRW1icm9pZGVyeSArIERURiDCtyAzNSB1bml0cyIsCiAgfSwKICB7CiAgICBpZDogOCwKICAgIGNhdGVnb3J5OiAiU3RpY2tlcnMiLAogICAgdGl0bGU6ICJHcmFmZml0aSBHb2RzIFBhY2siLAogICAgY2xpZW50OiAiQXJ0IENvbGxlY3RpdmUiLAogICAgZ3JhZGllbnQ6ICJmcm9tLXBpbmstOTAwLzYwIHZpYS16aW5jLTk1MCB0by16aW5jLTk1MCIsCiAgICBhY2NlbnQ6ICIjZWM0ODk5IiwKICAgIHRhZzogIkhvbG9ncmFwaGljIMK3IDMwMCBwYWNrcyIsCiAgICBzcGFuOiAidGFsbCIsCiAgfSwKICB7CiAgICBpZDogOSwKICAgIGNhdGVnb3J5OiAiQ2FwcyIsCiAgICB0aXRsZTogIlN0cmVldCBSb3lhbHR5IFNuYXBiYWNrIiwKICAgIGNsaWVudDogIlN0cmVldHdlYXIgTGFiZWwiLAogICAgZ3JhZGllbnQ6ICJmcm9tLXppbmMtODAwLzgwIHZpYS16aW5jLTk1MCB0by16aW5jLTk1MCIsCiAgICBhY2NlbnQ6ICIjYTFhMWFhIiwKICAgIHRhZzogIkZsYXQgRW1icm9pZGVyeSDCtyA2MCB1bml0cyIsCiAgfSwKXTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIERyb3BXYWxsKCkgewogIGNvbnN0IFthY3RpdmUsIHNldEFjdGl2ZV0gPSB1c2VTdGF0ZTxGaWx0ZXI+KCJBbGwiKTsKICBjb25zdCBbaG92ZXJlZCwgc2V0SG92ZXJlZF0gPSB1c2VTdGF0ZTxudW1iZXIgfCBudWxsPihudWxsKTsKCiAgY29uc3QgZmlsdGVyZWQgPSBhY3RpdmUgPT09ICJBbGwiID8gUFJPSkVDVFMgOiBQUk9KRUNUUy5maWx0ZXIoKHApID0+IHAuY2F0ZWdvcnkgPT09IGFjdGl2ZSk7CgogIHJldHVybiAoCiAgICA8c2VjdGlvbiBpZD0iZHJvcHMiIGNsYXNzTmFtZT0icHktMjQgcHgtNCBzbTpweC02IGJnLWJsYWNrIGJvcmRlci10IGJvcmRlci16aW5jLTkwMCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy03eGwgbXgtYXV0byI+CiAgICAgICAgey8qIEhlYWRlciAqL30KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBzbTpmbGV4LXJvdyBzbTppdGVtcy1lbmQganVzdGlmeS1iZXR3ZWVuIGdhcC02IG1iLTEyIj4KICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1wcmltYXJ5IHRleHQteHMgZm9udC1zYW5zIHRyYWNraW5nLVswLjNlbV0gdXBwZXJjYXNlIG1iLTIiPlRoZSBXYWxsPC9wPgogICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1ibGFjayB0ZXh0LTR4bCBzbTp0ZXh0LTV4bCBtZDp0ZXh0LTZ4bCB1cHBlcmNhc2UgdGV4dC13aGl0ZSBsZWFkaW5nLW5vbmUiPgogICAgICAgICAgICAgIERyb3A8YnIgLz4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtcHJpbWFyeSI+SGlzdG9yeTwvc3Bhbj4KICAgICAgICAgICAgPC9oMj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNTAwIHRleHQtc20gZm9udC1zYW5zIG1heC13LXhzIGxlYWRpbmctcmVsYXhlZCI+CiAgICAgICAgICAgIEV2ZXJ5IHBpZWNlIHRoYXQgbGVmdCBvdXIgc2hvcC4gQ3VzdG9tLCBpbnRlbnRpb25hbCwgYnVpbHQgdG8gbGFzdC4KICAgICAgICAgIDwvcD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgey8qIEZpbHRlciB0YWJzICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0yIGZsZXgtd3JhcCBtYi04Ij4KICAgICAgICAgIHtGSUxURVJTLm1hcCgoZikgPT4gKAogICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAga2V5PXtmfQogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEFjdGl2ZShmKX0KICAgICAgICAgICAgICBjbGFzc05hbWU9e2BweC00IHB5LTEuNSB0ZXh0LXhzIGZvbnQtZGlzcGxheSBmb250LWJvbGQgdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSB0cmFuc2l0aW9uLWFsbCBib3JkZXIgJHsKICAgICAgICAgICAgICAgIGFjdGl2ZSA9PT0gZgogICAgICAgICAgICAgICAgICA/ICJib3JkZXItcHJpbWFyeSBiZy1wcmltYXJ5IHRleHQtYmxhY2siCiAgICAgICAgICAgICAgICAgIDogImJvcmRlci16aW5jLTgwMCB0ZXh0LXppbmMtNTAwIGhvdmVyOmJvcmRlci16aW5jLTYwMCBob3Zlcjp0ZXh0LXppbmMtMzAwIgogICAgICAgICAgICAgIH1gfQogICAgICAgICAgICA+CiAgICAgICAgICAgICAge2Z9CiAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBHcmlkICovfQogICAgICAgIDxtb3Rpb24uZGl2IGxheW91dCBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTMgZ2FwLTMgbWQ6Z2FwLTQiPgogICAgICAgICAgPEFuaW1hdGVQcmVzZW5jZSBtb2RlPSJwb3BMYXlvdXQiPgogICAgICAgICAgICB7ZmlsdGVyZWQubWFwKChwKSA9PiAoCiAgICAgICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgICAgIGtleT17cC5pZH0KICAgICAgICAgICAgICAgIGxheW91dAogICAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45NSB9fQogICAgICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCBzY2FsZTogMSB9fQogICAgICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45IH19CiAgICAgICAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjI1IH19CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9e2ByZWxhdGl2ZSBvdmVyZmxvdy1oaWRkZW4gY3Vyc29yLXBvaW50ZXIgZ3JvdXAgJHsKICAgICAgICAgICAgICAgICAgcC5zcGFuID09PSAidGFsbCIgPyAicm93LXNwYW4tMiIgOiBwLnNwYW4gPT09ICJ3aWRlIiA/ICJjb2wtc3Bhbi0yIiA6ICIiCiAgICAgICAgICAgICAgICB9YH0KICAgICAgICAgICAgICAgIHN0eWxlPXt7IG1pbkhlaWdodDogcC5zcGFuID09PSAidGFsbCIgPyAzNjAgOiAxODAgfX0KICAgICAgICAgICAgICAgIG9uTW91c2VFbnRlcj17KCkgPT4gc2V0SG92ZXJlZChwLmlkKX0KICAgICAgICAgICAgICAgIG9uTW91c2VMZWF2ZT17KCkgPT4gc2V0SG92ZXJlZChudWxsKX0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7LyogR3JhZGllbnQgYmFja2dyb3VuZCAqL30KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgYWJzb2x1dGUgaW5zZXQtMCBiZy1ncmFkaWVudC10by1iciAke3AuZ3JhZGllbnR9YH0gLz4KCiAgICAgICAgICAgICAgICB7LyogQ29ybmVyIGFjY2VudCBsaW5lICovfQogICAgICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImFic29sdXRlIHRvcC0wIGxlZnQtMCB3LWZ1bGwgaC0wLjUgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwIgogICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IGhvdmVyZWQgPT09IHAuaWQgPyBwLmFjY2VudCA6ICJ0cmFuc3BhcmVudCIsCiAgICAgICAgICAgICAgICAgICAgYm94U2hhZG93OiBob3ZlcmVkID09PSBwLmlkID8gYDAgMCAxMnB4ICR7cC5hY2NlbnR9YCA6ICJub25lIiwKICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgIC8+CgogICAgICAgICAgICAgICAgey8qIENhdGVnb3J5IHBpbGwgKi99CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgdG9wLTMgbGVmdC0zIj4KICAgICAgICAgICAgICAgICAgPHNwYW4KICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtZGlzcGxheSBmb250LWJvbGQgdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSBweC0yIHB5LTAuNSBib3JkZXIiCiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgY29sb3I6IHAuYWNjZW50LCBib3JkZXJDb2xvcjogYCR7cC5hY2NlbnR9NDBgLCBiYWNrZ3JvdW5kOiBgJHtwLmFjY2VudH0xMGAgfX0KICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIHtwLmNhdGVnb3J5fQogICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICB7LyogQlVQIHdhdGVybWFyayAqL30KICAgICAgICAgICAgICAgIDxkaXYKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGZvbnQtZGlzcGxheSBmb250LWJsYWNrIHRleHQtWzgwcHhdIG1kOnRleHQtWzEwMHB4XSBzZWxlY3Qtbm9uZSBwb2ludGVyLWV2ZW50cy1ub25lIHRyYW5zaXRpb24tb3BhY2l0eSBkdXJhdGlvbi0zMDAiCiAgICAgICAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgICAgICAgY29sb3I6IGAke3AuYWNjZW50fTA4YCwKICAgICAgICAgICAgICAgICAgICBvcGFjaXR5OiBob3ZlcmVkID09PSBwLmlkID8gMSA6IDAuNCwKICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgQlVQCiAgICAgICAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICAgICAgICB7LyogSW5mbyBvdmVybGF5ICovfQogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBmbGV4LWNvbCBqdXN0aWZ5LWVuZCBwLTQiPgogICAgICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgeTogaG92ZXJlZCA9PT0gcC5pZCA/IDAgOiA4LCBvcGFjaXR5OiBob3ZlcmVkID09PSBwLmlkID8gMSA6IDAuNyB9fQogICAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuMiB9fQogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIHRleHQtWzEwcHhdIGZvbnQtc2FucyBtYi0xIj57cC5jbGllbnR9PC9wPgogICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LWJvbGQgdGV4dC13aGl0ZSB0ZXh0LXNtIG1kOnRleHQtYmFzZSB1cHBlcmNhc2UgbGVhZGluZy10aWdodCBtYi0yIj4KICAgICAgICAgICAgICAgICAgICAgIHtwLnRpdGxlfQogICAgICAgICAgICAgICAgICAgIDwvaDM+CiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNTAwIHRleHQtWzEwcHhdIGZvbnQtc2FucyB0cmFja2luZy13aWRlIj57cC50YWd9PC9wPgogICAgICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+CgogICAgICAgICAgICAgICAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICAgICAgICAgICAgICAgIHtob3ZlcmVkID09PSBwLmlkICYmICgKICAgICAgICAgICAgICAgICAgICAgIDxtb3Rpb24uYQogICAgICAgICAgICAgICAgICAgICAgICBocmVmPSIjY29udGFjdCIKICAgICAgICAgICAgICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiA2IH19CiAgICAgICAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCB9fQogICAgICAgICAgICAgICAgICAgICAgICBleGl0PXt7IG9wYWNpdHk6IDAgfX0KICAgICAgICAgICAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkdXJhdGlvbjogMC4xNSB9fQogICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9Im10LTMgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSB0ZXh0LVsxMXB4XSBmb250LWRpc3BsYXkgZm9udC1ib2xkIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UiCiAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IGNvbG9yOiBwLmFjY2VudCB9fQogICAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAgICA8U2hvcHBpbmdCYWcgc2l6ZT17MTF9IC8+IE9yZGVyIFNpbWlsYXIKICAgICAgICAgICAgICAgICAgICAgIDwvbW90aW9uLmE+CiAgICAgICAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CiAgICAgICAgPC9tb3Rpb24uZGl2PgoKICAgICAgICB7LyogQ1RBICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC0xMiB0ZXh0LWNlbnRlciI+CiAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy01MDAgdGV4dC1zbSBmb250LXNhbnMgbWItNCI+WW91ciBkcm9wIGNvdWxkIGJlIG5leHQuPC9wPgogICAgICAgICAgPGEKICAgICAgICAgICAgaHJlZj0iI2NvbnRhY3QiCiAgICAgICAgICAgIGNsYXNzTmFtZT0iaW5saW5lLWJsb2NrIGJnLXByaW1hcnkgdGV4dC1ibGFjayBmb250LWRpc3BsYXkgZm9udC1ib2xkIHRleHQtc20gdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSBweC0xMCBweS0zIGhvdmVyOmJnLW9yYW5nZS00MDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgIHN0eWxlPXt7IGJveFNoYWRvdzogIjAgMCAyNHB4IHJnYmEoMjQ5LDExNSwyMiwwLjMpIiB9fQogICAgICAgICAgPgogICAgICAgICAgICBTdGFydCBZb3VyIE9yZGVyCiAgICAgICAgICA8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0K
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ShoppingBag } from "lucide-react";
+
+const FILTERS = ["All", "Tees", "Hoodies", "Caps", "Stickers", "Posters"] as const;
+type Filter = (typeof FILTERS)[number];
+
+interface Project {
+  id: number;
+  category: Exclude<Filter, "All">;
+  title: string;
+  client: string;
+  gradient: string;
+  accent: string;
+  tag: string;
+  span?: "wide" | "tall";
+}
+
+const PROJECTS: Project[] = [
+  {
+    id: 1,
+    category: "Tees",
+    title: "Soweto Finest Drop",
+    client: "Self-initiated",
+    gradient: "from-orange-900/80 via-zinc-950 to-zinc-950",
+    accent: "#f97316",
+    tag: "Screen Print · 120 units",
+  },
+  {
+    id: 2,
+    category: "Hoodies",
+    title: "Township Royalty",
+    client: "Private Client",
+    gradient: "from-red-900/70 via-zinc-950 to-zinc-950",
+    accent: "#ef4444",
+    tag: "DTF Print · 50 units",
+    span: "tall",
+  },
+  {
+    id: 3,
+    category: "Stickers",
+    title: "Mzansi Pack Vol.1",
+    client: "Retail Drop",
+    gradient: "from-yellow-900/70 via-zinc-950 to-zinc-950",
+    accent: "#eab308",
+    tag: "Die-Cut · 500 packs",
+  },
+  {
+    id: 4,
+    category: "Caps",
+    title: "Drip Season 6-Panel",
+    client: "Brand Collab",
+    gradient: "from-purple-900/70 via-zinc-950 to-zinc-950",
+    accent: "#a855f7",
+    tag: "Embroidery · 80 units",
+  },
+  {
+    id: 5,
+    category: "Posters",
+    title: "Afro Futurism Series",
+    client: "Gallery Event",
+    gradient: "from-sky-900/70 via-zinc-950 to-zinc-950",
+    accent: "#38bdf8",
+    tag: "A2 Gloss · 200 prints",
+    span: "wide",
+  },
+  {
+    id: 6,
+    category: "Tees",
+    title: "Hustle Never Sleeps",
+    client: "Street Brand",
+    gradient: "from-emerald-900/60 via-zinc-950 to-zinc-950",
+    accent: "#22c55e",
+    tag: "Screen Print · 200 units",
+  },
+  {
+    id: 7,
+    category: "Hoodies",
+    title: "Block By Block Crew",
+    client: "Youth Collective",
+    gradient: "from-orange-950/80 via-red-950 to-zinc-950",
+    accent: "#f97316",
+    tag: "Embroidery + DTF · 35 units",
+  },
+  {
+    id: 8,
+    category: "Stickers",
+    title: "Graffiti Gods Pack",
+    client: "Art Collective",
+    gradient: "from-pink-900/60 via-zinc-950 to-zinc-950",
+    accent: "#ec4899",
+    tag: "Holographic · 300 packs",
+    span: "tall",
+  },
+  {
+    id: 9,
+    category: "Caps",
+    title: "Street Royalty Snapback",
+    client: "Streetwear Label",
+    gradient: "from-zinc-800/80 via-zinc-950 to-zinc-950",
+    accent: "#a1a1aa",
+    tag: "Flat Embroidery · 60 units",
+  },
+];
+
+export default function DropWall() {
+  const [active, setActive] = useState<Filter>("All");
+  const [hovered, setHovered] = useState<number | null>(null);
+
+  const filtered = active === "All" ? PROJECTS : PROJECTS.filter((p) => p.category === active);
+
+  return (
+    <section
+      id="drops"
+      className="relative py-24 px-4 sm:px-6 bg-black border-t border-zinc-900"
+    >
+      {/* A quiet signature in the wall — part of the artwork, not a credit banner. */}
+      <div
+        aria-label="Signed Dev The Dude"
+        className="pointer-events-none absolute right-5 top-7 rotate-[-8deg] select-none text-right sm:right-10 sm:top-10"
+      >
+        <p className="font-graffiti text-lg leading-none text-orange-300/60 sm:text-xl">
+          Dev The Dude
+        </p>
+        <p className="mt-1 font-display text-[7px] uppercase tracking-[0.35em] text-zinc-600">
+          BUP wall mark
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+          <div>
+            <p className="text-primary text-xs font-sans tracking-[0.3em] uppercase mb-2">The Wall</p>
+            <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none">
+              Drop<br />
+              <span className="text-primary">History</span>
+            </h2>
+          </div>
+          <p className="text-zinc-500 text-sm font-sans max-w-xs leading-relaxed">
+            Every piece that left our shop. Custom, intentional, built to last.
+          </p>
+        </div>
+
+        {/* Filter tabs */}
+        <div className="flex gap-2 flex-wrap mb-8">
+          {FILTERS.map((f) => (
+            <button
+              key={f}
+              onClick={() => setActive(f)}
+              className={`px-4 py-1.5 text-xs font-display font-bold tracking-widest uppercase transition-all border ${
+                active === f
+                  ? "border-primary bg-primary text-black"
+                  : "border-zinc-800 text-zinc-500 hover:border-zinc-600 hover:text-zinc-300"
+              }`}
+            >
+              {f}
+            </button>
+          ))}
+        </div>
+
+        {/* Grid */}
+        <motion.div layout className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          <AnimatePresence mode="popLayout">
+            {filtered.map((p) => (
+              <motion.div
+                key={p.id}
+                layout
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.25 }}
+                className={`relative overflow-hidden cursor-pointer group ${
+                  p.span === "tall" ? "row-span-2" : p.span === "wide" ? "col-span-2" : ""
+                }`}
+                style={{ minHeight: p.span === "tall" ? 360 : 180 }}
+                onMouseEnter={() => setHovered(p.id)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                {/* Gradient background */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient}`} />
+
+                {/* Corner accent line */}
+                <div
+                  className="absolute top-0 left-0 w-full h-0.5 transition-all duration-300"
+                  style={{
+                    background: hovered === p.id ? p.accent : "transparent",
+                    boxShadow: hovered === p.id ? `0 0 12px ${p.accent}` : "none",
+                  }}
+                />
+
+                {/* Category pill */}
+                <div className="absolute top-3 left-3">
+                  <span
+                    className="text-[10px] font-display font-bold tracking-widest uppercase px-2 py-0.5 border"
+                    style={{ color: p.accent, borderColor: `${p.accent}40`, background: `${p.accent}10` }}
+                  >
+                    {p.category}
+                  </span>
+                </div>
+
+                {/* BUP watermark */}
+                <div
+                  className="absolute inset-0 flex items-center justify-center font-display font-black text-[80px] md:text-[100px] select-none pointer-events-none transition-opacity duration-300"
+                  style={{
+                    color: `${p.accent}08`,
+                    opacity: hovered === p.id ? 1 : 0.4,
+                  }}
+                >
+                  BUP
+                </div>
+
+                {/* Info overlay */}
+                <div className="absolute inset-0 flex flex-col justify-end p-4">
+                  <motion.div
+                    animate={{ y: hovered === p.id ? 0 : 8, opacity: hovered === p.id ? 1 : 0.7 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <p className="text-zinc-400 text-[10px] font-sans mb-1">{p.client}</p>
+                    <h3 className="font-display font-bold text-white text-sm md:text-base uppercase leading-tight mb-2">
+                      {p.title}
+                    </h3>
+                    <p className="text-zinc-500 text-[10px] font-sans tracking-wide">{p.tag}</p>
+                  </motion.div>
+
+                  <AnimatePresence>
+                    {hovered === p.id && (
+                      <motion.a
+                        href="#contact"
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.15 }}
+                        className="mt-3 flex items-center gap-1.5 text-[11px] font-display font-bold tracking-widest uppercase"
+                        style={{ color: p.accent }}
+                      >
+                        <ShoppingBag size={11} /> Order Similar
+                      </motion.a>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* CTA */}
+        <div className="mt-12 text-center">
+          <p className="text-zinc-500 text-sm font-sans mb-4">Your drop could be next.</p>
+          <a
+            href="#contact"
+            className="inline-block bg-primary text-black font-display font-bold text-sm tracking-widest uppercase px-10 py-3 hover:bg-orange-400 transition-colors"
+            style={{ boxShadow: "0 0 24px rgba(249,115,22,0.3)" }}
+          >
+            Start Your Order
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

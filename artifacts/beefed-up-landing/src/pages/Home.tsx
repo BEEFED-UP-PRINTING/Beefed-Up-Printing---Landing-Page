@@ -1,1 +1,72 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IEFuaW1hdGVQcmVzZW5jZSB9IGZyb20gImZyYW1lci1tb3Rpb24iOwppbXBvcnQgTmF2YmFyIGZyb20gIkAvY29tcG9uZW50cy9OYXZiYXIiOwppbXBvcnQgSGVybyBmcm9tICJAL2NvbXBvbmVudHMvSGVybyI7CmltcG9ydCBHcmVldGluZ3NUaWNrZXIgZnJvbSAiQC9jb21wb25lbnRzL0dyZWV0aW5nc1RpY2tlciI7CmltcG9ydCBBYm91dCBmcm9tICJAL2NvbXBvbmVudHMvQWJvdXQiOwppbXBvcnQgU2VydmljZXMgZnJvbSAiQC9jb21wb25lbnRzL1NlcnZpY2VzIjsKaW1wb3J0IFN0YXRzQmFyIGZyb20gIkAvY29tcG9uZW50cy9TdGF0c0JhciI7CmltcG9ydCBEcm9wV2FsbCBmcm9tICJAL2NvbXBvbmVudHMvRHJvcFdhbGwiOwppbXBvcnQgRHJvcENvdW50ZG93biBmcm9tICJAL2NvbXBvbmVudHMvRHJvcENvdW50ZG93biI7CmltcG9ydCBRdW90ZUNhbGN1bGF0b3IgZnJvbSAiQC9jb21wb25lbnRzL1F1b3RlQ2FsY3VsYXRvciI7CmltcG9ydCBDb250YWN0Rm9ybSBmcm9tICJAL2NvbXBvbmVudHMvQ29udGFjdEZvcm0iOwppbXBvcnQgRm9vdGVyIGZyb20gIkAvY29tcG9uZW50cy9Gb290ZXIiOwppbXBvcnQgTWFnZ2llU3ByYXlDYW4gZnJvbSAiQC9jb21wb25lbnRzL01hZ2dpZVNwcmF5Q2FuIjsKaW1wb3J0IFdoYXRzQXBwRmxvYXQgZnJvbSAiQC9jb21wb25lbnRzL1doYXRzQXBwRmxvYXQiOwppbXBvcnQgRGVzaWduRE5BUGFuZWwgZnJvbSAiQC9jb21wb25lbnRzL0Rlc2lnbkROQVBhbmVsIjsKaW1wb3J0IEN1cnNvclRyYWlsIGZyb20gIkAvY29tcG9uZW50cy9DdXJzb3JUcmFpbCI7CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkgewogIGNvbnN0IFtkbmFPcGVuLCBzZXREbmFPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbbWFnZ2llRm9yY2VPcGVuLCBzZXRNYWdnaWVGb3JjZU9wZW5dID0gdXNlU3RhdGUoZmFsc2UpOwoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImJnLWJhY2tncm91bmQgbWluLWgtc2NyZWVuIHRleHQtZm9yZWdyb3VuZCByZWxhdGl2ZSI+CiAgICAgIDxDdXJzb3JUcmFpbCAvPgogICAgICA8TmF2YmFyIG9uT3BlbkROQT17KCkgPT4gc2V0RG5hT3Blbih0cnVlKX0gLz4KCiAgICAgIDxtYWluPgogICAgICAgIDxIZXJvIC8+CiAgICAgICAgPEdyZWV0aW5nc1RpY2tlciAvPgogICAgICAgIDxTdGF0c0JhciAvPgogICAgICAgIDxBYm91dCAvPgogICAgICAgIDxTZXJ2aWNlcyAvPgogICAgICAgIDxEcm9wV2FsbCAvPgogICAgICAgIDxEcm9wQ291bnRkb3duIC8+CiAgICAgICAgPFF1b3RlQ2FsY3VsYXRvciAvPgogICAgICAgIDxDb250YWN0Rm9ybSAvPgogICAgICA8L21haW4+CgogICAgICA8Rm9vdGVyIC8+CgogICAgICA8V2hhdHNBcHBGbG9hdCAvPgoKICAgICAgPE1hZ2dpZVNwcmF5Q2FuCiAgICAgICAgZm9yY2VPcGVuPXttYWdnaWVGb3JjZU9wZW59CiAgICAgICAgb25Gb3JjZUNsb3NlPXsoKSA9PiBzZXRNYWdnaWVGb3JjZU9wZW4oZmFsc2UpfQogICAgICAvPgoKICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7ZG5hT3BlbiAmJiAoCiAgICAgICAgICA8RGVzaWduRE5BUGFuZWwKICAgICAgICAgICAgb25DbG9zZT17KCkgPT4gc2V0RG5hT3BlbihmYWxzZSl9CiAgICAgICAgICAgIG9uT3Blbk1hZ2dpZT17KCkgPT4gc2V0TWFnZ2llRm9yY2VPcGVuKHRydWUpfQogICAgICAgICAgLz4KICAgICAgICApfQogICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgIDwvZGl2PgogICk7Cn0K
+import { useRef, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import GreetingsTicker from "@/components/GreetingsTicker";
+import BoomboxPlaylist from "@/components/BoomboxPlaylist";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import StatsBar from "@/components/StatsBar";
+import DropWall from "@/components/DropWall";
+import DropCountdown from "@/components/DropCountdown";
+import QuoteCalculator from "@/components/QuoteCalculator";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
+import MaggieSprayCan from "@/components/MaggieSprayCan";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+import DesignDNAPanel from "@/components/DesignDNAPanel";
+import CursorTrail from "@/components/CursorTrail";
+
+export default function Home() {
+  const [dnaOpen, setDnaOpen] = useState(false);
+  const [maggieForceOpen, setMaggieForceOpen] = useState(false);
+  const [playlistOpen, setPlaylistOpen] = useState(false);
+  const playlistRef = useRef<HTMLDivElement>(null);
+
+  const jumpToPlaylist = () => {
+    setPlaylistOpen(true);
+    requestAnimationFrame(() => {
+      playlistRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  };
+
+  return (
+    <div className="bg-background min-h-screen text-foreground relative">
+      <CursorTrail />
+      <Navbar onOpenDNA={() => setDnaOpen(true)} />
+
+      <main>
+        <Hero onJumpToPlaylist={jumpToPlaylist} />
+        <GreetingsTicker />
+        <div ref={playlistRef} className="py-6 bg-zinc-950 border-b border-zinc-900">
+          <BoomboxPlaylist open={playlistOpen} onOpenChange={setPlaylistOpen} />
+        </div>
+        <StatsBar />
+        <About />
+        <Services />
+        <DropWall />
+        <DropCountdown />
+        <QuoteCalculator />
+        <ContactForm />
+      </main>
+
+      <Footer />
+
+      <WhatsAppFloat />
+
+      <MaggieSprayCan
+        forceOpen={maggieForceOpen}
+        onForceClose={() => setMaggieForceOpen(false)}
+      />
+
+      <AnimatePresence>
+        {dnaOpen && (
+          <DesignDNAPanel
+            onClose={() => setDnaOpen(false)}
+            onOpenMaggie={() => setMaggieForceOpen(true)}
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}

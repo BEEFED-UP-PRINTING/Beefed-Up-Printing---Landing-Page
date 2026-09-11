@@ -1,1 +1,178 @@
-LyoqCiAqIEdlbmVyYXRlZCBieSBvcnZhbCB2OC41LjMg8J+NugogKiBEbyBub3QgZWRpdCBtYW51YWxseS4KICogQXBpCiAqIEFQSSBzcGVjaWZpY2F0aW9uCiAqIE9wZW5BUEkgc3BlYyB2ZXJzaW9uOiAwLjEuMAogKi8KaW1wb3J0ICogYXMgem9kIGZyb20gInpvZCI7CgovKioKICogUmV0dXJucyBzZXJ2ZXIgaGVhbHRoIHN0YXR1cwogKiBAc3VtbWFyeSBIZWFsdGggY2hlY2sKICovCmV4cG9ydCBjb25zdCBIZWFsdGhDaGVja1Jlc3BvbnNlID0gem9kLm9iamVjdCh7CiAgc3RhdHVzOiB6b2Quc3RyaW5nKCksCn0pOwoKLyoqCiAqIEBzdW1tYXJ5IEdldCB0aGUgY3VycmVudGx5IGF1dGhlbnRpY2F0ZWQgdXNlcgogKi8KZXhwb3J0IGNvbnN0IEdldEN1cnJlbnRBdXRoVXNlckhlYWRlciA9IHpvZC5vYmplY3QoewogIEF1dGhvcml6YXRpb246IHpvZC5zdHJpbmcoKS5vcHRpb25hbCgpLAp9KTsKCmV4cG9ydCBjb25zdCBHZXRDdXJyZW50QXV0aFVzZXJSZXNwb25zZSA9IHpvZC5vYmplY3QoewogIHVzZXI6IHpvZC51bmlvbihbCiAgICB6b2Qub2JqZWN0KHsKICAgICAgaWQ6IHpvZC5zdHJpbmcoKSwKICAgICAgZW1haWw6IHpvZC5zdHJpbmcoKS5udWxsaXNoKCksCiAgICAgIGZpcnN0TmFtZTogem9kLnN0cmluZygpLm51bGxpc2goKSwKICAgICAgbGFzdE5hbWU6IHpvZC5zdHJpbmcoKS5udWxsaXNoKCksCiAgICAgIHByb2ZpbGVJbWFnZVVybDogem9kLnN0cmluZygpLm51bGxpc2goKSwKICAgIH0pLAogICAgem9kLm51bGwoKSwKICBdKSwKfSk7CgovKioKICogQHN1bW1hcnkgU3RhcnQgdGhlIGJyb3dzZXIgT0lEQyBsb2dpbiBmbG93CiAqLwpleHBvcnQgY29uc3QgQmVnaW5Ccm93c2VyTG9naW5RdWVyeVBhcmFtcyA9IHpvZC5vYmplY3QoewogIHJldHVyblRvOiB6b2QuY29lcmNlCiAgICAuc3RyaW5nKCkKICAgIC5vcHRpb25hbCgpCiAgICAuZGVzY3JpYmUoCiAgICAgICJSZWxhdGl2ZSBwYXRoIHRvIHJlZGlyZWN0IHRvIGFmdGVyIGxvZ2luIChtdXN0IHN0YXJ0IHdpdGggYFwvYCkuIERlZmF1bHRzIHRvIGBcL2AuIiwKICAgICksCn0pOwoKLyoqCiAqIEBzdW1tYXJ5IENvbXBsZXRlIHRoZSBicm93c2VyIE9JREMgbG9naW4gZmxvdwogKi8KZXhwb3J0IGNvbnN0IEhhbmRsZUJyb3dzZXJMb2dpbkNhbGxiYWNrUXVlcnlQYXJhbXMgPSB6b2Qub2JqZWN0KHsKICBjb2RlOiB6b2QuY29lcmNlLnN0cmluZygpLm9wdGlvbmFsKCksCiAgc3RhdGU6IHpvZC5jb2VyY2Uuc3RyaW5nKCkub3B0aW9uYWwoKSwKICBpc3M6IHpvZC5jb2VyY2Uuc3RyaW5nKCkudXJsKCkub3B0aW9uYWwoKSwKfSk7CgovKioKICogQHN1bW1hcnkgQ2xlYXIgdGhlIHNlc3Npb24gYW5kIGJlZ2luIE9JREMgbG9nb3V0CiAqLwpleHBvcnQgY29uc3QgTG9nb3V0QnJvd3NlclNlc3Npb25IZWFkZXIgPSB6b2Qub2JqZWN0KHsKICBBdXRob3JpemF0aW9uOiB6b2Quc3RyaW5nKCkub3B0aW9uYWwoKSwKfSk7CgovKioKICogQHN1bW1hcnkgR2V0IHRoZSBhdXRoZW50aWNhdGVkIHVzZXIncyBEZXNpZ24gRE5BIHByb2ZpbGUKICovCmV4cG9ydCBjb25zdCBHZXREZXNpZ25EbmFQcm9maWxlUmVzcG9uc2UgPSB6b2Qub2JqZWN0KHsKICBwcm9maWxlOiB6b2QudW5pb24oWwogICAgem9kLm9iamVjdCh7CiAgICAgIGlkOiB6b2Quc3RyaW5nKCksCiAgICAgIHVzZXJJZDogem9kLnN0cmluZygpLAogICAgICBmYXZvdXJpdGVDb2xvdXJzOiB6b2QuYXJyYXkoem9kLnN0cmluZygpKSwKICAgICAgbXVzaWNHZW5yZXM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgICBzdHlsZVZpYmVzOiB6b2QuYXJyYXkoem9kLnN0cmluZygpKSwKICAgICAgZGVzaWduS2V5d29yZHM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgICBwdXJjaGFzZUhpc3Rvcnk6IHpvZC5hcnJheSh6b2Qub2JqZWN0KHt9KS5wYXNzdGhyb3VnaCgpKSwKICAgICAgcHJvamVjdEhpc3Rvcnk6IHpvZC5hcnJheSh6b2Qub2JqZWN0KHt9KS5wYXNzdGhyb3VnaCgpKSwKICAgICAgcmF3Tm90ZXM6IHpvZC5zdHJpbmcoKS5udWxsaXNoKCksCiAgICAgIGNyZWF0ZWRBdDogem9kLnN0cmluZygpLAogICAgICB1cGRhdGVkQXQ6IHpvZC5zdHJpbmcoKSwKICAgIH0pLAogICAgem9kLm51bGwoKSwKICBdKSwKfSk7CgovKioKICogQHN1bW1hcnkgQ3JlYXRlIG9yIHVwZGF0ZSB0aGUgYXV0aGVudGljYXRlZCB1c2VyJ3MgRGVzaWduIEROQSBwcm9maWxlCiAqLwpleHBvcnQgY29uc3QgVXBzZXJ0RGVzaWduRG5hUHJvZmlsZUJvZHkgPSB6b2Qub2JqZWN0KHsKICBmYXZvdXJpdGVDb2xvdXJzOiB6b2QuYXJyYXkoem9kLnN0cmluZygpKS5vcHRpb25hbCgpLAogIG11c2ljR2VucmVzOiB6b2QuYXJyYXkoem9kLnN0cmluZygpKS5vcHRpb25hbCgpLAogIHN0eWxlVmliZXM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLm9wdGlvbmFsKCksCiAgZGVzaWduS2V5d29yZHM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLm9wdGlvbmFsKCksCiAgcmF3Tm90ZXM6IHpvZC5zdHJpbmcoKS5vcHRpb25hbCgpLAp9KTsKCmV4cG9ydCBjb25zdCBVcHNlcnREZXNpZ25EbmFQcm9maWxlUmVzcG9uc2UgPSB6b2Qub2JqZWN0KHsKICBwcm9maWxlOiB6b2Qub2JqZWN0KHsKICAgIGlkOiB6b2Quc3RyaW5nKCksCiAgICB1c2VySWQ6IHpvZC5zdHJpbmcoKSwKICAgIGZhdm91cml0ZUNvbG91cnM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgbXVzaWNHZW5yZXM6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgc3R5bGVWaWJlczogem9kLmFycmF5KHpvZC5zdHJpbmcoKSksCiAgICBkZXNpZ25LZXl3b3Jkczogem9kLmFycmF5KHpvZC5zdHJpbmcoKSksCiAgICBwdXJjaGFzZUhpc3Rvcnk6IHpvZC5hcnJheSh6b2Qub2JqZWN0KHt9KS5wYXNzdGhyb3VnaCgpKSwKICAgIHByb2plY3RIaXN0b3J5OiB6b2QuYXJyYXkoem9kLm9iamVjdCh7fSkucGFzc3Rocm91Z2goKSksCiAgICByYXdOb3Rlczogem9kLnN0cmluZygpLm51bGxpc2goKSwKICAgIGNyZWF0ZWRBdDogem9kLnN0cmluZygpLAogICAgdXBkYXRlZEF0OiB6b2Quc3RyaW5nKCksCiAgfSksCn0pOwoKLyoqCiAqIEBzdW1tYXJ5IEdldCBBSS1nZW5lcmF0ZWQgbWVyY2ggc3VnZ2VzdGlvbnMgZm9yIHRoZSBhdXRoZW50aWNhdGVkIHVzZXIKICovCmV4cG9ydCBjb25zdCBHZXREZXNpZ25EbmFTdWdnZXN0aW9uc1Jlc3BvbnNlID0gem9kLm9iamVjdCh7CiAgc3VnZ2VzdGlvbnM6IHpvZC5hcnJheSgKICAgIHpvZC5vYmplY3QoewogICAgICBpZDogem9kLnN0cmluZygpLAogICAgICB1c2VySWQ6IHpvZC5zdHJpbmcoKSwKICAgICAgY2F0ZWdvcnk6IHpvZC5zdHJpbmcoKSwKICAgICAgdGl0bGU6IHpvZC5zdHJpbmcoKSwKICAgICAgZGVzY3JpcHRpb246IHpvZC5zdHJpbmcoKSwKICAgICAgdGFnczogem9kLmFycmF5KHpvZC5zdHJpbmcoKSksCiAgICAgIGNvbG91clBhbGV0dGU6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgICBkbmFWZXJzaW9uOiB6b2QubnVtYmVyKCksCiAgICAgIGNyZWF0ZWRBdDogem9kLnN0cmluZygpLAogICAgfSksCiAgKSwKfSk7CgovKioKICogQHN1bW1hcnkgR2VuZXJhdGUgZnJlc2ggQUkgbWVyY2ggc3VnZ2VzdGlvbnMgYmFzZWQgb24gdGhlIHVzZXIncyBEZXNpZ24gRE5BCiAqLwpleHBvcnQgY29uc3QgR2VuZXJhdGVEZXNpZ25EbmFTdWdnZXN0aW9uc1Jlc3BvbnNlID0gem9kLm9iamVjdCh7CiAgc3VnZ2VzdGlvbnM6IHpvZC5hcnJheSgKICAgIHpvZC5vYmplY3QoewogICAgICBpZDogem9kLnN0cmluZygpLAogICAgICB1c2VySWQ6IHpvZC5zdHJpbmcoKSwKICAgICAgY2F0ZWdvcnk6IHpvZC5zdHJpbmcoKSwKICAgICAgdGl0bGU6IHpvZC5zdHJpbmcoKSwKICAgICAgZGVzY3JpcHRpb246IHpvZC5zdHJpbmcoKSwKICAgICAgdGFnczogem9kLmFycmF5KHpvZC5zdHJpbmcoKSksCiAgICAgIGNvbG91clBhbGV0dGU6IHpvZC5hcnJheSh6b2Quc3RyaW5nKCkpLAogICAgICBkbmFWZXJzaW9uOiB6b2QubnVtYmVyKCksCiAgICAgIGNyZWF0ZWRBdDogem9kLnN0cmluZygpLAogICAgfSksCiAgKSwKfSk7CgovKioKICogQHN1bW1hcnkgRXhjaGFuZ2UgYSBtb2JpbGUgT0lEQyBjb2RlIGZvciBhIHNlc3Npb24gdG9rZW4KICovCgpleHBvcnQgY29uc3QgRXhjaGFuZ2VNb2JpbGVBdXRob3JpemF0aW9uQ29kZUJvZHkgPSB6b2Qub2JqZWN0KHsKICBjb2RlOiB6b2Quc3RyaW5nKCkubWluKDEpLAogIGNvZGVfdmVyaWZpZXI6IHpvZC5zdHJpbmcoKS5taW4oMSksCiAgcmVkaXJlY3RfdXJpOiB6b2Quc3RyaW5nKCkudXJsKCkubWluKDEpLAogIHN0YXRlOiB6b2Quc3RyaW5nKCkubWluKDEpLAogIG5vbmNlOiB6b2Quc3RyaW5nKCkubWluKDEpLm9wdGlvbmFsKCksCn0pOwoKZXhwb3J0IGNvbnN0IEV4Y2hhbmdlTW9iaWxlQXV0aG9yaXphdGlvbkNvZGVSZXNwb25zZSA9IHpvZC5vYmplY3QoewogIHRva2VuOiB6b2Quc3RyaW5nKCksCn0pOwoKLyoqCiAqIEBzdW1tYXJ5IERlbGV0ZSBhIG1vYmlsZSBzZXNzaW9uIHRva2VuCiAqLwpleHBvcnQgY29uc3QgTG9nb3V0TW9iaWxlU2Vzc2lvbkhlYWRlciA9IHpvZC5vYmplY3QoewogIEF1dGhvcml6YXRpb246IHpvZC5zdHJpbmcoKS5vcHRpb25hbCgpLAp9KTsKCmV4cG9ydCBjb25zdCBMb2dvdXRNb2JpbGVTZXNzaW9uUmVzcG9uc2UgPSB6b2Qub2JqZWN0KHsKICBzdWNjZXNzOiB6b2QuYm9vbGVhbigpLAp9KTsK
+/**
+ * Generated by orval v8.5.3 🍺
+ * Do not edit manually.
+ * Api
+ * API specification
+ * OpenAPI spec version: 0.1.0
+ */
+import * as zod from "zod";
+
+/**
+ * Returns server health status
+ * @summary Health check
+ */
+export const HealthCheckResponse = zod.object({
+  status: zod.string(),
+});
+
+/**
+ * @summary Get the currently authenticated user
+ */
+export const GetCurrentAuthUserHeader = zod.object({
+  Authorization: zod.string().optional(),
+});
+
+export const GetCurrentAuthUserResponse = zod.object({
+  user: zod.union([
+    zod.object({
+      id: zod.string(),
+      email: zod.string().nullish(),
+      firstName: zod.string().nullish(),
+      lastName: zod.string().nullish(),
+      profileImageUrl: zod.string().nullish(),
+    }),
+    zod.null(),
+  ]),
+});
+
+/**
+ * @summary Start the browser OIDC login flow
+ */
+export const BeginBrowserLoginQueryParams = zod.object({
+  returnTo: zod.coerce
+    .string()
+    .optional()
+    .describe(
+      "Relative path to redirect to after login (must start with `\/`). Defaults to `\/`.",
+    ),
+});
+
+/**
+ * @summary Complete the browser OIDC login flow
+ */
+export const HandleBrowserLoginCallbackQueryParams = zod.object({
+  code: zod.coerce.string().optional(),
+  state: zod.coerce.string().optional(),
+  iss: zod.coerce.string().url().optional(),
+});
+
+/**
+ * @summary Clear the session and begin OIDC logout
+ */
+export const LogoutBrowserSessionHeader = zod.object({
+  Authorization: zod.string().optional(),
+});
+
+/**
+ * @summary Get the authenticated user's Design DNA profile
+ */
+export const GetDesignDnaProfileResponse = zod.object({
+  profile: zod.union([
+    zod.object({
+      id: zod.string(),
+      userId: zod.string(),
+      favouriteColours: zod.array(zod.string()),
+      musicGenres: zod.array(zod.string()),
+      styleVibes: zod.array(zod.string()),
+      designKeywords: zod.array(zod.string()),
+      purchaseHistory: zod.array(zod.object({}).passthrough()),
+      projectHistory: zod.array(zod.object({}).passthrough()),
+      rawNotes: zod.string().nullish(),
+      createdAt: zod.string(),
+      updatedAt: zod.string(),
+    }),
+    zod.null(),
+  ]),
+});
+
+/**
+ * @summary Create or update the authenticated user's Design DNA profile
+ */
+export const UpsertDesignDnaProfileBody = zod.object({
+  favouriteColours: zod.array(zod.string()).optional(),
+  musicGenres: zod.array(zod.string()).optional(),
+  styleVibes: zod.array(zod.string()).optional(),
+  designKeywords: zod.array(zod.string()).optional(),
+  rawNotes: zod.string().optional(),
+});
+
+export const UpsertDesignDnaProfileResponse = zod.object({
+  profile: zod.object({
+    id: zod.string(),
+    userId: zod.string(),
+    favouriteColours: zod.array(zod.string()),
+    musicGenres: zod.array(zod.string()),
+    styleVibes: zod.array(zod.string()),
+    designKeywords: zod.array(zod.string()),
+    purchaseHistory: zod.array(zod.object({}).passthrough()),
+    projectHistory: zod.array(zod.object({}).passthrough()),
+    rawNotes: zod.string().nullish(),
+    createdAt: zod.string(),
+    updatedAt: zod.string(),
+  }),
+});
+
+/**
+ * @summary Get AI-generated merch suggestions for the authenticated user
+ */
+export const GetDesignDnaSuggestionsResponse = zod.object({
+  suggestions: zod.array(
+    zod.object({
+      id: zod.string(),
+      userId: zod.string(),
+      category: zod.string(),
+      title: zod.string(),
+      description: zod.string(),
+      tags: zod.array(zod.string()),
+      colourPalette: zod.array(zod.string()),
+      dnaVersion: zod.number(),
+      createdAt: zod.string(),
+    }),
+  ),
+});
+
+/**
+ * @summary Generate fresh AI merch suggestions based on the user's Design DNA
+ */
+export const GenerateDesignDnaSuggestionsResponse = zod.object({
+  suggestions: zod.array(
+    zod.object({
+      id: zod.string(),
+      userId: zod.string(),
+      category: zod.string(),
+      title: zod.string(),
+      description: zod.string(),
+      tags: zod.array(zod.string()),
+      colourPalette: zod.array(zod.string()),
+      dnaVersion: zod.number(),
+      createdAt: zod.string(),
+    }),
+  ),
+});
+
+/**
+ * @summary Exchange a mobile OIDC code for a session token
+ */
+
+export const ExchangeMobileAuthorizationCodeBody = zod.object({
+  code: zod.string().min(1),
+  code_verifier: zod.string().min(1),
+  redirect_uri: zod.string().url().min(1),
+  state: zod.string().min(1),
+  nonce: zod.string().min(1).optional(),
+});
+
+export const ExchangeMobileAuthorizationCodeResponse = zod.object({
+  token: zod.string(),
+});
+
+/**
+ * @summary Delete a mobile session token
+ */
+export const LogoutMobileSessionHeader = zod.object({
+  Authorization: zod.string().optional(),
+});
+
+export const LogoutMobileSessionResponse = zod.object({
+  success: zod.boolean(),
+});

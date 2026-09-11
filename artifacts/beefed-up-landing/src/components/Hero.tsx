@@ -1,1 +1,130 @@
-aW1wb3J0IHsgdXNlUmVmLCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgbW90aW9uLCBBbmltYXRlUHJlc2VuY2UgfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgQ2hldnJvbkRvd24gfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgVGFwVG9TdGFydCBmcm9tICIuL1RhcFRvU3RhcnQiOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVybygpIHsKICBjb25zdCB2aWRlb1JlZiA9IHVzZVJlZjxIVE1MVmlkZW9FbGVtZW50PihudWxsKTsKICBjb25zdCBbc3RhcnRlZCwgc2V0U3RhcnRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7CgogIGNvbnN0IG11cmFsU3JjID0gYCR7aW1wb3J0Lm1ldGEuZW52LkJBU0VfVVJMfW11cmFsLm1wNGA7CgogIGNvbnN0IGhhbmRsZVRhcCA9ICgpID0+IHsKICAgIGlmIChzdGFydGVkKSByZXR1cm47CiAgICBzZXRTdGFydGVkKHRydWUpOwoKICAgIGNvbnN0IHYgPSB2aWRlb1JlZi5jdXJyZW50OwogICAgaWYgKCF2KSByZXR1cm47CgogICAgdHJ5IHsKICAgICAgdi5jdXJyZW50VGltZSA9IDA7CiAgICB9IGNhdGNoIHt9CiAgICB2Lm11dGVkID0gZmFsc2U7CiAgICB2LnZvbHVtZSA9IDE7CiAgICB2LnBsYXkoKS5jYXRjaCgoKSA9PiB7fSk7CiAgfTsKCiAgY29uc3QgdG9nZ2xlTXV0ZSA9ICgpID0+IHsKICAgIGNvbnN0IHYgPSB2aWRlb1JlZi5jdXJyZW50OwogICAgaWYgKCF2KSByZXR1cm47CiAgICB2Lm11dGVkID0gIXYubXV0ZWQ7CiAgfTsKCiAgcmV0dXJuICgKICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0icmVsYXRpdmUgdy1mdWxsIGgtWzEwMHN2aF0gYmctYmxhY2sgb3ZlcmZsb3ctaGlkZGVuIj4KICAgICAgPHZpZGVvCiAgICAgICAgcmVmPXt2aWRlb1JlZn0KICAgICAgICBzcmM9e211cmFsU3JjfQogICAgICAgIGxvb3AKICAgICAgICBwbGF5c0lubGluZQogICAgICAgIHByZWxvYWQ9ImF1dG8iCiAgICAgICAgb25DbGljaz17c3RhcnRlZCA/IHRvZ2dsZU11dGUgOiB1bmRlZmluZWR9CiAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIHctZnVsbCBoLWZ1bGwgb2JqZWN0LWNvbnRhaW4gbWQ6b2JqZWN0LWNvdmVyIGJnLWJsYWNrIgogICAgICAvPgoKICAgICAgPGRpdgogICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBwb2ludGVyLWV2ZW50cy1ub25lIgogICAgICAgIHN0eWxlPXt7CiAgICAgICAgICBiYWNrZ3JvdW5kOgogICAgICAgICAgICAibGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgcmdiYSgwLDAsMCwwLjU1KSAwJSwgdHJhbnNwYXJlbnQgMTglLCB0cmFuc3BhcmVudCA3OCUsIHJnYmEoMCwwLDAsMC44NSkgMTAwJSkiLAogICAgICAgIH19CiAgICAgIC8+CgogICAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICAgIHshc3RhcnRlZCAmJiA8VGFwVG9TdGFydCBvblRhcD17aGFuZGxlVGFwfSAvPn0KICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CgogICAgICA8QW5pbWF0ZVByZXNlbmNlPgogICAgICAgIHtzdGFydGVkICYmICgKICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkZWxheTogMS41LCBkdXJhdGlvbjogMSB9fQogICAgICAgICAgICBjbGFzc05hbWU9ImFic29sdXRlIGJvdHRvbS04IGxlZnQtMS8yIC10cmFuc2xhdGUteC0xLzIgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTIgei0xMCIKICAgICAgICAgID4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LVsxMHB4XSB1cHBlcmNhc2UgdHJhY2tpbmctWzAuM2VtXSB0ZXh0LXppbmMtNDAwIGZvbnQtYm9sZCI+CiAgICAgICAgICAgICAgU2Nyb2xsCiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPGEKICAgICAgICAgICAgICBocmVmPSIjYWJvdXQiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIGhvdmVyOnRleHQtb3JhbmdlLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyBhbmltYXRlLWJvdW5jZSIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxDaGV2cm9uRG93biBzaXplPXsyOH0gLz4KICAgICAgICAgICAgPC9hPgogICAgICAgICAgPC9tb3Rpb24uZGl2PgogICAgICAgICl9CiAgICAgIDwvQW5pbWF0ZVByZXNlbmNlPgogICAgPC9zZWN0aW9uPgogICk7Cn0K
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, Music2 } from "lucide-react";
+import TapToStart from "./TapToStart";
+
+const INTRO_SEEN_KEY = "bup-intro-seen";
+
+function hasSeenIntro() {
+  try {
+    return window.localStorage.getItem(INTRO_SEEN_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
+interface HeroProps {
+  onJumpToPlaylist: () => void;
+}
+
+export default function Hero({ onJumpToPlaylist }: HeroProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [returningVisitor] = useState(hasSeenIntro);
+  const [started, setStarted] = useState(returningVisitor);
+
+  const muralSrc = `${import.meta.env.BASE_URL}mural.mp4`;
+
+  useEffect(() => {
+    if (!returningVisitor) return;
+
+    // Returning visitors get the visual intro without another blocking tap.
+    // Keep it muted because browsers only allow autoplay in that state.
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    v.play().catch(() => {});
+  }, [returningVisitor]);
+
+  const handleTap = () => {
+    if (started) return;
+    setStarted(true);
+
+    try {
+      window.localStorage.setItem(INTRO_SEEN_KEY, "true");
+    } catch {}
+
+    const v = videoRef.current;
+    if (!v) return;
+
+    try {
+      v.currentTime = 0;
+    } catch {}
+    v.muted = false;
+    v.volume = 1;
+    v.play().catch(() => {});
+  };
+
+  const toggleMute = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = !v.muted;
+  };
+
+  return (
+    <section className="relative w-full h-[100svh] bg-black overflow-hidden">
+      <video
+        ref={videoRef}
+        src={muralSrc}
+        loop
+        playsInline
+        preload="auto"
+        onClick={started ? toggleMute : undefined}
+        className="absolute inset-0 w-full h-full object-contain md:object-cover bg-black"
+      />
+
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, transparent 18%, transparent 78%, rgba(0,0,0,0.85) 100%)",
+        }}
+      />
+
+      <AnimatePresence>
+        {!started && <TapToStart onTap={handleTap} />}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {returningVisitor && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ delay: 0.35, duration: 0.45 }}
+            className="absolute top-24 left-1/2 z-20 -translate-x-1/2 px-4 sm:top-28"
+          >
+            <button
+              type="button"
+              onClick={onJumpToPlaylist}
+              className="flex items-center gap-2 whitespace-nowrap border border-orange-400/60 bg-black/75 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.18em] text-orange-300 shadow-[0_0_24px_rgba(249,115,22,0.18)] backdrop-blur-md transition-colors hover:border-orange-300 hover:bg-orange-500 hover:text-black"
+            >
+              <Music2 size={14} />
+              Skip intro · Play playlist
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {started && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
+          >
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-400 font-bold">
+              Scroll
+            </span>
+            <a
+              href="#about"
+              className="text-zinc-400 hover:text-orange-400 transition-colors animate-bounce"
+            >
+              <ChevronDown size={28} />
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}

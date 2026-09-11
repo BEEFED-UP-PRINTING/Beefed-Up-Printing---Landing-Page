@@ -1,1 +1,87 @@
-aW1wb3J0ICogYXMgb2lkYyBmcm9tICJvcGVuaWQtY2xpZW50IjsKaW1wb3J0IHsgdHlwZSBSZXF1ZXN0LCB0eXBlIFJlc3BvbnNlLCB0eXBlIE5leHRGdW5jdGlvbiB9IGZyb20gImV4cHJlc3MiOwppbXBvcnQgdHlwZSB7IEF1dGhVc2VyIH0gZnJvbSAiQHdvcmtzcGFjZS9hcGktem9kIjsKaW1wb3J0IHsKICBjbGVhclNlc3Npb24sCiAgZ2V0T2lkY0NvbmZpZywKICBnZXRTZXNzaW9uSWQsCiAgZ2V0U2Vzc2lvbiwKICB1cGRhdGVTZXNzaW9uLAogIHR5cGUgU2Vzc2lvbkRhdGEsCn0gZnJvbSAiLi4vbGliL2F1dGgiOwoKZGVjbGFyZSBnbG9iYWwgewogIG5hbWVzcGFjZSBFeHByZXNzIHsKICAgIGludGVyZmFjZSBVc2VyIGV4dGVuZHMgQXV0aFVzZXIge30KCiAgICBpbnRlcmZhY2UgUmVxdWVzdCB7CiAgICAgIGlzQXV0aGVudGljYXRlZCgpOiB0aGlzIGlzIEF1dGhlZFJlcXVlc3Q7CgogICAgICB1c2VyPzogVXNlciB8IHVuZGVmaW5lZDsKICAgIH0KCiAgICBleHBvcnQgaW50ZXJmYWNlIEF1dGhlZFJlcXVlc3QgewogICAgICB1c2VyOiBVc2VyOwogICAgfQogIH0KfQoKYXN5bmMgZnVuY3Rpb24gcmVmcmVzaElmRXhwaXJlZCgKICBzaWQ6IHN0cmluZywKICBzZXNzaW9uOiBTZXNzaW9uRGF0YSwKKTogUHJvbWlzZTxTZXNzaW9uRGF0YSB8IG51bGw+IHsKICBjb25zdCBub3cgPSBNYXRoLmZsb29yKERhdGUubm93KCkgLyAxMDAwKTsKICBpZiAoIXNlc3Npb24uZXhwaXJlc19hdCB8fCBub3cgPD0gc2Vzc2lvbi5leHBpcmVzX2F0KSByZXR1cm4gc2Vzc2lvbjsKCiAgaWYgKCFzZXNzaW9uLnJlZnJlc2hfdG9rZW4pIHJldHVybiBudWxsOwoKICB0cnkgewogICAgY29uc3QgY29uZmlnID0gYXdhaXQgZ2V0T2lkY0NvbmZpZygpOwogICAgY29uc3QgdG9rZW5zID0gYXdhaXQgb2lkYy5yZWZyZXNoVG9rZW5HcmFudCgKICAgICAgY29uZmlnLAogICAgICBzZXNzaW9uLnJlZnJlc2hfdG9rZW4sCiAgICApOwogICAgc2Vzc2lvbi5hY2Nlc3NfdG9rZW4gPSB0b2tlbnMuYWNjZXNzX3Rva2VuOwogICAgc2Vzc2lvbi5yZWZyZXNoX3Rva2VuID0gdG9rZW5zLnJlZnJlc2hfdG9rZW4gPz8gc2Vzc2lvbi5yZWZyZXNoX3Rva2VuOwogICAgc2Vzc2lvbi5leHBpcmVzX2F0ID0gdG9rZW5zLmV4cGlyZXNJbigpCiAgICAgID8gbm93ICsgdG9rZW5zLmV4cGlyZXNJbigpIQogICAgICA6IHNlc3Npb24uZXhwaXJlc19hdDsKICAgIGF3YWl0IHVwZGF0ZVNlc3Npb24oc2lkLCBzZXNzaW9uKTsKICAgIHJldHVybiBzZXNzaW9uOwogIH0gY2F0Y2ggewogICAgcmV0dXJuIG51bGw7CiAgfQp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gYXV0aE1pZGRsZXdhcmUoCiAgcmVxOiBSZXF1ZXN0LAogIHJlczogUmVzcG9uc2UsCiAgbmV4dDogTmV4dEZ1bmN0aW9uLAopIHsKICByZXEuaXNBdXRoZW50aWNhdGVkID0gZnVuY3Rpb24gKHRoaXM6IFJlcXVlc3QpIHsKICAgIHJldHVybiB0aGlzLnVzZXIgIT0gbnVsbDsKICB9IGFzIFJlcXVlc3RbImlzQXV0aGVudGljYXRlZCJdOwoKICBjb25zdCBzaWQgPSBnZXRTZXNzaW9uSWQocmVxKTsKICBpZiAoIXNpZCkgewogICAgbmV4dCgpOwogICAgcmV0dXJuOwogIH0KCiAgY29uc3Qgc2Vzc2lvbiA9IGF3YWl0IGdldFNlc3Npb24oc2lkKTsKICBpZiAoIXNlc3Npb24/LnVzZXI/LmlkKSB7CiAgICBhd2FpdCBjbGVhclNlc3Npb24ocmVzLCBzaWQpOwogICAgbmV4dCgpOwogICAgcmV0dXJuOwogIH0KCiAgY29uc3QgcmVmcmVzaGVkID0gYXdhaXQgcmVmcmVzaElmRXhwaXJlZChzaWQsIHNlc3Npb24pOwogIGlmICghcmVmcmVzaGVkKSB7CiAgICBhd2FpdCBjbGVhclNlc3Npb24ocmVzLCBzaWQpOwogICAgbmV4dCgpOwogICAgcmV0dXJuOwogIH0KCiAgcmVxLnVzZXIgPSByZWZyZXNoZWQudXNlcjsKICBuZXh0KCk7Cn0K
+import * as oidc from "openid-client";
+import { type Request, type Response, type NextFunction } from "express";
+import type { AuthUser } from "@workspace/api-zod";
+import {
+  clearSession,
+  getOidcConfig,
+  getSessionId,
+  getSession,
+  updateSession,
+  type SessionData,
+} from "../lib/auth";
+
+declare global {
+  namespace Express {
+    interface User extends AuthUser {}
+
+    interface Request {
+      isAuthenticated(): this is AuthedRequest;
+
+      user?: User | undefined;
+    }
+
+    export interface AuthedRequest {
+      user: User;
+    }
+  }
+}
+
+async function refreshIfExpired(
+  sid: string,
+  session: SessionData,
+): Promise<SessionData | null> {
+  const now = Math.floor(Date.now() / 1000);
+  if (!session.expires_at || now <= session.expires_at) return session;
+
+  if (!session.refresh_token) return null;
+
+  try {
+    const config = await getOidcConfig();
+    const tokens = await oidc.refreshTokenGrant(
+      config,
+      session.refresh_token,
+    );
+    session.access_token = tokens.access_token;
+    session.refresh_token = tokens.refresh_token ?? session.refresh_token;
+    session.expires_at = tokens.expiresIn()
+      ? now + tokens.expiresIn()!
+      : session.expires_at;
+    await updateSession(sid, session);
+    return session;
+  } catch {
+    return null;
+  }
+}
+
+export async function authMiddleware(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) {
+  req.isAuthenticated = function (this: Request) {
+    return this.user != null;
+  } as Request["isAuthenticated"];
+
+  const sid = getSessionId(req);
+  if (!sid) {
+    next();
+    return;
+  }
+
+  const session = await getSession(sid);
+  if (!session?.user?.id) {
+    await clearSession(res, sid);
+    next();
+    return;
+  }
+
+  const refreshed = await refreshIfExpired(sid, session);
+  if (!refreshed) {
+    await clearSession(res, sid);
+    next();
+    return;
+  }
+
+  req.user = refreshed.user;
+  next();
+}

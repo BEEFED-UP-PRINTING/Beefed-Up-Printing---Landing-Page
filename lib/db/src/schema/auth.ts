@@ -1,1 +1,27 @@
-aW1wb3J0IHsgc3FsIH0gZnJvbSAiZHJpenpsZS1vcm0iOwppbXBvcnQgeyBpbmRleCwganNvbmIsIHBnVGFibGUsIHRpbWVzdGFtcCwgdmFyY2hhciB9IGZyb20gImRyaXp6bGUtb3JtL3BnLWNvcmUiOwoKLy8gKElNUE9SVEFOVCkgVGhpcyB0YWJsZSBpcyBtYW5kYXRvcnkgZm9yIFJlcGxpdCBBdXRoLCBkb24ndCBkcm9wIGl0LgpleHBvcnQgY29uc3Qgc2Vzc2lvbnNUYWJsZSA9IHBnVGFibGUoCiAgInNlc3Npb25zIiwKICB7CiAgICBzaWQ6IHZhcmNoYXIoInNpZCIpLnByaW1hcnlLZXkoKSwKICAgIHNlc3M6IGpzb25iKCJzZXNzIikubm90TnVsbCgpLAogICAgZXhwaXJlOiB0aW1lc3RhbXAoImV4cGlyZSIpLm5vdE51bGwoKSwKICB9LAogICh0YWJsZSkgPT4gW2luZGV4KCJJRFhfc2Vzc2lvbl9leHBpcmUiKS5vbih0YWJsZS5leHBpcmUpXSwKKTsKCi8vIChJTVBPUlRBTlQpIFRoaXMgdGFibGUgaXMgbWFuZGF0b3J5IGZvciBSZXBsaXQgQXV0aCwgZG9uJ3QgZHJvcCBpdC4KZXhwb3J0IGNvbnN0IHVzZXJzVGFibGUgPSBwZ1RhYmxlKCJ1c2VycyIsIHsKICBpZDogdmFyY2hhcigiaWQiKS5wcmltYXJ5S2V5KCkuZGVmYXVsdChzcWxgZ2VuX3JhbmRvbV91dWlkKClgKSwKICBlbWFpbDogdmFyY2hhcigiZW1haWwiKS51bmlxdWUoKSwKICBmaXJzdE5hbWU6IHZhcmNoYXIoImZpcnN0X25hbWUiKSwKICBsYXN0TmFtZTogdmFyY2hhcigibGFzdF9uYW1lIiksCiAgcHJvZmlsZUltYWdlVXJsOiB2YXJjaGFyKCJwcm9maWxlX2ltYWdlX3VybCIpLAogIGNyZWF0ZWRBdDogdGltZXN0YW1wKCJjcmVhdGVkX2F0IiwgeyB3aXRoVGltZXpvbmU6IHRydWUgfSkubm90TnVsbCgpLmRlZmF1bHROb3coKSwKICB1cGRhdGVkQXQ6IHRpbWVzdGFtcCgidXBkYXRlZF9hdCIsIHsgd2l0aFRpbWV6b25lOiB0cnVlIH0pLm5vdE51bGwoKS5kZWZhdWx0Tm93KCkuJG9uVXBkYXRlKCgpID0+IG5ldyBEYXRlKCkpLAp9KTsKCmV4cG9ydCB0eXBlIFVwc2VydFVzZXIgPSB0eXBlb2YgdXNlcnNUYWJsZS4kaW5mZXJJbnNlcnQ7CmV4cG9ydCB0eXBlIFVzZXIgPSB0eXBlb2YgdXNlcnNUYWJsZS4kaW5mZXJTZWxlY3Q7Cg==
+import { sql } from "drizzle-orm";
+import { index, jsonb, pgTable, timestamp, varchar } from "drizzle-orm/pg-core";
+
+// (IMPORTANT) This table is mandatory for Replit Auth, don't drop it.
+export const sessionsTable = pgTable(
+  "sessions",
+  {
+    sid: varchar("sid").primaryKey(),
+    sess: jsonb("sess").notNull(),
+    expire: timestamp("expire").notNull(),
+  },
+  (table) => [index("IDX_session_expire").on(table.expire)],
+);
+
+// (IMPORTANT) This table is mandatory for Replit Auth, don't drop it.
+export const usersTable = pgTable("users", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  email: varchar("email").unique(),
+  firstName: varchar("first_name"),
+  lastName: varchar("last_name"),
+  profileImageUrl: varchar("profile_image_url"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow().$onUpdate(() => new Date()),
+});
+
+export type UpsertUser = typeof usersTable.$inferInsert;
+export type User = typeof usersTable.$inferSelect;

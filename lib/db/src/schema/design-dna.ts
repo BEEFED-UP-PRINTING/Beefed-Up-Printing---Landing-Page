@@ -1,1 +1,50 @@
-aW1wb3J0IHsgc3FsIH0gZnJvbSAiZHJpenpsZS1vcm0iOwppbXBvcnQgeyBwZ1RhYmxlLCB2YXJjaGFyLCB0ZXh0LCBqc29uYiwgdGltZXN0YW1wLCBpbnRlZ2VyIH0gZnJvbSAiZHJpenpsZS1vcm0vcGctY29yZSI7CmltcG9ydCB7IHVzZXJzVGFibGUgfSBmcm9tICIuL2F1dGgiOwoKZXhwb3J0IGNvbnN0IGRlc2lnbkRuYVByb2ZpbGVzVGFibGUgPSBwZ1RhYmxlKCJkZXNpZ25fZG5hX3Byb2ZpbGVzIiwgewogIGlkOiB2YXJjaGFyKCJpZCIpLnByaW1hcnlLZXkoKS5kZWZhdWx0KHNxbGBnZW5fcmFuZG9tX3V1aWQoKWApLAogIHVzZXJJZDogdmFyY2hhcigidXNlcl9pZCIpLm5vdE51bGwoKS5yZWZlcmVuY2VzKCgpID0+IHVzZXJzVGFibGUuaWQsIHsgb25EZWxldGU6ICJjYXNjYWRlIiB9KS51bmlxdWUoKSwKICBmYXZvdXJpdGVDb2xvdXJzOiBqc29uYigiZmF2b3VyaXRlX2NvbG91cnMiKS4kdHlwZTxzdHJpbmdbXT4oKS5kZWZhdWx0KFtdKS5ub3ROdWxsKCksCiAgbXVzaWNHZW5yZXM6IGpzb25iKCJtdXNpY19nZW5yZXMiKS4kdHlwZTxzdHJpbmdbXT4oKS5kZWZhdWx0KFtdKS5ub3ROdWxsKCksCiAgc3R5bGVWaWJlczoganNvbmIoInN0eWxlX3ZpYmVzIikuJHR5cGU8c3RyaW5nW10+KCkuZGVmYXVsdChbXSkubm90TnVsbCgpLAogIGRlc2lnbktleXdvcmRzOiBqc29uYigiZGVzaWduX2tleXdvcmRzIikuJHR5cGU8c3RyaW5nW10+KCkuZGVmYXVsdChbXSkubm90TnVsbCgpLAogIHB1cmNoYXNlSGlzdG9yeToganNvbmIoInB1cmNoYXNlX2hpc3RvcnkiKS4kdHlwZTxQdXJjaGFzZVJlY29yZFtdPigpLmRlZmF1bHQoW10pLm5vdE51bGwoKSwKICBwcm9qZWN0SGlzdG9yeToganNvbmIoInByb2plY3RfaGlzdG9yeSIpLiR0eXBlPFByb2plY3RSZWNvcmRbXT4oKS5kZWZhdWx0KFtdKS5ub3ROdWxsKCksCiAgcmF3Tm90ZXM6IHRleHQoInJhd19ub3RlcyIpLAogIGNyZWF0ZWRBdDogdGltZXN0YW1wKCJjcmVhdGVkX2F0IiwgeyB3aXRoVGltZXpvbmU6IHRydWUgfSkubm90TnVsbCgpLmRlZmF1bHROb3coKSwKICB1cGRhdGVkQXQ6IHRpbWVzdGFtcCgidXBkYXRlZF9hdCIsIHsgd2l0aFRpbWV6b25lOiB0cnVlIH0pLm5vdE51bGwoKS5kZWZhdWx0Tm93KCkuJG9uVXBkYXRlKCgpID0+IG5ldyBEYXRlKCkpLAp9KTsKCmV4cG9ydCBjb25zdCBkZXNpZ25EbmFTdWdnZXN0aW9uc1RhYmxlID0gcGdUYWJsZSgiZGVzaWduX2RuYV9zdWdnZXN0aW9ucyIsIHsKICBpZDogdmFyY2hhcigiaWQiKS5wcmltYXJ5S2V5KCkuZGVmYXVsdChzcWxgZ2VuX3JhbmRvbV91dWlkKClgKSwKICB1c2VySWQ6IHZhcmNoYXIoInVzZXJfaWQiKS5ub3ROdWxsKCkucmVmZXJlbmNlcygoKSA9PiB1c2Vyc1RhYmxlLmlkLCB7IG9uRGVsZXRlOiAiY2FzY2FkZSIgfSksCiAgY2F0ZWdvcnk6IHZhcmNoYXIoImNhdGVnb3J5IiwgeyBsZW5ndGg6IDUwIH0pLm5vdE51bGwoKSwKICB0aXRsZTogdmFyY2hhcigidGl0bGUiLCB7IGxlbmd0aDogMjAwIH0pLm5vdE51bGwoKSwKICBkZXNjcmlwdGlvbjogdGV4dCgiZGVzY3JpcHRpb24iKS5ub3ROdWxsKCksCiAgdGFnczoganNvbmIoInRhZ3MiKS4kdHlwZTxzdHJpbmdbXT4oKS5kZWZhdWx0KFtdKS5ub3ROdWxsKCksCiAgY29sb3VyUGFsZXR0ZToganNvbmIoImNvbG91cl9wYWxldHRlIikuJHR5cGU8c3RyaW5nW10+KCkuZGVmYXVsdChbXSkubm90TnVsbCgpLAogIGRuYVZlcnNpb246IGludGVnZXIoImRuYV92ZXJzaW9uIikubm90TnVsbCgpLmRlZmF1bHQoMSksCiAgY3JlYXRlZEF0OiB0aW1lc3RhbXAoImNyZWF0ZWRfYXQiLCB7IHdpdGhUaW1lem9uZTogdHJ1ZSB9KS5ub3ROdWxsKCkuZGVmYXVsdE5vdygpLAp9KTsKCmV4cG9ydCBpbnRlcmZhY2UgUHVyY2hhc2VSZWNvcmQgewogIGl0ZW06IHN0cmluZzsKICBjYXRlZ29yeTogc3RyaW5nOwogIGRhdGU6IHN0cmluZzsKICBjb2xvdXJzPzogc3RyaW5nW107Cn0KCmV4cG9ydCBpbnRlcmZhY2UgUHJvamVjdFJlY29yZCB7CiAgbmFtZTogc3RyaW5nOwogIHR5cGU6IHN0cmluZzsKICBkYXRlOiBzdHJpbmc7CiAgZGVzY3JpcHRpb24/OiBzdHJpbmc7CiAgY29sb3Vycz86IHN0cmluZ1tdOwogIHRhZ3M/OiBzdHJpbmdbXTsKfQoKZXhwb3J0IHR5cGUgRGVzaWduRG5hUHJvZmlsZSA9IHR5cGVvZiBkZXNpZ25EbmFQcm9maWxlc1RhYmxlLiRpbmZlclNlbGVjdDsKZXhwb3J0IHR5cGUgSW5zZXJ0RGVzaWduRG5hUHJvZmlsZSA9IHR5cGVvZiBkZXNpZ25EbmFQcm9maWxlc1RhYmxlLiRpbmZlckluc2VydDsKZXhwb3J0IHR5cGUgRGVzaWduRG5hU3VnZ2VzdGlvbiA9IHR5cGVvZiBkZXNpZ25EbmFTdWdnZXN0aW9uc1RhYmxlLiRpbmZlclNlbGVjdDsKZXhwb3J0IHR5cGUgSW5zZXJ0RGVzaWduRG5hU3VnZ2VzdGlvbiA9IHR5cGVvZiBkZXNpZ25EbmFTdWdnZXN0aW9uc1RhYmxlLiRpbmZlckluc2VydDsK
+import { sql } from "drizzle-orm";
+import { pgTable, varchar, text, jsonb, timestamp, integer } from "drizzle-orm/pg-core";
+import { usersTable } from "./auth";
+
+export const designDnaProfilesTable = pgTable("design_dna_profiles", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  userId: varchar("user_id").notNull().references(() => usersTable.id, { onDelete: "cascade" }).unique(),
+  favouriteColours: jsonb("favourite_colours").$type<string[]>().default([]).notNull(),
+  musicGenres: jsonb("music_genres").$type<string[]>().default([]).notNull(),
+  styleVibes: jsonb("style_vibes").$type<string[]>().default([]).notNull(),
+  designKeywords: jsonb("design_keywords").$type<string[]>().default([]).notNull(),
+  purchaseHistory: jsonb("purchase_history").$type<PurchaseRecord[]>().default([]).notNull(),
+  projectHistory: jsonb("project_history").$type<ProjectRecord[]>().default([]).notNull(),
+  rawNotes: text("raw_notes"),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow().$onUpdate(() => new Date()),
+});
+
+export const designDnaSuggestionsTable = pgTable("design_dna_suggestions", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  userId: varchar("user_id").notNull().references(() => usersTable.id, { onDelete: "cascade" }),
+  category: varchar("category", { length: 50 }).notNull(),
+  title: varchar("title", { length: 200 }).notNull(),
+  description: text("description").notNull(),
+  tags: jsonb("tags").$type<string[]>().default([]).notNull(),
+  colourPalette: jsonb("colour_palette").$type<string[]>().default([]).notNull(),
+  dnaVersion: integer("dna_version").notNull().default(1),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export interface PurchaseRecord {
+  item: string;
+  category: string;
+  date: string;
+  colours?: string[];
+}
+
+export interface ProjectRecord {
+  name: string;
+  type: string;
+  date: string;
+  description?: string;
+  colours?: string[];
+  tags?: string[];
+}
+
+export type DesignDnaProfile = typeof designDnaProfilesTable.$inferSelect;
+export type InsertDesignDnaProfile = typeof designDnaProfilesTable.$inferInsert;
+export type DesignDnaSuggestion = typeof designDnaSuggestionsTable.$inferSelect;
+export type InsertDesignDnaSuggestion = typeof designDnaSuggestionsTable.$inferInsert;

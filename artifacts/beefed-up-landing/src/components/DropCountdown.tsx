@@ -1,1 +1,161 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IEJlbGwsIENoZWNrQ2lyY2xlMiB9IGZyb20gImx1Y2lkZS1yZWFjdCI7Cgpjb25zdCBEUk9QX0RBVEUgPSBuZXcgRGF0ZSgiMjAyNi0wOC0wMVQwMDowMDowMCswMjowMCIpOyAvLyBCVVAgVm9sLiAxIERyb3AgRGF0ZQoKZnVuY3Rpb24gZ2V0VGltZUxlZnQodGFyZ2V0OiBEYXRlKSB7CiAgY29uc3QgZGlmZiA9IHRhcmdldC5nZXRUaW1lKCkgLSBEYXRlLm5vdygpOwogIGlmIChkaWZmIDw9IDApIHJldHVybiB7IGRheXM6IDAsIGhvdXJzOiAwLCBtaW51dGVzOiAwLCBzZWNvbmRzOiAwIH07CiAgcmV0dXJuIHsKICAgIGRheXM6IE1hdGguZmxvb3IoZGlmZiAvIDEwMDAgLyA2MCAvIDYwIC8gMjQpLAogICAgaG91cnM6IE1hdGguZmxvb3IoKGRpZmYgLyAxMDAwIC8gNjAgLyA2MCkgJSAyNCksCiAgICBtaW51dGVzOiBNYXRoLmZsb29yKChkaWZmIC8gMTAwMCAvIDYwKSAlIDYwKSwKICAgIHNlY29uZHM6IE1hdGguZmxvb3IoKGRpZmYgLyAxMDAwKSAlIDYwKSwKICB9Owp9CgpmdW5jdGlvbiBEaWdpdCh7IHZhbHVlLCBsYWJlbCB9OiB7IHZhbHVlOiBudW1iZXI7IGxhYmVsOiBzdHJpbmcgfSkgewogIGNvbnN0IGRpc3BsYXkgPSBTdHJpbmcodmFsdWUpLnBhZFN0YXJ0KDIsICIwIik7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciI+CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9InctMTYgc206dy0yMCBtZDp3LTI0IGgtMTYgc206aC0yMCBtZDpoLTI0IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGJvcmRlciBib3JkZXItemluYy04MDAgYmctemluYy05NTAgcmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIgogICAgICAgIHN0eWxlPXt7IGJveFNoYWRvdzogImluc2V0IDAgMCAyMHB4IHJnYmEoMjQ5LDExNSwyMiwwLjA1KSIgfX0KICAgICAgPgogICAgICAgIDxzcGFuCiAgICAgICAgICBrZXk9e2Rpc3BsYXl9CiAgICAgICAgICBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LWJsYWNrIHRleHQtM3hsIHNtOnRleHQtNHhsIG1kOnRleHQtNXhsIHRleHQtd2hpdGUgdGFidWxhci1udW1zIgogICAgICAgICAgc3R5bGU9e3sgdGV4dFNoYWRvdzogIjAgMCAxNnB4IHJnYmEoMjQ5LDExNSwyMiwwLjUpIiB9fQogICAgICAgID4KICAgICAgICAgIHtkaXNwbGF5fQogICAgICAgIDwvc3Bhbj4KICAgICAgICB7LyogU2NhbmxpbmUgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LXgtMCB0b3AtMS8yIGgtcHggYmctemluYy04MDAvNjAgcG9pbnRlci1ldmVudHMtbm9uZSIgLz4KICAgICAgPC9kaXY+CiAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC16aW5jLTYwMCB0ZXh0LVsxMHB4XSBmb250LXNhbnMgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCBtdC0yIj57bGFiZWx9PC9zcGFuPgogICAgPC9kaXY+CiAgKTsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRHJvcENvdW50ZG93bigpIHsKICBjb25zdCBbdGltZSwgc2V0VGltZV0gPSB1c2VTdGF0ZShnZXRUaW1lTGVmdChEUk9QX0RBVEUpKTsKICBjb25zdCBbZW1haWwsIHNldEVtYWlsXSA9IHVzZVN0YXRlKCIiKTsKICBjb25zdCBbc3VibWl0dGVkLCBzZXRTdWJtaXR0ZWRdID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtzdWJtaXR0aW5nLCBzZXRTdWJtaXR0aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbZXJyb3IsIHNldEVycm9yXSA9IHVzZVN0YXRlKCIiKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IHQgPSBzZXRJbnRlcnZhbCgoKSA9PiBzZXRUaW1lKGdldFRpbWVMZWZ0KERST1BfREFURSkpLCAxMDAwKTsKICAgIHJldHVybiAoKSA9PiBjbGVhckludGVydmFsKHQpOwogIH0sIFtdKTsKCiAgYXN5bmMgZnVuY3Rpb24gaGFuZGxlTm90aWZ5KGU6IFJlYWN0LkZvcm1FdmVudCkgewogICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgaWYgKCFlbWFpbC50cmltKCkpIHJldHVybjsKICAgIHNldFN1Ym1pdHRpbmcodHJ1ZSk7CiAgICBzZXRFcnJvcigiIik7CiAgICB0cnkgewogICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCgiL2FwaS9kcm9wcy9ub3RpZnkiLCB7CiAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgaGVhZGVyczogeyAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24iIH0sCiAgICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBlbWFpbDogZW1haWwudHJpbSgpIH0pLAogICAgICB9KTsKICAgICAgaWYgKHJlcy5vaykgewogICAgICAgIHNldFN1Ym1pdHRlZCh0cnVlKTsKICAgICAgfSBlbHNlIHsKICAgICAgICBzZXRFcnJvcigiU29tZXRoaW5nIHdlbnQgd3JvbmcuIFRyeSBhZ2Fpbi4iKTsKICAgICAgfQogICAgfSBjYXRjaCB7CiAgICAgIHNldEVycm9yKCJTb21ldGhpbmcgd2VudCB3cm9uZy4gVHJ5IGFnYWluLiIpOwogICAgfQogICAgc2V0U3VibWl0dGluZyhmYWxzZSk7CiAgfQoKICByZXR1cm4gKAogICAgPHNlY3Rpb24KICAgICAgaWQ9Im5leHQtZHJvcCIKICAgICAgY2xhc3NOYW1lPSJweS0yNCBweC00IHNtOnB4LTYgcmVsYXRpdmUgb3ZlcmZsb3ctaGlkZGVuIGJvcmRlci10IGJvcmRlci16aW5jLTkwMCIKICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogInJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IDUwJSAxMDAlLCByZ2JhKDI0OSwxMTUsMjIsMC4wNikgMCUsIHRyYW5zcGFyZW50IDcwJSkiIH19CiAgICA+CiAgICAgIHsvKiBCYWNrZ3JvdW5kIHRleHQgKi99CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZm9udC1kaXNwbGF5IGZvbnQtYmxhY2sgdGV4dC1bMTIwcHhdIHNtOnRleHQtWzE4MHB4XSBtZDp0ZXh0LVsyMjBweF0gdGV4dC16aW5jLTkwMC8zMCBzZWxlY3Qtbm9uZSBwb2ludGVyLWV2ZW50cy1ub25lIGxlYWRpbmctbm9uZSIKICAgICAgICBhcmlhLWhpZGRlbgogICAgICA+CiAgICAgICAgRFJPUAogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy00eGwgbXgtYXV0byByZWxhdGl2ZSB6LTEwIj4KICAgICAgICB7LyogSGVhZGVyICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciBtYi0xMiI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0yIGJvcmRlciBib3JkZXItcHJpbWFyeS8zMCBiZy1wcmltYXJ5LzUgcHgtNCBweS0xLjUgbWItNiI+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idy0xLjUgaC0xLjUgcm91bmRlZC1mdWxsIGJnLXByaW1hcnkgYW5pbWF0ZS1wdWxzZSIgLz4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkgdGV4dC1bMTFweF0gZm9udC1zYW5zIHRyYWNraW5nLVswLjI1ZW1dIHVwcGVyY2FzZSBmb250LWJvbGQiPkluY29taW5nPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1ibGFjayB0ZXh0LTR4bCBzbTp0ZXh0LTV4bCBtZDp0ZXh0LTZ4bCB1cHBlcmNhc2UgdGV4dC13aGl0ZSBsZWFkaW5nLW5vbmUgbWItNCI+CiAgICAgICAgICAgIEJVUCBWb2wuPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkiPjE8L3NwYW4+CiAgICAgICAgICA8L2gyPgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIGZvbnQtc2FucyB0ZXh0LXNtIG1heC13LW1kIG14LWF1dG8iPgogICAgICAgICAgICBBIGxpbWl0ZWQgY29sbGFiIGRyb3AuIFN0cmVldCBjdWx0dXJlLCBwcmludGVkIHByb3Blci4gQmUgZmlyc3Qg4oCUIHNpZ24gdXAgdG8gZ2V0IG5vdGlmaWVkIHRoZSBtb21lbnQgaXQgZHJvcHMuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CgogICAgICAgIHsvKiBDb3VudGRvd24gKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0zIHNtOmdhcC00IG1iLTE0Ij4KICAgICAgICAgIDxEaWdpdCB2YWx1ZT17dGltZS5kYXlzfSBsYWJlbD0iRGF5cyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYmxhY2sgdGV4dC0zeGwgdGV4dC1wcmltYXJ5IHBiLTYiPjo8L3NwYW4+CiAgICAgICAgICA8RGlnaXQgdmFsdWU9e3RpbWUuaG91cnN9IGxhYmVsPSJIb3VycyIgLz4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYmxhY2sgdGV4dC0zeGwgdGV4dC1wcmltYXJ5IHBiLTYiPjo8L3NwYW4+CiAgICAgICAgICA8RGlnaXQgdmFsdWU9e3RpbWUubWludXRlc30gbGFiZWw9Ik1pbnMiIC8+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LWJsYWNrIHRleHQtM3hsIHRleHQtcHJpbWFyeSBwYi02Ij46PC9zcGFuPgogICAgICAgICAgPERpZ2l0IHZhbHVlPXt0aW1lLnNlY29uZHN9IGxhYmVsPSJTZWNzIiAvPgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogRW1haWwgbm90aWZ5IGZvcm0gKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LW1kIG14LWF1dG8iPgogICAgICAgICAge3N1Ym1pdHRlZCA/ICgKICAgICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAsIHNjYWxlOiAwLjk1IH19CiAgICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCBzY2FsZTogMSB9fQogICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIgZ2FwLTMgdGV4dC1jZW50ZXIgYm9yZGVyIGJvcmRlci1wcmltYXJ5LzMwIGJnLXByaW1hcnkvNSBweC02IHB5LTYiCiAgICAgICAgICAgICAgc3R5bGU9e3sgYm94U2hhZG93OiAiMCAwIDI0cHggcmdiYSgyNDksMTE1LDIyLDAuMSkiIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8Q2hlY2tDaXJjbGUyIHNpemU9ezI4fSBjbGFzc05hbWU9InRleHQtcHJpbWFyeSIgLz4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LWJvbGQgdGV4dC13aGl0ZSB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHRleHQtc20iPgogICAgICAgICAgICAgICAgWW91J3JlIG9uIHRoZSBsaXN0CiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCB0ZXh0LXhzIGZvbnQtc2FucyI+CiAgICAgICAgICAgICAgICBXZSdsbCBoaXQgeW91IHVwIHRoZSBtb21lbnQgQlVQIFZvbC4xIGRyb3BzLiBTdGF5IHR1bmVkLgogICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgPC9tb3Rpb24uZGl2PgogICAgICAgICAgKSA6ICgKICAgICAgICAgICAgPGZvcm0gb25TdWJtaXQ9e2hhbmRsZU5vdGlmeX0gY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIHNtOmZsZXgtcm93IGdhcC0zIj4KICAgICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICAgIHR5cGU9ImVtYWlsIgogICAgICAgICAgICAgICAgcmVxdWlyZWQKICAgICAgICAgICAgICAgIHZhbHVlPXtlbWFpbH0KICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0RW1haWwoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9InlvdXJAZW1haWwuY29tIgogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4LTEgYmctemluYy05NTAgYm9yZGVyIGJvcmRlci16aW5jLTgwMCBweC00IHB5LTMgdGV4dC13aGl0ZSBwbGFjZWhvbGRlci16aW5jLTYwMCB0ZXh0LXNtIGZvbnQtc2FucyBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICB0eXBlPSJzdWJtaXQiCiAgICAgICAgICAgICAgICBkaXNhYmxlZD17c3VibWl0dGluZ30KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgYmctcHJpbWFyeSB0ZXh0LWJsYWNrIGZvbnQtZGlzcGxheSBmb250LWJvbGQgdGV4dC14cyB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHB4LTcgcHktMyBob3ZlcjpiZy1vcmFuZ2UtNDAwIHRyYW5zaXRpb24tY29sb3JzIGRpc2FibGVkOm9wYWNpdHktNTAgc2hyaW5rLTAiCiAgICAgICAgICAgICAgICBzdHlsZT17eyBib3hTaGFkb3c6ICIwIDAgMjBweCByZ2JhKDI0OSwxMTUsMjIsMC4zKSIgfX0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8QmVsbCBzaXplPXsxNH0gLz4KICAgICAgICAgICAgICAgIHtzdWJtaXR0aW5nID8gIlNhdmluZy4uLiIgOiAiTm90aWZ5IE1lIn0KICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgPC9mb3JtPgogICAgICAgICAgKX0KICAgICAgICAgIHtlcnJvciAmJiA8cCBjbGFzc05hbWU9InRleHQtcmVkLTQwMCB0ZXh0LXhzIGZvbnQtc2FucyBtdC0yIHRleHQtY2VudGVyIj57ZXJyb3J9PC9wPn0KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTcwMCB0ZXh0LVsxMHB4XSBmb250LXNhbnMgdGV4dC1jZW50ZXIgbXQtMyB0cmFja2luZy13aWRlIHVwcGVyY2FzZSI+CiAgICAgICAgICAgIE5vIHNwYW0uIEp1c3QgdGhlIGRyb3Agbm90aWZpY2F0aW9uLiBVbnN1YnNjcmliZSBhbnl0aW1lLgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cg==
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Bell, CheckCircle2 } from "lucide-react";
+
+const DROP_DATE = new Date("2026-08-01T00:00:00+02:00"); // BUP Vol. 1 Drop Date
+
+function getTimeLeft(target: Date) {
+  const diff = target.getTime() - Date.now();
+  if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  return {
+    days: Math.floor(diff / 1000 / 60 / 60 / 24),
+    hours: Math.floor((diff / 1000 / 60 / 60) % 24),
+    minutes: Math.floor((diff / 1000 / 60) % 60),
+    seconds: Math.floor((diff / 1000) % 60),
+  };
+}
+
+function Digit({ value, label }: { value: number; label: string }) {
+  const display = String(value).padStart(2, "0");
+  return (
+    <div className="flex flex-col items-center">
+      <div
+        className="w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 flex items-center justify-center border border-zinc-800 bg-zinc-950 relative overflow-hidden"
+        style={{ boxShadow: "inset 0 0 20px rgba(249,115,22,0.05)" }}
+      >
+        <span
+          key={display}
+          className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-white tabular-nums"
+          style={{ textShadow: "0 0 16px rgba(249,115,22,0.5)" }}
+        >
+          {display}
+        </span>
+        {/* Scanline */}
+        <div className="absolute inset-x-0 top-1/2 h-px bg-zinc-800/60 pointer-events-none" />
+      </div>
+      <span className="text-zinc-600 text-[10px] font-sans uppercase tracking-widest mt-2">{label}</span>
+    </div>
+  );
+}
+
+export default function DropCountdown() {
+  const [time, setTime] = useState(getTimeLeft(DROP_DATE));
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const t = setInterval(() => setTime(getTimeLeft(DROP_DATE)), 1000);
+    return () => clearInterval(t);
+  }, []);
+
+  async function handleNotify(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email.trim()) return;
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/drops/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Try again.");
+      }
+    } catch {
+      setError("Something went wrong. Try again.");
+    }
+    setSubmitting(false);
+  }
+
+  return (
+    <section
+      id="next-drop"
+      className="py-24 px-4 sm:px-6 relative overflow-hidden border-t border-zinc-900"
+      style={{ background: "radial-gradient(ellipse at 50% 100%, rgba(249,115,22,0.06) 0%, transparent 70%)" }}
+    >
+      {/* Background text */}
+      <div
+        className="absolute inset-0 flex items-center justify-center font-display font-black text-[120px] sm:text-[180px] md:text-[220px] text-zinc-900/30 select-none pointer-events-none leading-none"
+        aria-hidden
+      >
+        DROP
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 px-4 py-1.5 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+            <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
+          </div>
+          <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none mb-4">
+            BUP Vol.<span className="text-primary">1</span>
+          </h2>
+          <p className="text-zinc-400 font-sans text-sm max-w-md mx-auto">
+            A limited collab drop. Street culture, printed proper. Be first — sign up to get notified the moment it drops.
+          </p>
+        </div>
+
+        {/* Countdown */}
+        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-14">
+          <Digit value={time.days} label="Days" />
+          <span className="font-display font-black text-3xl text-primary pb-6">:</span>
+          <Digit value={time.hours} label="Hours" />
+          <span className="font-display font-black text-3xl text-primary pb-6">:</span>
+          <Digit value={time.minutes} label="Mins" />
+          <span className="font-display font-black text-3xl text-primary pb-6">:</span>
+          <Digit value={time.seconds} label="Secs" />
+        </div>
+
+        {/* Email notify form */}
+        <div className="max-w-md mx-auto">
+          {submitted ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="flex flex-col items-center gap-3 text-center border border-primary/30 bg-primary/5 px-6 py-6"
+              style={{ boxShadow: "0 0 24px rgba(249,115,22,0.1)" }}
+            >
+              <CheckCircle2 size={28} className="text-primary" />
+              <p className="font-display font-bold text-white tracking-widest uppercase text-sm">
+                You're on the list
+              </p>
+              <p className="text-zinc-500 text-xs font-sans">
+                We'll hit you up the moment BUP Vol.1 drops. Stay tuned.
+              </p>
+            </motion.div>
+          ) : (
+            <form onSubmit={handleNotify} className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                className="flex-1 bg-zinc-950 border border-zinc-800 px-4 py-3 text-white placeholder-zinc-600 text-sm font-sans focus:outline-none focus:border-primary transition-colors"
+              />
+              <button
+                type="submit"
+                disabled={submitting}
+                className="flex items-center justify-center gap-2 bg-primary text-black font-display font-bold text-xs tracking-widest uppercase px-7 py-3 hover:bg-orange-400 transition-colors disabled:opacity-50 shrink-0"
+                style={{ boxShadow: "0 0 20px rgba(249,115,22,0.3)" }}
+              >
+                <Bell size={14} />
+                {submitting ? "Saving..." : "Notify Me"}
+              </button>
+            </form>
+          )}
+          {error && <p className="text-red-400 text-xs font-sans mt-2 text-center">{error}</p>}
+          <p className="text-zinc-700 text-[10px] font-sans text-center mt-3 tracking-wide uppercase">
+            No spam. Just the drop notification. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

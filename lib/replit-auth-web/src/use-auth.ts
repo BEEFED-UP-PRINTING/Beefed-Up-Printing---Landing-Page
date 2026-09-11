@@ -1,1 +1,60 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlQ2FsbGJhY2sgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB0eXBlIHsgQXV0aFVzZXIgfSBmcm9tICJAd29ya3NwYWNlL2FwaS1jbGllbnQtcmVhY3QiOwoKZXhwb3J0IHR5cGUgeyBBdXRoVXNlciB9OwoKaW50ZXJmYWNlIEF1dGhTdGF0ZSB7CiAgdXNlcjogQXV0aFVzZXIgfCBudWxsOwogIGlzTG9hZGluZzogYm9vbGVhbjsKICBpc0F1dGhlbnRpY2F0ZWQ6IGJvb2xlYW47CiAgbG9naW46ICgpID0+IHZvaWQ7CiAgbG9nb3V0OiAoKSA9PiB2b2lkOwp9CgpleHBvcnQgZnVuY3Rpb24gdXNlQXV0aCgpOiBBdXRoU3RhdGUgewogIGNvbnN0IFt1c2VyLCBzZXRVc2VyXSA9IHVzZVN0YXRlPEF1dGhVc2VyIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW2lzTG9hZGluZywgc2V0SXNMb2FkaW5nXSA9IHVzZVN0YXRlKHRydWUpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgbGV0IGNhbmNlbGxlZCA9IGZhbHNlOwoKICAgIGZldGNoKCIvYXBpL2F1dGgvdXNlciIsIHsgY3JlZGVudGlhbHM6ICJpbmNsdWRlIiB9KQogICAgICAudGhlbigocmVzKSA9PiB7CiAgICAgICAgaWYgKCFyZXMub2spIHRocm93IG5ldyBFcnJvcihgSFRUUCAke3Jlcy5zdGF0dXN9YCk7CiAgICAgICAgcmV0dXJuIHJlcy5qc29uKCkgYXMgUHJvbWlzZTx7IHVzZXI6IEF1dGhVc2VyIHwgbnVsbCB9PjsKICAgICAgfSkKICAgICAgLnRoZW4oKGRhdGEpID0+IHsKICAgICAgICBpZiAoIWNhbmNlbGxlZCkgewogICAgICAgICAgc2V0VXNlcihkYXRhLnVzZXIgPz8gbnVsbCk7CiAgICAgICAgICBzZXRJc0xvYWRpbmcoZmFsc2UpOwogICAgICAgIH0KICAgICAgfSkKICAgICAgLmNhdGNoKCgpID0+IHsKICAgICAgICBpZiAoIWNhbmNlbGxlZCkgewogICAgICAgICAgc2V0VXNlcihudWxsKTsKICAgICAgICAgIHNldElzTG9hZGluZyhmYWxzZSk7CiAgICAgICAgfQogICAgICB9KTsKCiAgICByZXR1cm4gKCkgPT4gewogICAgICBjYW5jZWxsZWQgPSB0cnVlOwogICAgfTsKICB9LCBbXSk7CgogIGNvbnN0IGxvZ2luID0gdXNlQ2FsbGJhY2soKCkgPT4gewogICAgY29uc3QgYmFzZSA9IGltcG9ydC5tZXRhLmVudi5CQVNFX1VSTC5yZXBsYWNlKC9cLyskLywgIiIpIHx8ICIvIjsKICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gYC9hcGkvbG9naW4/cmV0dXJuVG89JHtlbmNvZGVVUklDb21wb25lbnQoYmFzZSl9YDsKICB9LCBbXSk7CgogIGNvbnN0IGxvZ291dCA9IHVzZUNhbGxiYWNrKCgpID0+IHsKICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gIi9hcGkvbG9nb3V0IjsKICB9LCBbXSk7CgogIHJldHVybiB7CiAgICB1c2VyLAogICAgaXNMb2FkaW5nLAogICAgaXNBdXRoZW50aWNhdGVkOiAhIXVzZXIsCiAgICBsb2dpbiwKICAgIGxvZ291dCwKICB9Owp9Cg==
+import { useState, useEffect, useCallback } from "react";
+import type { AuthUser } from "@workspace/api-client-react";
+
+export type { AuthUser };
+
+interface AuthState {
+  user: AuthUser | null;
+  isLoading: boolean;
+  isAuthenticated: boolean;
+  login: () => void;
+  logout: () => void;
+}
+
+export function useAuth(): AuthState {
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch("/api/auth/user", { credentials: "include" })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json() as Promise<{ user: AuthUser | null }>;
+      })
+      .then((data) => {
+        if (!cancelled) {
+          setUser(data.user ?? null);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setUser(null);
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const login = useCallback(() => {
+    const base = import.meta.env.BASE_URL.replace(/\/+$/, "") || "/";
+    window.location.href = `/api/login?returnTo=${encodeURIComponent(base)}`;
+  }, []);
+
+  const logout = useCallback(() => {
+    window.location.href = "/api/logout";
+  }, []);
+
+  return {
+    user,
+    isLoading,
+    isAuthenticated: !!user,
+    login,
+    logout,
+  };
+}

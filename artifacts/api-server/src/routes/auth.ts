@@ -1,1 +1,270 @@
-aW1wb3J0ICogYXMgb2lkYyBmcm9tICJvcGVuaWQtY2xpZW50IjsKaW1wb3J0IHsgUm91dGVyLCB0eXBlIElSb3V0ZXIsIHR5cGUgUmVxdWVzdCwgdHlwZSBSZXNwb25zZSB9IGZyb20gImV4cHJlc3MiOwppbXBvcnQgewogIEdldEN1cnJlbnRBdXRoVXNlclJlc3BvbnNlLAogIEV4Y2hhbmdlTW9iaWxlQXV0aG9yaXphdGlvbkNvZGVCb2R5LAogIEV4Y2hhbmdlTW9iaWxlQXV0aG9yaXphdGlvbkNvZGVSZXNwb25zZSwKICBMb2dvdXRNb2JpbGVTZXNzaW9uUmVzcG9uc2UsCn0gZnJvbSAiQHdvcmtzcGFjZS9hcGktem9kIjsKaW1wb3J0IHsgZGIsIHVzZXJzVGFibGUgfSBmcm9tICJAd29ya3NwYWNlL2RiIjsKaW1wb3J0IHsKICBjbGVhclNlc3Npb24sCiAgZ2V0T2lkY0NvbmZpZywKICBnZXRTZXNzaW9uSWQsCiAgY3JlYXRlU2Vzc2lvbiwKICBkZWxldGVTZXNzaW9uLAogIFNFU1NJT05fQ09PS0lFLAogIFNFU1NJT05fVFRMLAogIElTU1VFUl9VUkwsCiAgdHlwZSBTZXNzaW9uRGF0YSwKfSBmcm9tICIuLi9saWIvYXV0aCI7Cgpjb25zdCBPSURDX0NPT0tJRV9UVEwgPSAxMCAqIDYwICogMTAwMDsKCmNvbnN0IHJvdXRlcjogSVJvdXRlciA9IFJvdXRlcigpOwoKZnVuY3Rpb24gZ2V0T3JpZ2luKHJlcTogUmVxdWVzdCk6IHN0cmluZyB7CiAgY29uc3QgcHJvdG8gPSByZXEuaGVhZGVyc1sieC1mb3J3YXJkZWQtcHJvdG8iXSB8fCAiaHR0cHMiOwogIGNvbnN0IGhvc3QgPQogICAgcmVxLmhlYWRlcnNbIngtZm9yd2FyZGVkLWhvc3QiXSB8fCByZXEuaGVhZGVyc1siaG9zdCJdIHx8ICJsb2NhbGhvc3QiOwogIHJldHVybiBgJHtwcm90b306Ly8ke2hvc3R9YDsKfQoKZnVuY3Rpb24gc2V0U2Vzc2lvbkNvb2tpZShyZXM6IFJlc3BvbnNlLCBzaWQ6IHN0cmluZykgewogIHJlcy5jb29raWUoU0VTU0lPTl9DT09LSUUsIHNpZCwgewogICAgaHR0cE9ubHk6IHRydWUsCiAgICBzZWN1cmU6IHRydWUsCiAgICBzYW1lU2l0ZTogImxheCIsCiAgICBwYXRoOiAiLyIsCiAgICBtYXhBZ2U6IFNFU1NJT05fVFRMLAogIH0pOwp9CgpmdW5jdGlvbiBzZXRPaWRjQ29va2llKHJlczogUmVzcG9uc2UsIG5hbWU6IHN0cmluZywgdmFsdWU6IHN0cmluZykgewogIHJlcy5jb29raWUobmFtZSwgdmFsdWUsIHsKICAgIGh0dHBPbmx5OiB0cnVlLAogICAgc2VjdXJlOiB0cnVlLAogICAgc2FtZVNpdGU6ICJsYXgiLAogICAgcGF0aDogIi8iLAogICAgbWF4QWdlOiBPSURDX0NPT0tJRV9UVEwsCiAgfSk7Cn0KCmZ1bmN0aW9uIGdldFNhZmVSZXR1cm5Ubyh2YWx1ZTogdW5rbm93bik6IHN0cmluZyB7CiAgaWYgKHR5cGVvZiB2YWx1ZSAhPT0gInN0cmluZyIgfHwgIXZhbHVlLnN0YXJ0c1dpdGgoIi8iKSB8fCB2YWx1ZS5zdGFydHNXaXRoKCIvLyIpKSB7CiAgICByZXR1cm4gIi8iOwogIH0KICByZXR1cm4gdmFsdWU7Cn0KCmFzeW5jIGZ1bmN0aW9uIHVwc2VydFVzZXIoY2xhaW1zOiBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPikgewogIGNvbnN0IHVzZXJEYXRhID0gewogICAgaWQ6IGNsYWltcy5zdWIgYXMgc3RyaW5nLAogICAgZW1haWw6IChjbGFpbXMuZW1haWwgYXMgc3RyaW5nKSB8fCBudWxsLAogICAgZmlyc3ROYW1lOiAoY2xhaW1zLmZpcnN0X25hbWUgYXMgc3RyaW5nKSB8fCBudWxsLAogICAgbGFzdE5hbWU6IChjbGFpbXMubGFzdF9uYW1lIGFzIHN0cmluZykgfHwgbnVsbCwKICAgIHByb2ZpbGVJbWFnZVVybDogKGNsYWltcy5wcm9maWxlX2ltYWdlX3VybCB8fCBjbGFpbXMucGljdHVyZSkgYXMKICAgICAgfCBzdHJpbmcKICAgICAgfCBudWxsLAogIH07CgogIGNvbnN0IFt1c2VyXSA9IGF3YWl0IGRiCiAgICAuaW5zZXJ0KHVzZXJzVGFibGUpCiAgICAudmFsdWVzKHVzZXJEYXRhKQogICAgLm9uQ29uZmxpY3REb1VwZGF0ZSh7CiAgICAgIHRhcmdldDogdXNlcnNUYWJsZS5pZCwKICAgICAgc2V0OiB7CiAgICAgICAgLi4udXNlckRhdGEsCiAgICAgICAgdXBkYXRlZEF0OiBuZXcgRGF0ZSgpLAogICAgICB9LAogICAgfSkKICAgIC5yZXR1cm5pbmcoKTsKICByZXR1cm4gdXNlcjsKfQoKcm91dGVyLmdldCgiL2F1dGgvdXNlciIsIChyZXE6IFJlcXVlc3QsIHJlczogUmVzcG9uc2UpID0+IHsKICByZXMuanNvbigKICAgIEdldEN1cnJlbnRBdXRoVXNlclJlc3BvbnNlLnBhcnNlKHsKICAgICAgdXNlcjogcmVxLmlzQXV0aGVudGljYXRlZCgpID8gcmVxLnVzZXIgOiBudWxsLAogICAgfSksCiAgKTsKfSk7Cgpyb3V0ZXIuZ2V0KCIvbG9naW4iLCBhc3luYyAocmVxOiBSZXF1ZXN0LCByZXM6IFJlc3BvbnNlKSA9PiB7CiAgY29uc3QgY29uZmlnID0gYXdhaXQgZ2V0T2lkY0NvbmZpZygpOwogIGNvbnN0IGNhbGxiYWNrVXJsID0gYCR7Z2V0T3JpZ2luKHJlcSl9L2FwaS9jYWxsYmFja2A7CgogIGNvbnN0IHJldHVyblRvID0gZ2V0U2FmZVJldHVyblRvKHJlcS5xdWVyeS5yZXR1cm5Ubyk7CgogIGNvbnN0IHN0YXRlID0gb2lkYy5yYW5kb21TdGF0ZSgpOwogIGNvbnN0IG5vbmNlID0gb2lkYy5yYW5kb21Ob25jZSgpOwogIGNvbnN0IGNvZGVWZXJpZmllciA9IG9pZGMucmFuZG9tUEtDRUNvZGVWZXJpZmllcigpOwogIGNvbnN0IGNvZGVDaGFsbGVuZ2UgPSBhd2FpdCBvaWRjLmNhbGN1bGF0ZVBLQ0VDb2RlQ2hhbGxlbmdlKGNvZGVWZXJpZmllcik7CgogIGNvbnN0IHJlZGlyZWN0VG8gPSBvaWRjLmJ1aWxkQXV0aG9yaXphdGlvblVybChjb25maWcsIHsKICAgIHJlZGlyZWN0X3VyaTogY2FsbGJhY2tVcmwsCiAgICBzY29wZTogIm9wZW5pZCBlbWFpbCBwcm9maWxlIG9mZmxpbmVfYWNjZXNzIiwKICAgIGNvZGVfY2hhbGxlbmdlOiBjb2RlQ2hhbGxlbmdlLAogICAgY29kZV9jaGFsbGVuZ2VfbWV0aG9kOiAiUzI1NiIsCiAgICBwcm9tcHQ6ICJsb2dpbiBjb25zZW50IiwKICAgIHN0YXRlLAogICAgbm9uY2UsCiAgfSk7CgogIHNldE9pZGNDb29raWUocmVzLCAiY29kZV92ZXJpZmllciIsIGNvZGVWZXJpZmllcik7CiAgc2V0T2lkY0Nvb2tpZShyZXMsICJub25jZSIsIG5vbmNlKTsKICBzZXRPaWRjQ29va2llKHJlcywgInN0YXRlIiwgc3RhdGUpOwogIHNldE9pZGNDb29raWUocmVzLCAicmV0dXJuX3RvIiwgcmV0dXJuVG8pOwoKICByZXMucmVkaXJlY3QocmVkaXJlY3RUby5ocmVmKTsKfSk7Cgpyb3V0ZXIuZ2V0KCIvY2FsbGJhY2siLCBhc3luYyAocmVxOiBSZXF1ZXN0LCByZXM6IFJlc3BvbnNlKSA9PiB7CiAgY29uc3QgY29uZmlnID0gYXdhaXQgZ2V0T2lkY0NvbmZpZygpOwogIGNvbnN0IGNhbGxiYWNrVXJsID0gYCR7Z2V0T3JpZ2luKHJlcSl9L2FwaS9jYWxsYmFja2A7CgogIGNvbnN0IGNvZGVWZXJpZmllciA9IHJlcS5jb29raWVzPy5jb2RlX3ZlcmlmaWVyOwogIGNvbnN0IG5vbmNlID0gcmVxLmNvb2tpZXM/Lm5vbmNlOwogIGNvbnN0IGV4cGVjdGVkU3RhdGUgPSByZXEuY29va2llcz8uc3RhdGU7CgogIGlmICghY29kZVZlcmlmaWVyIHx8ICFleHBlY3RlZFN0YXRlKSB7CiAgICByZXMucmVkaXJlY3QoIi9hcGkvbG9naW4iKTsKICAgIHJldHVybjsKICB9CgogIGNvbnN0IGN1cnJlbnRVcmwgPSBuZXcgVVJMKAogICAgYCR7Y2FsbGJhY2tVcmx9PyR7bmV3IFVSTChyZXEudXJsLCBgaHR0cDovLyR7cmVxLmhlYWRlcnMuaG9zdH1gKS5zZWFyY2hQYXJhbXN9YCwKICApOwoKICBsZXQgdG9rZW5zOiBvaWRjLlRva2VuRW5kcG9pbnRSZXNwb25zZSAmIG9pZGMuVG9rZW5FbmRwb2ludFJlc3BvbnNlSGVscGVyczsKICB0cnkgewogICAgdG9rZW5zID0gYXdhaXQgb2lkYy5hdXRob3JpemF0aW9uQ29kZUdyYW50KGNvbmZpZywgY3VycmVudFVybCwgewogICAgICBwa2NlQ29kZVZlcmlmaWVyOiBjb2RlVmVyaWZpZXIsCiAgICAgIGV4cGVjdGVkTm9uY2U6IG5vbmNlLAogICAgICBleHBlY3RlZFN0YXRlLAogICAgICBpZFRva2VuRXhwZWN0ZWQ6IHRydWUsCiAgICB9KTsKICB9IGNhdGNoIHsKICAgIHJlcy5yZWRpcmVjdCgiL2FwaS9sb2dpbiIpOwogICAgcmV0dXJuOwogIH0KCiAgY29uc3QgcmV0dXJuVG8gPSBnZXRTYWZlUmV0dXJuVG8ocmVxLmNvb2tpZXM/LnJldHVybl90byk7CgogIHJlcy5jbGVhckNvb2tpZSgiY29kZV92ZXJpZmllciIsIHsgcGF0aDogIi8iIH0pOwogIHJlcy5jbGVhckNvb2tpZSgibm9uY2UiLCB7IHBhdGg6ICIvIiB9KTsKICByZXMuY2xlYXJDb29raWUoInN0YXRlIiwgeyBwYXRoOiAiLyIgfSk7CiAgcmVzLmNsZWFyQ29va2llKCJyZXR1cm5fdG8iLCB7IHBhdGg6ICIvIiB9KTsKCiAgY29uc3QgY2xhaW1zID0gdG9rZW5zLmNsYWltcygpOwogIGlmICghY2xhaW1zKSB7CiAgICByZXMucmVkaXJlY3QoIi9hcGkvbG9naW4iKTsKICAgIHJldHVybjsKICB9CgogIGNvbnN0IGRiVXNlciA9IGF3YWl0IHVwc2VydFVzZXIoCiAgICBjbGFpbXMgYXMgdW5rbm93biBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPiwKICApOwoKICBjb25zdCBub3cgPSBNYXRoLmZsb29yKERhdGUubm93KCkgLyAxMDAwKTsKICBjb25zdCBzZXNzaW9uRGF0YTogU2Vzc2lvbkRhdGEgPSB7CiAgICB1c2VyOiB7CiAgICAgIGlkOiBkYlVzZXIuaWQsCiAgICAgIGVtYWlsOiBkYlVzZXIuZW1haWwsCiAgICAgIGZpcnN0TmFtZTogZGJVc2VyLmZpcnN0TmFtZSwKICAgICAgbGFzdE5hbWU6IGRiVXNlci5sYXN0TmFtZSwKICAgICAgcHJvZmlsZUltYWdlVXJsOiBkYlVzZXIucHJvZmlsZUltYWdlVXJsLAogICAgfSwKICAgIGFjY2Vzc190b2tlbjogdG9rZW5zLmFjY2Vzc190b2tlbiwKICAgIHJlZnJlc2hfdG9rZW46IHRva2Vucy5yZWZyZXNoX3Rva2VuLAogICAgZXhwaXJlc19hdDogdG9rZW5zLmV4cGlyZXNJbigpID8gbm93ICsgdG9rZW5zLmV4cGlyZXNJbigpISA6IGNsYWltcy5leHAsCiAgfTsKCiAgY29uc3Qgc2lkID0gYXdhaXQgY3JlYXRlU2Vzc2lvbihzZXNzaW9uRGF0YSk7CiAgc2V0U2Vzc2lvbkNvb2tpZShyZXMsIHNpZCk7CiAgcmVzLnJlZGlyZWN0KHJldHVyblRvKTsKfSk7Cgpyb3V0ZXIuZ2V0KCIvbG9nb3V0IiwgYXN5bmMgKHJlcTogUmVxdWVzdCwgcmVzOiBSZXNwb25zZSkgPT4gewogIGNvbnN0IGNvbmZpZyA9IGF3YWl0IGdldE9pZGNDb25maWcoKTsKICBjb25zdCBvcmlnaW4gPSBnZXRPcmlnaW4ocmVxKTsKCiAgY29uc3Qgc2lkID0gZ2V0U2Vzc2lvbklkKHJlcSk7CiAgYXdhaXQgY2xlYXJTZXNzaW9uKHJlcywgc2lkKTsKCiAgY29uc3QgZW5kU2Vzc2lvblVybCA9IG9pZGMuYnVpbGRFbmRTZXNzaW9uVXJsKGNvbmZpZywgewogICAgY2xpZW50X2lkOiBwcm9jZXNzLmVudi5SRVBMX0lEISwKICAgIHBvc3RfbG9nb3V0X3JlZGlyZWN0X3VyaTogb3JpZ2luLAogIH0pOwoKICByZXMucmVkaXJlY3QoZW5kU2Vzc2lvblVybC5ocmVmKTsKfSk7Cgpyb3V0ZXIucG9zdCgKICAiL21vYmlsZS1hdXRoL3Rva2VuLWV4Y2hhbmdlIiwKICBhc3luYyAocmVxOiBSZXF1ZXN0LCByZXM6IFJlc3BvbnNlKSA9PiB7CiAgICBjb25zdCBwYXJzZWQgPSBFeGNoYW5nZU1vYmlsZUF1dGhvcml6YXRpb25Db2RlQm9keS5zYWZlUGFyc2UocmVxLmJvZHkpOwogICAgaWYgKCFwYXJzZWQuc3VjY2VzcykgewogICAgICByZXMuc3RhdHVzKDQwMCkuanNvbih7IGVycm9yOiAiTWlzc2luZyBvciBpbnZhbGlkIHJlcXVpcmVkIHBhcmFtZXRlcnMiIH0pOwogICAgICByZXR1cm47CiAgICB9CgogICAgY29uc3QgeyBjb2RlLCBjb2RlX3ZlcmlmaWVyLCByZWRpcmVjdF91cmksIHN0YXRlLCBub25jZSB9ID0gcGFyc2VkLmRhdGE7CgogICAgdHJ5IHsKICAgICAgY29uc3QgY29uZmlnID0gYXdhaXQgZ2V0T2lkY0NvbmZpZygpOwoKICAgICAgY29uc3QgY2FsbGJhY2tVcmwgPSBuZXcgVVJMKHJlZGlyZWN0X3VyaSk7CiAgICAgIGNhbGxiYWNrVXJsLnNlYXJjaFBhcmFtcy5zZXQoImNvZGUiLCBjb2RlKTsKICAgICAgY2FsbGJhY2tVcmwuc2VhcmNoUGFyYW1zLnNldCgic3RhdGUiLCBzdGF0ZSk7CiAgICAgIGNhbGxiYWNrVXJsLnNlYXJjaFBhcmFtcy5zZXQoImlzcyIsIElTU1VFUl9VUkwpOwoKICAgICAgY29uc3QgdG9rZW5zID0gYXdhaXQgb2lkYy5hdXRob3JpemF0aW9uQ29kZUdyYW50KGNvbmZpZywgY2FsbGJhY2tVcmwsIHsKICAgICAgICBwa2NlQ29kZVZlcmlmaWVyOiBjb2RlX3ZlcmlmaWVyLAogICAgICAgIGV4cGVjdGVkTm9uY2U6IG5vbmNlID8/IHVuZGVmaW5lZCwKICAgICAgICBleHBlY3RlZFN0YXRlOiBzdGF0ZSwKICAgICAgICBpZFRva2VuRXhwZWN0ZWQ6IHRydWUsCiAgICAgIH0pOwoKICAgICAgY29uc3QgY2xhaW1zID0gdG9rZW5zLmNsYWltcygpOwogICAgICBpZiAoIWNsYWltcykgewogICAgICAgIHJlcy5zdGF0dXMoNDAxKS5qc29uKHsgZXJyb3I6ICJObyBjbGFpbXMgaW4gSUQgdG9rZW4iIH0pOwogICAgICAgIHJldHVybjsKICAgICAgfQoKICAgICAgY29uc3QgZGJVc2VyID0gYXdhaXQgdXBzZXJ0VXNlcigKICAgICAgICBjbGFpbXMgYXMgdW5rbm93biBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPiwKICAgICAgKTsKCiAgICAgIGNvbnN0IG5vdyA9IE1hdGguZmxvb3IoRGF0ZS5ub3coKSAvIDEwMDApOwogICAgICBjb25zdCBzZXNzaW9uRGF0YTogU2Vzc2lvbkRhdGEgPSB7CiAgICAgICAgdXNlcjogewogICAgICAgICAgaWQ6IGRiVXNlci5pZCwKICAgICAgICAgIGVtYWlsOiBkYlVzZXIuZW1haWwsCiAgICAgICAgICBmaXJzdE5hbWU6IGRiVXNlci5maXJzdE5hbWUsCiAgICAgICAgICBsYXN0TmFtZTogZGJVc2VyLmxhc3ROYW1lLAogICAgICAgICAgcHJvZmlsZUltYWdlVXJsOiBkYlVzZXIucHJvZmlsZUltYWdlVXJsLAogICAgICAgIH0sCiAgICAgICAgYWNjZXNzX3Rva2VuOiB0b2tlbnMuYWNjZXNzX3Rva2VuLAogICAgICAgIHJlZnJlc2hfdG9rZW46IHRva2Vucy5yZWZyZXNoX3Rva2VuLAogICAgICAgIGV4cGlyZXNfYXQ6IHRva2Vucy5leHBpcmVzSW4oKSA/IG5vdyArIHRva2Vucy5leHBpcmVzSW4oKSEgOiBjbGFpbXMuZXhwLAogICAgICB9OwoKICAgICAgY29uc3Qgc2lkID0gYXdhaXQgY3JlYXRlU2Vzc2lvbihzZXNzaW9uRGF0YSk7CiAgICAgIHJlcy5qc29uKEV4Y2hhbmdlTW9iaWxlQXV0aG9yaXphdGlvbkNvZGVSZXNwb25zZS5wYXJzZSh7IHRva2VuOiBzaWQgfSkpOwogICAgfSBjYXRjaCAoZXJyKSB7CiAgICAgIHJlcS5sb2cuZXJyb3IoeyBlcnIgfSwgIk1vYmlsZSB0b2tlbiBleGNoYW5nZSBlcnJvciIpOwogICAgICByZXMuc3RhdHVzKDUwMCkuanNvbih7IGVycm9yOiAiVG9rZW4gZXhjaGFuZ2UgZmFpbGVkIiB9KTsKICAgIH0KICB9LAopOwoKcm91dGVyLnBvc3QoIi9tb2JpbGUtYXV0aC9sb2dvdXQiLCBhc3luYyAocmVxOiBSZXF1ZXN0LCByZXM6IFJlc3BvbnNlKSA9PiB7CiAgY29uc3Qgc2lkID0gZ2V0U2Vzc2lvbklkKHJlcSk7CiAgaWYgKHNpZCkgewogICAgYXdhaXQgZGVsZXRlU2Vzc2lvbihzaWQpOwogIH0KICByZXMuanNvbihMb2dvdXRNb2JpbGVTZXNzaW9uUmVzcG9uc2UucGFyc2UoeyBzdWNjZXNzOiB0cnVlIH0pKTsKfSk7CgpleHBvcnQgZGVmYXVsdCByb3V0ZXI7Cg==
+import * as oidc from "openid-client";
+import { Router, type IRouter, type Request, type Response } from "express";
+import {
+  GetCurrentAuthUserResponse,
+  ExchangeMobileAuthorizationCodeBody,
+  ExchangeMobileAuthorizationCodeResponse,
+  LogoutMobileSessionResponse,
+} from "@workspace/api-zod";
+import { db, usersTable } from "@workspace/db";
+import {
+  clearSession,
+  getOidcConfig,
+  getSessionId,
+  createSession,
+  deleteSession,
+  SESSION_COOKIE,
+  SESSION_TTL,
+  ISSUER_URL,
+  type SessionData,
+} from "../lib/auth";
+
+const OIDC_COOKIE_TTL = 10 * 60 * 1000;
+
+const router: IRouter = Router();
+
+function getOrigin(req: Request): string {
+  const proto = req.headers["x-forwarded-proto"] || "https";
+  const host =
+    req.headers["x-forwarded-host"] || req.headers["host"] || "localhost";
+  return `${proto}://${host}`;
+}
+
+function setSessionCookie(res: Response, sid: string) {
+  res.cookie(SESSION_COOKIE, sid, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+    maxAge: SESSION_TTL,
+  });
+}
+
+function setOidcCookie(res: Response, name: string, value: string) {
+  res.cookie(name, value, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+    maxAge: OIDC_COOKIE_TTL,
+  });
+}
+
+function getSafeReturnTo(value: unknown): string {
+  if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) {
+    return "/";
+  }
+  return value;
+}
+
+async function upsertUser(claims: Record<string, unknown>) {
+  const userData = {
+    id: claims.sub as string,
+    email: (claims.email as string) || null,
+    firstName: (claims.first_name as string) || null,
+    lastName: (claims.last_name as string) || null,
+    profileImageUrl: (claims.profile_image_url || claims.picture) as
+      | string
+      | null,
+  };
+
+  const [user] = await db
+    .insert(usersTable)
+    .values(userData)
+    .onConflictDoUpdate({
+      target: usersTable.id,
+      set: {
+        ...userData,
+        updatedAt: new Date(),
+      },
+    })
+    .returning();
+  return user;
+}
+
+router.get("/auth/user", (req: Request, res: Response) => {
+  res.json(
+    GetCurrentAuthUserResponse.parse({
+      user: req.isAuthenticated() ? req.user : null,
+    }),
+  );
+});
+
+router.get("/login", async (req: Request, res: Response) => {
+  const config = await getOidcConfig();
+  const callbackUrl = `${getOrigin(req)}/api/callback`;
+
+  const returnTo = getSafeReturnTo(req.query.returnTo);
+
+  const state = oidc.randomState();
+  const nonce = oidc.randomNonce();
+  const codeVerifier = oidc.randomPKCECodeVerifier();
+  const codeChallenge = await oidc.calculatePKCECodeChallenge(codeVerifier);
+
+  const redirectTo = oidc.buildAuthorizationUrl(config, {
+    redirect_uri: callbackUrl,
+    scope: "openid email profile offline_access",
+    code_challenge: codeChallenge,
+    code_challenge_method: "S256",
+    prompt: "login consent",
+    state,
+    nonce,
+  });
+
+  setOidcCookie(res, "code_verifier", codeVerifier);
+  setOidcCookie(res, "nonce", nonce);
+  setOidcCookie(res, "state", state);
+  setOidcCookie(res, "return_to", returnTo);
+
+  res.redirect(redirectTo.href);
+});
+
+router.get("/callback", async (req: Request, res: Response) => {
+  const config = await getOidcConfig();
+  const callbackUrl = `${getOrigin(req)}/api/callback`;
+
+  const codeVerifier = req.cookies?.code_verifier;
+  const nonce = req.cookies?.nonce;
+  const expectedState = req.cookies?.state;
+
+  if (!codeVerifier || !expectedState) {
+    res.redirect("/api/login");
+    return;
+  }
+
+  const currentUrl = new URL(
+    `${callbackUrl}?${new URL(req.url, `http://${req.headers.host}`).searchParams}`,
+  );
+
+  let tokens: oidc.TokenEndpointResponse & oidc.TokenEndpointResponseHelpers;
+  try {
+    tokens = await oidc.authorizationCodeGrant(config, currentUrl, {
+      pkceCodeVerifier: codeVerifier,
+      expectedNonce: nonce,
+      expectedState,
+      idTokenExpected: true,
+    });
+  } catch {
+    res.redirect("/api/login");
+    return;
+  }
+
+  const returnTo = getSafeReturnTo(req.cookies?.return_to);
+
+  res.clearCookie("code_verifier", { path: "/" });
+  res.clearCookie("nonce", { path: "/" });
+  res.clearCookie("state", { path: "/" });
+  res.clearCookie("return_to", { path: "/" });
+
+  const claims = tokens.claims();
+  if (!claims) {
+    res.redirect("/api/login");
+    return;
+  }
+
+  const dbUser = await upsertUser(
+    claims as unknown as Record<string, unknown>,
+  );
+
+  const now = Math.floor(Date.now() / 1000);
+  const sessionData: SessionData = {
+    user: {
+      id: dbUser.id,
+      email: dbUser.email,
+      firstName: dbUser.firstName,
+      lastName: dbUser.lastName,
+      profileImageUrl: dbUser.profileImageUrl,
+    },
+    access_token: tokens.access_token,
+    refresh_token: tokens.refresh_token,
+    expires_at: tokens.expiresIn() ? now + tokens.expiresIn()! : claims.exp,
+  };
+
+  const sid = await createSession(sessionData);
+  setSessionCookie(res, sid);
+  res.redirect(returnTo);
+});
+
+router.get("/logout", async (req: Request, res: Response) => {
+  const config = await getOidcConfig();
+  const origin = getOrigin(req);
+
+  const sid = getSessionId(req);
+  await clearSession(res, sid);
+
+  const endSessionUrl = oidc.buildEndSessionUrl(config, {
+    client_id: process.env.REPL_ID!,
+    post_logout_redirect_uri: origin,
+  });
+
+  res.redirect(endSessionUrl.href);
+});
+
+router.post(
+  "/mobile-auth/token-exchange",
+  async (req: Request, res: Response) => {
+    const parsed = ExchangeMobileAuthorizationCodeBody.safeParse(req.body);
+    if (!parsed.success) {
+      res.status(400).json({ error: "Missing or invalid required parameters" });
+      return;
+    }
+
+    const { code, code_verifier, redirect_uri, state, nonce } = parsed.data;
+
+    try {
+      const config = await getOidcConfig();
+
+      const callbackUrl = new URL(redirect_uri);
+      callbackUrl.searchParams.set("code", code);
+      callbackUrl.searchParams.set("state", state);
+      callbackUrl.searchParams.set("iss", ISSUER_URL);
+
+      const tokens = await oidc.authorizationCodeGrant(config, callbackUrl, {
+        pkceCodeVerifier: code_verifier,
+        expectedNonce: nonce ?? undefined,
+        expectedState: state,
+        idTokenExpected: true,
+      });
+
+      const claims = tokens.claims();
+      if (!claims) {
+        res.status(401).json({ error: "No claims in ID token" });
+        return;
+      }
+
+      const dbUser = await upsertUser(
+        claims as unknown as Record<string, unknown>,
+      );
+
+      const now = Math.floor(Date.now() / 1000);
+      const sessionData: SessionData = {
+        user: {
+          id: dbUser.id,
+          email: dbUser.email,
+          firstName: dbUser.firstName,
+          lastName: dbUser.lastName,
+          profileImageUrl: dbUser.profileImageUrl,
+        },
+        access_token: tokens.access_token,
+        refresh_token: tokens.refresh_token,
+        expires_at: tokens.expiresIn() ? now + tokens.expiresIn()! : claims.exp,
+      };
+
+      const sid = await createSession(sessionData);
+      res.json(ExchangeMobileAuthorizationCodeResponse.parse({ token: sid }));
+    } catch (err) {
+      req.log.error({ err }, "Mobile token exchange error");
+      res.status(500).json({ error: "Token exchange failed" });
+    }
+  },
+);
+
+router.post("/mobile-auth/logout", async (req: Request, res: Response) => {
+  const sid = getSessionId(req);
+  if (sid) {
+    await deleteSession(sid);
+  }
+  res.json(LogoutMobileSessionResponse.parse({ success: true }));
+});
+
+export default router;

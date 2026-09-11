@@ -1,1 +1,268 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCwgdXNlQ2FsbGJhY2sgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IG1vdGlvbiwgQW5pbWF0ZVByZXNlbmNlIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFgsIERuYSwgTWVzc2FnZUNpcmNsZSwgQ2hlY2ssIENvcHkgfSBmcm9tICJsdWNpZGUtcmVhY3QiOwppbXBvcnQgeyB1c2VBdXRoIH0gZnJvbSAiQHdvcmtzcGFjZS9yZXBsaXQtYXV0aC13ZWIiOwppbXBvcnQgRGVzaWduRE5BT25ib2FyZGluZyBmcm9tICIuL0Rlc2lnbkROQU9uYm9hcmRpbmciOwppbXBvcnQgRGVzaWduRE5BQ2FyZCBmcm9tICIuL0Rlc2lnbkROQUNhcmQiOwppbXBvcnQgRGVzaWduRE5BU3VnZ2VzdGlvbnMgZnJvbSAiLi9EZXNpZ25ETkFTdWdnZXN0aW9ucyI7CgppbnRlcmZhY2UgUHJvZmlsZSB7CiAgaWQ6IHN0cmluZzsKICB1c2VySWQ6IHN0cmluZzsKICBmYXZvdXJpdGVDb2xvdXJzOiBzdHJpbmdbXTsKICBtdXNpY0dlbnJlczogc3RyaW5nW107CiAgc3R5bGVWaWJlczogc3RyaW5nW107CiAgZGVzaWduS2V5d29yZHM6IHN0cmluZ1tdOwogIHB1cmNoYXNlSGlzdG9yeTogb2JqZWN0W107CiAgcHJvamVjdEhpc3Rvcnk6IG9iamVjdFtdOwogIHJhd05vdGVzPzogc3RyaW5nIHwgbnVsbDsKICBjcmVhdGVkQXQ6IHN0cmluZzsKICB1cGRhdGVkQXQ6IHN0cmluZzsKfQoKaW50ZXJmYWNlIFN1Z2dlc3Rpb24gewogIGlkOiBzdHJpbmc7CiAgdXNlcklkOiBzdHJpbmc7CiAgY2F0ZWdvcnk6IHN0cmluZzsKICB0aXRsZTogc3RyaW5nOwogIGRlc2NyaXB0aW9uOiBzdHJpbmc7CiAgdGFnczogc3RyaW5nW107CiAgY29sb3VyUGFsZXR0ZTogc3RyaW5nW107CiAgZG5hVmVyc2lvbjogbnVtYmVyOwogIGNyZWF0ZWRBdDogc3RyaW5nOwp9CgppbnRlcmZhY2UgUHJvcHMgewogIG9uQ2xvc2U6ICgpID0+IHZvaWQ7CiAgb25PcGVuTWFnZ2llPzogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRGVzaWduRE5BUGFuZWwoeyBvbkNsb3NlLCBvbk9wZW5NYWdnaWUgfTogUHJvcHMpIHsKICBjb25zdCB7IHVzZXIsIGlzQXV0aGVudGljYXRlZCwgbG9naW4gfSA9IHVzZUF1dGgoKTsKICBjb25zdCBbcHJvZmlsZSwgc2V0UHJvZmlsZV0gPSB1c2VTdGF0ZTxQcm9maWxlIHwgbnVsbD4obnVsbCk7CiAgY29uc3QgW3N1Z2dlc3Rpb25zLCBzZXRTdWdnZXN0aW9uc10gPSB1c2VTdGF0ZTxTdWdnZXN0aW9uW10+KFtdKTsKICBjb25zdCBbbG9hZGluZ1Byb2ZpbGUsIHNldExvYWRpbmdQcm9maWxlXSA9IHVzZVN0YXRlKHRydWUpOwogIGNvbnN0IFtsb2FkaW5nU3VnZ2VzdGlvbnMsIHNldExvYWRpbmdTdWdnZXN0aW9uc10gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW2dlbmVyYXRpbmcsIHNldEdlbmVyYXRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtzaG93T25ib2FyZGluZywgc2V0U2hvd09uYm9hcmRpbmddID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtjb3BpZWQsIHNldENvcGllZF0gPSB1c2VTdGF0ZShmYWxzZSk7CgogIGNvbnN0IGZldGNoUHJvZmlsZSA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIHNldExvYWRpbmdQcm9maWxlKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvZG5hL3Byb2ZpbGUiLCB7IGNyZWRlbnRpYWxzOiAiaW5jbHVkZSIgfSk7CiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpOwogICAgICBzZXRQcm9maWxlKGRhdGEucHJvZmlsZSk7CiAgICAgIGlmICghZGF0YS5wcm9maWxlKSBzZXRTaG93T25ib2FyZGluZyh0cnVlKTsKICAgIH0gY2F0Y2ggeyAvKiBpZ25vcmUgKi8gfQogICAgc2V0TG9hZGluZ1Byb2ZpbGUoZmFsc2UpOwogIH0sIFtdKTsKCiAgY29uc3QgZmV0Y2hTdWdnZXN0aW9ucyA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIHNldExvYWRpbmdTdWdnZXN0aW9ucyh0cnVlKTsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKCIvYXBpL2RuYS9zdWdnZXN0aW9ucyIsIHsgY3JlZGVudGlhbHM6ICJpbmNsdWRlIiB9KTsKICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICAgIHNldFN1Z2dlc3Rpb25zKGRhdGEuc3VnZ2VzdGlvbnMgPz8gW10pOwogICAgfSBjYXRjaCB7IC8qIGlnbm9yZSAqLyB9CiAgICBzZXRMb2FkaW5nU3VnZ2VzdGlvbnMoZmFsc2UpOwogIH0sIFtdKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmIChpc0F1dGhlbnRpY2F0ZWQpIHsKICAgICAgZmV0Y2hQcm9maWxlKCk7CiAgICAgIGZldGNoU3VnZ2VzdGlvbnMoKTsKICAgIH0gZWxzZSB7CiAgICAgIHNldExvYWRpbmdQcm9maWxlKGZhbHNlKTsKICAgIH0KICB9LCBbaXNBdXRoZW50aWNhdGVkLCBmZXRjaFByb2ZpbGUsIGZldGNoU3VnZ2VzdGlvbnNdKTsKCiAgYXN5bmMgZnVuY3Rpb24gaGFuZGxlU2F2ZVByb2ZpbGUoZGF0YTogewogICAgZmF2b3VyaXRlQ29sb3Vyczogc3RyaW5nW107CiAgICBtdXNpY0dlbnJlczogc3RyaW5nW107CiAgICBzdHlsZVZpYmVzOiBzdHJpbmdbXTsKICAgIGRlc2lnbktleXdvcmRzOiBzdHJpbmdbXTsKICAgIHJhd05vdGVzOiBzdHJpbmc7CiAgfSkgewogICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvZG5hL3Byb2ZpbGUiLCB7CiAgICAgIG1ldGhvZDogIlBVVCIsCiAgICAgIGNyZWRlbnRpYWxzOiAiaW5jbHVkZSIsCiAgICAgIGhlYWRlcnM6IHsgIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiB9LAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShkYXRhKSwKICAgIH0pOwogICAgY29uc3QganNvbiA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICBzZXRQcm9maWxlKGpzb24ucHJvZmlsZSk7CiAgICBzZXRTaG93T25ib2FyZGluZyhmYWxzZSk7CiAgICBoYW5kbGVHZW5lcmF0ZSgpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gaGFuZGxlR2VuZXJhdGUoKSB7CiAgICBzZXRHZW5lcmF0aW5nKHRydWUpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goIi9hcGkvZG5hL3N1Z2dlc3Rpb25zIiwgewogICAgICAgIG1ldGhvZDogIlBPU1QiLAogICAgICAgIGNyZWRlbnRpYWxzOiAiaW5jbHVkZSIsCiAgICAgIH0pOwogICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTsKICAgICAgaWYgKGRhdGEuc3VnZ2VzdGlvbnMpIHNldFN1Z2dlc3Rpb25zKChwcmV2KSA9PiBbLi4uZGF0YS5zdWdnZXN0aW9ucywgLi4ucHJldl0pOwogICAgfSBjYXRjaCB7IC8qIGlnbm9yZSAqLyB9CiAgICBzZXRHZW5lcmF0aW5nKGZhbHNlKTsKICB9CgogIGZ1bmN0aW9uIGJ1aWxkRE5BQnJpZWYoKTogc3RyaW5nIHsKICAgIGlmICghcHJvZmlsZSkgcmV0dXJuICIiOwogICAgY29uc3QgbmFtZSA9ICh1c2VyIGFzIGFueSk/Lm5hbWUgPz8gImEgQlVQIGN1c3RvbWVyIjsKICAgIGNvbnN0IGxpbmVzID0gWwogICAgICBgSGV5IE1hZ2dpZSEgSSdtICR7bmFtZX0gYW5kIGhlcmUncyBteSBEZXNpZ24gRE5BOmAsCiAgICAgIHByb2ZpbGUuZmF2b3VyaXRlQ29sb3Vycy5sZW5ndGggPyBg8J+OqCBDb2xvdXJzOiAke3Byb2ZpbGUuZmF2b3VyaXRlQ29sb3Vycy5qb2luKCIsICIpfWAgOiAiIiwKICAgICAgcHJvZmlsZS5tdXNpY0dlbnJlcy5sZW5ndGggPyBg8J+OtSBNdXNpYzogJHtwcm9maWxlLm11c2ljR2VucmVzLmpvaW4oIiwgIil9YCA6ICIiLAogICAgICBwcm9maWxlLnN0eWxlVmliZXMubGVuZ3RoID8gYPCflKUgU3R5bGUgdmliZXM6ICR7cHJvZmlsZS5zdHlsZVZpYmVzLmpvaW4oIiwgIil9YCA6ICIiLAogICAgICBwcm9maWxlLmRlc2lnbktleXdvcmRzLmxlbmd0aCA/IGDinI3vuI8gRGVzaWduIGtleXdvcmRzOiAke3Byb2ZpbGUuZGVzaWduS2V5d29yZHMuam9pbigiLCAiKX1gIDogIiIsCiAgICAgIHByb2ZpbGUucmF3Tm90ZXMgPyBg8J+TnSBOb3RlczogJHtwcm9maWxlLnJhd05vdGVzfWAgOiAiIiwKICAgICAgIiIsCiAgICAgICJDYW4geW91IGhlbHAgbWUgZGVzaWduIHNvbWUgbWVyY2ggdGhhdCBtYXRjaGVzIG15IHZpYmU/IiwKICAgIF07CiAgICByZXR1cm4gbGluZXMuZmlsdGVyKEJvb2xlYW4pLmpvaW4oIlxuIik7CiAgfQoKICBhc3luYyBmdW5jdGlvbiBoYW5kbGVDaGF0V2l0aE1hZ2dpZSgpIHsKICAgIGNvbnN0IGJyaWVmID0gYnVpbGRETkFCcmllZigpOwogICAgaWYgKGJyaWVmKSB7CiAgICAgIHRyeSB7CiAgICAgICAgYXdhaXQgbmF2aWdhdG9yLmNsaXBib2FyZC53cml0ZVRleHQoYnJpZWYpOwogICAgICAgIHNldENvcGllZCh0cnVlKTsKICAgICAgICBzZXRUaW1lb3V0KCgpID0+IHNldENvcGllZChmYWxzZSksIDMwMDApOwogICAgICB9IGNhdGNoIHsgLyogY2xpcGJvYXJkIG1heSBiZSBibG9ja2VkICovIH0KICAgIH0KICAgIG9uQ2xvc2UoKTsKICAgIHNldFRpbWVvdXQoKCkgPT4gb25PcGVuTWFnZ2llPy4oKSwgMzAwKTsKICB9CgogIHJldHVybiAoCiAgICA8PgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LVs3MF0gZmxleCI+CiAgICAgICAgey8qIEJhY2tkcm9wICovfQogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIGJnLWJsYWNrLzcwIGJhY2tkcm9wLWJsdXItc20iIG9uQ2xpY2s9e29uQ2xvc2V9IC8+CgogICAgICAgIHsvKiBTbGlkZS1pbiBwYW5lbCAqL30KICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgaW5pdGlhbD17eyB4OiAiMTAwJSIgfX0KICAgICAgICAgIGFuaW1hdGU9e3sgeDogMCB9fQogICAgICAgICAgZXhpdD17eyB4OiAiMTAwJSIgfX0KICAgICAgICAgIHRyYW5zaXRpb249e3sgdHlwZTogInR3ZWVuIiwgZHVyYXRpb246IDAuMyB9fQogICAgICAgICAgY2xhc3NOYW1lPSJyZWxhdGl2ZSBtbC1hdXRvIHctZnVsbCBtYXgtdy1zbSBoLWZ1bGwgYmctemluYy05NTAgYm9yZGVyLWwgYm9yZGVyLXppbmMtODAwIGZsZXggZmxleC1jb2wgb3ZlcmZsb3ctaGlkZGVuIgogICAgICAgICAgc3R5bGU9e3sgYm94U2hhZG93OiAiLTIwcHggMCA2MHB4IHJnYmEoMCwwLDAsMC44KSIgfX0KICAgICAgICA+CiAgICAgICAgICB7LyogSGVhZGVyICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBweC01IHB5LTQgYm9yZGVyLWIgYm9yZGVyLXppbmMtODAwIHNocmluay0wIj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgICA8RG5hIHNpemU9ezIwfSBjbGFzc05hbWU9InRleHQtcHJpbWFyeSIgLz4KICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LWJhc2UgdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSB0ZXh0LXdoaXRlIj5EZXNpZ24gRE5BPC9oMj4KICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCB0ZXh0LVsxMXB4XSBmb250LXNhbnMiPllvdXIgcGVyc29uYWxpc2VkIG1lcmNoIHByb2ZpbGU8L3A+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e29uQ2xvc2V9IGNsYXNzTmFtZT0idGV4dC16aW5jLTUwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMiPgogICAgICAgICAgICAgIDxYIHNpemU9ezIwfSAvPgogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHsvKiBCb2R5ICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBvdmVyZmxvdy15LWF1dG8gcHgtNSBweS01IHNwYWNlLXktNSI+CiAgICAgICAgICAgIHshaXNBdXRoZW50aWNhdGVkID8gKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0LWNlbnRlciBweS0xMCI+CiAgICAgICAgICAgICAgICA8RG5hIHNpemU9ezM2fSBjbGFzc05hbWU9InRleHQtemluYy03MDAgbXgtYXV0byBtYi0zIiAvPgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIHRleHQtc20gZm9udC1zYW5zIG1iLTQiPgogICAgICAgICAgICAgICAgICBMb2cgaW4gdG8gdW5sb2NrIHlvdXIgRGVzaWduIEROQSDigJQgYSBzdHlsZSBwcm9maWxlIHRoYXQgZ2V0cyBzbWFydGVyIGV2ZXJ5IHRpbWUgeW91IG9yZGVyLgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXtsb2dpbn0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJiZy1wcmltYXJ5IHRleHQtYmxhY2sgZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LXhzIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgcHgtNiBweS0yLjUgaG92ZXI6Ymctb3JhbmdlLTQwMCB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgTG9nIEluIFRvIENvbnRpbnVlCiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSA6IGxvYWRpbmdQcm9maWxlID8gKAogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTMgYW5pbWF0ZS1wdWxzZSI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iaC0zMiBiZy16aW5jLTkwMCByb3VuZGVkIiAvPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImgtMjQgYmctemluYy05MDAgcm91bmRlZCIgLz4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICA8PgogICAgICAgICAgICAgICAge3Byb2ZpbGUgPyAoCiAgICAgICAgICAgICAgICAgIDw+CiAgICAgICAgICAgICAgICAgICAgPERlc2lnbkROQUNhcmQKICAgICAgICAgICAgICAgICAgICAgIHByb2ZpbGU9e3Byb2ZpbGV9CiAgICAgICAgICAgICAgICAgICAgICBvbkVkaXQ9eygpID0+IHNldFNob3dPbmJvYXJkaW5nKHRydWUpfQogICAgICAgICAgICAgICAgICAgICAgb25HZW5lcmF0ZT17aGFuZGxlR2VuZXJhdGV9CiAgICAgICAgICAgICAgICAgICAgICBnZW5lcmF0aW5nPXtnZW5lcmF0aW5nfQogICAgICAgICAgICAgICAgICAgIC8+CgogICAgICAgICAgICAgICAgICAgIHsvKiBNYWdnaWUgw5cgRE5BIENUQSAqL30KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVDaGF0V2l0aE1hZ2dpZX0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtMyBib3JkZXIgYm9yZGVyLXppbmMtODAwIGhvdmVyOmJvcmRlci1wcmltYXJ5LzUwIGJnLXppbmMtOTAwLzUwIGhvdmVyOmJnLXByaW1hcnkvNSBweC00IHB5LTMgdHJhbnNpdGlvbi1hbGwgZ3JvdXAiCiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17eyBib3hTaGFkb3c6IGNvcGllZCA/ICIwIDAgMTZweCByZ2JhKDI0OSwxMTUsMjIsMC4yKSIgOiAibm9uZSIgfX0KICAgICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIuNSI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxNZXNzYWdlQ2lyY2xlIHNpemU9ezE2fSBjbGFzc05hbWU9InRleHQtcHJpbWFyeSBzaHJpbmstMCIgLz4KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtbGVmdCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1ib2xkIHRleHQteHMgdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSB0ZXh0LXdoaXRlIGdyb3VwLWhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBDaGF0IHdpdGggTWFnZ2llIGFib3V0IG15IEROQQogICAgICAgICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy02MDAgdGV4dC1bMTBweF0gZm9udC1zYW5zIG10LTAuNSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBPcGVucyBNYWdnaWUgwrcgeW91ciBicmllZiBpcyBjb3BpZWQgdG8gY2xpcGJvYXJkCiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgICAge2NvcGllZCA/ICgKICAgICAgICAgICAgICAgICAgICAgICAgPENoZWNrIHNpemU9ezE0fSBjbGFzc05hbWU9InRleHQtcHJpbWFyeSBzaHJpbmstMCIgLz4KICAgICAgICAgICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICAgICAgICAgIDxDb3B5IHNpemU9ezEyfSBjbGFzc05hbWU9InRleHQtemluYy02MDAgc2hyaW5rLTAiIC8+CiAgICAgICAgICAgICAgICAgICAgICApfQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8Lz4KICAgICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJib3JkZXIgYm9yZGVyLWRhc2hlZCBib3JkZXItemluYy03MDAgcC02IHRleHQtY2VudGVyIj4KICAgICAgICAgICAgICAgICAgICA8RG5hIHNpemU9ezI4fSBjbGFzc05hbWU9InRleHQtemluYy02MDAgbXgtYXV0byBtYi0yIiAvPgogICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC16aW5jLTQwMCB0ZXh0LXNtIGZvbnQtc2FucyBtYi0zIj4KICAgICAgICAgICAgICAgICAgICAgIFlvdSBoYXZlbid0IHNldCB1cCB5b3VyIERlc2lnbiBETkEgeWV0LgogICAgICAgICAgICAgICAgICAgIDwvcD4KICAgICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRTaG93T25ib2FyZGluZyh0cnVlKX0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYmctcHJpbWFyeSB0ZXh0LWJsYWNrIGZvbnQtZGlzcGxheSBmb250LWJvbGQgdGV4dC14cyB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIHB4LTUgcHktMiBob3ZlcjpiZy1vcmFuZ2UtNDAwIHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICAgIEJ1aWxkIE15IEROQQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICl9CgogICAgICAgICAgICAgICAgPERlc2lnbkROQVN1Z2dlc3Rpb25zCiAgICAgICAgICAgICAgICAgIHN1Z2dlc3Rpb25zPXtzdWdnZXN0aW9uc30KICAgICAgICAgICAgICAgICAgbG9hZGluZz17bG9hZGluZ1N1Z2dlc3Rpb25zfQogICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICA8Lz4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgIHsvKiBGb290ZXIgd2F0ZXJtYXJrICovfQogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTUgcHktMyBib3JkZXItdCBib3JkZXItemluYy05MDAgc2hyaW5rLTAiPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtemluYy03MDAgdGV4dC1bMTBweF0gZm9udC1zYW5zIHRleHQtY2VudGVyIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UiPgogICAgICAgICAgICAgIFBvd2VyZWQgYnkgQlVQIEFJIMK3IEdldHMgc21hcnRlciB3aXRoIGV2ZXJ5IG9yZGVyCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgPC9kaXY+CgogICAgICB7LyogT25ib2FyZGluZyBtb2RhbCAqL30KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7c2hvd09uYm9hcmRpbmcgJiYgKAogICAgICAgICAgPERlc2lnbkROQU9uYm9hcmRpbmcKICAgICAgICAgICAgb25DbG9zZT17KCkgPT4gc2V0U2hvd09uYm9hcmRpbmcoZmFsc2UpfQogICAgICAgICAgICBvblNhdmU9e2hhbmRsZVNhdmVQcm9maWxlfQogICAgICAgICAgLz4KICAgICAgICApfQogICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgIDwvPgogICk7Cn0K
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Dna, MessageCircle, Check, Copy } from "lucide-react";
+import { useAuth } from "@workspace/replit-auth-web";
+import DesignDNAOnboarding from "./DesignDNAOnboarding";
+import DesignDNACard from "./DesignDNACard";
+import DesignDNASuggestions from "./DesignDNASuggestions";
+
+interface Profile {
+  id: string;
+  userId: string;
+  favouriteColours: string[];
+  musicGenres: string[];
+  styleVibes: string[];
+  designKeywords: string[];
+  purchaseHistory: object[];
+  projectHistory: object[];
+  rawNotes?: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface Suggestion {
+  id: string;
+  userId: string;
+  category: string;
+  title: string;
+  description: string;
+  tags: string[];
+  colourPalette: string[];
+  dnaVersion: number;
+  createdAt: string;
+}
+
+interface Props {
+  onClose: () => void;
+  onOpenMaggie?: () => void;
+}
+
+export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
+  const { user, isAuthenticated, login } = useAuth();
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [loadingProfile, setLoadingProfile] = useState(true);
+  const [loadingSuggestions, setLoadingSuggestions] = useState(false);
+  const [generating, setGenerating] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const fetchProfile = useCallback(async () => {
+    setLoadingProfile(true);
+    try {
+      const res = await fetch("/api/dna/profile", { credentials: "include" });
+      const data = await res.json();
+      setProfile(data.profile);
+      if (!data.profile) setShowOnboarding(true);
+    } catch { /* ignore */ }
+    setLoadingProfile(false);
+  }, []);
+
+  const fetchSuggestions = useCallback(async () => {
+    setLoadingSuggestions(true);
+    try {
+      const res = await fetch("/api/dna/suggestions", { credentials: "include" });
+      const data = await res.json();
+      setSuggestions(data.suggestions ?? []);
+    } catch { /* ignore */ }
+    setLoadingSuggestions(false);
+  }, []);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchProfile();
+      fetchSuggestions();
+    } else {
+      setLoadingProfile(false);
+    }
+  }, [isAuthenticated, fetchProfile, fetchSuggestions]);
+
+  async function handleSaveProfile(data: {
+    favouriteColours: string[];
+    musicGenres: string[];
+    styleVibes: string[];
+    designKeywords: string[];
+    rawNotes: string;
+  }) {
+    const res = await fetch("/api/dna/profile", {
+      method: "PUT",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    const json = await res.json();
+    setProfile(json.profile);
+    setShowOnboarding(false);
+    handleGenerate();
+  }
+
+  async function handleGenerate() {
+    setGenerating(true);
+    try {
+      const res = await fetch("/api/dna/suggestions", {
+        method: "POST",
+        credentials: "include",
+      });
+      const data = await res.json();
+      if (data.suggestions) setSuggestions((prev) => [...data.suggestions, ...prev]);
+    } catch { /* ignore */ }
+    setGenerating(false);
+  }
+
+  function buildDNABrief(): string {
+    if (!profile) return "";
+    const name = (user as any)?.name ?? "a BUP customer";
+    const lines = [
+      `Hey Maggie! I'm ${name} and here's my Design DNA:`,
+      profile.favouriteColours.length ? `🎨 Colours: ${profile.favouriteColours.join(", ")}` : "",
+      profile.musicGenres.length ? `🎵 Music: ${profile.musicGenres.join(", ")}` : "",
+      profile.styleVibes.length ? `🔥 Style vibes: ${profile.styleVibes.join(", ")}` : "",
+      profile.designKeywords.length ? `✍️ Design keywords: ${profile.designKeywords.join(", ")}` : "",
+      profile.rawNotes ? `📝 Notes: ${profile.rawNotes}` : "",
+      "",
+      "Can you help me design some merch that matches my vibe?",
+    ];
+    return lines.filter(Boolean).join("\n");
+  }
+
+  async function handleChatWithMaggie() {
+    const brief = buildDNABrief();
+    if (brief) {
+      try {
+        await navigator.clipboard.writeText(brief);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 3000);
+      } catch { /* clipboard may be blocked */ }
+    }
+    onClose();
+    setTimeout(() => onOpenMaggie?.(), 300);
+  }
+
+  return (
+    <>
+      <div className="fixed inset-0 z-[70] flex">
+        {/* Backdrop */}
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
+
+        {/* Slide-in panel */}
+        <motion.div
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "100%" }}
+          transition={{ type: "tween", duration: 0.3 }}
+          className="relative ml-auto w-full max-w-sm h-full bg-zinc-950 border-l border-zinc-800 flex flex-col overflow-hidden"
+          style={{ boxShadow: "-20px 0 60px rgba(0,0,0,0.8)" }}
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800 shrink-0">
+            <div className="flex items-center gap-2">
+              <Dna size={20} className="text-primary" />
+              <div>
+                <h2 className="font-display font-bold text-base tracking-widest uppercase text-white">Design DNA</h2>
+                <p className="text-zinc-500 text-[11px] font-sans">Your personalised merch profile</p>
+              </div>
+            </div>
+            <button onClick={onClose} className="text-zinc-500 hover:text-primary transition-colors">
+              <X size={20} />
+            </button>
+          </div>
+
+          {/* Body */}
+          <div className="flex-1 overflow-y-auto px-5 py-5 space-y-5">
+            {!isAuthenticated ? (
+              <div className="text-center py-10">
+                <Dna size={36} className="text-zinc-700 mx-auto mb-3" />
+                <p className="text-zinc-400 text-sm font-sans mb-4">
+                  Log in to unlock your Design DNA — a style profile that gets smarter every time you order.
+                </p>
+                <button
+                  onClick={login}
+                  className="bg-primary text-black font-display font-bold text-xs tracking-widest uppercase px-6 py-2.5 hover:bg-orange-400 transition-colors"
+                >
+                  Log In To Continue
+                </button>
+              </div>
+            ) : loadingProfile ? (
+              <div className="space-y-3 animate-pulse">
+                <div className="h-32 bg-zinc-900 rounded" />
+                <div className="h-24 bg-zinc-900 rounded" />
+              </div>
+            ) : (
+              <>
+                {profile ? (
+                  <>
+                    <DesignDNACard
+                      profile={profile}
+                      onEdit={() => setShowOnboarding(true)}
+                      onGenerate={handleGenerate}
+                      generating={generating}
+                    />
+
+                    {/* Maggie × DNA CTA */}
+                    <button
+                      onClick={handleChatWithMaggie}
+                      className="w-full flex items-center justify-between gap-3 border border-zinc-800 hover:border-primary/50 bg-zinc-900/50 hover:bg-primary/5 px-4 py-3 transition-all group"
+                      style={{ boxShadow: copied ? "0 0 16px rgba(249,115,22,0.2)" : "none" }}
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <MessageCircle size={16} className="text-primary shrink-0" />
+                        <div className="text-left">
+                          <p className="font-display font-bold text-xs tracking-widest uppercase text-white group-hover:text-primary transition-colors">
+                            Chat with Maggie about my DNA
+                          </p>
+                          <p className="text-zinc-600 text-[10px] font-sans mt-0.5">
+                            Opens Maggie · your brief is copied to clipboard
+                          </p>
+                        </div>
+                      </div>
+                      {copied ? (
+                        <Check size={14} className="text-primary shrink-0" />
+                      ) : (
+                        <Copy size={12} className="text-zinc-600 shrink-0" />
+                      )}
+                    </button>
+                  </>
+                ) : (
+                  <div className="border border-dashed border-zinc-700 p-6 text-center">
+                    <Dna size={28} className="text-zinc-600 mx-auto mb-2" />
+                    <p className="text-zinc-400 text-sm font-sans mb-3">
+                      You haven't set up your Design DNA yet.
+                    </p>
+                    <button
+                      onClick={() => setShowOnboarding(true)}
+                      className="bg-primary text-black font-display font-bold text-xs tracking-widest uppercase px-5 py-2 hover:bg-orange-400 transition-colors"
+                    >
+                      Build My DNA
+                    </button>
+                  </div>
+                )}
+
+                <DesignDNASuggestions
+                  suggestions={suggestions}
+                  loading={loadingSuggestions}
+                />
+              </>
+            )}
+          </div>
+
+          {/* Footer watermark */}
+          <div className="px-5 py-3 border-t border-zinc-900 shrink-0">
+            <p className="text-zinc-700 text-[10px] font-sans text-center tracking-widest uppercase">
+              Powered by BUP AI · Gets smarter with every order
+            </p>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Onboarding modal */}
+      <AnimatePresence>
+        {showOnboarding && (
+          <DesignDNAOnboarding
+            onClose={() => setShowOnboarding(false)}
+            onSave={handleSaveProfile}
+          />
+        )}
+      </AnimatePresence>
+    </>
+  );
+}

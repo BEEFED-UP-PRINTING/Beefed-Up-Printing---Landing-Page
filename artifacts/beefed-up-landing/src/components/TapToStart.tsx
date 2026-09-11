@@ -1,1 +1,80 @@
-aW1wb3J0IHsgbW90aW9uIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CgppbnRlcmZhY2UgVGFwVG9TdGFydFByb3BzIHsKICBvblRhcDogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gVGFwVG9TdGFydCh7IG9uVGFwIH06IFRhcFRvU3RhcnRQcm9wcykgewogIHJldHVybiAoCiAgICA8bW90aW9uLmJ1dHRvbgogICAgICB0eXBlPSJidXR0b24iCiAgICAgIG9uQ2xpY2s9e29uVGFwfQogICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAgfX0KICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxIH19CiAgICAgIGV4aXQ9e3sgb3BhY2l0eTogMCB9fQogICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjQgfX0KICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIHotMzAgZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTYgYmctYmxhY2svODUgYmFja2Ryb3AtYmx1ci1zbSBjdXJzb3ItcG9pbnRlciBzZWxlY3Qtbm9uZSIKICAgICAgYXJpYS1sYWJlbD0iVGFwIHRvIHN0YXJ0IHRoZSBleHBlcmllbmNlIgogICAgPgogICAgICA8bW90aW9uLmRpdgogICAgICAgIGFuaW1hdGU9e3sKICAgICAgICAgIHNjYWxlOiBbMSwgMS4wOCwgMV0sCiAgICAgICAgICByb3RhdGU6IFswLCAtNCwgMCwgNCwgMF0sCiAgICAgICAgfX0KICAgICAgICB0cmFuc2l0aW9uPXt7CiAgICAgICAgICBkdXJhdGlvbjogMS42LAogICAgICAgICAgcmVwZWF0OiBJbmZpbml0eSwKICAgICAgICAgIGVhc2U6ICJlYXNlSW5PdXQiLAogICAgICAgIH19CiAgICAgICAgY2xhc3NOYW1lPSJyZWxhdGl2ZSIKICAgICAgICBzdHlsZT17ewogICAgICAgICAgZmlsdGVyOgogICAgICAgICAgICAiZHJvcC1zaGFkb3coMCAwIDE4cHggcmdiYSgyNDksMTE1LDIyLDAuODUpKSBkcm9wLXNoYWRvdygwIDAgMzZweCByZ2JhKDI0OSwxMTUsMjIsMC41KSkgZHJvcC1zaGFkb3coMCA4cHggMTRweCByZ2JhKDAsMCwwLDAuNykpIiwKICAgICAgICB9fQogICAgICA+CiAgICAgICAgPGltZwogICAgICAgICAgc3JjPXtgJHtpbXBvcnQubWV0YS5lbnYuQkFTRV9VUkx9ZmlzdC5wbmdgfQogICAgICAgICAgYWx0PSIiCiAgICAgICAgICBhcmlhLWhpZGRlbgogICAgICAgICAgZHJhZ2dhYmxlPXtmYWxzZX0KICAgICAgICAgIGNsYXNzTmFtZT0iYmxvY2sgdy1bMTgwcHhdIHNtOnctWzI0MHB4XSBoLWF1dG8gc2VsZWN0LW5vbmUiCiAgICAgICAgICBzdHlsZT17eyB0cmFuc2Zvcm06ICJwZXJzcGVjdGl2ZSg1MDBweCkgcm90YXRlWCg4ZGVnKSIgfX0KICAgICAgICAvPgogICAgICA8L21vdGlvbi5kaXY+CgogICAgICA8bW90aW9uLmRpdgogICAgICAgIGluaXRpYWw9e3sgeTogMTQsIG9wYWNpdHk6IDAgfX0KICAgICAgICBhbmltYXRlPXt7IHk6IDAsIG9wYWNpdHk6IDEgfX0KICAgICAgICB0cmFuc2l0aW9uPXt7IGRlbGF5OiAwLjI1LCBkdXJhdGlvbjogMC42IH19CiAgICAgICAgY2xhc3NOYW1lPSJweC02IHRleHQtY2VudGVyIgogICAgICA+CiAgICAgICAgPGRpdgogICAgICAgICAgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgdGV4dC0yeGwgc206dGV4dC0zeGwgbWQ6dGV4dC00eGwgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGUgdGV4dC13aGl0ZSIKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIHRleHRTaGFkb3c6CiAgICAgICAgICAgICAgIjAgMCAxMnB4IHJnYmEoMjQ5LDExNSwyMiwwLjkpLCAwIDAgMjRweCByZ2JhKDI0OSwxMTUsMjIsMC41KSwgMCAycHggMCAjMDAwIiwKICAgICAgICAgIH19CiAgICAgICAgPgogICAgICAgICAgU2xhdCBIZXJlCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdgogICAgICAgICAgY2xhc3NOYW1lPSJtdC0yIGZvbnQtZGlzcGxheSB0ZXh0LWJhc2Ugc206dGV4dC1sZyBtZDp0ZXh0LXhsIHVwcGVyY2FzZSB0cmFja2luZy1bMC4yNWVtXSB0ZXh0LW9yYW5nZS00MDAiCiAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICB0ZXh0U2hhZG93OiAiMCAwIDEwcHggcmdiYSgyNDksMTE1LDIyLDAuNyksIDAgMXB4IDAgIzAwMCIsCiAgICAgICAgICB9fQogICAgICAgID4KICAgICAgICAgIElmIFlvdSBQcm91ZCBUbyBCZSBGcm9tIE16YW5zaQogICAgICAgIDwvZGl2PgogICAgICA8L21vdGlvbi5kaXY+CgogICAgICA8bW90aW9uLmRpdgogICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogWzAuNCwgMSwgMC40XSB9fQogICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDEuNCwgcmVwZWF0OiBJbmZpbml0eSB9fQogICAgICAgIGNsYXNzTmFtZT0idGV4dC1bMTBweF0gdXBwZXJjYXNlIHRyYWNraW5nLVswLjRlbV0gdGV4dC16aW5jLTQwMCBmb250LWJvbGQiCiAgICAgID4KICAgICAgICBUYXAgQW55d2hlcmUKICAgICAgPC9tb3Rpb24uZGl2PgogICAgPC9tb3Rpb24uYnV0dG9uPgogICk7Cn0K
+import { motion } from "framer-motion";
+
+interface TapToStartProps {
+  onTap: () => void;
+}
+
+export default function TapToStart({ onTap }: TapToStartProps) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4 }}
+      className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-black/85 backdrop-blur-sm select-none"
+    >
+      <motion.button
+        type="button"
+        onClick={onTap}
+        aria-label="Tap the fist to activate the Beefed Up experience"
+        whileTap={{ scale: 0.95 }}
+        className="relative cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+        animate={{
+          scale: [1, 1.08, 1],
+          rotate: [0, -4, 0, 4, 0],
+        }}
+        transition={{
+          duration: 1.6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        style={{
+          filter:
+            "drop-shadow(0 0 18px rgba(249,115,22,0.85)) drop-shadow(0 0 36px rgba(249,115,22,0.5)) drop-shadow(0 8px 14px rgba(0,0,0,0.7))",
+        }}
+      >
+        <img
+          src={`${import.meta.env.BASE_URL}fist.png`}
+          alt=""
+          aria-hidden
+          draggable={false}
+          className="block w-[180px] sm:w-[240px] h-auto select-none"
+          style={{ transform: "perspective(500px) rotateX(8deg)" }}
+        />
+      </motion.button>
+
+      <motion.div
+        initial={{ y: 14, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.25, duration: 0.6 }}
+        className="px-6 text-center"
+      >
+        <div
+          className="font-display text-2xl sm:text-3xl md:text-4xl uppercase tracking-wide text-white"
+          style={{
+            textShadow:
+              "0 0 12px rgba(249,115,22,0.9), 0 0 24px rgba(249,115,22,0.5), 0 2px 0 #000",
+          }}
+        >
+          Slat Here
+        </div>
+        <div
+          className="mt-2 font-display text-base sm:text-lg md:text-xl uppercase tracking-[0.25em] text-orange-400"
+          style={{
+            textShadow: "0 0 10px rgba(249,115,22,0.7), 0 1px 0 #000",
+          }}
+        >
+          If You Proud To Be From Mzansi
+        </div>
+      </motion.div>
+
+      <motion.div
+        animate={{ opacity: [0.4, 1, 0.4] }}
+        transition={{ duration: 1.4, repeat: Infinity }}
+        className="text-[10px] uppercase tracking-[0.35em] text-zinc-400 font-bold"
+      >
+        Tap Fist To Activate
+      </motion.div>
+    </motion.div>
+  );
+}

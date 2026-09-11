@@ -1,1 +1,14 @@
-aW1wb3J0IHsgUm91dGVyLCB0eXBlIElSb3V0ZXIgfSBmcm9tICJleHByZXNzIjsKaW1wb3J0IGhlYWx0aFJvdXRlciBmcm9tICIuL2hlYWx0aCI7CmltcG9ydCBhdXRoUm91dGVyIGZyb20gIi4vYXV0aCI7CmltcG9ydCBkbmFSb3V0ZXIgZnJvbSAiLi9kbmEiOwppbXBvcnQgZHJvcHNSb3V0ZXIgZnJvbSAiLi9kcm9wcyI7Cgpjb25zdCByb3V0ZXI6IElSb3V0ZXIgPSBSb3V0ZXIoKTsKCnJvdXRlci51c2UoaGVhbHRoUm91dGVyKTsKcm91dGVyLnVzZShhdXRoUm91dGVyKTsKcm91dGVyLnVzZShkbmFSb3V0ZXIpOwpyb3V0ZXIudXNlKGRyb3BzUm91dGVyKTsKCmV4cG9ydCBkZWZhdWx0IHJvdXRlcjsK
+import { Router, type IRouter } from "express";
+import healthRouter from "./health";
+import authRouter from "./auth";
+import dnaRouter from "./dna";
+import dropsRouter from "./drops";
+
+const router: IRouter = Router();
+
+router.use(healthRouter);
+router.use(authRouter);
+router.use(dnaRouter);
+router.use(dropsRouter);
+
+export default router;

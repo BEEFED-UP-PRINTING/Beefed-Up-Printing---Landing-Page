@@ -1,1 +1,15 @@
-cGFja2FnZXM6CiAgImZyYW1lci1tb3Rpb24iOiAiRm9yIGdyaXR0eSBzdHJlZXQtc3R5bGUgYW5pbWF0aW9ucyBhbmQgc2Nyb2xsIHJldmVhbHMiCiAgImx1Y2lkZS1yZWFjdCI6ICJVSSBJY29ucyBmb3Igc2VydmljZXMgYW5kIGNvbnRhY3QgZm9ybXMiCiAgInJlYWN0LWhvb2stZm9ybSI6ICJSb2J1c3QgZm9ybSBoYW5kbGluZyBmb3IgdGhlIGNvbnRhY3Qgc2VjdGlvbiIKICAiQGhvb2tmb3JtL3Jlc29sdmVycyI6ICJab2QgaW50ZWdyYXRpb24gZm9yIHRoZSBjb250YWN0IGZvcm0iCiAgInpvZCI6ICJWYWxpZGF0aW9uIHNjaGVtYXMgZm9yIGZvcm1zIgogICJjbHN4IjogIlV0aWxpdHkgZm9yIGNvbnN0cnVjdGluZyBjbGFzcyBuYW1lcyIKICAidGFpbHdpbmQtbWVyZ2UiOiAiVXRpbGl0eSBmb3IgbWVyZ2luZyB0YWlsd2luZCBjbGFzc2VzIgoKaW1hZ2VzOiBbXQoKbm90ZXM6CiAgLSAiVGhlIGFydHdvcmsucG5nIGFuZCBtdXNpYy5tcDMgYXJlIGFscmVhZHkgcHJlc2VudCBpbiB0aGUgcHVibGljIGZvbGRlci4iCiAgLSAiVXNpbmcgc2ltdWxhdGVkIEFQSSBob29rICh1c2UtY29udGFjdC50cykgZm9yIHRoZSBjb250YWN0IGZvcm0gc2luY2Ugbm8gYWN0dWFsIGJhY2tlbmQgZW5kcG9pbnQgaXMgZGVmaW5lZC4iCiAgLSAiVXNpbmcgd291dGVyIGZvciByb3V0aW5nIGFuZCBGcmFtZXIgTW90aW9uIGZvciBzY3JvbGwgYW5pbWF0aW9ucyB0byBlbmhhbmNlIHRoZSBwcmVtaXVtIHN0cmVldCBjdWx0dXJlIGFlc3RoZXRpYy4iCg==
+packages:
+  "framer-motion": "For gritty street-style animations and scroll reveals"
+  "lucide-react": "UI Icons for services and contact forms"
+  "react-hook-form": "Robust form handling for the contact section"
+  "@hookform/resolvers": "Zod integration for the contact form"
+  "zod": "Validation schemas for forms"
+  "clsx": "Utility for constructing class names"
+  "tailwind-merge": "Utility for merging tailwind classes"
+
+images: []
+
+notes:
+  - "The artwork.png and music.mp3 are already present in the public folder."
+  - "Using simulated API hook (use-contact.ts) for the contact form since no actual backend endpoint is defined."
+  - "Using wouter for routing and Framer Motion for scroll animations to enhance the premium street culture aesthetic."

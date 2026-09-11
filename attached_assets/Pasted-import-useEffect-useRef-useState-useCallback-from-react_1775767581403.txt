@@ -1,0 +1,96 @@
+import { useEffect, useRef, useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+
+interface HeroProps {
+  onLightsOn: () => void;
+}
+
+type Phase = "loading" | "lit";
+
+export default function Hero({ onLightsOn }: HeroProps) {
+  const [phase, setPhase] = useState<Phase>("loading");
+  const lightsOnFired = useRef(false);
+
+  const artworkSrc = `${import.meta.env.BASE_URL}skyline-placeholder.png`;
+  const litArtworkSrc = `${import.meta.env.BASE_URL}file_00000000cd1871fbb989bbb0aecb1b7f.png`;
+
+  const fireLightsOn = useCallback(() => {
+    if (lightsOnFired.current) return;
+    lightsOnFired.current = true;
+    onLightsOn();
+  }, [onLightsOn]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (phase === "loading") {
+        setPhase("lit");
+        fireLightsOn();
+      }
+    }, 6000); // shorter, better UX
+
+    return () => clearTimeout(timer);
+  }, [phase, fireLightsOn]);
+
+  const imgContain =
+    "absolute inset-0 w-full h-full object-contain px-2 sm:px-4 md:px-12 pt-10 sm:pt-8 md:pt-0";
+
+  return (
+    <section className="relative w-full h-[100svh] bg-black flex flex-col items-center justify-center overflow-hidden">
+
+      {/* Fade overlay */}
+      <motion.div
+        initial={{ opacity: 1 }}
+        animate={{ opacity: phase === "loading" ? 1 : 0 }}
+        transition={{ duration: 1.2 }}
+        className="absolute inset-0 bg-black z-10"
+      />
+
+      {/* Dark artwork */}
+      <motion.img
+        src={artworkSrc}
+        alt=""
+        aria-hidden
+        initial={{ opacity: 0 }}
+        animate={{ opacity: phase === "loading" ? 1 : 0 }}
+        transition={{ duration: 0.35 }}
+        className={imgContain}
+        style={{ zIndex: 21, objectPosition: "center top" }}
+      />
+
+      {/* Lit artwork (ONLY boombox now) */}
+      <motion.img
+        src={litArtworkSrc}
+        alt="Beefed Up Printing — Street Culture Custom Merch"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: phase === "lit" ? 1 : 0 }}
+        transition={{ duration: 0.7 }}
+        className={imgContain}
+        style={{ zIndex: 12, objectPosition: "center top" }}
+      />
+
+      {/* Gradients */}
+      <div className="absolute inset-0 pointer-events-none z-20 bg-[radial-gradient(ellipse_at_center,transparent_38%,rgba(0,0,0,0.92)_100%)]" />
+      <div className="absolute inset-0 pointer-events-none z-20 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.65)_0%,transparent_22%,transparent_75%,rgba(0,0,0,0.85)_100%)]" />
+
+      {/* Scroll indicator */}
+      <AnimatePresence>
+        {phase === "lit" && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-30"
+          >
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">
+              Scroll
+            </span>
+            <a href="#about" className="text-zinc-500 hover:text-orange-400 transition animate-bounce">
+              <ChevronDown size={28} />
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
+}

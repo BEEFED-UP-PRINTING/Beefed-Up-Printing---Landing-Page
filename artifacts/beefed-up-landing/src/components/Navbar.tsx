@@ -1,1 +1,195 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgbW90aW9uLCBBbmltYXRlUHJlc2VuY2UgfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgTWVudSwgWCwgTG9nSW4sIExvZ091dCwgVXNlciwgRG5hIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKaW1wb3J0IHsgdXNlQXV0aCB9IGZyb20gIkB3b3Jrc3BhY2UvcmVwbGl0LWF1dGgtd2ViIjsKCmludGVyZmFjZSBOYXZiYXJQcm9wcyB7CiAgb25PcGVuRE5BPzogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTmF2YmFyKHsgb25PcGVuRE5BIH06IE5hdmJhclByb3BzKSB7CiAgY29uc3QgW3Njcm9sbGVkLCBzZXRTY3JvbGxlZF0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgW21vYmlsZU1lbnVPcGVuLCBzZXRNb2JpbGVNZW51T3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgeyB1c2VyLCBpc0xvYWRpbmcsIGlzQXV0aGVudGljYXRlZCwgbG9naW4sIGxvZ291dCB9ID0gdXNlQXV0aCgpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgaGFuZGxlU2Nyb2xsID0gKCkgPT4gewogICAgICBzZXRTY3JvbGxlZCh3aW5kb3cuc2Nyb2xsWSA+IDUwKTsKICAgIH07CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigic2Nyb2xsIiwgaGFuZGxlU2Nyb2xsKTsKICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigic2Nyb2xsIiwgaGFuZGxlU2Nyb2xsKTsKICB9LCBbXSk7CgogIGNvbnN0IG5hdkxpbmtzID0gWwogICAgeyBuYW1lOiAiQWJvdXQiLCBocmVmOiAiI2Fib3V0IiB9LAogICAgeyBuYW1lOiAiU2VydmljZXMiLCBocmVmOiAiI3NlcnZpY2VzIiB9LAogICAgeyBuYW1lOiAiRHJvcHMiLCBocmVmOiAiI2Ryb3BzIiB9LAogICAgeyBuYW1lOiAiUXVvdGUiLCBocmVmOiAiI3F1b3RlIiB9LAogICAgeyBuYW1lOiAiT3JkZXIiLCBocmVmOiAiI2NvbnRhY3QiIH0sCiAgXTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxuYXYgCiAgICAgICAgY2xhc3NOYW1lPXtgZml4ZWQgdG9wLTAgdy1mdWxsIHotNTAgdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tMzAwICR7CiAgICAgICAgICBzY3JvbGxlZCAKICAgICAgICAgICAgPyAiYmctYmxhY2svODAgYmFja2Ryb3AtYmx1ci1tZCBib3JkZXItYiBib3JkZXItemluYy04MDAgcHktNCBzaGFkb3ctbGciIAogICAgICAgICAgICA6ICJiZy10cmFuc3BhcmVudCBweS02IgogICAgICAgIH1gfQogICAgICA+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LTd4bCBteC1hdXRvIHB4LTQgc206cHgtNiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gZ2FwLTQiPgogICAgICAgICAgPGEgaHJlZj0iIyIgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLXN0YXJ0IGxlYWRpbmctbm9uZSBnYXAtMSBncm91cCI+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LXhsIHNtOnRleHQtMnhsIG1kOnRleHQtM3hsIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgQkVFRkVEIFVQPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMgZHVyYXRpb24tMzAwIGdyb3VwLWhvdmVyOnRleHQtd2hpdGUiPi48L3NwYW4+CiAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPGltZwogICAgICAgICAgICAgIHNyYz17YCR7aW1wb3J0Lm1ldGEuZW52LkJBU0VfVVJMfXRhZ2xpbmUucG5nYH0KICAgICAgICAgICAgICBhbHQ9IkN1c3RvbSBEZXNpZ25lZCBOb3QgQm91Z2h0IgogICAgICAgICAgICAgIGNsYXNzTmFtZT0iaC00IHNtOmgtNSBtZDpoLTcgdy1hdXRvIG9wYWNpdHktOTUgbWF4LXctWzE4MHB4XSBzbTptYXgtdy1ub25lIgogICAgICAgICAgICAvPgogICAgICAgICAgPC9hPgoKICAgICAgICAgIHsvKiBEZXNrdG9wIE5hdiAqL30KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJoaWRkZW4gbWQ6ZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEwIj4KICAgICAgICAgICAge25hdkxpbmtzLm1hcCgobGluaykgPT4gKAogICAgICAgICAgICAgIDxhIAogICAgICAgICAgICAgICAga2V5PXtsaW5rLm5hbWV9IAogICAgICAgICAgICAgICAgaHJlZj17bGluay5ocmVmfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1zZW1pYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC16aW5jLTMwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMgcmVsYXRpdmUgZ3JvdXAiCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAge2xpbmsubmFtZX0KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYWJzb2x1dGUgLWJvdHRvbS0xIGxlZnQtMCB3LTAgaC0wLjUgYmctcHJpbWFyeSB0cmFuc2l0aW9uLWFsbCBkdXJhdGlvbi0zMDAgZ3JvdXAtaG92ZXI6dy1mdWxsIiAvPgogICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgKSl9CgogICAgICAgICAgICB7LyogRGVzaWduIEROQSBidXR0b24gKi99CiAgICAgICAgICAgIHtpc0F1dGhlbnRpY2F0ZWQgJiYgKAogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIG9uQ2xpY2s9e29uT3BlbkROQX0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSBmb250LXNhbnMgZm9udC1zZW1pYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC16aW5jLTMwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMgcmVsYXRpdmUgZ3JvdXAiCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPERuYSBzaXplPXsxNX0gLz4KICAgICAgICAgICAgICAgIE15IEROQQogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJhYnNvbHV0ZSAtYm90dG9tLTEgbGVmdC0wIHctMCBoLTAuNSBiZy1wcmltYXJ5IHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTMwMCBncm91cC1ob3Zlcjp3LWZ1bGwiIC8+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICl9CgogICAgICAgICAgICB7LyogQXV0aCBidXR0b24gKi99CiAgICAgICAgICAgIHshaXNMb2FkaW5nICYmICgKICAgICAgICAgICAgICBpc0F1dGhlbnRpY2F0ZWQgPyAoCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMiPgogICAgICAgICAgICAgICAgICB7dXNlcj8ucHJvZmlsZUltYWdlVXJsID8gKAogICAgICAgICAgICAgICAgICAgIDxpbWcKICAgICAgICAgICAgICAgICAgICAgIHNyYz17dXNlci5wcm9maWxlSW1hZ2VVcmx9CiAgICAgICAgICAgICAgICAgICAgICBhbHQ9e3VzZXIuZmlyc3ROYW1lID8/ICJBY2NvdW50In0KICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy04IGgtOCByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1wcmltYXJ5IG9iamVjdC1jb3ZlciIKICAgICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idy04IGgtOCByb3VuZGVkLWZ1bGwgYm9yZGVyIGJvcmRlci1wcmltYXJ5IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHRleHQtcHJpbWFyeSI+CiAgICAgICAgICAgICAgICAgICAgICA8VXNlciBzaXplPXsxNn0gLz4KICAgICAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXtsb2dvdXR9CiAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1zZW1pYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC16aW5jLTMwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiCiAgICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgICA8TG9nT3V0IHNpemU9ezE0fSAvPgogICAgICAgICAgICAgICAgICAgIExvZyBvdXQKICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXtsb2dpbn0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1zZW1pYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC16aW5jLTMwMCBob3Zlcjp0ZXh0LXByaW1hcnkgdHJhbnNpdGlvbi1jb2xvcnMgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEiCiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIDxMb2dJbiBzaXplPXsxNH0gLz4KICAgICAgICAgICAgICAgICAgTG9nIGluCiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICApCiAgICAgICAgICAgICl9CgogICAgICAgICAgICA8YSAKICAgICAgICAgICAgICBocmVmPSIjY29udGFjdCIKICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXByaW1hcnkgdGV4dC1ibGFjayBmb250LWRpc3BsYXkgZm9udC1ib2xkIHRleHQtc20gdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSBweC02IHB5LTIgYm9yZGVyIGJvcmRlci1wcmltYXJ5IGhvdmVyOmJnLXRyYW5zcGFyZW50IGhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWFsbCBib3gtZ2xvdyIKICAgICAgICAgICAgPgogICAgICAgICAgICAgIEdldCBRdW90ZQogICAgICAgICAgICA8L2E+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICB7LyogTW9iaWxlIFRvZ2dsZSAqL30KICAgICAgICAgIDxidXR0b24gCiAgICAgICAgICAgIGNsYXNzTmFtZT0ibWQ6aGlkZGVuIHRleHQtd2hpdGUgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRNb2JpbGVNZW51T3Blbih0cnVlKX0KICAgICAgICAgID4KICAgICAgICAgICAgPE1lbnUgc2l6ZT17Mjh9IC8+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9uYXY+CgogICAgICB7LyogTW9iaWxlIE1lbnUgT3ZlcmxheSAqL30KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7bW9iaWxlTWVudU9wZW4gJiYgKAogICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB4OiAiMTAwJSIgfX0KICAgICAgICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCB4OiAwIH19CiAgICAgICAgICAgIGV4aXQ9e3sgb3BhY2l0eTogMCwgeDogIjEwMCUiIH19CiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgdHlwZTogInR3ZWVuIiwgZHVyYXRpb246IDAuMyB9fQogICAgICAgICAgICBjbGFzc05hbWU9ImZpeGVkIGluc2V0LTAgei1bNjBdIGJnLXppbmMtOTUwIGZsZXggZmxleC1jb2wganVzdGlmeS1jZW50ZXIgaXRlbXMtY2VudGVyIHB4LTYiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxidXR0b24gCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtNSByaWdodC01IHRleHQtemluYy00MDAgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHNldE1vYmlsZU1lbnVPcGVuKGZhbHNlKX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIDxYIHNpemU9ezM2fSAvPgogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtNiI+CiAgICAgICAgICAgICAge25hdkxpbmtzLm1hcCgobGluaykgPT4gKAogICAgICAgICAgICAgICAgPGEgCiAgICAgICAgICAgICAgICAgIGtleT17bGluay5uYW1lfSAKICAgICAgICAgICAgICAgICAgaHJlZj17bGluay5ocmVmfQogICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRNb2JpbGVNZW51T3BlbihmYWxzZSl9CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LTN4bCB1cHBlcmNhc2UgdGV4dC13aGl0ZSBob3Zlcjp0ZXh0LXByaW1hcnkgaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tYWxsIgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICB7bGluay5uYW1lfQogICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgICkpfQoKICAgICAgICAgICAgICB7LyogTW9iaWxlIEROQSAqL30KICAgICAgICAgICAgICB7aXNBdXRoZW50aWNhdGVkICYmICgKICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4geyBzZXRNb2JpbGVNZW51T3BlbihmYWxzZSk7IG9uT3BlbkROQT8uKCk7IH19CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LTJ4bCB1cHBlcmNhc2UgdGV4dC1wcmltYXJ5IGhvdmVyOnNjYWxlLTExMCB0cmFuc2l0aW9uLWFsbCBmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiIKICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgPERuYSBzaXplPXsyMH0gLz4KICAgICAgICAgICAgICAgICAgTXkgRE5BCiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICApfQoKICAgICAgICAgICAgICB7LyogTW9iaWxlIGF1dGggKi99CiAgICAgICAgICAgICAgeyFpc0xvYWRpbmcgJiYgKAogICAgICAgICAgICAgICAgaXNBdXRoZW50aWNhdGVkID8gKAogICAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17bG9nb3V0fQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LTJ4bCB1cHBlcmNhc2UgdGV4dC16aW5jLTQwMCBob3Zlcjp0ZXh0LXByaW1hcnkgaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tYWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIgogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgPExvZ091dCBzaXplPXsyMH0gLz4KICAgICAgICAgICAgICAgICAgICBMb2cgb3V0CiAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgKSA6ICgKICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2xvZ2lufQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LTJ4bCB1cHBlcmNhc2UgdGV4dC16aW5jLTQwMCBob3Zlcjp0ZXh0LXByaW1hcnkgaG92ZXI6c2NhbGUtMTEwIHRyYW5zaXRpb24tYWxsIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIgogICAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgICAgPExvZ0luIHNpemU9ezIwfSAvPgogICAgICAgICAgICAgICAgICAgIExvZyBpbgogICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICApfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgICApfQogICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgIDwvPgogICk7Cn0K
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, LogIn, LogOut, User, Dna } from "lucide-react";
+import { useAuth } from "@workspace/replit-auth-web";
+
+interface NavbarProps {
+  onOpenDNA?: () => void;
+}
+
+export default function Navbar({ onOpenDNA }: NavbarProps) {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { user, isLoading, isAuthenticated, login, logout } = useAuth();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Drops", href: "#drops" },
+    { name: "Quote", href: "#quote" },
+    { name: "Order", href: "#contact" },
+  ];
+
+  return (
+    <>
+      <nav 
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled 
+            ? "bg-black/80 backdrop-blur-md border-b border-zinc-800 py-4 shadow-lg" 
+            : "bg-transparent py-6"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+          <a href="#" className="flex flex-col items-start leading-none gap-1 group">
+            <span className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-widest uppercase text-white">
+              BEEFED UP<span className="text-primary transition-colors duration-300 group-hover:text-white">.</span>
+            </span>
+            <img
+              src={`${import.meta.env.BASE_URL}tagline.png`}
+              alt="Custom Designed Not Bought"
+              className="h-4 sm:h-5 md:h-7 w-auto opacity-95 max-w-[180px] sm:max-w-none"
+            />
+          </a>
+
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <a 
+                key={link.name} 
+                href={link.href}
+                className="font-sans font-semibold text-sm tracking-widest uppercase text-zinc-300 hover:text-primary transition-colors relative group"
+              >
+                {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              </a>
+            ))}
+
+            {/* Design DNA button */}
+            {isAuthenticated && (
+              <button
+                onClick={onOpenDNA}
+                className="flex items-center gap-1.5 font-sans font-semibold text-sm tracking-widest uppercase text-zinc-300 hover:text-primary transition-colors relative group"
+              >
+                <Dna size={15} />
+                My DNA
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              </button>
+            )}
+
+            {/* Auth button */}
+            {!isLoading && (
+              isAuthenticated ? (
+                <div className="flex items-center gap-3">
+                  {user?.profileImageUrl ? (
+                    <img
+                      src={user.profileImageUrl}
+                      alt={user.firstName ?? "Account"}
+                      className="w-8 h-8 rounded-full border border-primary object-cover"
+                    />
+                  ) : (
+                    <span className="w-8 h-8 rounded-full border border-primary flex items-center justify-center text-primary">
+                      <User size={16} />
+                    </span>
+                  )}
+                  <button
+                    onClick={logout}
+                    className="font-sans font-semibold text-sm tracking-widest uppercase text-zinc-300 hover:text-primary transition-colors flex items-center gap-1"
+                  >
+                    <LogOut size={14} />
+                    Log out
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={login}
+                  className="font-sans font-semibold text-sm tracking-widest uppercase text-zinc-300 hover:text-primary transition-colors flex items-center gap-1"
+                >
+                  <LogIn size={14} />
+                  Log in
+                </button>
+              )
+            )}
+
+            <a 
+              href="#contact"
+              className="bg-primary text-black font-display font-bold text-sm tracking-widest uppercase px-6 py-2 border border-primary hover:bg-transparent hover:text-primary transition-all box-glow"
+            >
+              Get Quote
+            </a>
+          </div>
+
+          {/* Mobile Toggle */}
+          <button 
+            className="md:hidden text-white hover:text-primary transition-colors"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <Menu size={28} />
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "tween", duration: 0.3 }}
+            className="fixed inset-0 z-[60] bg-zinc-950 flex flex-col justify-center items-center px-6"
+          >
+            <button 
+              className="absolute top-5 right-5 text-zinc-400 hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <X size={36} />
+            </button>
+            
+            <div className="flex flex-col items-center gap-6">
+              {navLinks.map((link) => (
+                <a 
+                  key={link.name} 
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="font-display font-bold text-3xl uppercase text-white hover:text-primary hover:scale-110 transition-all"
+                >
+                  {link.name}
+                </a>
+              ))}
+
+              {/* Mobile DNA */}
+              {isAuthenticated && (
+                <button
+                  onClick={() => { setMobileMenuOpen(false); onOpenDNA?.(); }}
+                  className="font-display font-bold text-2xl uppercase text-primary hover:scale-110 transition-all flex items-center gap-2"
+                >
+                  <Dna size={20} />
+                  My DNA
+                </button>
+              )}
+
+              {/* Mobile auth */}
+              {!isLoading && (
+                isAuthenticated ? (
+                  <button
+                    onClick={logout}
+                    className="font-display font-bold text-2xl uppercase text-zinc-400 hover:text-primary hover:scale-110 transition-all flex items-center gap-2"
+                  >
+                    <LogOut size={20} />
+                    Log out
+                  </button>
+                ) : (
+                  <button
+                    onClick={login}
+                    className="font-display font-bold text-2xl uppercase text-zinc-400 hover:text-primary hover:scale-110 transition-all flex items-center gap-2"
+                  >
+                    <LogIn size={20} />
+                    Log in
+                  </button>
+                )
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}

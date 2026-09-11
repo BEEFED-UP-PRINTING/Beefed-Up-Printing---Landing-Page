@@ -1,0 +1,58 @@
+import { useEffect, useRef } from "react";
+
+export default function CinematicIntroSafe() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let raf: number;
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      raf = requestAnimationFrame(draw);
+    };
+    draw();
+
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
+  return (
+    <div className="relative w-full h-full">
+      {/* Phase 2 — full artwork revealed when lights come on (bottom layer) */}
+      <div
+        className="cinematic-bg"
+        style={{ backgroundImage: `url('/cinematic-bg-new.png')` }}
+      />
+
+      {/* Phase 1 — brick wall + neon skyline only, fades out at 5s */}
+      <div
+        className="cinematic-skyline-phase"
+        style={{ backgroundImage: `url('/skyline-placeholder.png')` }}
+      />
+
+      {/* Dark overlay lifts at 5s, triggering the reveal */}
+      <div className="cinematic-dark-overlay" />
+
+      <div className="cinematic-light cinematic-light-left" />
+      <div className="cinematic-light cinematic-light-right" />
+
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 w-full h-full pointer-events-none z-10 cinematic-canvas"
+      />
+    </div>
+  );
+}

@@ -1,1 +1,31 @@
-a2luZCA9ICJ3ZWIiCnByZXZpZXdQYXRoID0gIi8iCnRpdGxlID0gIkJlZWZlZCBVcCBQcmludGluZyAtIExhbmRpbmcgUGFnZSIKdmVyc2lvbiA9ICIxLjAuMCIKaWQgPSAiYXJ0aWZhY3RzL2JlZWZlZC11cC1sYW5kaW5nIgpyb3V0ZXIgPSAicGF0aCIKCltbaW50ZWdyYXRlZFNraWxsc11dCm5hbWUgPSAicmVhY3Qtdml0ZSIKdmVyc2lvbiA9ICIxLjAuMCIKCltbc2VydmljZXNdXQpuYW1lID0gIndlYiIKcGF0aHMgPSBbICIvIiBdCmxvY2FsUG9ydCA9IDI1MTg4Cgpbc2VydmljZXMuZGV2ZWxvcG1lbnRdCnJ1biA9ICJwbnBtIC0tZmlsdGVyIEB3b3Jrc3BhY2UvYmVlZmVkLXVwLWxhbmRpbmcgcnVuIGRldiIKCltzZXJ2aWNlcy5wcm9kdWN0aW9uXQpidWlsZCA9IFsgInBucG0iLCAiLS1maWx0ZXIiLCAiQHdvcmtzcGFjZS9iZWVmZWQtdXAtbGFuZGluZyIsICJydW4iLCAiYnVpbGQiIF0KcHVibGljRGlyID0gImFydGlmYWN0cy9iZWVmZWQtdXAtbGFuZGluZy9kaXN0L3B1YmxpYyIKc2VydmUgPSAic3RhdGljIgoKW1tzZXJ2aWNlcy5wcm9kdWN0aW9uLnJld3JpdGVzXV0KZnJvbSA9ICIvKiIKdG8gPSAiL2luZGV4Lmh0bWwiCgpbc2VydmljZXMuZW52XQpQT1JUID0gIjI1MTg4IgpCQVNFX1BBVEggPSAiLyIK
+kind = "web"
+previewPath = "/"
+title = "Beefed Up Printing - Landing Page"
+version = "1.0.0"
+id = "artifacts/beefed-up-landing"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25188
+
+[services.development]
+run = "pnpm --filter @workspace/beefed-up-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/beefed-up-landing", "run", "build" ]
+publicDir = "artifacts/beefed-up-landing/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25188"
+BASE_PATH = "/"

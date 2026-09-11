@@ -1,1 +1,103 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IG1vdGlvbiwgQW5pbWF0ZVByZXNlbmNlIH0gZnJvbSAiZnJhbWVyLW1vdGlvbiI7CmltcG9ydCB7IFggfSBmcm9tICJsdWNpZGUtcmVhY3QiOwoKaW50ZXJmYWNlIEJvb21ib3hNb2RhbFByb3BzIHsKICBpc09wZW46IGJvb2xlYW47CiAgb25DbG9zZTogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQm9vbWJveE1vZGFsKHsgaXNPcGVuLCBvbkNsb3NlIH06IEJvb21ib3hNb2RhbFByb3BzKSB7CiAgY29uc3QgdmlkZW9SZWYgPSB1c2VSZWY8SFRNTFZpZGVvRWxlbWVudD4obnVsbCk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAoaXNPcGVuICYmIHZpZGVvUmVmLmN1cnJlbnQpIHsKICAgICAgdmlkZW9SZWYuY3VycmVudC5jdXJyZW50VGltZSA9IDA7CiAgICAgIHZpZGVvUmVmLmN1cnJlbnQucGxheSgpLmNhdGNoKCgpID0+IHt9KTsKICAgIH0gZWxzZSBpZiAoIWlzT3BlbiAmJiB2aWRlb1JlZi5jdXJyZW50KSB7CiAgICAgIHZpZGVvUmVmLmN1cnJlbnQucGF1c2UoKTsKICAgICAgdmlkZW9SZWYuY3VycmVudC5jdXJyZW50VGltZSA9IDA7CiAgICB9CiAgfSwgW2lzT3Blbl0pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgaGFuZGxlS2V5ID0gKGU6IEtleWJvYXJkRXZlbnQpID0+IHsKICAgICAgaWYgKGUua2V5ID09PSAiRXNjYXBlIikgb25DbG9zZSgpOwogICAgfTsKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJrZXlkb3duIiwgaGFuZGxlS2V5KTsKICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigia2V5ZG93biIsIGhhbmRsZUtleSk7CiAgfSwgW29uQ2xvc2VdKTsKCiAgcmV0dXJuICgKICAgIDxBbmltYXRlUHJlc2VuY2U+CiAgICAgIHtpc09wZW4gJiYgKAogICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICBpbml0aWFsPXt7IG9wYWNpdHk6IDAgfX0KICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSB9fQogICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwIH19CiAgICAgICAgICB0cmFuc2l0aW9uPXt7IGR1cmF0aW9uOiAwLjMgfX0KICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LVsxMDBdIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIgogICAgICAgICAgb25DbGljaz17b25DbG9zZX0KICAgICAgICA+CiAgICAgICAgICB7LyogQmFja2Ryb3AgKi99CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBiZy1ibGFjay84NSBiYWNrZHJvcC1ibHVyLXNtIiAvPgoKICAgICAgICAgIHsvKiBNb2RhbCAqL30KICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgc2NhbGU6IDAuODUsIG9wYWNpdHk6IDAsIHk6IDMwIH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgc2NhbGU6IDEsIG9wYWNpdHk6IDEsIHk6IDAgfX0KICAgICAgICAgICAgZXhpdD17eyBzY2FsZTogMC44NSwgb3BhY2l0eTogMCwgeTogMzAgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyB0eXBlOiAic3ByaW5nIiwgc3RpZmZuZXNzOiAyNjAsIGRhbXBpbmc6IDIyIH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0icmVsYXRpdmUgei0xMCB3LVs5MnZ3XSBtYXgtdy0zeGwgcm91bmRlZC0yeGwgb3ZlcmZsb3ctaGlkZGVuIGJvcmRlci0yIGJvcmRlci1wcmltYXJ5IHNoYWRvdy1bMF8wXzYwcHhfcmdiYSgyNDksMTE1LDIyLDAuNSldIgogICAgICAgICAgICBvbkNsaWNrPXsoZSkgPT4gZS5zdG9wUHJvcGFnYXRpb24oKX0KICAgICAgICAgID4KICAgICAgICAgICAgey8qIEhlYWRlciBiYXIgKi99CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4gYmctemluYy05NTAgcHgtNSBweS0zIGJvcmRlci1iIGJvcmRlci16aW5jLTgwMCI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0zIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC0yeGwiPvCfjpnvuI88L3NwYW4+CiAgICAgICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtd2hpdGUgZm9udC1ib2xkIHRleHQtc20gdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIj5Ob3cgUGxheWluZzwvcD4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXByaW1hcnkgdGV4dC14cyBmb250LW1lZGl1bSI+QmVlZmVkIFVwIFByaW50aW5nIOKAlCBTdHJlZXQgQ3VsdHVyZSBWaWJlczwvcD4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIG9uQ2xpY2s9e29uQ2xvc2V9CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9InRleHQtemluYy00MDAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyBwLTEgcm91bmRlZC1mdWxsIGhvdmVyOmJnLXppbmMtODAwIgogICAgICAgICAgICAgICAgYXJpYS1sYWJlbD0iQ2xvc2UgdmlkZW8iCiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgPFggc2l6ZT17MjJ9IC8+CiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgey8qIFZpZGVvICovfQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctYmxhY2sgYXNwZWN0LXZpZGVvIj4KICAgICAgICAgICAgICA8dmlkZW8KICAgICAgICAgICAgICAgIHJlZj17dmlkZW9SZWZ9CiAgICAgICAgICAgICAgICBzcmM9e2Ake2ltcG9ydC5tZXRhLmVudi5CQVNFX1VSTH12aWRlby5tcDRgfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgaC1mdWxsIG9iamVjdC1jb250YWluIgogICAgICAgICAgICAgICAgY29udHJvbHMKICAgICAgICAgICAgICAgIHBsYXlzSW5saW5lCiAgICAgICAgICAgICAgICBsb29wCiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICB7LyogRm9vdGVyICovfQogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctemluYy05NTAgcHgtNSBweS0zIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBnYXAtWzNweF0gaXRlbXMtZW5kIGgtNCI+CiAgICAgICAgICAgICAgICB7WzEsMiwzLDQsNV0ubWFwKChpKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgICAgICAgICAga2V5PXtpfQogICAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgaGVpZ2h0OiBbIjIwJSIsIjEwMCUiLCI1MCUiLCI4MCUiLCIyMCUiXSB9fQogICAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgcmVwZWF0OiBJbmZpbml0eSwgZHVyYXRpb246IDAuNiArIGkgKiAwLjEyLCBlYXNlOiAiZWFzZUluT3V0IiB9fQogICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0idy0xIGJnLXByaW1hcnkgcm91bmRlZC10LXNtIgogICAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNDAwIHRleHQteHMgbWwtMiBmb250LW1vbm8gdHJhY2tpbmctd2lkZXN0IHVwcGVyY2FzZSI+TGl2ZSBmcm9tIHRoZSBibG9jazwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgPC9tb3Rpb24uZGl2PgogICAgICApfQogICAgPC9BbmltYXRlUHJlc2VuY2U+CiAgKTsKfQo=
+import { useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+
+interface BoomboxModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function BoomboxModal({ isOpen, onClose }: BoomboxModalProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (isOpen && videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play().catch(() => {});
+    } else if (!isOpen && videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [onClose]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="fixed inset-0 z-[100] flex items-center justify-center"
+          onClick={onClose}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/85 backdrop-blur-sm" />
+
+          {/* Modal */}
+          <motion.div
+            initial={{ scale: 0.85, opacity: 0, y: 30 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.85, opacity: 0, y: 30 }}
+            transition={{ type: "spring", stiffness: 260, damping: 22 }}
+            className="relative z-10 w-[92vw] max-w-3xl rounded-2xl overflow-hidden border-2 border-primary shadow-[0_0_60px_rgba(249,115,22,0.5)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header bar */}
+            <div className="flex items-center justify-between bg-zinc-950 px-5 py-3 border-b border-zinc-800">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">🎙️</span>
+                <div>
+                  <p className="text-white font-bold text-sm uppercase tracking-wider">Now Playing</p>
+                  <p className="text-primary text-xs font-medium">Beefed Up Printing — Street Culture Vibes</p>
+                </div>
+              </div>
+              <button
+                onClick={onClose}
+                className="text-zinc-400 hover:text-white transition-colors p-1 rounded-full hover:bg-zinc-800"
+                aria-label="Close video"
+              >
+                <X size={22} />
+              </button>
+            </div>
+
+            {/* Video */}
+            <div className="bg-black aspect-video">
+              <video
+                ref={videoRef}
+                src={`${import.meta.env.BASE_URL}video.mp4`}
+                className="w-full h-full object-contain"
+                controls
+                playsInline
+                loop
+              />
+            </div>
+
+            {/* Footer */}
+            <div className="bg-zinc-950 px-5 py-3 flex items-center gap-2">
+              <div className="flex gap-[3px] items-end h-4">
+                {[1,2,3,4,5].map((i) => (
+                  <motion.div
+                    key={i}
+                    animate={{ height: ["20%","100%","50%","80%","20%"] }}
+                    transition={{ repeat: Infinity, duration: 0.6 + i * 0.12, ease: "easeInOut" }}
+                    className="w-1 bg-primary rounded-t-sm"
+                  />
+                ))}
+              </div>
+              <span className="text-zinc-400 text-xs ml-2 font-mono tracking-widest uppercase">Live from the block</span>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}

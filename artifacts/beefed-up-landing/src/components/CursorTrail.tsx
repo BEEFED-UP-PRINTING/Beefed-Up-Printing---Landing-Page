@@ -1,1 +1,118 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CgppbnRlcmZhY2UgUGFydGljbGUgewogIHg6IG51bWJlcjsKICB5OiBudW1iZXI7CiAgdng6IG51bWJlcjsKICB2eTogbnVtYmVyOwogIGxpZmU6IG51bWJlcjsKICBtYXhMaWZlOiBudW1iZXI7CiAgc2l6ZTogbnVtYmVyOwogIGNvbG9yOiBzdHJpbmc7Cn0KCmNvbnN0IENPTE9SUyA9IFsKICAicmdiYSgyNDksMTE1LDIyLCIsICAgLy8gb3JhbmdlCiAgInJnYmEoMjM5LDY4LDY4LCIsICAgIC8vIHJlZAogICJyZ2JhKDI1NSwyMDAsODAsIiwgICAvLyBhbWJlcgogICJyZ2JhKDI1NSwyNTUsMjU1LCIsICAvLyB3aGl0ZQpdOwoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQ3Vyc29yVHJhaWwoKSB7CiAgY29uc3QgY2FudmFzUmVmID0gdXNlUmVmPEhUTUxDYW52YXNFbGVtZW50PihudWxsKTsKICBjb25zdCBwYXJ0aWNsZXMgPSB1c2VSZWY8UGFydGljbGVbXT4oW10pOwogIGNvbnN0IG1vdXNlID0gdXNlUmVmKHsgeDogLTk5OSwgeTogLTk5OSB9KTsKICBjb25zdCByYWYgPSB1c2VSZWY8bnVtYmVyPigwKTsKICBjb25zdCBpc1RvdWNoID0gdXNlUmVmKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGlmICh0eXBlb2Ygd2luZG93ID09PSAidW5kZWZpbmVkIikgcmV0dXJuOwoKICAgIC8vIERpc2FibGUgb24gdG91Y2ggZGV2aWNlcwogICAgY29uc3QgbXEgPSB3aW5kb3cubWF0Y2hNZWRpYSgiKGhvdmVyOiBub25lKSIpOwogICAgaWYgKG1xLm1hdGNoZXMpIHJldHVybjsKCiAgICBjb25zdCBjYW52YXMgPSBjYW52YXNSZWYuY3VycmVudDsKICAgIGlmICghY2FudmFzKSByZXR1cm47CiAgICBjb25zdCBjdHggPSBjYW52YXMuZ2V0Q29udGV4dCgiMmQiKTsKICAgIGlmICghY3R4KSByZXR1cm47CgogICAgbGV0IFcgPSB3aW5kb3cuaW5uZXJXaWR0aDsKICAgIGxldCBIID0gd2luZG93LmlubmVySGVpZ2h0OwoKICAgIGZ1bmN0aW9uIHJlc2l6ZSgpIHsKICAgICAgVyA9IHdpbmRvdy5pbm5lcldpZHRoOwogICAgICBIID0gd2luZG93LmlubmVySGVpZ2h0OwogICAgICBpZiAoY2FudmFzKSB7CiAgICAgICAgY2FudmFzLndpZHRoID0gVzsKICAgICAgICBjYW52YXMuaGVpZ2h0ID0gSDsKICAgICAgfQogICAgfQogICAgcmVzaXplKCk7CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigicmVzaXplIiwgcmVzaXplKTsKCiAgICBmdW5jdGlvbiBvbk1vdmUoZTogTW91c2VFdmVudCkgewogICAgICBtb3VzZS5jdXJyZW50ID0geyB4OiBlLmNsaWVudFgsIHk6IGUuY2xpZW50WSB9OwogICAgICAvLyBFbWl0IHBhcnRpY2xlcwogICAgICBjb25zdCBjb3VudCA9IDIgKyBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiAzKTsKICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCBjb3VudDsgaSsrKSB7CiAgICAgICAgY29uc3QgY29sb3IgPSBDT0xPUlNbTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpICogQ09MT1JTLmxlbmd0aCldOwogICAgICAgIGNvbnN0IHNwZWVkID0gMC41ICsgTWF0aC5yYW5kb20oKSAqIDEuNTsKICAgICAgICBjb25zdCBhbmdsZSA9IE1hdGgucmFuZG9tKCkgKiBNYXRoLlBJICogMjsKICAgICAgICBwYXJ0aWNsZXMuY3VycmVudC5wdXNoKHsKICAgICAgICAgIHg6IGUuY2xpZW50WCArIChNYXRoLnJhbmRvbSgpIC0gMC41KSAqIDYsCiAgICAgICAgICB5OiBlLmNsaWVudFkgKyAoTWF0aC5yYW5kb20oKSAtIDAuNSkgKiA2LAogICAgICAgICAgdng6IE1hdGguY29zKGFuZ2xlKSAqIHNwZWVkLAogICAgICAgICAgdnk6IE1hdGguc2luKGFuZ2xlKSAqIHNwZWVkIC0gMC41LAogICAgICAgICAgbGlmZTogMSwKICAgICAgICAgIG1heExpZmU6IDAuNiArIE1hdGgucmFuZG9tKCkgKiAwLjYsCiAgICAgICAgICBzaXplOiAyICsgTWF0aC5yYW5kb20oKSAqIDQsCiAgICAgICAgICBjb2xvciwKICAgICAgICB9KTsKICAgICAgfQogICAgfQoKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJtb3VzZW1vdmUiLCBvbk1vdmUpOwoKICAgIGZ1bmN0aW9uIGxvb3AoKSB7CiAgICAgIGN0eCEuY2xlYXJSZWN0KDAsIDAsIFcsIEgpOwoKICAgICAgcGFydGljbGVzLmN1cnJlbnQgPSBwYXJ0aWNsZXMuY3VycmVudC5maWx0ZXIoKHApID0+IHAubGlmZSA+IDApOwoKICAgICAgZm9yIChjb25zdCBwIG9mIHBhcnRpY2xlcy5jdXJyZW50KSB7CiAgICAgICAgcC54ICs9IHAudng7CiAgICAgICAgcC55ICs9IHAudnk7CiAgICAgICAgcC52eSArPSAwLjA0OyAvLyBncmF2aXR5CiAgICAgICAgcC52eCAqPSAwLjk3OwogICAgICAgIHAubGlmZSAtPSAxIC8gKDYwICogcC5tYXhMaWZlKTsKCiAgICAgICAgY29uc3QgYWxwaGEgPSBNYXRoLm1heCgwLCBwLmxpZmUpOwogICAgICAgIGN0eCEuYmVnaW5QYXRoKCk7CiAgICAgICAgY3R4IS5hcmMocC54LCBwLnksIHAuc2l6ZSAqIGFscGhhLCAwLCBNYXRoLlBJICogMik7CiAgICAgICAgY3R4IS5maWxsU3R5bGUgPSBgJHtwLmNvbG9yfSR7KGFscGhhICogMC45KS50b0ZpeGVkKDIpfSlgOwogICAgICAgIGN0eCEuc2hhZG93Qmx1ciA9IDY7CiAgICAgICAgY3R4IS5zaGFkb3dDb2xvciA9IHAuY29sb3IgKyAiMC42KSI7CiAgICAgICAgY3R4IS5maWxsKCk7CiAgICAgIH0KCiAgICAgIHJhZi5jdXJyZW50ID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGxvb3ApOwogICAgfQoKICAgIHJhZi5jdXJyZW50ID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGxvb3ApOwoKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIHdpbmRvdy5yZW1vdmVFdmVudExpc3RlbmVyKCJyZXNpemUiLCByZXNpemUpOwogICAgICB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigibW91c2Vtb3ZlIiwgb25Nb3ZlKTsKICAgICAgY2FuY2VsQW5pbWF0aW9uRnJhbWUocmFmLmN1cnJlbnQpOwogICAgfTsKICB9LCBbXSk7CgogIHJldHVybiAoCiAgICA8Y2FudmFzCiAgICAgIHJlZj17Y2FudmFzUmVmfQogICAgICBjbGFzc05hbWU9ImZpeGVkIGluc2V0LTAgcG9pbnRlci1ldmVudHMtbm9uZSB6LVs5OTk5XSIKICAgICAgc3R5bGU9e3sgbWl4QmxlbmRNb2RlOiAic2NyZWVuIiB9fQogICAgICBhcmlhLWhpZGRlbgogICAgLz4KICApOwp9Cg==
+import { useEffect, useRef } from "react";
+
+interface Particle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  life: number;
+  maxLife: number;
+  size: number;
+  color: string;
+}
+
+const COLORS = [
+  "rgba(249,115,22,",   // orange
+  "rgba(239,68,68,",    // red
+  "rgba(255,200,80,",   // amber
+  "rgba(255,255,255,",  // white
+];
+
+export default function CursorTrail() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const particles = useRef<Particle[]>([]);
+  const mouse = useRef({ x: -999, y: -999 });
+  const raf = useRef<number>(0);
+  const isTouch = useRef(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Disable on touch devices
+    const mq = window.matchMedia("(hover: none)");
+    if (mq.matches) return;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let W = window.innerWidth;
+    let H = window.innerHeight;
+
+    function resize() {
+      W = window.innerWidth;
+      H = window.innerHeight;
+      if (canvas) {
+        canvas.width = W;
+        canvas.height = H;
+      }
+    }
+    resize();
+    window.addEventListener("resize", resize);
+
+    function onMove(e: MouseEvent) {
+      mouse.current = { x: e.clientX, y: e.clientY };
+      // Emit particles
+      const count = 2 + Math.floor(Math.random() * 3);
+      for (let i = 0; i < count; i++) {
+        const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+        const speed = 0.5 + Math.random() * 1.5;
+        const angle = Math.random() * Math.PI * 2;
+        particles.current.push({
+          x: e.clientX + (Math.random() - 0.5) * 6,
+          y: e.clientY + (Math.random() - 0.5) * 6,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 0.5,
+          life: 1,
+          maxLife: 0.6 + Math.random() * 0.6,
+          size: 2 + Math.random() * 4,
+          color,
+        });
+      }
+    }
+
+    window.addEventListener("mousemove", onMove);
+
+    function loop() {
+      ctx!.clearRect(0, 0, W, H);
+
+      particles.current = particles.current.filter((p) => p.life > 0);
+
+      for (const p of particles.current) {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.04; // gravity
+        p.vx *= 0.97;
+        p.life -= 1 / (60 * p.maxLife);
+
+        const alpha = Math.max(0, p.life);
+        ctx!.beginPath();
+        ctx!.arc(p.x, p.y, p.size * alpha, 0, Math.PI * 2);
+        ctx!.fillStyle = `${p.color}${(alpha * 0.9).toFixed(2)})`;
+        ctx!.shadowBlur = 6;
+        ctx!.shadowColor = p.color + "0.6)";
+        ctx!.fill();
+      }
+
+      raf.current = requestAnimationFrame(loop);
+    }
+
+    raf.current = requestAnimationFrame(loop);
+
+    return () => {
+      window.removeEventListener("resize", resize);
+      window.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(raf.current);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 pointer-events-none z-[9999]"
+      style={{ mixBlendMode: "screen" }}
+      aria-hidden
+    />
+  );
+}

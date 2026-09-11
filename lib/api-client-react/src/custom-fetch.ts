@@ -1,1 +1,368 @@
-ZXhwb3J0IHR5cGUgQ3VzdG9tRmV0Y2hPcHRpb25zID0gUmVxdWVzdEluaXQgJiB7CiAgcmVzcG9uc2VUeXBlPzogImpzb24iIHwgInRleHQiIHwgImJsb2IiIHwgImF1dG8iOwp9OwoKZXhwb3J0IHR5cGUgRXJyb3JUeXBlPFQgPSB1bmtub3duPiA9IEFwaUVycm9yPFQ+OwoKZXhwb3J0IHR5cGUgQm9keVR5cGU8VD4gPSBUOwoKZXhwb3J0IHR5cGUgQXV0aFRva2VuR2V0dGVyID0gKCkgPT4gUHJvbWlzZTxzdHJpbmcgfCBudWxsPiB8IHN0cmluZyB8IG51bGw7Cgpjb25zdCBOT19CT0RZX1NUQVRVUyA9IG5ldyBTZXQoWzIwNCwgMjA1LCAzMDRdKTsKY29uc3QgREVGQVVMVF9KU09OX0FDQ0VQVCA9ICJhcHBsaWNhdGlvbi9qc29uLCBhcHBsaWNhdGlvbi9wcm9ibGVtK2pzb24iOwoKLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCi8vIE1vZHVsZS1sZXZlbCBjb25maWd1cmF0aW9uCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKbGV0IF9iYXNlVXJsOiBzdHJpbmcgfCBudWxsID0gbnVsbDsKbGV0IF9hdXRoVG9rZW5HZXR0ZXI6IEF1dGhUb2tlbkdldHRlciB8IG51bGwgPSBudWxsOwoKLyoqCiAqIFNldCBhIGJhc2UgVVJMIHRoYXQgaXMgcHJlcGVuZGVkIHRvIGV2ZXJ5IHJlbGF0aXZlIHJlcXVlc3QgVVJMCiAqIChpLmUuIHBhdGhzIHRoYXQgc3RhcnQgd2l0aCBgL2ApLgogKgogKiBVc2VmdWwgZm9yIEV4cG8gYnVuZGxlcyB0aGF0IG5lZWQgdG8gY2FsbCBhIHJlbW90ZSBBUEkgc2VydmVyLgogKiBQYXNzIGBudWxsYCB0byBjbGVhciB0aGUgYmFzZSBVUkwuCiAqLwpleHBvcnQgZnVuY3Rpb24gc2V0QmFzZVVybCh1cmw6IHN0cmluZyB8IG51bGwpOiB2b2lkIHsKICBfYmFzZVVybCA9IHVybCA/IHVybC5yZXBsYWNlKC9cLyskLywgIiIpIDogbnVsbDsKfQoKLyoqCiAqIFJlZ2lzdGVyIGEgZ2V0dGVyIHRoYXQgc3VwcGxpZXMgYSBiZWFyZXIgYXV0aCB0b2tlbi4gIEJlZm9yZSBldmVyeSBmZXRjaAogKiB0aGUgZ2V0dGVyIGlzIGludm9rZWQ7IHdoZW4gaXQgcmV0dXJucyBhIG5vbi1udWxsIHN0cmluZywgYW4KICogYEF1dGhvcml6YXRpb246IEJlYXJlciA8dG9rZW4+YCBoZWFkZXIgaXMgYXR0YWNoZWQgdG8gdGhlIHJlcXVlc3QuCiAqCiAqIFVzZWZ1bCBmb3IgRXhwbyBidW5kbGVzIG1ha2luZyB0b2tlbi1nYXRlZCBBUEkgY2FsbHMuCiAqIFBhc3MgYG51bGxgIHRvIGNsZWFyIHRoZSBnZXR0ZXIuCiAqLwpleHBvcnQgZnVuY3Rpb24gc2V0QXV0aFRva2VuR2V0dGVyKGdldHRlcjogQXV0aFRva2VuR2V0dGVyIHwgbnVsbCk6IHZvaWQgewogIF9hdXRoVG9rZW5HZXR0ZXIgPSBnZXR0ZXI7Cn0KCmZ1bmN0aW9uIGlzUmVxdWVzdChpbnB1dDogUmVxdWVzdEluZm8gfCBVUkwpOiBpbnB1dCBpcyBSZXF1ZXN0IHsKICByZXR1cm4gdHlwZW9mIFJlcXVlc3QgIT09ICJ1bmRlZmluZWQiICYmIGlucHV0IGluc3RhbmNlb2YgUmVxdWVzdDsKfQoKZnVuY3Rpb24gcmVzb2x2ZU1ldGhvZChpbnB1dDogUmVxdWVzdEluZm8gfCBVUkwsIGV4cGxpY2l0TWV0aG9kPzogc3RyaW5nKTogc3RyaW5nIHsKICBpZiAoZXhwbGljaXRNZXRob2QpIHJldHVybiBleHBsaWNpdE1ldGhvZC50b1VwcGVyQ2FzZSgpOwogIGlmIChpc1JlcXVlc3QoaW5wdXQpKSByZXR1cm4gaW5wdXQubWV0aG9kLnRvVXBwZXJDYXNlKCk7CiAgcmV0dXJuICJHRVQiOwp9CgovLyBVc2UgbG9vc2UgY2hlY2sgZm9yIFVSTCDigJQgc29tZSBydW50aW1lcyAoZS5nLiBSZWFjdCBOYXRpdmUpIHBvbHlmaWxsIFVSTAovLyBkaWZmZXJlbnRseSwgc28gYGluc3RhbmNlb2YgVVJMYCBjYW4gZmFpbC4KZnVuY3Rpb24gaXNVcmwoaW5wdXQ6IFJlcXVlc3RJbmZvIHwgVVJMKTogaW5wdXQgaXMgVVJMIHsKICByZXR1cm4gdHlwZW9mIFVSTCAhPT0gInVuZGVmaW5lZCIgJiYgaW5wdXQgaW5zdGFuY2VvZiBVUkw7Cn0KCmZ1bmN0aW9uIGFwcGx5QmFzZVVybChpbnB1dDogUmVxdWVzdEluZm8gfCBVUkwpOiBSZXF1ZXN0SW5mbyB8IFVSTCB7CiAgaWYgKCFfYmFzZVVybCkgcmV0dXJuIGlucHV0OwogIGNvbnN0IHVybCA9IHJlc29sdmVVcmwoaW5wdXQpOwogIC8vIE9ubHkgcHJlcGVuZCB0byByZWxhdGl2ZSBwYXRocyAoc3RhcnRpbmcgd2l0aCAvKQogIGlmICghdXJsLnN0YXJ0c1dpdGgoIi8iKSkgcmV0dXJuIGlucHV0OwoKICBjb25zdCBhYnNvbHV0ZSA9IGAke19iYXNlVXJsfSR7dXJsfWA7CiAgaWYgKHR5cGVvZiBpbnB1dCA9PT0gInN0cmluZyIpIHJldHVybiBhYnNvbHV0ZTsKICBpZiAoaXNVcmwoaW5wdXQpKSByZXR1cm4gbmV3IFVSTChhYnNvbHV0ZSk7CiAgcmV0dXJuIG5ldyBSZXF1ZXN0KGFic29sdXRlLCBpbnB1dCBhcyBSZXF1ZXN0KTsKfQoKZnVuY3Rpb24gcmVzb2x2ZVVybChpbnB1dDogUmVxdWVzdEluZm8gfCBVUkwpOiBzdHJpbmcgewogIGlmICh0eXBlb2YgaW5wdXQgPT09ICJzdHJpbmciKSByZXR1cm4gaW5wdXQ7CiAgaWYgKGlzVXJsKGlucHV0KSkgcmV0dXJuIGlucHV0LnRvU3RyaW5nKCk7CiAgcmV0dXJuIGlucHV0LnVybDsKfQoKZnVuY3Rpb24gbWVyZ2VIZWFkZXJzKC4uLnNvdXJjZXM6IEFycmF5PEhlYWRlcnNJbml0IHwgdW5kZWZpbmVkPik6IEhlYWRlcnMgewogIGNvbnN0IGhlYWRlcnMgPSBuZXcgSGVhZGVycygpOwoKICBmb3IgKGNvbnN0IHNvdXJjZSBvZiBzb3VyY2VzKSB7CiAgICBpZiAoIXNvdXJjZSkgY29udGludWU7CiAgICBuZXcgSGVhZGVycyhzb3VyY2UpLmZvckVhY2goKHZhbHVlLCBrZXkpID0+IHsKICAgICAgaGVhZGVycy5zZXQoa2V5LCB2YWx1ZSk7CiAgICB9KTsKICB9CgogIHJldHVybiBoZWFkZXJzOwp9CgpmdW5jdGlvbiBnZXRNZWRpYVR5cGUoaGVhZGVyczogSGVhZGVycyk6IHN0cmluZyB8IG51bGwgewogIGNvbnN0IHZhbHVlID0gaGVhZGVycy5nZXQoImNvbnRlbnQtdHlwZSIpOwogIHJldHVybiB2YWx1ZSA/IHZhbHVlLnNwbGl0KCI7IiwgMSlbMF0udHJpbSgpLnRvTG93ZXJDYXNlKCkgOiBudWxsOwp9CgpmdW5jdGlvbiBpc0pzb25NZWRpYVR5cGUobWVkaWFUeXBlOiBzdHJpbmcgfCBudWxsKTogYm9vbGVhbiB7CiAgcmV0dXJuIG1lZGlhVHlwZSA9PT0gImFwcGxpY2F0aW9uL2pzb24iIHx8IEJvb2xlYW4obWVkaWFUeXBlPy5lbmRzV2l0aCgiK2pzb24iKSk7Cn0KCmZ1bmN0aW9uIGlzVGV4dE1lZGlhVHlwZShtZWRpYVR5cGU6IHN0cmluZyB8IG51bGwpOiBib29sZWFuIHsKICByZXR1cm4gQm9vbGVhbigKICAgIG1lZGlhVHlwZSAmJgogICAgICAobWVkaWFUeXBlLnN0YXJ0c1dpdGgoInRleHQvIikgfHwKICAgICAgICBtZWRpYVR5cGUgPT09ICJhcHBsaWNhdGlvbi94bWwiIHx8CiAgICAgICAgbWVkaWFUeXBlID09PSAidGV4dC94bWwiIHx8CiAgICAgICAgbWVkaWFUeXBlLmVuZHNXaXRoKCIreG1sIikgfHwKICAgICAgICBtZWRpYVR5cGUgPT09ICJhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQiKSwKICApOwp9CgovLyBVc2Ugc3RyaWN0IGVxdWFsaXR5OiBpbiBicm93c2VycywgYHJlc3BvbnNlLmJvZHlgIGlzIGBudWxsYCB3aGVuIHRoZQovLyByZXNwb25zZSBnZW51aW5lbHkgaGFzIG5vIGNvbnRlbnQuICBJbiBSZWFjdCBOYXRpdmUsIGByZXNwb25zZS5ib2R5YCBpcwovLyBhbHdheXMgYHVuZGVmaW5lZGAgYmVjYXVzZSB0aGUgUmVhZGFibGVTdHJlYW0gQVBJIGlzIG5vdCBpbXBsZW1lbnRlZCDigJQKLy8gZXZlbiB3aGVuIHRoZSByZXNwb25zZSBjYXJyaWVzIGEgZnVsbCBwYXlsb2FkIHJlYWRhYmxlIHZpYSBgLnRleHQoKWAgb3IKLy8gYC5qc29uKClgLiAgTG9vc2UgZXF1YWxpdHkgKGA9PSBudWxsYCkgbWF0Y2hlcyBib3RoIGBudWxsYCBhbmQgYHVuZGVmaW5lZGAsCi8vIHdoaWNoIGNhdXNlcyBldmVyeSBSZWFjdCBOYXRpdmUgcmVzcG9uc2UgdG8gYmUgdHJlYXRlZCBhcyBlbXB0eS4KZnVuY3Rpb24gaGFzTm9Cb2R5KHJlc3BvbnNlOiBSZXNwb25zZSwgbWV0aG9kOiBzdHJpbmcpOiBib29sZWFuIHsKICBpZiAobWV0aG9kID09PSAiSEVBRCIpIHJldHVybiB0cnVlOwogIGlmIChOT19CT0RZX1NUQVRVUy5oYXMocmVzcG9uc2Uuc3RhdHVzKSkgcmV0dXJuIHRydWU7CiAgaWYgKHJlc3BvbnNlLmhlYWRlcnMuZ2V0KCJjb250ZW50LWxlbmd0aCIpID09PSAiMCIpIHJldHVybiB0cnVlOwogIGlmIChyZXNwb25zZS5ib2R5ID09PSBudWxsKSByZXR1cm4gdHJ1ZTsKICByZXR1cm4gZmFsc2U7Cn0KCmZ1bmN0aW9uIHN0cmlwQm9tKHRleHQ6IHN0cmluZyk6IHN0cmluZyB7CiAgcmV0dXJuIHRleHQuY2hhckNvZGVBdCgwKSA9PT0gMHhmZWZmID8gdGV4dC5zbGljZSgxKSA6IHRleHQ7Cn0KCmZ1bmN0aW9uIGxvb2tzTGlrZUpzb24odGV4dDogc3RyaW5nKTogYm9vbGVhbiB7CiAgY29uc3QgdHJpbW1lZCA9IHRleHQudHJpbVN0YXJ0KCk7CiAgcmV0dXJuIHRyaW1tZWQuc3RhcnRzV2l0aCgieyIpIHx8IHRyaW1tZWQuc3RhcnRzV2l0aCgiWyIpOwp9CgpmdW5jdGlvbiBnZXRTdHJpbmdGaWVsZCh2YWx1ZTogdW5rbm93biwga2V5OiBzdHJpbmcpOiBzdHJpbmcgfCB1bmRlZmluZWQgewogIGlmICghdmFsdWUgfHwgdHlwZW9mIHZhbHVlICE9PSAib2JqZWN0IikgcmV0dXJuIHVuZGVmaW5lZDsKCiAgY29uc3QgY2FuZGlkYXRlID0gKHZhbHVlIGFzIFJlY29yZDxzdHJpbmcsIHVua25vd24+KVtrZXldOwogIGlmICh0eXBlb2YgY2FuZGlkYXRlICE9PSAic3RyaW5nIikgcmV0dXJuIHVuZGVmaW5lZDsKCiAgY29uc3QgdHJpbW1lZCA9IGNhbmRpZGF0ZS50cmltKCk7CiAgcmV0dXJuIHRyaW1tZWQgPT09ICIiID8gdW5kZWZpbmVkIDogdHJpbW1lZDsKfQoKZnVuY3Rpb24gdHJ1bmNhdGUodGV4dDogc3RyaW5nLCBtYXhMZW5ndGggPSAzMDApOiBzdHJpbmcgewogIHJldHVybiB0ZXh0Lmxlbmd0aCA+IG1heExlbmd0aCA/IGAke3RleHQuc2xpY2UoMCwgbWF4TGVuZ3RoIC0gMSl94oCmYCA6IHRleHQ7Cn0KCmZ1bmN0aW9uIGJ1aWxkRXJyb3JNZXNzYWdlKHJlc3BvbnNlOiBSZXNwb25zZSwgZGF0YTogdW5rbm93bik6IHN0cmluZyB7CiAgY29uc3QgcHJlZml4ID0gYEhUVFAgJHtyZXNwb25zZS5zdGF0dXN9ICR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1gOwoKICBpZiAodHlwZW9mIGRhdGEgPT09ICJzdHJpbmciKSB7CiAgICBjb25zdCB0ZXh0ID0gZGF0YS50cmltKCk7CiAgICByZXR1cm4gdGV4dCA/IGAke3ByZWZpeH06ICR7dHJ1bmNhdGUodGV4dCl9YCA6IHByZWZpeDsKICB9CgogIGNvbnN0IHRpdGxlID0gZ2V0U3RyaW5nRmllbGQoZGF0YSwgInRpdGxlIik7CiAgY29uc3QgZGV0YWlsID0gZ2V0U3RyaW5nRmllbGQoZGF0YSwgImRldGFpbCIpOwogIGNvbnN0IG1lc3NhZ2UgPQogICAgZ2V0U3RyaW5nRmllbGQoZGF0YSwgIm1lc3NhZ2UiKSA/PwogICAgZ2V0U3RyaW5nRmllbGQoZGF0YSwgImVycm9yX2Rlc2NyaXB0aW9uIikgPz8KICAgIGdldFN0cmluZ0ZpZWxkKGRhdGEsICJlcnJvciIpOwoKICBpZiAodGl0bGUgJiYgZGV0YWlsKSByZXR1cm4gYCR7cHJlZml4fTogJHt0aXRsZX0g4oCUICR7ZGV0YWlsfWA7CiAgaWYgKGRldGFpbCkgcmV0dXJuIGAke3ByZWZpeH06ICR7ZGV0YWlsfWA7CiAgaWYgKG1lc3NhZ2UpIHJldHVybiBgJHtwcmVmaXh9OiAke21lc3NhZ2V9YDsKICBpZiAodGl0bGUpIHJldHVybiBgJHtwcmVmaXh9OiAke3RpdGxlfWA7CgogIHJldHVybiBwcmVmaXg7Cn0KCmV4cG9ydCBjbGFzcyBBcGlFcnJvcjxUID0gdW5rbm93bj4gZXh0ZW5kcyBFcnJvciB7CiAgcmVhZG9ubHkgbmFtZSA9ICJBcGlFcnJvciI7CiAgcmVhZG9ubHkgc3RhdHVzOiBudW1iZXI7CiAgcmVhZG9ubHkgc3RhdHVzVGV4dDogc3RyaW5nOwogIHJlYWRvbmx5IGRhdGE6IFQgfCBudWxsOwogIHJlYWRvbmx5IGhlYWRlcnM6IEhlYWRlcnM7CiAgcmVhZG9ubHkgcmVzcG9uc2U6IFJlc3BvbnNlOwogIHJlYWRvbmx5IG1ldGhvZDogc3RyaW5nOwogIHJlYWRvbmx5IHVybDogc3RyaW5nOwoKICBjb25zdHJ1Y3RvcigKICAgIHJlc3BvbnNlOiBSZXNwb25zZSwKICAgIGRhdGE6IFQgfCBudWxsLAogICAgcmVxdWVzdEluZm86IHsgbWV0aG9kOiBzdHJpbmc7IHVybDogc3RyaW5nIH0sCiAgKSB7CiAgICBzdXBlcihidWlsZEVycm9yTWVzc2FnZShyZXNwb25zZSwgZGF0YSkpOwogICAgT2JqZWN0LnNldFByb3RvdHlwZU9mKHRoaXMsIG5ldy50YXJnZXQucHJvdG90eXBlKTsKCiAgICB0aGlzLnN0YXR1cyA9IHJlc3BvbnNlLnN0YXR1czsKICAgIHRoaXMuc3RhdHVzVGV4dCA9IHJlc3BvbnNlLnN0YXR1c1RleHQ7CiAgICB0aGlzLmRhdGEgPSBkYXRhOwogICAgdGhpcy5oZWFkZXJzID0gcmVzcG9uc2UuaGVhZGVyczsKICAgIHRoaXMucmVzcG9uc2UgPSByZXNwb25zZTsKICAgIHRoaXMubWV0aG9kID0gcmVxdWVzdEluZm8ubWV0aG9kOwogICAgdGhpcy51cmwgPSByZXNwb25zZS51cmwgfHwgcmVxdWVzdEluZm8udXJsOwogIH0KfQoKZXhwb3J0IGNsYXNzIFJlc3BvbnNlUGFyc2VFcnJvciBleHRlbmRzIEVycm9yIHsKICByZWFkb25seSBuYW1lID0gIlJlc3BvbnNlUGFyc2VFcnJvciI7CiAgcmVhZG9ubHkgc3RhdHVzOiBudW1iZXI7CiAgcmVhZG9ubHkgc3RhdHVzVGV4dDogc3RyaW5nOwogIHJlYWRvbmx5IGhlYWRlcnM6IEhlYWRlcnM7CiAgcmVhZG9ubHkgcmVzcG9uc2U6IFJlc3BvbnNlOwogIHJlYWRvbmx5IG1ldGhvZDogc3RyaW5nOwogIHJlYWRvbmx5IHVybDogc3RyaW5nOwogIHJlYWRvbmx5IHJhd0JvZHk6IHN0cmluZzsKICByZWFkb25seSBjYXVzZTogdW5rbm93bjsKCiAgY29uc3RydWN0b3IoCiAgICByZXNwb25zZTogUmVzcG9uc2UsCiAgICByYXdCb2R5OiBzdHJpbmcsCiAgICBjYXVzZTogdW5rbm93biwKICAgIHJlcXVlc3RJbmZvOiB7IG1ldGhvZDogc3RyaW5nOyB1cmw6IHN0cmluZyB9LAogICkgewogICAgc3VwZXIoCiAgICAgIGBGYWlsZWQgdG8gcGFyc2UgcmVzcG9uc2UgZnJvbSAke3JlcXVlc3RJbmZvLm1ldGhvZH0gJHtyZXNwb25zZS51cmwgfHwgcmVxdWVzdEluZm8udXJsfSBgICsKICAgICAgICBgKCR7cmVzcG9uc2Uuc3RhdHVzfSAke3Jlc3BvbnNlLnN0YXR1c1RleHR9KSBhcyBKU09OYCwKICAgICk7CiAgICBPYmplY3Quc2V0UHJvdG90eXBlT2YodGhpcywgbmV3LnRhcmdldC5wcm90b3R5cGUpOwoKICAgIHRoaXMuc3RhdHVzID0gcmVzcG9uc2Uuc3RhdHVzOwogICAgdGhpcy5zdGF0dXNUZXh0ID0gcmVzcG9uc2Uuc3RhdHVzVGV4dDsKICAgIHRoaXMuaGVhZGVycyA9IHJlc3BvbnNlLmhlYWRlcnM7CiAgICB0aGlzLnJlc3BvbnNlID0gcmVzcG9uc2U7CiAgICB0aGlzLm1ldGhvZCA9IHJlcXVlc3RJbmZvLm1ldGhvZDsKICAgIHRoaXMudXJsID0gcmVzcG9uc2UudXJsIHx8IHJlcXVlc3RJbmZvLnVybDsKICAgIHRoaXMucmF3Qm9keSA9IHJhd0JvZHk7CiAgICB0aGlzLmNhdXNlID0gY2F1c2U7CiAgfQp9Cgphc3luYyBmdW5jdGlvbiBwYXJzZUpzb25Cb2R5KAogIHJlc3BvbnNlOiBSZXNwb25zZSwKICByZXF1ZXN0SW5mbzogeyBtZXRob2Q6IHN0cmluZzsgdXJsOiBzdHJpbmcgfSwKKTogUHJvbWlzZTx1bmtub3duPiB7CiAgY29uc3QgcmF3ID0gYXdhaXQgcmVzcG9uc2UudGV4dCgpOwogIGNvbnN0IG5vcm1hbGl6ZWQgPSBzdHJpcEJvbShyYXcpOwoKICBpZiAobm9ybWFsaXplZC50cmltKCkgPT09ICIiKSB7CiAgICByZXR1cm4gbnVsbDsKICB9CgogIHRyeSB7CiAgICByZXR1cm4gSlNPTi5wYXJzZShub3JtYWxpemVkKTsKICB9IGNhdGNoIChjYXVzZSkgewogICAgdGhyb3cgbmV3IFJlc3BvbnNlUGFyc2VFcnJvcihyZXNwb25zZSwgcmF3LCBjYXVzZSwgcmVxdWVzdEluZm8pOwogIH0KfQoKYXN5bmMgZnVuY3Rpb24gcGFyc2VFcnJvckJvZHkocmVzcG9uc2U6IFJlc3BvbnNlLCBtZXRob2Q6IHN0cmluZyk6IFByb21pc2U8dW5rbm93bj4gewogIGlmIChoYXNOb0JvZHkocmVzcG9uc2UsIG1ldGhvZCkpIHsKICAgIHJldHVybiBudWxsOwogIH0KCiAgY29uc3QgbWVkaWFUeXBlID0gZ2V0TWVkaWFUeXBlKHJlc3BvbnNlLmhlYWRlcnMpOwoKICAvLyBGYWxsIGJhY2sgdG8gdGV4dCB3aGVuIGJsb2IoKSBpcyB1bmF2YWlsYWJsZSAoZS5nLiBzb21lIFJlYWN0IE5hdGl2ZSBidWlsZHMpLgogIGlmIChtZWRpYVR5cGUgJiYgIWlzSnNvbk1lZGlhVHlwZShtZWRpYVR5cGUpICYmICFpc1RleHRNZWRpYVR5cGUobWVkaWFUeXBlKSkgewogICAgcmV0dXJuIHR5cGVvZiByZXNwb25zZS5ibG9iID09PSAiZnVuY3Rpb24iID8gcmVzcG9uc2UuYmxvYigpIDogcmVzcG9uc2UudGV4dCgpOwogIH0KCiAgY29uc3QgcmF3ID0gYXdhaXQgcmVzcG9uc2UudGV4dCgpOwogIGNvbnN0IG5vcm1hbGl6ZWQgPSBzdHJpcEJvbShyYXcpOwogIGNvbnN0IHRyaW1tZWQgPSBub3JtYWxpemVkLnRyaW0oKTsKCiAgaWYgKHRyaW1tZWQgPT09ICIiKSB7CiAgICByZXR1cm4gbnVsbDsKICB9CgogIGlmIChpc0pzb25NZWRpYVR5cGUobWVkaWFUeXBlKSB8fCBsb29rc0xpa2VKc29uKG5vcm1hbGl6ZWQpKSB7CiAgICB0cnkgewogICAgICByZXR1cm4gSlNPTi5wYXJzZShub3JtYWxpemVkKTsKICAgIH0gY2F0Y2ggewogICAgICByZXR1cm4gcmF3OwogICAgfQogIH0KCiAgcmV0dXJuIHJhdzsKfQoKZnVuY3Rpb24gaW5mZXJSZXNwb25zZVR5cGUocmVzcG9uc2U6IFJlc3BvbnNlKTogImpzb24iIHwgInRleHQiIHwgImJsb2IiIHsKICBjb25zdCBtZWRpYVR5cGUgPSBnZXRNZWRpYVR5cGUocmVzcG9uc2UuaGVhZGVycyk7CgogIGlmIChpc0pzb25NZWRpYVR5cGUobWVkaWFUeXBlKSkgcmV0dXJuICJqc29uIjsKICBpZiAoaXNUZXh0TWVkaWFUeXBlKG1lZGlhVHlwZSkgfHwgbWVkaWFUeXBlID09IG51bGwpIHJldHVybiAidGV4dCI7CiAgcmV0dXJuICJibG9iIjsKfQoKYXN5bmMgZnVuY3Rpb24gcGFyc2VTdWNjZXNzQm9keSgKICByZXNwb25zZTogUmVzcG9uc2UsCiAgcmVzcG9uc2VUeXBlOiAianNvbiIgfCAidGV4dCIgfCAiYmxvYiIgfCAiYXV0byIsCiAgcmVxdWVzdEluZm86IHsgbWV0aG9kOiBzdHJpbmc7IHVybDogc3RyaW5nIH0sCik6IFByb21pc2U8dW5rbm93bj4gewogIGlmIChoYXNOb0JvZHkocmVzcG9uc2UsIHJlcXVlc3RJbmZvLm1ldGhvZCkpIHsKICAgIHJldHVybiBudWxsOwogIH0KCiAgY29uc3QgZWZmZWN0aXZlVHlwZSA9CiAgICByZXNwb25zZVR5cGUgPT09ICJhdXRvIiA/IGluZmVyUmVzcG9uc2VUeXBlKHJlc3BvbnNlKSA6IHJlc3BvbnNlVHlwZTsKCiAgc3dpdGNoIChlZmZlY3RpdmVUeXBlKSB7CiAgICBjYXNlICJqc29uIjoKICAgICAgcmV0dXJuIHBhcnNlSnNvbkJvZHkocmVzcG9uc2UsIHJlcXVlc3RJbmZvKTsKCiAgICBjYXNlICJ0ZXh0IjogewogICAgICBjb25zdCB0ZXh0ID0gYXdhaXQgcmVzcG9uc2UudGV4dCgpOwogICAgICByZXR1cm4gdGV4dCA9PT0gIiIgPyBudWxsIDogdGV4dDsKICAgIH0KCiAgICBjYXNlICJibG9iIjoKICAgICAgaWYgKHR5cGVvZiByZXNwb25zZS5ibG9iICE9PSAiZnVuY3Rpb24iKSB7CiAgICAgICAgdGhyb3cgbmV3IFR5cGVFcnJvcigKICAgICAgICAgICJCbG9iIHJlc3BvbnNlcyBhcmUgbm90IHN1cHBvcnRlZCBpbiB0aGlzIHJ1bnRpbWUuICIgKwogICAgICAgICAgICAiVXNlIHJlc3BvbnNlVHlwZSBcImpzb25cIiBvciBcInRleHRcIiBpbnN0ZWFkLiIsCiAgICAgICAgKTsKICAgICAgfQogICAgICByZXR1cm4gcmVzcG9uc2UuYmxvYigpOwogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGN1c3RvbUZldGNoPFQgPSB1bmtub3duPigKICBpbnB1dDogUmVxdWVzdEluZm8gfCBVUkwsCiAgb3B0aW9uczogQ3VzdG9tRmV0Y2hPcHRpb25zID0ge30sCik6IFByb21pc2U8VD4gewogIGlucHV0ID0gYXBwbHlCYXNlVXJsKGlucHV0KTsKICBjb25zdCB7IHJlc3BvbnNlVHlwZSA9ICJhdXRvIiwgaGVhZGVyczogaGVhZGVyc0luaXQsIC4uLmluaXQgfSA9IG9wdGlvbnM7CgogIGNvbnN0IG1ldGhvZCA9IHJlc29sdmVNZXRob2QoaW5wdXQsIGluaXQubWV0aG9kKTsKCiAgaWYgKGluaXQuYm9keSAhPSBudWxsICYmIChtZXRob2QgPT09ICJHRVQiIHx8IG1ldGhvZCA9PT0gIkhFQUQiKSkgewogICAgdGhyb3cgbmV3IFR5cGVFcnJvcihgY3VzdG9tRmV0Y2g6ICR7bWV0aG9kfSByZXF1ZXN0cyBjYW5ub3QgaGF2ZSBhIGJvZHkuYCk7CiAgfQoKICBjb25zdCBoZWFkZXJzID0gbWVyZ2VIZWFkZXJzKGlzUmVxdWVzdChpbnB1dCkgPyBpbnB1dC5oZWFkZXJzIDogdW5kZWZpbmVkLCBoZWFkZXJzSW5pdCk7CgogIGlmICgKICAgIHR5cGVvZiBpbml0LmJvZHkgPT09ICJzdHJpbmciICYmCiAgICAhaGVhZGVycy5oYXMoImNvbnRlbnQtdHlwZSIpICYmCiAgICBsb29rc0xpa2VKc29uKGluaXQuYm9keSkKICApIHsKICAgIGhlYWRlcnMuc2V0KCJjb250ZW50LXR5cGUiLCAiYXBwbGljYXRpb24vanNvbiIpOwogIH0KCiAgaWYgKHJlc3BvbnNlVHlwZSA9PT0gImpzb24iICYmICFoZWFkZXJzLmhhcygiYWNjZXB0IikpIHsKICAgIGhlYWRlcnMuc2V0KCJhY2NlcHQiLCBERUZBVUxUX0pTT05fQUNDRVBUKTsKICB9CgogIC8vIEF0dGFjaCBiZWFyZXIgdG9rZW4gd2hlbiBhbiBhdXRoIGdldHRlciBpcyBjb25maWd1cmVkIGFuZCBubwogIC8vIEF1dGhvcml6YXRpb24gaGVhZGVyIGhhcyBiZWVuIGV4cGxpY2l0bHkgcHJvdmlkZWQuCiAgaWYgKF9hdXRoVG9rZW5HZXR0ZXIgJiYgIWhlYWRlcnMuaGFzKCJhdXRob3JpemF0aW9uIikpIHsKICAgIGNvbnN0IHRva2VuID0gYXdhaXQgX2F1dGhUb2tlbkdldHRlcigpOwogICAgaWYgKHRva2VuKSB7CiAgICAgIGhlYWRlcnMuc2V0KCJhdXRob3JpemF0aW9uIiwgYEJlYXJlciAke3Rva2VufWApOwogICAgfQogIH0KCiAgY29uc3QgcmVxdWVzdEluZm8gPSB7IG1ldGhvZCwgdXJsOiByZXNvbHZlVXJsKGlucHV0KSB9OwoKICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGlucHV0LCB7IC4uLmluaXQsIG1ldGhvZCwgaGVhZGVycyB9KTsKCiAgaWYgKCFyZXNwb25zZS5vaykgewogICAgY29uc3QgZXJyb3JEYXRhID0gYXdhaXQgcGFyc2VFcnJvckJvZHkocmVzcG9uc2UsIG1ldGhvZCk7CiAgICB0aHJvdyBuZXcgQXBpRXJyb3IocmVzcG9uc2UsIGVycm9yRGF0YSwgcmVxdWVzdEluZm8pOwogIH0KCiAgcmV0dXJuIChhd2FpdCBwYXJzZVN1Y2Nlc3NCb2R5KHJlc3BvbnNlLCByZXNwb25zZVR5cGUsIHJlcXVlc3RJbmZvKSkgYXMgVDsKfQo=
+export type CustomFetchOptions = RequestInit & {
+  responseType?: "json" | "text" | "blob" | "auto";
+};
+
+export type ErrorType<T = unknown> = ApiError<T>;
+
+export type BodyType<T> = T;
+
+export type AuthTokenGetter = () => Promise<string | null> | string | null;
+
+const NO_BODY_STATUS = new Set([204, 205, 304]);
+const DEFAULT_JSON_ACCEPT = "application/json, application/problem+json";
+
+// ---------------------------------------------------------------------------
+// Module-level configuration
+// ---------------------------------------------------------------------------
+
+let _baseUrl: string | null = null;
+let _authTokenGetter: AuthTokenGetter | null = null;
+
+/**
+ * Set a base URL that is prepended to every relative request URL
+ * (i.e. paths that start with `/`).
+ *
+ * Useful for Expo bundles that need to call a remote API server.
+ * Pass `null` to clear the base URL.
+ */
+export function setBaseUrl(url: string | null): void {
+  _baseUrl = url ? url.replace(/\/+$/, "") : null;
+}
+
+/**
+ * Register a getter that supplies a bearer auth token.  Before every fetch
+ * the getter is invoked; when it returns a non-null string, an
+ * `Authorization: Bearer <token>` header is attached to the request.
+ *
+ * Useful for Expo bundles making token-gated API calls.
+ * Pass `null` to clear the getter.
+ */
+export function setAuthTokenGetter(getter: AuthTokenGetter | null): void {
+  _authTokenGetter = getter;
+}
+
+function isRequest(input: RequestInfo | URL): input is Request {
+  return typeof Request !== "undefined" && input instanceof Request;
+}
+
+function resolveMethod(input: RequestInfo | URL, explicitMethod?: string): string {
+  if (explicitMethod) return explicitMethod.toUpperCase();
+  if (isRequest(input)) return input.method.toUpperCase();
+  return "GET";
+}
+
+// Use loose check for URL — some runtimes (e.g. React Native) polyfill URL
+// differently, so `instanceof URL` can fail.
+function isUrl(input: RequestInfo | URL): input is URL {
+  return typeof URL !== "undefined" && input instanceof URL;
+}
+
+function applyBaseUrl(input: RequestInfo | URL): RequestInfo | URL {
+  if (!_baseUrl) return input;
+  const url = resolveUrl(input);
+  // Only prepend to relative paths (starting with /)
+  if (!url.startsWith("/")) return input;
+
+  const absolute = `${_baseUrl}${url}`;
+  if (typeof input === "string") return absolute;
+  if (isUrl(input)) return new URL(absolute);
+  return new Request(absolute, input as Request);
+}
+
+function resolveUrl(input: RequestInfo | URL): string {
+  if (typeof input === "string") return input;
+  if (isUrl(input)) return input.toString();
+  return input.url;
+}
+
+function mergeHeaders(...sources: Array<HeadersInit | undefined>): Headers {
+  const headers = new Headers();
+
+  for (const source of sources) {
+    if (!source) continue;
+    new Headers(source).forEach((value, key) => {
+      headers.set(key, value);
+    });
+  }
+
+  return headers;
+}
+
+function getMediaType(headers: Headers): string | null {
+  const value = headers.get("content-type");
+  return value ? value.split(";", 1)[0].trim().toLowerCase() : null;
+}
+
+function isJsonMediaType(mediaType: string | null): boolean {
+  return mediaType === "application/json" || Boolean(mediaType?.endsWith("+json"));
+}
+
+function isTextMediaType(mediaType: string | null): boolean {
+  return Boolean(
+    mediaType &&
+      (mediaType.startsWith("text/") ||
+        mediaType === "application/xml" ||
+        mediaType === "text/xml" ||
+        mediaType.endsWith("+xml") ||
+        mediaType === "application/x-www-form-urlencoded"),
+  );
+}
+
+// Use strict equality: in browsers, `response.body` is `null` when the
+// response genuinely has no content.  In React Native, `response.body` is
+// always `undefined` because the ReadableStream API is not implemented —
+// even when the response carries a full payload readable via `.text()` or
+// `.json()`.  Loose equality (`== null`) matches both `null` and `undefined`,
+// which causes every React Native response to be treated as empty.
+function hasNoBody(response: Response, method: string): boolean {
+  if (method === "HEAD") return true;
+  if (NO_BODY_STATUS.has(response.status)) return true;
+  if (response.headers.get("content-length") === "0") return true;
+  if (response.body === null) return true;
+  return false;
+}
+
+function stripBom(text: string): string {
+  return text.charCodeAt(0) === 0xfeff ? text.slice(1) : text;
+}
+
+function looksLikeJson(text: string): boolean {
+  const trimmed = text.trimStart();
+  return trimmed.startsWith("{") || trimmed.startsWith("[");
+}
+
+function getStringField(value: unknown, key: string): string | undefined {
+  if (!value || typeof value !== "object") return undefined;
+
+  const candidate = (value as Record<string, unknown>)[key];
+  if (typeof candidate !== "string") return undefined;
+
+  const trimmed = candidate.trim();
+  return trimmed === "" ? undefined : trimmed;
+}
+
+function truncate(text: string, maxLength = 300): string {
+  return text.length > maxLength ? `${text.slice(0, maxLength - 1)}…` : text;
+}
+
+function buildErrorMessage(response: Response, data: unknown): string {
+  const prefix = `HTTP ${response.status} ${response.statusText}`;
+
+  if (typeof data === "string") {
+    const text = data.trim();
+    return text ? `${prefix}: ${truncate(text)}` : prefix;
+  }
+
+  const title = getStringField(data, "title");
+  const detail = getStringField(data, "detail");
+  const message =
+    getStringField(data, "message") ??
+    getStringField(data, "error_description") ??
+    getStringField(data, "error");
+
+  if (title && detail) return `${prefix}: ${title} — ${detail}`;
+  if (detail) return `${prefix}: ${detail}`;
+  if (message) return `${prefix}: ${message}`;
+  if (title) return `${prefix}: ${title}`;
+
+  return prefix;
+}
+
+export class ApiError<T = unknown> extends Error {
+  readonly name = "ApiError";
+  readonly status: number;
+  readonly statusText: string;
+  readonly data: T | null;
+  readonly headers: Headers;
+  readonly response: Response;
+  readonly method: string;
+  readonly url: string;
+
+  constructor(
+    response: Response,
+    data: T | null,
+    requestInfo: { method: string; url: string },
+  ) {
+    super(buildErrorMessage(response, data));
+    Object.setPrototypeOf(this, new.target.prototype);
+
+    this.status = response.status;
+    this.statusText = response.statusText;
+    this.data = data;
+    this.headers = response.headers;
+    this.response = response;
+    this.method = requestInfo.method;
+    this.url = response.url || requestInfo.url;
+  }
+}
+
+export class ResponseParseError extends Error {
+  readonly name = "ResponseParseError";
+  readonly status: number;
+  readonly statusText: string;
+  readonly headers: Headers;
+  readonly response: Response;
+  readonly method: string;
+  readonly url: string;
+  readonly rawBody: string;
+  readonly cause: unknown;
+
+  constructor(
+    response: Response,
+    rawBody: string,
+    cause: unknown,
+    requestInfo: { method: string; url: string },
+  ) {
+    super(
+      `Failed to parse response from ${requestInfo.method} ${response.url || requestInfo.url} ` +
+        `(${response.status} ${response.statusText}) as JSON`,
+    );
+    Object.setPrototypeOf(this, new.target.prototype);
+
+    this.status = response.status;
+    this.statusText = response.statusText;
+    this.headers = response.headers;
+    this.response = response;
+    this.method = requestInfo.method;
+    this.url = response.url || requestInfo.url;
+    this.rawBody = rawBody;
+    this.cause = cause;
+  }
+}
+
+async function parseJsonBody(
+  response: Response,
+  requestInfo: { method: string; url: string },
+): Promise<unknown> {
+  const raw = await response.text();
+  const normalized = stripBom(raw);
+
+  if (normalized.trim() === "") {
+    return null;
+  }
+
+  try {
+    return JSON.parse(normalized);
+  } catch (cause) {
+    throw new ResponseParseError(response, raw, cause, requestInfo);
+  }
+}
+
+async function parseErrorBody(response: Response, method: string): Promise<unknown> {
+  if (hasNoBody(response, method)) {
+    return null;
+  }
+
+  const mediaType = getMediaType(response.headers);
+
+  // Fall back to text when blob() is unavailable (e.g. some React Native builds).
+  if (mediaType && !isJsonMediaType(mediaType) && !isTextMediaType(mediaType)) {
+    return typeof response.blob === "function" ? response.blob() : response.text();
+  }
+
+  const raw = await response.text();
+  const normalized = stripBom(raw);
+  const trimmed = normalized.trim();
+
+  if (trimmed === "") {
+    return null;
+  }
+
+  if (isJsonMediaType(mediaType) || looksLikeJson(normalized)) {
+    try {
+      return JSON.parse(normalized);
+    } catch {
+      return raw;
+    }
+  }
+
+  return raw;
+}
+
+function inferResponseType(response: Response): "json" | "text" | "blob" {
+  const mediaType = getMediaType(response.headers);
+
+  if (isJsonMediaType(mediaType)) return "json";
+  if (isTextMediaType(mediaType) || mediaType == null) return "text";
+  return "blob";
+}
+
+async function parseSuccessBody(
+  response: Response,
+  responseType: "json" | "text" | "blob" | "auto",
+  requestInfo: { method: string; url: string },
+): Promise<unknown> {
+  if (hasNoBody(response, requestInfo.method)) {
+    return null;
+  }
+
+  const effectiveType =
+    responseType === "auto" ? inferResponseType(response) : responseType;
+
+  switch (effectiveType) {
+    case "json":
+      return parseJsonBody(response, requestInfo);
+
+    case "text": {
+      const text = await response.text();
+      return text === "" ? null : text;
+    }
+
+    case "blob":
+      if (typeof response.blob !== "function") {
+        throw new TypeError(
+          "Blob responses are not supported in this runtime. " +
+            "Use responseType \"json\" or \"text\" instead.",
+        );
+      }
+      return response.blob();
+  }
+}
+
+export async function customFetch<T = unknown>(
+  input: RequestInfo | URL,
+  options: CustomFetchOptions = {},
+): Promise<T> {
+  input = applyBaseUrl(input);
+  const { responseType = "auto", headers: headersInit, ...init } = options;
+
+  const method = resolveMethod(input, init.method);
+
+  if (init.body != null && (method === "GET" || method === "HEAD")) {
+    throw new TypeError(`customFetch: ${method} requests cannot have a body.`);
+  }
+
+  const headers = mergeHeaders(isRequest(input) ? input.headers : undefined, headersInit);
+
+  if (
+    typeof init.body === "string" &&
+    !headers.has("content-type") &&
+    looksLikeJson(init.body)
+  ) {
+    headers.set("content-type", "application/json");
+  }
+
+  if (responseType === "json" && !headers.has("accept")) {
+    headers.set("accept", DEFAULT_JSON_ACCEPT);
+  }
+
+  // Attach bearer token when an auth getter is configured and no
+  // Authorization header has been explicitly provided.
+  if (_authTokenGetter && !headers.has("authorization")) {
+    const token = await _authTokenGetter();
+    if (token) {
+      headers.set("authorization", `Bearer ${token}`);
+    }
+  }
+
+  const requestInfo = { method, url: resolveUrl(input) };
+
+  const response = await fetch(input, { ...init, method, headers });
+
+  if (!response.ok) {
+    const errorData = await parseErrorBody(response, method);
+    throw new ApiError(response, errorData, requestInfo);
+  }
+
+  return (await parseSuccessBody(response, responseType, requestInfo)) as T;
+}

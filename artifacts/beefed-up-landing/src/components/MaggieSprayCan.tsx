@@ -1,1 +1,254 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgbW90aW9uLCBBbmltYXRlUHJlc2VuY2UgfSBmcm9tICJmcmFtZXItbW90aW9uIjsKaW1wb3J0IHsgWCwgRXh0ZXJuYWxMaW5rIH0gZnJvbSAibHVjaWRlLXJlYWN0IjsKCmNvbnN0IEFTU0lTVEFOVF9VUkwgPSAiaHR0cHM6Ly9wZXJzb25hbC1haS1hc3Npc3RhbnQua2VlZ3oxOTg0LnJlcGxpdC5hcHAiOwpjb25zdCBBUFBFQVJfREVMQVlfTVMgPSA2MF8wMDA7CgppbnRlcmZhY2UgUHJvcHMgewogIGZvcmNlT3Blbj86IGJvb2xlYW47CiAgb25Gb3JjZUNsb3NlPzogKCkgPT4gdm9pZDsKfQoKZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTWFnZ2llU3ByYXlDYW4oeyBmb3JjZU9wZW4gPSBmYWxzZSwgb25Gb3JjZUNsb3NlIH06IFByb3BzKSB7CiAgY29uc3QgW3Zpc2libGUsIHNldFZpc2libGVdID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtvcGVuLCBzZXRPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc3ByYXlpbmcsIHNldFNwcmF5aW5nXSA9IHVzZVN0YXRlKGZhbHNlKTsKICBjb25zdCBbc2hvd0hpbnQsIHNldFNob3dIaW50XSA9IHVzZVN0YXRlKGZhbHNlKTsKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IHQgPSBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgc2V0VmlzaWJsZSh0cnVlKTsKICAgICAgc2V0U2hvd0hpbnQodHJ1ZSk7CiAgICAgIGNvbnN0IGggPSBzZXRUaW1lb3V0KCgpID0+IHNldFNob3dIaW50KGZhbHNlKSwgNjAwMCk7CiAgICAgIHJldHVybiAoKSA9PiBjbGVhclRpbWVvdXQoaCk7CiAgICB9LCBBUFBFQVJfREVMQVlfTVMpOwogICAgcmV0dXJuICgpID0+IGNsZWFyVGltZW91dCh0KTsKICB9LCBbXSk7CgogIC8vIFdoZW4gcGFyZW50IGZvcmNlcyBvcGVuIChlLmcuIGZyb20gRE5BIHBhbmVsIENUQSkKICB1c2VFZmZlY3QoKCkgPT4gewogICAgaWYgKGZvcmNlT3BlbiAmJiAhb3BlbikgewogICAgICBzZXRWaXNpYmxlKHRydWUpOwogICAgICBzZXRTaG93SGludChmYWxzZSk7CiAgICAgIHNldFNwcmF5aW5nKHRydWUpOwogICAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgICBzZXRPcGVuKHRydWUpOwogICAgICAgIHNldFNwcmF5aW5nKGZhbHNlKTsKICAgICAgfSwgMTEwMCk7CiAgICB9CiAgfSwgW2ZvcmNlT3Blbl0pOwoKICBmdW5jdGlvbiBoYW5kbGVDbG9zZSgpIHsKICAgIHNldE9wZW4oZmFsc2UpOwogICAgb25Gb3JjZUNsb3NlPy4oKTsKICB9CgogIGNvbnN0IGhhbmRsZVRhcCA9ICgpID0+IHsKICAgIGlmIChvcGVuKSB7CiAgICAgIGhhbmRsZUNsb3NlKCk7CiAgICAgIHJldHVybjsKICAgIH0KICAgIHNldFNob3dIaW50KGZhbHNlKTsKICAgIHNldFNwcmF5aW5nKHRydWUpOwogICAgc2V0VGltZW91dCgoKSA9PiB7CiAgICAgIHNldE9wZW4odHJ1ZSk7CiAgICAgIHNldFNwcmF5aW5nKGZhbHNlKTsKICAgIH0sIDExMDApOwogIH07CgogIGNvbnN0IGNhblNyYyA9IGAke2ltcG9ydC5tZXRhLmVudi5CQVNFX1VSTH1tYWdnaWUtY2FuLmpwZWdgOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgey8qIFNwcmF5IHBhaW50IHNwbGFzaCArIE1BR0dJRSB0YWcgKi99CiAgICAgIDxBbmltYXRlUHJlc2VuY2U+CiAgICAgICAge3NwcmF5aW5nICYmICgKICAgICAgICAgIDxtb3Rpb24uZGl2CiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCB9fQogICAgICAgICAgICBhbmltYXRlPXt7IG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTQwIHBvaW50ZXItZXZlbnRzLW5vbmUgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiCiAgICAgICAgICA+CiAgICAgICAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiAyNCB9KS5tYXAoKF8sIGkpID0+IHsKICAgICAgICAgICAgICBjb25zdCBhbmdsZSA9IChpIC8gMjQpICogTWF0aC5QSSAqIDI7CiAgICAgICAgICAgICAgY29uc3QgZGlzdCA9IDkwICsgTWF0aC5yYW5kb20oKSAqIDE0MDsKICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgPG1vdGlvbi5zcGFuCiAgICAgICAgICAgICAgICAgIGtleT17aX0KICAgICAgICAgICAgICAgICAgaW5pdGlhbD17eyB4OiAwLCB5OiAwLCBvcGFjaXR5OiAwLjksIHNjYWxlOiAwIH19CiAgICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sKICAgICAgICAgICAgICAgICAgICB4OiBNYXRoLmNvcyhhbmdsZSkgKiBkaXN0LAogICAgICAgICAgICAgICAgICAgIHk6IE1hdGguc2luKGFuZ2xlKSAqIGRpc3QsCiAgICAgICAgICAgICAgICAgICAgb3BhY2l0eTogMCwKICAgICAgICAgICAgICAgICAgICBzY2FsZTogMSArIE1hdGgucmFuZG9tKCkgKiAxLjQsCiAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuOSwgZWFzZTogImVhc2VPdXQiIH19CiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWJzb2x1dGUgYmxvY2sgcm91bmRlZC1mdWxsIgogICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgIHdpZHRoOiAxMCArIE1hdGgucmFuZG9tKCkgKiAxMCwKICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDEwICsgTWF0aC5yYW5kb20oKSAqIDEwLAogICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6CiAgICAgICAgICAgICAgICAgICAgICBpICUgMyA9PT0gMAogICAgICAgICAgICAgICAgICAgICAgICA/ICJyZ2JhKDI0OSwxMTUsMjIsMC44NSkiCiAgICAgICAgICAgICAgICAgICAgICAgIDogaSAlIDMgPT09IDEKICAgICAgICAgICAgICAgICAgICAgICAgPyAicmdiYSgyMzksNjgsNjgsMC43NSkiCiAgICAgICAgICAgICAgICAgICAgICAgIDogInJnYmEoMjU1LDI1NSwyNTUsMC42NSkiLAogICAgICAgICAgICAgICAgICAgIGZpbHRlcjogImJsdXIoMnB4KSIsCiAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgICk7CiAgICAgICAgICAgIH0pfQoKICAgICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgICBpbml0aWFsPXt7IHNjYWxlOiAwLjYsIG9wYWNpdHk6IDAsIHJvdGF0ZTogLTggfX0KICAgICAgICAgICAgICBhbmltYXRlPXt7IHNjYWxlOiAxLCBvcGFjaXR5OiAxLCByb3RhdGU6IC02IH19CiAgICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgICAgdHJhbnNpdGlvbj17eyBkZWxheTogMC4yNSwgZHVyYXRpb246IDAuNSwgZWFzZTogImJhY2tPdXQiIH19CiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmb250LWdyYWZmaXRpIHRleHQtN3hsIHNtOnRleHQtOXhsIHRleHQtb3JhbmdlLTUwMCBzZWxlY3Qtbm9uZSIKICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgdGV4dFNoYWRvdzoKICAgICAgICAgICAgICAgICAgIjAgMCAxOHB4IHJnYmEoMjQ5LDExNSwyMiwwLjk1KSwgMCAwIDM2cHggcmdiYSgyMzksNjgsNjgsMC43KSwgNHB4IDZweCAwIHJnYmEoMCwwLDAsMC44KSIsCiAgICAgICAgICAgICAgICBXZWJraXRUZXh0U3Ryb2tlOiAiMnB4IHJnYmEoMCwwLDAsMC42KSIsCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIE1BR0dJRQogICAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgKX0KICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CgogICAgICB7LyogQ2hhdCBwYW5lbCAqL30KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7b3BlbiAmJiAoCiAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICBrZXk9ImNoYXQtcGFuZWwiCiAgICAgICAgICAgIGluaXRpYWw9e3sgb3BhY2l0eTogMCwgeTogNDAsIHNjYWxlOiAwLjk1IH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCwgc2NhbGU6IDEgfX0KICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCB5OiA0MCwgc2NhbGU6IDAuOTUgfX0KICAgICAgICAgICAgdHJhbnNpdGlvbj17eyB0eXBlOiAic3ByaW5nIiwgc3RpZmZuZXNzOiAyODAsIGRhbXBpbmc6IDI2IH19CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgaW5zZXQtMCB6LTUwIG1kOmluc2V0LWF1dG8gbWQ6Ym90dG9tLTI0IG1kOnJpZ2h0LTYgZmxleCBmbGV4LWNvbCBvdmVyZmxvdy1oaWRkZW4gYmctYmxhY2sgbWQ6cm91bmRlZC14bCBib3JkZXItMiBib3JkZXItcHJpbWFyeSBzaGFkb3ctWzBfMF80MHB4X3JnYmEoMjQ5LDExNSwyMiwwLjM1KV0iCiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgd2lkdGg6ICJtaW4oNDIwcHgsIGNhbGMoMTAwdncgLSAyNHB4KSkiLAogICAgICAgICAgICAgIGhlaWdodDogIm1pbig2NDBweCwgY2FsYygxMDBzdmggLSAyNHB4KSkiLAogICAgICAgICAgICB9fQogICAgICAgICAgPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGJnLXppbmMtOTUwIHB4LTQgcHktMyBib3JkZXItYiBib3JkZXItemluYy04MDAgZmxleC1zaHJpbmstMCBwdC1bY2FsYyhlbnYoc2FmZS1hcmVhLWluc2V0LXRvcCkrMTJweCldIG1kOnB0LTMiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InctMiBoLTIgcm91bmRlZC1mdWxsIGJnLXByaW1hcnkgYW5pbWF0ZS1wdWxzZSIgLz4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtYm9sZCB0ZXh0LXNtIHRyYWNraW5nLXdpZGVzdCB1cHBlcmNhc2UgdGV4dC13aGl0ZSI+CiAgICAgICAgICAgICAgICAgIE1hZ2dpZSDCtyBDdXN0b20gRGVzaWducwogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyI+CiAgICAgICAgICAgICAgICA8YQogICAgICAgICAgICAgICAgICBocmVmPXtBU1NJU1RBTlRfVVJMfQogICAgICAgICAgICAgICAgICB0YXJnZXQ9Il9ibGFuayIKICAgICAgICAgICAgICAgICAgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InRleHQtemluYy01MDAgaG92ZXI6dGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIgogICAgICAgICAgICAgICAgICB0aXRsZT0iT3BlbiBpbiBuZXcgdGFiIgogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICA8RXh0ZXJuYWxMaW5rIHNpemU9ezE2fSAvPgogICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVDbG9zZX0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ0ZXh0LXppbmMtNTAwIGhvdmVyOnRleHQtcHJpbWFyeSB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgICAgICAgICAgYXJpYS1sYWJlbD0iQ2xvc2UgY2hhdCIKICAgICAgICAgICAgICAgID4KICAgICAgICAgICAgICAgICAgPFggc2l6ZT17MTh9IC8+CiAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICB7LyogRE5BIGNsaXBib2FyZCBudWRnZSAqL30KICAgICAgICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICAgICAgICA8bW90aW9uLmRpdgogICAgICAgICAgICAgICAgaW5pdGlhbD17eyBoZWlnaHQ6IDAsIG9wYWNpdHk6IDAgfX0KICAgICAgICAgICAgICAgIGFuaW1hdGU9e3sgaGVpZ2h0OiAiYXV0byIsIG9wYWNpdHk6IDEgfX0KICAgICAgICAgICAgICAgIGV4aXQ9e3sgaGVpZ2h0OiAwLCBvcGFjaXR5OiAwIH19CiAgICAgICAgICAgICAgICBjbGFzc05hbWU9ImJnLXByaW1hcnkvMTAgYm9yZGVyLWIgYm9yZGVyLXByaW1hcnkvMjAgcHgtNCBweS0yIG92ZXJmbG93LWhpZGRlbiIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtWzEwcHhdIGZvbnQtc2FucyB0ZXh0LW9yYW5nZS0zMDAgbGVhZGluZy1yZWxheGVkIj4KICAgICAgICAgICAgICAgICAg8J+SoSBJZiB5b3UgY2FtZSBmcm9tIHlvdXIgRGVzaWduIEROQSwgcGFzdGUgeW91ciBicmllZiBpbnRvIE1hZ2dpZSB0byBnZXQgcGVyc29uYWxpc2VkIGNvbmNlcHRzLgogICAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICAgIDwvbW90aW9uLmRpdj4KICAgICAgICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CgogICAgICAgICAgICA8aWZyYW1lCiAgICAgICAgICAgICAgc3JjPXtBU1NJU1RBTlRfVVJMfQogICAgICAgICAgICAgIHRpdGxlPSJNYWdnaWUgwrcgQ3VzdG9tIERlc2lnbiBBZHZpc29yIgogICAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleC0xIHctZnVsbCBiZy16aW5jLTk1MCIKICAgICAgICAgICAgICBhbGxvdz0ibWljcm9waG9uZTsgY2xpcGJvYXJkLXdyaXRlIgogICAgICAgICAgICAgIGxvYWRpbmc9ImxhenkiCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgKX0KICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CgogICAgICB7LyogSGludCBwb3B1cCAqL30KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7dmlzaWJsZSAmJiBzaG93SGludCAmJiAhb3BlbiAmJiAhc3ByYXlpbmcgJiYgKAogICAgICAgICAgPG1vdGlvbi5kaXYKICAgICAgICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCB5OiA4LCBzY2FsZTogMC45IH19CiAgICAgICAgICAgIGFuaW1hdGU9e3sgb3BhY2l0eTogMSwgeTogMCwgc2NhbGU6IDEgfX0KICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC45IH19CiAgICAgICAgICAgIHRyYW5zaXRpb249e3sgZHVyYXRpb246IDAuMzUgfX0KICAgICAgICAgICAgY2xhc3NOYW1lPSJmaXhlZCBib3R0b20tWzc4cHhdIHJpZ2h0LTMgc206cmlnaHQtNSB6LTQwIG1heC13LVsyMDBweF0gcG9pbnRlci1ldmVudHMtbm9uZSIKICAgICAgICAgID4KICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGNsYXNzTmFtZT0icHgtMyBweS0yIHJvdW5kZWQtbGcgYmctemluYy05NTAvOTUgYmFja2Ryb3AtYmx1ci1zbSBib3JkZXIgYm9yZGVyLW9yYW5nZS01MDAvNTAgdGV4dC1bMTFweF0gdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVyIGZvbnQtYm9sZCB0ZXh0LW9yYW5nZS0zMDAiCiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHRleHRTaGFkb3c6ICIwIDAgOHB4IHJnYmEoMjQ5LDExNSwyMiwwLjYpIiwKICAgICAgICAgICAgICAgIGJveFNoYWRvdzogIjAgMCAxNHB4IHJnYmEoMjQ5LDExNSwyMiwwLjMpIiwKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgTmVlZCBoZWxwIGN1c3RvbWlzaW5nPyA8c3BhbiBjbGFzc05hbWU9InRleHQtd2hpdGUiPlRhcCB0aGUgY2FuPC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1sLWF1dG8gbXItNiB3LTAgaC0wIGJvcmRlci1sLTggYm9yZGVyLXItOCBib3JkZXItdC04IGJvcmRlci1sLXRyYW5zcGFyZW50IGJvcmRlci1yLXRyYW5zcGFyZW50IGJvcmRlci10LW9yYW5nZS01MDAvNTAiIC8+CiAgICAgICAgICA8L21vdGlvbi5kaXY+CiAgICAgICAgKX0KICAgICAgPC9BbmltYXRlUHJlc2VuY2U+CgogICAgICB7LyogU3ByYXkgY2FuIGJ1dHRvbiAqL30KICAgICAgPEFuaW1hdGVQcmVzZW5jZT4KICAgICAgICB7dmlzaWJsZSAmJiAoCiAgICAgICAgICA8bW90aW9uLmJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVUYXB9CiAgICAgICAgICAgIGluaXRpYWw9e3sgeTogODAsIG9wYWNpdHk6IDAsIHNjYWxlOiAwLjYgfX0KICAgICAgICAgICAgYW5pbWF0ZT17ewogICAgICAgICAgICAgIHk6IDAsCiAgICAgICAgICAgICAgb3BhY2l0eTogMSwKICAgICAgICAgICAgICBzY2FsZTogMSwKICAgICAgICAgICAgICByb3RhdGU6IHNwcmF5aW5nID8gWy0yLCAtMjIsIC0yMiwgLTJdIDogMCwKICAgICAgICAgICAgfX0KICAgICAgICAgICAgZXhpdD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC42IH19CiAgICAgICAgICAgIHRyYW5zaXRpb249e3sKICAgICAgICAgICAgICB5OiB7IHR5cGU6ICJzcHJpbmciLCBzdGlmZm5lc3M6IDIwMCwgZGFtcGluZzogMjIgfSwKICAgICAgICAgICAgICBvcGFjaXR5OiB7IGR1cmF0aW9uOiAwLjQgfSwKICAgICAgICAgICAgICBzY2FsZTogeyBkdXJhdGlvbjogMC40IH0sCiAgICAgICAgICAgICAgcm90YXRlOiB7IGR1cmF0aW9uOiAxLjAsIGVhc2U6ICJlYXNlSW5PdXQiIH0sCiAgICAgICAgICAgIH19CiAgICAgICAgICAgIHdoaWxlSG92ZXI9e3sgc2NhbGU6IDEuMSB9fQogICAgICAgICAgICB3aGlsZVRhcD17eyBzY2FsZTogMC45MiB9fQogICAgICAgICAgICBhcmlhLWxhYmVsPXtvcGVuID8gIkNsb3NlIE1hZ2dpZSIgOiAiVGFwIHRvIHNwcmF5IE1hZ2dpZSJ9CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZml4ZWQgYm90dG9tLTQgcmlnaHQtMyBzbTpyaWdodC01IHotNTAgdy0xNCBoLTE0IHNtOnctMTYgc206aC0xNiByb3VuZGVkLWZ1bGwgYmctemluYy05NTAgYm9yZGVyLTIgYm9yZGVyLXByaW1hcnkgc2hhZG93LVswXzBfMjJweF9yZ2JhKDI0OSwxMTUsMjIsMC41KV0gb3ZlcmZsb3ctaGlkZGVuIgogICAgICAgICAgICBzdHlsZT17eyB0cmFuc2Zvcm1PcmlnaW46ICJib3R0b20gcmlnaHQiIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIHtvcGVuID8gKAogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgdy1mdWxsIGgtZnVsbCB0ZXh0LXByaW1hcnkiPgogICAgICAgICAgICAgICAgPFggc2l6ZT17MjJ9IC8+CiAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICApIDogKAogICAgICAgICAgICAgIDxpbWcKICAgICAgICAgICAgICAgIHNyYz17Y2FuU3JjfQogICAgICAgICAgICAgICAgYWx0PSJNYWdnaWUgc3ByYXkgY2FuIgogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgaC1mdWxsIG9iamVjdC1jb3ZlciIKICAgICAgICAgICAgICAgIGRyYWdnYWJsZT17ZmFsc2V9CiAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgKX0KICAgICAgICAgIDwvbW90aW9uLmJ1dHRvbj4KICAgICAgICApfQogICAgICA8L0FuaW1hdGVQcmVzZW5jZT4KICAgIDwvPgogICk7Cn0K
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, ExternalLink } from "lucide-react";
+
+const ASSISTANT_URL = "https://personal-ai-assistant.keegz1984.replit.app";
+const APPEAR_DELAY_MS = 60_000;
+
+interface Props {
+  forceOpen?: boolean;
+  onForceClose?: () => void;
+}
+
+export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Props) {
+  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [spraying, setSpraying] = useState(false);
+  const [showHint, setShowHint] = useState(false);
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      setVisible(true);
+      setShowHint(true);
+      const h = setTimeout(() => setShowHint(false), 6000);
+      return () => clearTimeout(h);
+    }, APPEAR_DELAY_MS);
+    return () => clearTimeout(t);
+  }, []);
+
+  // When parent forces open (e.g. from DNA panel CTA)
+  useEffect(() => {
+    if (forceOpen && !open) {
+      setVisible(true);
+      setShowHint(false);
+      setSpraying(true);
+      setTimeout(() => {
+        setOpen(true);
+        setSpraying(false);
+      }, 1100);
+    }
+  }, [forceOpen]);
+
+  function handleClose() {
+    setOpen(false);
+    onForceClose?.();
+  }
+
+  const handleTap = () => {
+    if (open) {
+      handleClose();
+      return;
+    }
+    setShowHint(false);
+    setSpraying(true);
+    setTimeout(() => {
+      setOpen(true);
+      setSpraying(false);
+    }, 1100);
+  };
+
+  const canSrc = `${import.meta.env.BASE_URL}maggie-can.jpeg`;
+
+  return (
+    <>
+      {/* Spray paint splash + MAGGIE tag */}
+      <AnimatePresence>
+        {spraying && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 pointer-events-none flex items-center justify-center"
+          >
+            {Array.from({ length: 24 }).map((_, i) => {
+              const angle = (i / 24) * Math.PI * 2;
+              const dist = 90 + Math.random() * 140;
+              return (
+                <motion.span
+                  key={i}
+                  initial={{ x: 0, y: 0, opacity: 0.9, scale: 0 }}
+                  animate={{
+                    x: Math.cos(angle) * dist,
+                    y: Math.sin(angle) * dist,
+                    opacity: 0,
+                    scale: 1 + Math.random() * 1.4,
+                  }}
+                  transition={{ duration: 0.9, ease: "easeOut" }}
+                  className="absolute block rounded-full"
+                  style={{
+                    width: 10 + Math.random() * 10,
+                    height: 10 + Math.random() * 10,
+                    background:
+                      i % 3 === 0
+                        ? "rgba(249,115,22,0.85)"
+                        : i % 3 === 1
+                        ? "rgba(239,68,68,0.75)"
+                        : "rgba(255,255,255,0.65)",
+                    filter: "blur(2px)",
+                  }}
+                />
+              );
+            })}
+
+            <motion.div
+              initial={{ scale: 0.6, opacity: 0, rotate: -8 }}
+              animate={{ scale: 1, opacity: 1, rotate: -6 }}
+              exit={{ opacity: 0 }}
+              transition={{ delay: 0.25, duration: 0.5, ease: "backOut" }}
+              className="font-graffiti text-7xl sm:text-9xl text-orange-500 select-none"
+              style={{
+                textShadow:
+                  "0 0 18px rgba(249,115,22,0.95), 0 0 36px rgba(239,68,68,0.7), 4px 6px 0 rgba(0,0,0,0.8)",
+                WebkitTextStroke: "2px rgba(0,0,0,0.6)",
+              }}
+            >
+              MAGGIE
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Chat panel */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="chat-panel"
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 40, scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 280, damping: 26 }}
+            className="fixed inset-0 z-50 md:inset-auto md:bottom-24 md:right-6 flex flex-col overflow-hidden bg-black md:rounded-xl border-2 border-primary shadow-[0_0_40px_rgba(249,115,22,0.35)]"
+            style={{
+              width: "min(420px, calc(100vw - 24px))",
+              height: "min(640px, calc(100svh - 24px))",
+            }}
+          >
+            <div className="flex items-center justify-between bg-zinc-950 px-4 py-3 border-b border-zinc-800 flex-shrink-0 pt-[calc(env(safe-area-inset-top)+12px)] md:pt-3">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                <span className="font-display font-bold text-sm tracking-widest uppercase text-white">
+                  Maggie · Custom Designs
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <a
+                  href={ASSISTANT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                  title="Open in new tab"
+                >
+                  <ExternalLink size={16} />
+                </a>
+                <button
+                  onClick={handleClose}
+                  className="text-zinc-500 hover:text-primary transition-colors"
+                  aria-label="Close chat"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+            </div>
+
+            {/* DNA clipboard nudge */}
+            <AnimatePresence>
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="bg-primary/10 border-b border-primary/20 px-4 py-2 overflow-hidden"
+              >
+                <p className="text-[10px] font-sans text-orange-300 leading-relaxed">
+                  💡 If you came from your Design DNA, paste your brief into Maggie to get personalised concepts.
+                </p>
+              </motion.div>
+            </AnimatePresence>
+
+            <iframe
+              src={ASSISTANT_URL}
+              title="Maggie · Custom Design Advisor"
+              className="flex-1 w-full bg-zinc-950"
+              allow="microphone; clipboard-write"
+              loading="lazy"
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Hint popup */}
+      <AnimatePresence>
+        {visible && showHint && !open && !spraying && (
+          <motion.div
+            initial={{ opacity: 0, y: 8, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.35 }}
+            className="fixed bottom-[78px] right-3 sm:right-5 z-40 max-w-[200px] pointer-events-none"
+          >
+            <div
+              className="px-3 py-2 rounded-lg bg-zinc-950/95 backdrop-blur-sm border border-orange-500/50 text-[11px] uppercase tracking-wider font-bold text-orange-300"
+              style={{
+                textShadow: "0 0 8px rgba(249,115,22,0.6)",
+                boxShadow: "0 0 14px rgba(249,115,22,0.3)",
+              }}
+            >
+              Need help customising? <span className="text-white">Tap the can</span>
+            </div>
+            <div className="ml-auto mr-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500/50" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Spray can button */}
+      <AnimatePresence>
+        {visible && (
+          <motion.button
+            onClick={handleTap}
+            initial={{ y: 80, opacity: 0, scale: 0.6 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: 1,
+              rotate: spraying ? [-2, -22, -22, -2] : 0,
+            }}
+            exit={{ opacity: 0, scale: 0.6 }}
+            transition={{
+              y: { type: "spring", stiffness: 200, damping: 22 },
+              opacity: { duration: 0.4 },
+              scale: { duration: 0.4 },
+              rotate: { duration: 1.0, ease: "easeInOut" },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.92 }}
+            aria-label={open ? "Close Maggie" : "Tap to spray Maggie"}
+            className="fixed bottom-4 right-3 sm:right-5 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-zinc-950 border-2 border-primary shadow-[0_0_22px_rgba(249,115,22,0.5)] overflow-hidden"
+            style={{ transformOrigin: "bottom right" }}
+          >
+            {open ? (
+              <span className="flex items-center justify-center w-full h-full text-primary">
+                <X size={22} />
+              </span>
+            ) : (
+              <img
+                src={canSrc}
+                alt="Maggie spray can"
+                className="w-full h-full object-cover"
+                draggable={false}
+              />
+            )}
+          </motion.button>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}

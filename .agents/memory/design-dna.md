@@ -1,1 +1,27 @@
-LS0tCm5hbWU6IEJVUCBEZXNpZ24gRE5BCmRlc2NyaXB0aW9uOiBQZXJzb25hbGlzZWQgc3R5bGUgcHJvZmlsaW5nICsgQUktZ2VuZXJhdGVkIG1lcmNoIGNvbmNlcHRzIGZvciBCZWVmZWQgVXAgUHJpbnRpbmcgY3VzdG9tZXJzLgotLS0KCiMgQlVQIERlc2lnbiBETkEKCiMjIFdoYXQgaXQgaXMKQSBwZXJzb25hbGlzZWQgc3R5bGUgcHJvZmlsZSBwZXIgbG9nZ2VkLWluIHVzZXIuIENhcHR1cmVzIGNvbG91cnMsIG11c2ljLCB2aWJlcywgZGVzaWduIGtleXdvcmRzLCBhbmQgbm90ZXMuIEdQVC01LjQgZ2VuZXJhdGVzIDYgaHlwZXItcGVyc29uYWxpc2VkIG1lcmNoIGNvbmNlcHRzICh0ZWVzLCBob29kaWVzLCBjYXBzLCBzdGlja2VyIHBhY2tzLCBwb3N0ZXJzKSBlYWNoIHRpbWUgdGhlIHVzZXIgcmVxdWVzdHMgZnJlc2ggc3VnZ2VzdGlvbnMuCgojIyBBcmNoaXRlY3R1cmUKLSBEQiB0YWJsZXM6IGBkZXNpZ25fZG5hX3Byb2ZpbGVzYCAob25lIHBlciB1c2VyKSwgYGRlc2lnbl9kbmFfc3VnZ2VzdGlvbnNgIChtYW55IHBlciB1c2VyLCBvcmRlcmVkIGJ5IGNyZWF0ZWRBdCBkZXNjKQotIEFQSSByb3V0ZXMgKGFsbCByZXF1aXJlIGF1dGgpOiBgR0VUL1BVVCAvYXBpL2RuYS9wcm9maWxlYCwgYEdFVC9QT1NUIC9hcGkvZG5hL3N1Z2dlc3Rpb25zYAotIEFJOiBgQHdvcmtzcGFjZS9pbnRlZ3JhdGlvbnMtb3BlbmFpLWFpLXNlcnZlcmAg4oaSIGBvcGVuYWlgIGNsaWVudCDihpIgYGdwdC01LjRgLCBub24tc3RyZWFtaW5nLCBKU09OIG91dHB1dAotIEZyb250ZW5kOiBgRGVzaWduRE5BUGFuZWxgIChzbGlkZS1pbiksIGBEZXNpZ25ETkFPbmJvYXJkaW5nYCAoNS1zdGVwIHF1aXogbW9kYWwpLCBgRGVzaWduRE5BQ2FyZGAsIGBEZXNpZ25ETkFTdWdnZXN0aW9uc2AKLSBFbnRyeSBwb2ludHM6IE5hdmJhciAiTXkgRE5BIiBsaW5rIChkZXNrdG9wICsgbW9iaWxlKSDigJQgb25seSB2aXNpYmxlIHdoZW4gYXV0aGVudGljYXRlZAoKIyMgS2V5IGRlY2lzaW9ucwotIFN1Z2dlc3Rpb25zIGFyZSBhZGRpdGl2ZSAobmV3IGJhdGNoIHByZXBlbmRlZCB0byBleGlzdGluZykg4oCUIHVzZXIgY2FuIGtlZXAgcmVxdWVzdGluZyBuZXcgb25lcwotIEZpcnN0LXNhdmUgYXV0by1nZW5lcmF0ZXMgc3VnZ2VzdGlvbnMgc28gdXNlciBpbW1lZGlhdGVseSBzZWVzIHZhbHVlCi0gUGFuZWwgaXMgYSByaWdodC1zaWRlIHNsaWRlLWluLCBub3QgYSBwYWdlLCBzbyBpdCBkb2Vzbid0IGludGVycnVwdCB0aGUgbGFuZGluZyBwYWdlIGV4cGVyaWVuY2UKCioqV2h5OioqIEtlZXBzIHRoZSBsYW5kaW5nIHBhZ2UgaW1tZXJzaXZlIHdoaWxlIGdpdmluZyByZXR1cm5pbmcgY3VzdG9tZXJzIGEgcGVyc29uYWwgc3BhY2UuCgojIyBHb3RjaGFzCi0gT3BlbkFJIHJldHVybnMgSlNPTiB3cmFwcGVkIGluIG1hcmtkb3duIHNvbWV0aW1lcyDigJQgc3RyaXAgYGBganNvbiBmZW5jZXMgYmVmb3JlIHBhcnNpbmcKLSBgZG5hVmVyc2lvbmAgaXMgYSBVbml4IHRpbWVzdGFtcCBzbmFwc2hvdCDigJQgbm90IGEgcmVhbCBpbmNyZW1lbnQsIGp1c3QgdXNlZCBmb3IgZ3JvdXBpbmcgYSBiYXRjaAo=
+---
+name: BUP Design DNA
+description: Personalised style profiling + AI-generated merch concepts for Beefed Up Printing customers.
+---
+
+# BUP Design DNA
+
+## What it is
+A personalised style profile per logged-in user. Captures colours, music, vibes, design keywords, and notes. GPT-5.4 generates 6 hyper-personalised merch concepts (tees, hoodies, caps, sticker packs, posters) each time the user requests fresh suggestions.
+
+## Architecture
+- DB tables: `design_dna_profiles` (one per user), `design_dna_suggestions` (many per user, ordered by createdAt desc)
+- API routes (all require auth): `GET/PUT /api/dna/profile`, `GET/POST /api/dna/suggestions`
+- AI: `@workspace/integrations-openai-ai-server` → `openai` client → `gpt-5.4`, non-streaming, JSON output
+- Frontend: `DesignDNAPanel` (slide-in), `DesignDNAOnboarding` (5-step quiz modal), `DesignDNACard`, `DesignDNASuggestions`
+- Entry points: Navbar "My DNA" link (desktop + mobile) — only visible when authenticated
+
+## Key decisions
+- Suggestions are additive (new batch prepended to existing) — user can keep requesting new ones
+- First-save auto-generates suggestions so user immediately sees value
+- Panel is a right-side slide-in, not a page, so it doesn't interrupt the landing page experience
+
+**Why:** Keeps the landing page immersive while giving returning customers a personal space.
+
+## Gotchas
+- OpenAI returns JSON wrapped in markdown sometimes — strip ```json fences before parsing
+- `dnaVersion` is a Unix timestamp snapshot — not a real increment, just used for grouping a batch

@@ -1,1 +1,167 @@
-aW1wb3J0IHBMaW1pdCBmcm9tICJwLWxpbWl0IjsKaW1wb3J0IHBSZXRyeSwgeyBBYm9ydEVycm9yIH0gZnJvbSAicC1yZXRyeSI7CgovKioKICogQmF0Y2ggUHJvY2Vzc2luZyBVdGlsaXRpZXMKICoKICogVGhpcyBtb2R1bGUgcHJvdmlkZXMgYSBnZW5lcmljIGJhdGNoIHByb2Nlc3NpbmcgZnVuY3Rpb24gd2l0aCBidWlsdC1pbgogKiByYXRlIGxpbWl0aW5nIGFuZCBhdXRvbWF0aWMgcmV0cmllcy4gVXNlIGl0IGZvciBhbnkgdGFzayB0aGF0IHJlcXVpcmVzCiAqIHByb2Nlc3NpbmcgbXVsdGlwbGUgaXRlbXMgdGhyb3VnaCBhbiBMTE0gb3IgZXh0ZXJuYWwgQVBJLgogKgogKiBVU0FHRToKICogYGBgdHlwZXNjcmlwdAogKiBpbXBvcnQgeyBiYXRjaFByb2Nlc3MsIGlzUmF0ZUxpbWl0RXJyb3IgfSBmcm9tICIuL3JlcGxpdF9pbnRlZ3JhdGlvbnMvYmF0Y2giOwogKgogKiBjb25zdCByZXN1bHRzID0gYXdhaXQgYmF0Y2hQcm9jZXNzKAogKiAgIGFydHdvcmtzLAogKiAgIGFzeW5jIChhcnR3b3JrKSA9PiB7CiAqICAgICAvLyBZb3VyIGN1c3RvbSBMTE0gbG9naWMgaGVyZQogKiAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBvcGVuYWkuY2hhdC5jb21wbGV0aW9ucy5jcmVhdGUoewogKiAgICAgICBtb2RlbDogImdwdC01LjQiLAogKiAgICAgICBtZXNzYWdlczogW3sgcm9sZTogInVzZXIiLCBjb250ZW50OiBgQ2F0ZWdvcml6ZTogJHthcnR3b3JrLm5hbWV9YCB9XSwKICogICAgICAgcmVzcG9uc2VfZm9ybWF0OiB7IHR5cGU6ICJqc29uX29iamVjdCIgfSwKICogICAgIH0pOwogKiAgICAgcmV0dXJuIEpTT04ucGFyc2UocmVzcG9uc2UuY2hvaWNlc1swXT8ubWVzc2FnZT8uY29udGVudCB8fCAie30iKTsKICogICB9LAogKiAgIHsgY29uY3VycmVuY3k6IDIsIHJldHJpZXM6IDUgfQogKiApOwogKiBgYGAKICovCgpleHBvcnQgaW50ZXJmYWNlIEJhdGNoT3B0aW9ucyB7CiAgLyoqIE1heCBjb25jdXJyZW50IHJlcXVlc3RzIChkZWZhdWx0OiAyKSAqLwogIGNvbmN1cnJlbmN5PzogbnVtYmVyOwogIC8qKiBNYXggcmV0cnkgYXR0ZW1wdHMgZm9yIHJhdGUgbGltaXQgZXJyb3JzIChkZWZhdWx0OiA3KSAqLwogIHJldHJpZXM/OiBudW1iZXI7CiAgLyoqIEluaXRpYWwgcmV0cnkgZGVsYXkgaW4gbXMgKGRlZmF1bHQ6IDIwMDApICovCiAgbWluVGltZW91dD86IG51bWJlcjsKICAvKiogTWF4IHJldHJ5IGRlbGF5IGluIG1zIChkZWZhdWx0OiAxMjgwMDApICovCiAgbWF4VGltZW91dD86IG51bWJlcjsKICAvKiogQ2FsbGJhY2sgZm9yIHByb2dyZXNzIHVwZGF0ZXMgKi8KICBvblByb2dyZXNzPzogKGNvbXBsZXRlZDogbnVtYmVyLCB0b3RhbDogbnVtYmVyLCBpdGVtOiB1bmtub3duKSA9PiB2b2lkOwp9CgovKioKICogQ2hlY2sgaWYgYW4gZXJyb3IgaXMgYSByYXRlIGxpbWl0IG9yIHF1b3RhIHZpb2xhdGlvbi4KICogVXNlIHRoaXMgaW4gY3VzdG9tIGVycm9yIGhhbmRsaW5nIGlmIG5lZWRlZC4KICovCmV4cG9ydCBmdW5jdGlvbiBpc1JhdGVMaW1pdEVycm9yKGVycm9yOiB1bmtub3duKTogYm9vbGVhbiB7CiAgY29uc3QgZXJyb3JNc2cgPSBlcnJvciBpbnN0YW5jZW9mIEVycm9yID8gZXJyb3IubWVzc2FnZSA6IFN0cmluZyhlcnJvcik7CiAgcmV0dXJuICgKICAgIGVycm9yTXNnLmluY2x1ZGVzKCI0MjkiKSB8fAogICAgZXJyb3JNc2cuaW5jbHVkZXMoIlJBVEVMSU1JVF9FWENFRURFRCIpIHx8CiAgICBlcnJvck1zZy50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKCJxdW90YSIpIHx8CiAgICBlcnJvck1zZy50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKCJyYXRlIGxpbWl0IikKICApOwp9CgovKioKICogUHJvY2VzcyBpdGVtcyBpbiBiYXRjaGVzIHdpdGggcmF0ZSBsaW1pdGluZyBhbmQgYXV0b21hdGljIHJldHJpZXMuCiAqCiAqIEBwYXJhbSBpdGVtcyAtIEFycmF5IG9mIGl0ZW1zIHRvIHByb2Nlc3MKICogQHBhcmFtIHByb2Nlc3NvciAtIEFzeW5jIGZ1bmN0aW9uIHRvIHByb2Nlc3MgZWFjaCBpdGVtICh3cml0ZSB5b3VyIExMTSBsb2dpYyBoZXJlKQogKiBAcGFyYW0gb3B0aW9ucyAtIENvbmN1cnJlbmN5IGFuZCByZXRyeSBzZXR0aW5ncwogKiBAcmV0dXJucyBQcm9taXNlIHJlc29sdmluZyB0byBhcnJheSBvZiByZXN1bHRzIGluIHRoZSBzYW1lIG9yZGVyIGFzIGlucHV0CiAqLwpleHBvcnQgYXN5bmMgZnVuY3Rpb24gYmF0Y2hQcm9jZXNzPFQsIFI+KAogIGl0ZW1zOiBUW10sCiAgcHJvY2Vzc29yOiAoaXRlbTogVCwgaW5kZXg6IG51bWJlcikgPT4gUHJvbWlzZTxSPiwKICBvcHRpb25zOiBCYXRjaE9wdGlvbnMgPSB7fQopOiBQcm9taXNlPFJbXT4gewogIGNvbnN0IHsKICAgIGNvbmN1cnJlbmN5ID0gMiwKICAgIHJldHJpZXMgPSA3LAogICAgbWluVGltZW91dCA9IDIwMDAsCiAgICBtYXhUaW1lb3V0ID0gMTI4MDAwLAogICAgb25Qcm9ncmVzcywKICB9ID0gb3B0aW9uczsKCiAgY29uc3QgbGltaXQgPSBwTGltaXQoY29uY3VycmVuY3kpOwogIGxldCBjb21wbGV0ZWQgPSAwOwoKICBjb25zdCBwcm9taXNlcyA9IGl0ZW1zLm1hcCgoaXRlbSwgaW5kZXgpID0+CiAgICBsaW1pdCgoKSA9PgogICAgICBwUmV0cnkoCiAgICAgICAgYXN5bmMgKCkgPT4gewogICAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgcHJvY2Vzc29yKGl0ZW0sIGluZGV4KTsKICAgICAgICAgICAgY29tcGxldGVkKys7CiAgICAgICAgICAgIG9uUHJvZ3Jlc3M/Lihjb21wbGV0ZWQsIGl0ZW1zLmxlbmd0aCwgaXRlbSk7CiAgICAgICAgICAgIHJldHVybiByZXN1bHQ7CiAgICAgICAgICB9IGNhdGNoIChlcnJvcjogdW5rbm93bikgewogICAgICAgICAgICBpZiAoaXNSYXRlTGltaXRFcnJvcihlcnJvcikpIHsKICAgICAgICAgICAgICB0aHJvdyBlcnJvcjsgLy8gUmV0aHJvdyB0byB0cmlnZ2VyIHAtcmV0cnkKICAgICAgICAgICAgfQogICAgICAgICAgICAvLyBGb3Igbm9uLXJhdGUtbGltaXQgZXJyb3JzLCBhYm9ydCBpbW1lZGlhdGVseQogICAgICAgICAgICB0aHJvdyBuZXcgQWJvcnRFcnJvcigKICAgICAgICAgICAgICBlcnJvciBpbnN0YW5jZW9mIEVycm9yID8gZXJyb3IgOiBuZXcgRXJyb3IoU3RyaW5nKGVycm9yKSkKICAgICAgICAgICAgKTsKICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgIHsgcmV0cmllcywgbWluVGltZW91dCwgbWF4VGltZW91dCwgZmFjdG9yOiAyIH0KICAgICAgKQogICAgKQogICk7CgogIHJldHVybiBQcm9taXNlLmFsbChwcm9taXNlcyk7Cn0KCi8qKgogKiBQcm9jZXNzIGl0ZW1zIHNlcXVlbnRpYWxseSB3aXRoIFNTRSBwcm9ncmVzcyBzdHJlYW1pbmcuCiAqIFVzZSB0aGlzIHdoZW4geW91IG5lZWQgcmVhbC10aW1lIHByb2dyZXNzIHVwZGF0ZXMgdG8gdGhlIGNsaWVudC4KICoKICogQHBhcmFtIGl0ZW1zIC0gQXJyYXkgb2YgaXRlbXMgdG8gcHJvY2VzcwogKiBAcGFyYW0gcHJvY2Vzc29yIC0gQXN5bmMgZnVuY3Rpb24gdG8gcHJvY2VzcyBlYWNoIGl0ZW0KICogQHBhcmFtIHNlbmRFdmVudCAtIEZ1bmN0aW9uIHRvIHNlbmQgU1NFIGV2ZW50cyB0byB0aGUgY2xpZW50CiAqIEBwYXJhbSBvcHRpb25zIC0gUmV0cnkgc2V0dGluZ3MgKGNvbmN1cnJlbmN5IGlzIGFsd2F5cyAxIGZvciBzZXF1ZW50aWFsKQogKi8KZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGJhdGNoUHJvY2Vzc1dpdGhTU0U8VCwgUj4oCiAgaXRlbXM6IFRbXSwKICBwcm9jZXNzb3I6IChpdGVtOiBULCBpbmRleDogbnVtYmVyKSA9PiBQcm9taXNlPFI+LAogIHNlbmRFdmVudDogKGV2ZW50OiB7IHR5cGU6IHN0cmluZzsgW2tleTogc3RyaW5nXTogdW5rbm93biB9KSA9PiB2b2lkLAogIG9wdGlvbnM6IE9taXQ8QmF0Y2hPcHRpb25zLCAiY29uY3VycmVuY3kiIHwgIm9uUHJvZ3Jlc3MiPiA9IHt9Cik6IFByb21pc2U8UltdPiB7CiAgY29uc3QgeyByZXRyaWVzID0gNSwgbWluVGltZW91dCA9IDEwMDAsIG1heFRpbWVvdXQgPSAxNTAwMCB9ID0gb3B0aW9uczsKCiAgc2VuZEV2ZW50KHsgdHlwZTogInN0YXJ0ZWQiLCB0b3RhbDogaXRlbXMubGVuZ3RoIH0pOwoKICBjb25zdCByZXN1bHRzOiBSW10gPSBbXTsKICBsZXQgZXJyb3JzID0gMDsKCiAgZm9yIChsZXQgaW5kZXggPSAwOyBpbmRleCA8IGl0ZW1zLmxlbmd0aDsgaW5kZXgrKykgewogICAgY29uc3QgaXRlbSA9IGl0ZW1zW2luZGV4XTsKICAgIHNlbmRFdmVudCh7IHR5cGU6ICJwcm9jZXNzaW5nIiwgaW5kZXgsIGl0ZW0gfSk7CgogICAgdHJ5IHsKICAgICAgY29uc3QgcmVzdWx0ID0gYXdhaXQgcFJldHJ5KAogICAgICAgICgpID0+IHByb2Nlc3NvcihpdGVtLCBpbmRleCksCiAgICAgICAgewogICAgICAgICAgcmV0cmllcywKICAgICAgICAgIG1pblRpbWVvdXQsCiAgICAgICAgICBtYXhUaW1lb3V0LAogICAgICAgICAgZmFjdG9yOiAyLAogICAgICAgICAgb25GYWlsZWRBdHRlbXB0OiAoZXJyb3IpID0+IHsKICAgICAgICAgICAgaWYgKCFpc1JhdGVMaW1pdEVycm9yKGVycm9yKSkgewogICAgICAgICAgICAgIHRocm93IG5ldyBBYm9ydEVycm9yKAogICAgICAgICAgICAgICAgZXJyb3IgaW5zdGFuY2VvZiBFcnJvciA/IGVycm9yIDogbmV3IEVycm9yKFN0cmluZyhlcnJvcikpCiAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgfQogICAgICAgICAgfSwKICAgICAgICB9CiAgICAgICk7CiAgICAgIHJlc3VsdHMucHVzaChyZXN1bHQpOwogICAgICBzZW5kRXZlbnQoeyB0eXBlOiAicHJvZ3Jlc3MiLCBpbmRleCwgcmVzdWx0IH0pOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgZXJyb3JzKys7CiAgICAgIHJlc3VsdHMucHVzaCh1bmRlZmluZWQgYXMgUik7IC8vIFBsYWNlaG9sZGVyIGZvciBmYWlsZWQgaXRlbXMKICAgICAgc2VuZEV2ZW50KHsKICAgICAgICB0eXBlOiAicHJvZ3Jlc3MiLAogICAgICAgIGluZGV4LAogICAgICAgIGVycm9yOiBlcnJvciBpbnN0YW5jZW9mIEVycm9yID8gZXJyb3IubWVzc2FnZSA6ICJQcm9jZXNzaW5nIGZhaWxlZCIsCiAgICAgIH0pOwogICAgfQogIH0KCiAgc2VuZEV2ZW50KHsgdHlwZTogImNvbXBsZXRlIiwgcHJvY2Vzc2VkOiBpdGVtcy5sZW5ndGgsIGVycm9ycyB9KTsKICByZXR1cm4gcmVzdWx0czsKfQo=
+import pLimit from "p-limit";
+import pRetry, { AbortError } from "p-retry";
+
+/**
+ * Batch Processing Utilities
+ *
+ * This module provides a generic batch processing function with built-in
+ * rate limiting and automatic retries. Use it for any task that requires
+ * processing multiple items through an LLM or external API.
+ *
+ * USAGE:
+ * ```typescript
+ * import { batchProcess, isRateLimitError } from "./replit_integrations/batch";
+ *
+ * const results = await batchProcess(
+ *   artworks,
+ *   async (artwork) => {
+ *     // Your custom LLM logic here
+ *     const response = await openai.chat.completions.create({
+ *       model: "gpt-5.4",
+ *       messages: [{ role: "user", content: `Categorize: ${artwork.name}` }],
+ *       response_format: { type: "json_object" },
+ *     });
+ *     return JSON.parse(response.choices[0]?.message?.content || "{}");
+ *   },
+ *   { concurrency: 2, retries: 5 }
+ * );
+ * ```
+ */
+
+export interface BatchOptions {
+  /** Max concurrent requests (default: 2) */
+  concurrency?: number;
+  /** Max retry attempts for rate limit errors (default: 7) */
+  retries?: number;
+  /** Initial retry delay in ms (default: 2000) */
+  minTimeout?: number;
+  /** Max retry delay in ms (default: 128000) */
+  maxTimeout?: number;
+  /** Callback for progress updates */
+  onProgress?: (completed: number, total: number, item: unknown) => void;
+}
+
+/**
+ * Check if an error is a rate limit or quota violation.
+ * Use this in custom error handling if needed.
+ */
+export function isRateLimitError(error: unknown): boolean {
+  const errorMsg = error instanceof Error ? error.message : String(error);
+  return (
+    errorMsg.includes("429") ||
+    errorMsg.includes("RATELIMIT_EXCEEDED") ||
+    errorMsg.toLowerCase().includes("quota") ||
+    errorMsg.toLowerCase().includes("rate limit")
+  );
+}
+
+/**
+ * Process items in batches with rate limiting and automatic retries.
+ *
+ * @param items - Array of items to process
+ * @param processor - Async function to process each item (write your LLM logic here)
+ * @param options - Concurrency and retry settings
+ * @returns Promise resolving to array of results in the same order as input
+ */
+export async function batchProcess<T, R>(
+  items: T[],
+  processor: (item: T, index: number) => Promise<R>,
+  options: BatchOptions = {}
+): Promise<R[]> {
+  const {
+    concurrency = 2,
+    retries = 7,
+    minTimeout = 2000,
+    maxTimeout = 128000,
+    onProgress,
+  } = options;
+
+  const limit = pLimit(concurrency);
+  let completed = 0;
+
+  const promises = items.map((item, index) =>
+    limit(() =>
+      pRetry(
+        async () => {
+          try {
+            const result = await processor(item, index);
+            completed++;
+            onProgress?.(completed, items.length, item);
+            return result;
+          } catch (error: unknown) {
+            if (isRateLimitError(error)) {
+              throw error; // Rethrow to trigger p-retry
+            }
+            // For non-rate-limit errors, abort immediately
+            throw new AbortError(
+              error instanceof Error ? error : new Error(String(error))
+            );
+          }
+        },
+        { retries, minTimeout, maxTimeout, factor: 2 }
+      )
+    )
+  );
+
+  return Promise.all(promises);
+}
+
+/**
+ * Process items sequentially with SSE progress streaming.
+ * Use this when you need real-time progress updates to the client.
+ *
+ * @param items - Array of items to process
+ * @param processor - Async function to process each item
+ * @param sendEvent - Function to send SSE events to the client
+ * @param options - Retry settings (concurrency is always 1 for sequential)
+ */
+export async function batchProcessWithSSE<T, R>(
+  items: T[],
+  processor: (item: T, index: number) => Promise<R>,
+  sendEvent: (event: { type: string; [key: string]: unknown }) => void,
+  options: Omit<BatchOptions, "concurrency" | "onProgress"> = {}
+): Promise<R[]> {
+  const { retries = 5, minTimeout = 1000, maxTimeout = 15000 } = options;
+
+  sendEvent({ type: "started", total: items.length });
+
+  const results: R[] = [];
+  let errors = 0;
+
+  for (let index = 0; index < items.length; index++) {
+    const item = items[index];
+    sendEvent({ type: "processing", index, item });
+
+    try {
+      const result = await pRetry(
+        () => processor(item, index),
+        {
+          retries,
+          minTimeout,
+          maxTimeout,
+          factor: 2,
+          onFailedAttempt: (error) => {
+            if (!isRateLimitError(error)) {
+              throw new AbortError(
+                error instanceof Error ? error : new Error(String(error))
+              );
+            }
+          },
+        }
+      );
+      results.push(result);
+      sendEvent({ type: "progress", index, result });
+    } catch (error) {
+      errors++;
+      results.push(undefined as R); // Placeholder for failed items
+      sendEvent({
+        type: "progress",
+        index,
+        error: error instanceof Error ? error.message : "Processing failed",
+      });
+    }
+  }
+
+  sendEvent({ type: "complete", processed: items.length, errors });
+  return results;
+}
