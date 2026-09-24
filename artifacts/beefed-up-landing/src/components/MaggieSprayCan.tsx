@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ExternalLink } from "lucide-react";
+import { X, Send } from "lucide-react";
 
-const ASSISTANT_URL = "https://personal-ai-assistant.keegz1984.replit.app";
 const APPEAR_DELAY_MS = 60_000;
+
+type ChatMessage = { role: "user" | "assistant"; content: string };
 
 interface Props {
   forceOpen?: boolean;
@@ -15,6 +16,13 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
   const [open, setOpen] = useState(false);
   const [spraying, setSpraying] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [messages, setMessages] = useState<ChatMessage[]>([{
+    role: "assistant",
+    content: "I’m Maggie. Tell me what you want to print, wear, or launch.",
+  }]);
+  const [input, setInput] = useState("");
+  const [sending, setSending] = useState(false);
+  const [chatError, setChatError] = useState<string | null>(null);
 
   useEffect(() => {
     const t = setTimeout(() => {
@@ -56,6 +64,32 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
       setSpraying(false);
     }, 1100);
   };
+
+  async function handleSend(event: FormEvent) {
+    event.preventDefault();
+    const content = input.trim();
+    if (!content || sending) return;
+    const nextMessages = [...messages, { role: "user" as const, content }];
+    setMessages(nextMessages);
+    setInput("");
+    setSending(true);
+    setChatError(null);
+    try {
+      const res = await fetch("/api/maggie/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ messages: nextMessages }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error ?? "Maggie is temporarily unavailable.");
+      setMessages((previous) => [...previous, { role: "assistant", content: data.message }]);
+    } catch (error) {
+      setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
+    } finally {
+      setSending(false);
+    }
+  }
 
   const canSrc = `${import.meta.env.BASE_URL}maggie-can.jpeg`;
 
@@ -141,16 +175,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <a
-                  href={ASSISTANT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-primary transition-colors"
-                  title="Open in new tab"
-                >
-                  <ExternalLink size={16} />
-                </a>
-                <button
+<button
                   onClick={handleClose}
                   className="text-zinc-500 hover:text-primary transition-colors"
                   aria-label="Close chat"
@@ -173,15 +198,30 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
                 </p>
               </motion.div>
             </AnimatePresence>
-
-            <iframe
-              src={ASSISTANT_URL}
-              title="Maggie · Custom Design Advisor"
-              className="flex-1 w-full bg-zinc-950"
-              allow="microphone; clipboard-write"
-              loading="lazy"
-            />
-          </motion.div>
+            <div className="flex-1 overflow-y-auto p-3 space-y-3">
+              {messages.map((message, index) => (
+                <div key={message.role + "-" + index} className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}>
+                  <p className={"max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed whitespace-pre-wrap " + (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")}>
+                    {message.content}
+                  </p>
+                </div>
+              ))}
+              {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}
+              {chatError && <p className="text-red-400 text-[11px] leading-relaxed">{chatError}</p>}
+            </div>
+            <form onSubmit={handleSend} className="flex gap-2 border-t border-zinc-800 p-3">
+              <input
+                value={input}
+                onChange={(event) => setInput(event.target.value)}
+                placeholder="Ask Maggie for a concept…"
+                className="min-w-0 flex-1 bg-zinc-900 border border-zinc-800 rounded px-3 py-2 text-xs text-white outline-none focus:border-primary"
+                aria-label="Message Maggie"
+              />
+              <button type="submit" disabled={sending || !input.trim()} className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40" aria-label="Send message">
+                <Send size={15} />
+              </button>
+            </form>
+</motion.div>
         )}
       </AnimatePresence>
 
