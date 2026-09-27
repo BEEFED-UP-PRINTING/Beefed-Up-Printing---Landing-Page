@@ -20,6 +20,7 @@ import CursorTrail from "@/components/CursorTrail";
 export default function Home() {
   const [dnaOpen, setDnaOpen] = useState(false);
   const [maggieForceOpen, setMaggieForceOpen] = useState(false);
+  const [maggieDnaBrief, setMaggieDnaBrief] = useState("");
   const [playlistOpen, setPlaylistOpen] = useState(false);
   const playlistRef = useRef<HTMLDivElement>(null);
 
@@ -56,6 +57,7 @@ export default function Home() {
 
       <MaggieSprayCan
         forceOpen={maggieForceOpen}
+        dnaBrief={maggieDnaBrief}
         onForceClose={() => setMaggieForceOpen(false)}
       />
 
@@ -63,7 +65,10 @@ export default function Home() {
         {dnaOpen && (
           <DesignDNAPanel
             onClose={() => setDnaOpen(false)}
-            onOpenMaggie={() => setMaggieForceOpen(true)}
+            onOpenMaggie={(brief) => {
+              setMaggieDnaBrief(brief ?? "");
+              setMaggieForceOpen(true);
+            }}
           />
         )}
       </AnimatePresence>
