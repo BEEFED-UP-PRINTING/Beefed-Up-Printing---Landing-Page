@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink } from "lucide-react";
 
-const ASSISTANT_URL = "https://personal-ai-assistant.keegz1984.replit.app";
+const ASSISTANT_URL = "https://personal-ai-assistant--keegz1984.replit.app";
 
 export default function ChatBubble() {
   const [open, setOpen] = useState(false);
