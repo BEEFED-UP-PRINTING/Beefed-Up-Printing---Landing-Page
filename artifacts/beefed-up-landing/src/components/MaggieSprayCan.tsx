@@ -9,9 +9,10 @@ type ChatMessage = { role: "user" | "assistant"; content: string };
 interface Props {
   forceOpen?: boolean;
   onForceClose?: () => void;
+  dnaBrief?: string;
 }
 
-export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Props) {
+export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBrief = "" }: Props) {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
   const [spraying, setSpraying] = useState(false);
@@ -22,6 +23,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
   }]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
+  const [activeDnaBrief, setActiveDnaBrief] = useState(dnaBrief);
   const [chatError, setChatError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -33,6 +35,10 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
     }, APPEAR_DELAY_MS);
     return () => clearTimeout(t);
   }, []);
+
+  useEffect(() => {
+    setActiveDnaBrief(dnaBrief);
+  }, [dnaBrief]);
 
   // When parent forces open (e.g. from DNA panel CTA)
   useEffect(() => {
@@ -75,15 +81,15 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
     setSending(true);
     setChatError(null);
     try {
-      const res = await fetch("/api/maggie/chat", {
+      const res = await fetch("/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
-        body: JSON.stringify({ messages: nextMessages }),
+        body: JSON.stringify({ prompt: content, dnaBrief: activeDnaBrief }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.error ?? "Maggie is temporarily unavailable.");
-      setMessages((previous) => [...previous, { role: "assistant", content: data.message }]);
+      setMessages((previous) => [...previous, { role: "assistant", content: data.reply }]);
     } catch (error) {
       setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
     } finally {
@@ -194,7 +200,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose }: Prop
                 className="bg-primary/10 border-b border-primary/20 px-4 py-2 overflow-hidden"
               >
                 <p className="text-[10px] font-sans text-orange-300 leading-relaxed">
-                  💡 If you came from your Design DNA, paste your brief into Maggie to get personalised concepts.
+                  💡 Your Design DNA brief is attached automatically when you open Maggie from the DNA panel.
                 </p>
               </motion.div>
             </AnimatePresence>
