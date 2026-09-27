@@ -34,7 +34,7 @@ interface Suggestion {
 
 interface Props {
   onClose: () => void;
-  onOpenMaggie?: () => void;
+  onOpenMaggie?: (dnaBrief?: string) => void;
 }
 
 export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
@@ -135,7 +135,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
       } catch { /* clipboard may be blocked */ }
     }
     onClose();
-    setTimeout(() => onOpenMaggie?.(), 300);
+    setTimeout(() => onOpenMaggie?.(brief), 300);
   }
 
   return (
@@ -211,7 +211,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
                             Chat with Maggie about my DNA
                           </p>
                           <p className="text-zinc-600 text-[10px] font-sans mt-0.5">
-                            Opens Maggie · your brief is copied to clipboard
+                            Opens Maggie · your DNA brief is attached automatically
                           </p>
                         </div>
                       </div>
