@@ -6,6 +6,16 @@ import DesignDNAOnboarding from "./DesignDNAOnboarding";
 import DesignDNACard from "./DesignDNACard";
 import DesignDNASuggestions from "./DesignDNASuggestions";
 
+const PUBLIC_APP_HOSTS = new Set(["beefedupp.co.za", "www.beefedupp.co.za"]);
+const API_ORIGIN = "https://api.beefedupp.co.za";
+
+function apiUrl(path: string): string {
+  if (typeof window !== "undefined" && PUBLIC_APP_HOSTS.has(window.location.hostname)) {
+    return `${API_ORIGIN}${path}`;
+  }
+  return path;
+}
+
 interface Profile {
   id: string;
   userId: string;
@@ -50,7 +60,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   const fetchProfile = useCallback(async () => {
     setLoadingProfile(true);
     try {
-      const res = await fetch("/api/dna/profile", { credentials: "include" });
+      const res = await fetch(apiUrl("/api/dna/profile", { credentials: "include" });
       const data = await res.json();
       setProfile(data.profile);
       if (!data.profile) setShowOnboarding(true);
@@ -61,7 +71,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   const fetchSuggestions = useCallback(async () => {
     setLoadingSuggestions(true);
     try {
-      const res = await fetch("/api/dna/suggestions", { credentials: "include" });
+      const res = await fetch(apiUrl("/api/dna/suggestions", { credentials: "include" });
       const data = await res.json();
       setSuggestions(data.suggestions ?? []);
     } catch { /* ignore */ }
@@ -84,7 +94,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
     designKeywords: string[];
     rawNotes: string;
   }) {
-    const res = await fetch("/api/dna/profile", {
+    const res = await fetch(apiUrl("/api/dna/profile", {
       method: "PUT",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
@@ -99,7 +109,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   async function handleGenerate() {
     setGenerating(true);
     try {
-      const res = await fetch("/api/dna/suggestions", {
+      const res = await fetch(apiUrl("/api/dna/suggestions", {
         method: "POST",
         credentials: "include",
       });
