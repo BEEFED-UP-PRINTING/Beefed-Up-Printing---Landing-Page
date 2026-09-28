@@ -11,6 +11,16 @@ interface AuthState {
   logout: () => void;
 }
 
+const PUBLIC_APP_HOSTS = new Set(["beefedupp.co.za", "www.beefedupp.co.za"]);
+const API_ORIGIN = "https://api.beefedupp.co.za";
+
+function apiUrl(path: string): string {
+  if (typeof window !== "undefined" && PUBLIC_APP_HOSTS.has(window.location.hostname)) {
+    return `${API_ORIGIN}${path}`;
+  }
+  return path;
+}
+
 export function useAuth(): AuthState {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -18,7 +28,7 @@ export function useAuth(): AuthState {
   useEffect(() => {
     let cancelled = false;
 
-    fetch("/api/auth/user", { credentials: "include" })
+    fetch(apiUrl("/api/auth/user"), { credentials: "include" })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json() as Promise<{ user: AuthUser | null }>;
@@ -43,11 +53,14 @@ export function useAuth(): AuthState {
 
   const login = useCallback(() => {
     const base = import.meta.env.BASE_URL.replace(/\/+$/, "") || "/";
-    window.location.href = `/api/login?returnTo=${encodeURIComponent(base)}`;
+    const returnTo = PUBLIC_APP_HOSTS.has(window.location.hostname)
+      ? `${window.location.origin}${base}`
+      : base;
+    window.location.href = `${apiUrl("/api/login")}?returnTo=${encodeURIComponent(returnTo)}`;
   }, []);
 
   const logout = useCallback(() => {
-    window.location.href = "/api/logout";
+    window.location.href = apiUrl("/api/logout");
   }, []);
 
   return {
