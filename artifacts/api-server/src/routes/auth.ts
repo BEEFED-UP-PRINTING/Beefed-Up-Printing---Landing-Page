@@ -50,11 +50,20 @@ function setOidcCookie(res: Response, name: string, value: string) {
   });
 }
 
+const PUBLIC_APP_ORIGINS = new Set(["https://beefedupp.co.za", "https://www.beefedupp.co.za"]);
+
 function getSafeReturnTo(value: unknown): string {
-  if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) {
-    return "/";
+  if (typeof value !== "string") return "/";
+  if (value.startsWith("/") && !value.startsWith("//")) return value;
+
+  try {
+    const url = new URL(value);
+    if (PUBLIC_APP_ORIGINS.has(url.origin)) return url.href;
+  } catch {
+    // Ignore malformed return URLs and use the API root.
   }
-  return value;
+
+  return "/";
 }
 
 async function upsertUser(claims: Record<string, unknown>) {
