@@ -19,7 +19,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
   const [showHint, setShowHint] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([{
     role: "assistant",
-    content: "I’m Maggie. Tell me what you want to print, wear, or launch.",
+    content: "I'm Maggie. Tell me what you want to print, wear, or launch.",
   }]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
@@ -81,10 +81,9 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
     setSending(true);
     setChatError(null);
     try {
-      const res = await fetch("/api/maggie", {
+      const res = await fetch("https://api.beefedupp.co.za/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include",
         body: JSON.stringify({ prompt: content, dnaBrief: activeDnaBrief }),
       });
       const data = await res.json().catch(() => ({}));
@@ -251,6 +250,55 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
               Need help customising? <span className="text-white">Tap the can</span>
             </div>
             <div className="ml-auto mr-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500/50" />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Spray can button */}
+      <AnimatePresence>
+        {visible && (
+          <motion.button
+            onClick={handleTap}
+            initial={{ y: 80, opacity: 0, scale: 0.6 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              scale: 1,
+              rotate: spraying ? [-2, -22, -22, -2] : 0,
+            }}
+            exit={{ opacity: 0, scale: 0.6 }}
+            transition={{
+              y: { type: "spring", stiffness: 200, damping: 22 },
+              opacity: { duration: 0.4 },
+              scale: { duration: 0.4 },
+              rotate: { duration: 1.0, ease: "easeInOut" },
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.92 }}
+            aria-label={open ? "Close Maggie" : "Tap to spray Maggie"}
+            className="fixed bottom-4 right-3 sm:right-5 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-zinc-950 border-2 border-primary shadow-[0_0_22px_rgba(249,115,22,0.5)] overflow-hidden"
+            style={{ transformOrigin: "bottom right" }}
+          >
+            {open ? (
+              <span className="flex items-center justify-center w-full h-full text-primary">
+                <X size={22} />
+              </span>
+            ) : (
+              <img
+                src={canSrc}
+                alt="Maggie spray can"
+                className="w-full h-full object-cover"
+                draggable={false}
+              />
+            )}
+          </motion.button>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+
+transparent border-t-orange-500/50" />
           </motion.div>
         )}
       </AnimatePresence>
