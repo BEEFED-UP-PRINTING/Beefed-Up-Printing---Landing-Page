@@ -60,7 +60,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   const fetchProfile = useCallback(async () => {
     setLoadingProfile(true);
     try {
-      const res = await fetch(apiUrl("/api/dna/profile", { credentials: "include" });
+      const res = await fetch(apiUrl("/api/dna/profile"), { credentials: "include" });
       const data = await res.json();
       setProfile(data.profile);
       if (!data.profile) setShowOnboarding(true);
@@ -71,7 +71,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   const fetchSuggestions = useCallback(async () => {
     setLoadingSuggestions(true);
     try {
-      const res = await fetch(apiUrl("/api/dna/suggestions", { credentials: "include" });
+      const res = await fetch(apiUrl("/api/dna/suggestions"), { credentials: "include" });
       const data = await res.json();
       setSuggestions(data.suggestions ?? []);
     } catch { /* ignore */ }
@@ -94,7 +94,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
     designKeywords: string[];
     rawNotes: string;
   }) {
-    const res = await fetch(apiUrl("/api/dna/profile", {
+    const res = await fetch(apiUrl("/api/dna/profile"), {
       method: "PUT",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
@@ -109,7 +109,7 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   async function handleGenerate() {
     setGenerating(true);
     try {
-      const res = await fetch(apiUrl("/api/dna/suggestions", {
+      const res = await fetch(apiUrl("/api/dna/suggestions"), {
         method: "POST",
         credentials: "include",
       });
