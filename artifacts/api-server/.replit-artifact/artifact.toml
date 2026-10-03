@@ -1,13 +1,29 @@
 kind = "api"
-previewPath = "/"
+previewPath = "/api"
 title = "API Server"
 version = "1.0.0"
 id = "3B4_FFSkEVBkAeYMFRJ2e"
 
-# Disabled: this Replit API artifact is no longer used.
-# The production API now lives on the Cloudflare Worker at https://api.beefedupp.co.za.
-# Keeping it inactive prevents the Replit deploy from failing health checks while the
-# landing page continues to serve the frontend.
+[[services]]
+localPort = 8080
+name = "API Server"
+paths = ["/api"]
 
-# NOTE: no runtime services are defined here, so Replit will not try to start the legacy
-# backend during publishing.
+[services.development]
+run = "pnpm --filter @workspace/api-server run dev"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/api-server", "run", "build"]
+
+[services.production.build.env]
+NODE_ENV = "production"
+
+[services.production.run]
+args = ["node", "--enable-source-maps", "artifacts/api-server/dist/index.mjs"]
+
+[services.production.run.env]
+PORT = "8080"
+NODE_ENV = "production"
+
+[services.production.health.startup]
+path = "/api/healthz"
