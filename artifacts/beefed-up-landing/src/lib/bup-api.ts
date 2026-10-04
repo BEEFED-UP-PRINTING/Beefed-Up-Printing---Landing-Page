@@ -1,23 +1,20 @@
 const API_ORIGIN = "https://api.beefedupp.co.za";
-const PUBLIC_APP_HOSTS = new Set(["beefedupp.co.za", "www.beefedupp.co.za"]);
 const SESSION_TOKEN_KEY = "bup-api-session";
 
 export const AUTH_OPEN_EVENT = "bup:auth-open";
 export const AUTH_CHANGED_EVENT = "bup:auth-changed";
 
+// Always talk to the Worker directly. It handles CORS for beefedupp.co.za and www.
+// (A relative path only works if the host also serves /api, which this static site does not.)
 export function bupApiUrl(path: string): string {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  if (typeof window !== "undefined" && PUBLIC_APP_HOSTS.has(window.location.hostname)) {
-    return `${API_ORIGIN}${normalizedPath}`;
-  }
-  return normalizedPath;
+  return `${API_ORIGIN}${normalizedPath}`;
 }
 
+// localStorage so customers stay signed in across tabs and visits (token expires after 7 days on the server).
 export function getSessionToken(): string | null {
   try {
-    return typeof window === "undefined"
-      ? null
-      : window.sessionStorage.getItem(SESSION_TOKEN_KEY);
+    return typeof window === "undefined" ? null : window.localStorage.getItem(SESSION_TOKEN_KEY);
   } catch {
     return null;
   }
@@ -25,7 +22,7 @@ export function getSessionToken(): string | null {
 
 export function setSessionToken(token: string): void {
   try {
-    window.sessionStorage.setItem(SESSION_TOKEN_KEY, token);
+    window.localStorage.setItem(SESSION_TOKEN_KEY, token);
   } catch {
     throw new Error("This browser could not save the sign-in session. Check its privacy settings and try again.");
   }
@@ -34,7 +31,7 @@ export function setSessionToken(token: string): void {
 
 export function clearSessionToken(notify = true): void {
   try {
-    window.sessionStorage.removeItem(SESSION_TOKEN_KEY);
+    window.localStorage.removeItem(SESSION_TOKEN_KEY);
   } catch {
     // The session is still cleared in React state when storage is unavailable.
   }
@@ -54,11 +51,14 @@ export async function bupApiFetch(path: string, init: RequestInit = {}): Promise
   if (token && !headers.has("Authorization")) {
     headers.set("Authorization", `Bearer ${token}`);
   }
+  if (init.body && !headers.has("Content-Type")) {
+    headers.set("Content-Type", "application/json");
+  }
 
   return fetch(bupApiUrl(path), {
     ...init,
     headers,
-    credentials: "omit",
+    credentials: "omit", // token travels in the Authorization header, not cookies
   });
 }
 
