@@ -2,13 +2,13 @@ import { Dna, Edit2, Sparkles, RefreshCw } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface Profile {
-  id: string;
+  id?: string;
   favouriteColours: string[];
   musicGenres: string[];
   styleVibes: string[];
   designKeywords: string[];
   rawNotes?: string | null;
-  updatedAt: string;
+  updatedAt?: string;
 }
 
 interface Props {

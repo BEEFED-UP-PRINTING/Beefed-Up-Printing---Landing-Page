@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import MaggieSprayCan from "@/components/MaggieSprayCan";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import DesignDNAPanel from "@/components/DesignDNAPanel";
+import AuthDialog from "@/components/AuthDialog";
 import CursorTrail from "@/components/CursorTrail";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
     <div className="bg-background min-h-screen text-foreground relative">
       <CursorTrail />
       <Navbar onOpenDNA={() => setDnaOpen(true)} />
+      <AuthDialog />
 
       <main>
         <Hero onJumpToPlaylist={jumpToPlaylist} />

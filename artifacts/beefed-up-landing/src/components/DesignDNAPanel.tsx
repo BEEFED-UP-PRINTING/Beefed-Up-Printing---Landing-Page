@@ -1,33 +1,22 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Dna, MessageCircle, Check, Copy } from "lucide-react";
-import { useAuth } from "@workspace/replit-auth-web";
+import { useBupAuth } from "@/hooks/use-bup-auth";
+import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
 import DesignDNAOnboarding from "./DesignDNAOnboarding";
 import DesignDNACard from "./DesignDNACard";
 import DesignDNASuggestions from "./DesignDNASuggestions";
 
-const PUBLIC_APP_HOSTS = new Set(["beefedupp.co.za", "www.beefedupp.co.za"]);
-const API_ORIGIN = "https://api.beefedupp.co.za";
-
-function apiUrl(path: string): string {
-  if (typeof window !== "undefined" && PUBLIC_APP_HOSTS.has(window.location.hostname)) {
-    return `${API_ORIGIN}${path}`;
-  }
-  return path;
-}
-
 interface Profile {
-  id: string;
-  userId: string;
+  id?: string;
+  userId?: string;
   favouriteColours: string[];
   musicGenres: string[];
   styleVibes: string[];
   designKeywords: string[];
-  purchaseHistory: object[];
-  projectHistory: object[];
   rawNotes?: string | null;
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface Suggestion {
@@ -48,7 +37,7 @@ interface Props {
 }
 
 export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
-  const { user, isAuthenticated, login } = useAuth();
+  const { user, isAuthenticated, login } = useBupAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [loadingProfile, setLoadingProfile] = useState(true);
@@ -56,26 +45,51 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
   const [generating, setGenerating] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [requestError, setRequestError] = useState("");
 
   const fetchProfile = useCallback(async () => {
     setLoadingProfile(true);
+    setRequestError("");
     try {
-      const res = await fetch(apiUrl("/api/dna/profile"), { credentials: "include" });
-      const data = await res.json();
-      setProfile(data.profile);
-      if (!data.profile) setShowOnboarding(true);
-    } catch { /* ignore */ }
-    setLoadingProfile(false);
+      const res = await bupApiFetch("/api/dna/profile");
+      const data = await res.json().catch(() => ({})) as { profile?: Profile | null };
+      if (!res.ok) {
+        if (res.status === 401 || res.status === 403) clearSessionToken();
+        throw new Error(getApiErrorMessage(data, "Couldn't load your Design DNA."));
+      }
+      const nextProfile = data.profile
+        ? {
+            ...data.profile,
+            favouriteColours: Array.isArray(data.profile.favouriteColours) ? data.profile.favouriteColours : [],
+            musicGenres: Array.isArray(data.profile.musicGenres) ? data.profile.musicGenres : [],
+            styleVibes: Array.isArray(data.profile.styleVibes) ? data.profile.styleVibes : [],
+            designKeywords: Array.isArray(data.profile.designKeywords) ? data.profile.designKeywords : [],
+          }
+        : null;
+      setProfile(nextProfile);
+      if (!nextProfile) setShowOnboarding(true);
+    } catch (error) {
+      setRequestError(error instanceof Error ? error.message : "Couldn't load your Design DNA.");
+    } finally {
+      setLoadingProfile(false);
+    }
   }, []);
 
   const fetchSuggestions = useCallback(async () => {
     setLoadingSuggestions(true);
     try {
-      const res = await fetch(apiUrl("/api/dna/suggestions"), { credentials: "include" });
-      const data = await res.json();
+      const res = await bupApiFetch("/api/dna/suggestions");
+      const data = await res.json().catch(() => ({})) as { suggestions?: Suggestion[] };
+      if (!res.ok) {
+        if (res.status === 401 || res.status === 403) clearSessionToken();
+        throw new Error(getApiErrorMessage(data, "Couldn't load your saved concepts."));
+      }
       setSuggestions(data.suggestions ?? []);
-    } catch { /* ignore */ }
-    setLoadingSuggestions(false);
+    } catch (error) {
+      setRequestError(error instanceof Error ? error.message : "Couldn't load your saved concepts.");
+    } finally {
+      setLoadingSuggestions(false);
+    }
   }, []);
 
   useEffect(() => {
@@ -83,6 +97,8 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
       fetchProfile();
       fetchSuggestions();
     } else {
+      setProfile(null);
+      setSuggestions([]);
       setLoadingProfile(false);
     }
   }, [isAuthenticated, fetchProfile, fetchSuggestions]);
@@ -94,34 +110,52 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
     designKeywords: string[];
     rawNotes: string;
   }) {
-    const res = await fetch(apiUrl("/api/dna/profile"), {
+    setRequestError("");
+    const res = await bupApiFetch("/api/dna/profile", {
       method: "PUT",
-      credentials: "include",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-    const json = await res.json();
-    setProfile(json.profile);
+    const json = await res.json().catch(() => ({})) as { profile?: Profile };
+    if (!res.ok) {
+      if (res.status === 401 || res.status === 403) clearSessionToken();
+      throw new Error(getApiErrorMessage(json, "Couldn't save your Design DNA."));
+    }
+    if (!json.profile) throw new Error("The account service did not return the saved profile.");
+    setProfile({
+      ...json.profile,
+      favouriteColours: Array.isArray(json.profile.favouriteColours) ? json.profile.favouriteColours : [],
+      musicGenres: Array.isArray(json.profile.musicGenres) ? json.profile.musicGenres : [],
+      styleVibes: Array.isArray(json.profile.styleVibes) ? json.profile.styleVibes : [],
+      designKeywords: Array.isArray(json.profile.designKeywords) ? json.profile.designKeywords : [],
+    });
     setShowOnboarding(false);
-    handleGenerate();
+    await handleGenerate();
   }
 
   async function handleGenerate() {
     setGenerating(true);
+    setRequestError("");
     try {
-      const res = await fetch(apiUrl("/api/dna/suggestions"), {
-        method: "POST",
-        credentials: "include",
-      });
-      const data = await res.json();
-      if (data.suggestions) setSuggestions((prev) => [...data.suggestions, ...prev]);
-    } catch { /* ignore */ }
-    setGenerating(false);
+      const res = await bupApiFetch("/api/dna/suggestions", { method: "POST" });
+      const data = await res.json().catch(() => ({})) as { suggestions?: Suggestion[] };
+      if (!res.ok) {
+        if (res.status === 401 || res.status === 403) clearSessionToken();
+        throw new Error(getApiErrorMessage(data, "Couldn't generate new concepts."));
+      }
+      if (Array.isArray(data.suggestions)) {
+        setSuggestions((previous) => [...data.suggestions!, ...previous]);
+      }
+    } catch (error) {
+      setRequestError(error instanceof Error ? error.message : "Couldn't generate new concepts.");
+    } finally {
+      setGenerating(false);
+    }
   }
 
   function buildDNABrief(): string {
     if (!profile) return "";
-    const name = (user as any)?.name ?? "a BUP customer";
+    const name = user?.firstName ?? "a BUP customer";
     const lines = [
       `Hey Maggie! I'm ${name} and here's my Design DNA:`,
       profile.favouriteColours.length ? `🎨 Colours: ${profile.favouriteColours.join(", ")}` : "",
@@ -179,6 +213,11 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
 
           {/* Body */}
           <div className="flex-1 overflow-y-auto px-5 py-5 space-y-5">
+            {requestError && (
+              <p role="alert" className="border border-red-900/70 bg-red-950/40 px-3 py-2 text-xs leading-relaxed text-red-300">
+                {requestError}
+              </p>
+            )}
             {!isAuthenticated ? (
               <div className="text-center py-10">
                 <Dna size={36} className="text-zinc-700 mx-auto mb-3" />

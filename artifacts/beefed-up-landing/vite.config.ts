@@ -62,6 +62,18 @@ export default defineConfig({
     port,
     host: "0.0.0.0",
     allowedHosts: true,
+    proxy: {
+      "/api": {
+        target: "https://api.beefedupp.co.za",
+        changeOrigin: true,
+        secure: true,
+        configure: (proxy) => {
+          proxy.on("proxyReq", (proxyRequest) => {
+            proxyRequest.setHeader("Origin", "https://beefedupp.co.za");
+          });
+        },
+      },
+    },
     fs: {
       strict: true,
       deny: ["**/.*"],

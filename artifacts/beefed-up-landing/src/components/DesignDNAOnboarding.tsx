@@ -53,6 +53,7 @@ export default function DesignDNAOnboarding({ onClose, onSave }: Props) {
   const [keywords, setKeywords] = useState<string[]>([]);
   const [notes, setNotes] = useState("");
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState("");
 
   function toggle<T>(arr: T[], val: T, set: (v: T[]) => void, max = 5) {
     if (arr.includes(val)) set(arr.filter((x) => x !== val));
@@ -61,8 +62,14 @@ export default function DesignDNAOnboarding({ onClose, onSave }: Props) {
 
   async function handleSave() {
     setSaving(true);
-    await onSave({ favouriteColours: colours, musicGenres: music, styleVibes: vibes, designKeywords: keywords, rawNotes: notes });
-    setSaving(false);
+    setSaveError("");
+    try {
+      await onSave({ favouriteColours: colours, musicGenres: music, styleVibes: vibes, designKeywords: keywords, rawNotes: notes });
+    } catch (error) {
+      setSaveError(error instanceof Error ? error.message : "Couldn't save your Design DNA. Please try again.");
+    } finally {
+      setSaving(false);
+    }
   }
 
   const canNext = [
@@ -211,6 +218,11 @@ export default function DesignDNAOnboarding({ onClose, onSave }: Props) {
 
         {/* Footer */}
         <div className="flex items-center justify-between px-6 py-4 border-t border-zinc-800">
+          {saveError && (
+            <p role="alert" className="mr-4 text-xs leading-relaxed text-red-300">
+              {saveError}
+            </p>
+          )}
           <button
             onClick={() => setStep((s) => s - 1)}
             disabled={step === 0}

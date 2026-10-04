@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, LogIn, LogOut, User, Dna } from "lucide-react";
-import { useAuth } from "@workspace/replit-auth-web";
+import { useBupAuth } from "@/hooks/use-bup-auth";
 
 interface NavbarProps {
   onOpenDNA?: () => void;
@@ -10,7 +10,7 @@ interface NavbarProps {
 export default function Navbar({ onOpenDNA }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { user, isLoading, isAuthenticated, login, logout } = useAuth();
+  const { user, isLoading, isAuthenticated, login, logout } = useBupAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -170,7 +170,7 @@ export default function Navbar({ onOpenDNA }: NavbarProps) {
               {!isLoading && (
                 isAuthenticated ? (
                   <button
-                    onClick={logout}
+                    onClick={() => { setMobileMenuOpen(false); logout(); }}
                     className="font-display font-bold text-2xl uppercase text-zinc-400 hover:text-primary hover:scale-110 transition-all flex items-center gap-2"
                   >
                     <LogOut size={20} />
@@ -178,7 +178,7 @@ export default function Navbar({ onOpenDNA }: NavbarProps) {
                   </button>
                 ) : (
                   <button
-                    onClick={login}
+                    onClick={() => { setMobileMenuOpen(false); login(); }}
                     className="font-display font-bold text-2xl uppercase text-zinc-400 hover:text-primary hover:scale-110 transition-all flex items-center gap-2"
                   >
                     <LogIn size={20} />

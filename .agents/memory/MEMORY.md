@@ -1,1 +1,2 @@
 - [BUP Design DNA feature](design-dna.md) — DNA profile + AI suggestion system wired to OpenAI; requires auth; tables: design_dna_profiles, design_dna_suggestions.
+- [BUP production auth split](bup-production-auth.md) — Cloudflare Worker uses email/password + JWT while landing source expects Replit OIDC; align them explicitly.
