@@ -206,6 +206,28 @@ router.post("/conversations/:id/messages", async (req, res) => {
       content: fullResponse,
     });
 
+    // Generate a real design image
+    try {
+      const imagePrompt = `${body.content}, streetwear design, South African style, high quality graphic, bold, clean composition, suitable for t-shirt print, neon orange and ice blue accents on black if no colors specified`;
+
+      const imageRes = await fetch("https://maggie-image-gen.beefedupp.workers.dev/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: imagePrompt }),
+      });
+
+      if (imageRes.ok) {
+        const arrayBuffer = await imageRes.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        const imageBase64 = `data:image/jpeg;base64,${buffer.toString("base64")}`;
+
+        // Send the image to the frontend
+        res.write(`data: ${JSON.stringify({ image: imageBase64 })}\n\n`);
+      }
+    } catch (imgErr) {
+      console.error("Image generation failed:", imgErr);
+    }
+
     res.write(`data: ${JSON.stringify({ done: true })}\n\n`);
     res.end();
   } catch (err) {
