@@ -15,12 +15,12 @@ import Footer from "@/components/Footer";
 import MaggieSprayCan from "@/components/MaggieSprayCan";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import DesignDNAPanel from "@/components/DesignDNAPanel";
+import AuthDialog from "@/components/AuthDialog";
 import CursorTrail from "@/components/CursorTrail";
 
 export default function Home() {
   const [dnaOpen, setDnaOpen] = useState(false);
   const [maggieForceOpen, setMaggieForceOpen] = useState(false);
-  const [maggieDnaBrief, setMaggieDnaBrief] = useState("");
   const [playlistOpen, setPlaylistOpen] = useState(false);
   const playlistRef = useRef<HTMLDivElement>(null);
 
@@ -35,6 +35,7 @@ export default function Home() {
     <div className="bg-background min-h-screen text-foreground relative">
       <CursorTrail />
       <Navbar onOpenDNA={() => setDnaOpen(true)} />
+      <AuthDialog />
 
       <main>
         <Hero onJumpToPlaylist={jumpToPlaylist} />
@@ -57,7 +58,7 @@ export default function Home() {
 
       <MaggieSprayCan
         forceOpen={maggieForceOpen}
-        dnaBrief={maggieDnaBrief}
+        onOpenDNA={() => setDnaOpen(true)}
         onForceClose={() => setMaggieForceOpen(false)}
       />
 
@@ -65,10 +66,7 @@ export default function Home() {
         {dnaOpen && (
           <DesignDNAPanel
             onClose={() => setDnaOpen(false)}
-            onOpenMaggie={(brief) => {
-              setMaggieDnaBrief(brief ?? "");
-              setMaggieForceOpen(true);
-            }}
+            onOpenMaggie={() => setMaggieForceOpen(true)}
           />
         )}
       </AnimatePresence>
