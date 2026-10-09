@@ -1,31 +1,65 @@
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
-import { bupApiFetch, getApiErrorMessage } from "@/lib/bup-api";
+import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
+import { useBupAuth } from "@/hooks/use-bup-auth";
 
 const APPEAR_DELAY_MS = 60_000;
+const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
+
+interface DesignDnaProfile {
+  favouriteColours?: string[] | null;
+  musicGenres?: string[] | null;
+  styleVibes?: string[] | null;
+  designKeywords?: string[] | null;
+  rawNotes?: string | null;
+}
 
 interface Props {
   forceOpen?: boolean;
   onForceClose?: () => void;
-  dnaBrief?: string;
+  onOpenDNA?: () => void;
 }
 
-export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBrief = "" }: Props) {
+function buildDnaBrief(profile: DesignDnaProfile, firstName: string | null | undefined): string {
+  const list = (value: string[] | null | undefined) =>
+    Array.isArray(value) ? value.filter((item): item is string => typeof item === "string" && item.trim().length > 0) : [];
+  const lines = [
+    `Customer first name: ${firstName?.trim() || "not provided"}`,
+    "Saved Design DNA:",
+    list(profile.favouriteColours).length ? `Favourite colours: ${list(profile.favouriteColours).join(", ")}` : "",
+    list(profile.musicGenres).length ? `Music genres: ${list(profile.musicGenres).join(", ")}` : "",
+    list(profile.styleVibes).length ? `Style vibes: ${list(profile.styleVibes).join(", ")}` : "",
+    list(profile.designKeywords).length ? `Design keywords: ${list(profile.designKeywords).join(", ")}` : "",
+    profile.rawNotes?.trim() ? `Customer notes: ${profile.rawNotes.trim()}` : "",
+  ];
+  return lines.filter(Boolean).join("\n");
+}
+
+export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpenDNA }: Props) {
+  const { user, isAuthenticated, isLoading: authLoading, login } = useBupAuth();
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
   const [spraying, setSpraying] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([{
     role: "assistant",
-    content: "I'm Maggie. Tell me what you want to print, wear, or launch.",
+    content: INITIAL_GREETING,
   }]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
-  const [activeDnaBrief, setActiveDnaBrief] = useState(dnaBrief);
+  const [activeDnaBrief, setActiveDnaBrief] = useState("");
+  const [hasSavedDna, setHasSavedDna] = useState(false);
+  const [dnaLoading, setDnaLoading] = useState(false);
+  const [dnaLoadedForUser, setDnaLoadedForUser] = useState<string | null>(null);
+  const [dnaError, setDnaError] = useState<string | null>(null);
   const [chatError, setChatError] = useState<string | null>(null);
+  const conversationOwner = useRef<string | null>(null);
+
+  const chatContextLoading = authLoading
+    || (open && isAuthenticated && (dnaLoading || !user?.id || dnaLoadedForUser !== user.id));
 
   useEffect(() => {
     const t = setTimeout(() => {
@@ -38,12 +72,107 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
   }, []);
 
   useEffect(() => {
-    setActiveDnaBrief(dnaBrief);
-  }, [dnaBrief]);
+    if (authLoading) return;
+    const nextOwner = isAuthenticated && user?.id ? `user:${user.id}` : "guest";
+    if (conversationOwner.current && conversationOwner.current !== nextOwner) {
+      setMessages([{ role: "assistant", content: INITIAL_GREETING }]);
+      setActiveDnaBrief("");
+      setHasSavedDna(false);
+      setDnaLoadedForUser(null);
+      setDnaError(null);
+    }
+    conversationOwner.current = nextOwner;
+  }, [authLoading, isAuthenticated, user?.id]);
+
+  useEffect(() => {
+    if (!open) {
+      if (!isAuthenticated) {
+        setActiveDnaBrief("");
+        setHasSavedDna(false);
+        setDnaLoadedForUser(null);
+        setDnaLoading(false);
+        setDnaError(null);
+      }
+      return;
+    }
+
+    if (authLoading) {
+      setDnaLoading(true);
+      setDnaLoadedForUser(null);
+      return;
+    }
+
+    if (!isAuthenticated || !user || !user.id) {
+      setActiveDnaBrief("");
+      setHasSavedDna(false);
+      setDnaLoadedForUser(null);
+      setDnaLoading(false);
+      setDnaError(null);
+      return;
+    }
+
+    const currentUser = user;
+    const controller = new AbortController();
+    let cancelled = false;
+    setDnaLoading(true);
+    setDnaLoadedForUser(null);
+    setActiveDnaBrief("");
+    setHasSavedDna(false);
+    setDnaError(null);
+
+    async function loadSavedDna() {
+      try {
+        const response = await bupApiFetch("/api/dna/profile", { signal: controller.signal });
+        const data = await response.json().catch(() => ({})) as { profile?: DesignDnaProfile | null };
+        if (!response.ok) {
+          if (response.status === 401 || response.status === 403) clearSessionToken();
+          throw new Error(getApiErrorMessage(data, "Couldn't load your saved Design DNA."));
+        }
+
+        const profile = data.profile ?? null;
+        if (cancelled) return;
+        setHasSavedDna(!!profile);
+        setActiveDnaBrief(profile ? buildDnaBrief(profile, currentUser.firstName) : "");
+        setMessages((previous) => {
+          if (previous.length !== 1 || previous[0].role !== "assistant" || previous[0].content !== INITIAL_GREETING) {
+            return previous;
+          }
+          const firstName = currentUser.firstName?.trim() || "there";
+          return [{
+            role: "assistant",
+            content: profile
+              ? `Hey ${firstName}! Maggie already knows your Design DNA and can suggest merch ideas from it. What would you like to create?`
+              : `Hey ${firstName}! Tell me what you want to print, wear, or launch.`,
+          }];
+        });
+      } catch (error) {
+        if (cancelled) return;
+        setActiveDnaBrief("");
+        setHasSavedDna(false);
+        setDnaError(error instanceof Error ? error.message : "Couldn't load your saved Design DNA.");
+      } finally {
+        if (!cancelled) {
+          setDnaLoadedForUser(currentUser.id);
+          setDnaLoading(false);
+        }
+      }
+    }
+
+    void loadSavedDna();
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
+  }, [open, authLoading, isAuthenticated, user?.id, user?.firstName]);
 
   // When parent forces open (e.g. from DNA panel CTA)
   useEffect(() => {
     if (forceOpen && !open) {
+      setDnaError(null);
+      setDnaLoadedForUser(null);
+      setDnaLoading(authLoading || isAuthenticated);
+      setActiveDnaBrief("");
+      setHasSavedDna(false);
       setVisible(true);
       setShowHint(false);
       setSpraying(true);
@@ -64,6 +193,11 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
       handleClose();
       return;
     }
+    setDnaError(null);
+    setDnaLoadedForUser(null);
+    setDnaLoading(authLoading || isAuthenticated);
+    setActiveDnaBrief("");
+    setHasSavedDna(false);
     setShowHint(false);
     setSpraying(true);
     setTimeout(() => {
@@ -75,8 +209,9 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
   async function handleSend(event: FormEvent) {
     event.preventDefault();
     const content = input.trim();
-    if (!content || sending) return;
-    const nextMessages = [...messages, { role: "user" as const, content }];
+    if (!content || sending || chatContextLoading) return;
+    const history = isAuthenticated ? undefined : messages.slice(-10);
+    const nextMessages: ChatMessage[] = [...messages, { role: "user", content }];
     setMessages(nextMessages);
     setInput("");
     setSending(true);
@@ -85,7 +220,11 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
       const res = await bupApiFetch("/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: content, dnaBrief: activeDnaBrief }),
+        body: JSON.stringify({
+          prompt: content,
+          dnaBrief: activeDnaBrief,
+          ...(!isAuthenticated ? { history } : {}),
+        }),
       });
       const data = await res.json().catch(() => ({})) as { reply?: unknown };
       if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
@@ -194,7 +333,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
               </div>
             </div>
 
-            {/* DNA clipboard nudge */}
+            {/* Design DNA status */}
             <AnimatePresence>
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
@@ -203,7 +342,27 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
                 className="bg-primary/10 border-b border-primary/20 px-4 py-2 overflow-hidden"
               >
                 <p className="text-[10px] font-sans text-orange-300 leading-relaxed">
-                  💡 Your Design DNA brief is attached automatically when you open Maggie from the DNA panel.
+                  {authLoading || (isAuthenticated && dnaLoading) ? (
+                    "Loading your Design DNA…"
+                  ) : dnaError ? (
+                    dnaError
+                  ) : hasSavedDna ? (
+                    "Maggie already knows your Design DNA and can suggest merch ideas from it."
+                  ) : isAuthenticated ? (
+                    <>
+                      Build your Design DNA so Maggie can tailor merch ideas.{" "}
+                      <button type="button" onClick={onOpenDNA} className="font-bold underline underline-offset-2 hover:text-white">
+                        Open Design DNA
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <button type="button" onClick={login} className="font-bold underline underline-offset-2 hover:text-white">
+                        Log in
+                      </button>{" "}
+                      and build your Design DNA so Maggie can suggest merch from your style.
+                    </>
+                  )}
                 </p>
               </motion.div>
             </AnimatePresence>
@@ -226,7 +385,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, dnaBri
                 className="min-w-0 flex-1 bg-zinc-900 border border-zinc-800 rounded px-3 py-2 text-xs text-white outline-none focus:border-primary"
                 aria-label="Message Maggie"
               />
-              <button type="submit" disabled={sending || !input.trim()} className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40" aria-label="Send message">
+              <button type="submit" disabled={sending || chatContextLoading || !input.trim()} className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40" aria-label="Send message">
                 <Send size={15} />
               </button>
             </form>

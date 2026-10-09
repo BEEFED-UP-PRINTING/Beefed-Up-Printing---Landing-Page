@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Dna, MessageCircle, Check, Copy } from "lucide-react";
+import { X, Dna, MessageCircle, ArrowRight } from "lucide-react";
 import { useBupAuth } from "@/hooks/use-bup-auth";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
 import DesignDNAOnboarding from "./DesignDNAOnboarding";
@@ -33,18 +33,17 @@ interface Suggestion {
 
 interface Props {
   onClose: () => void;
-  onOpenMaggie?: (dnaBrief?: string) => void;
+  onOpenMaggie?: () => void;
 }
 
 export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
-  const { user, isAuthenticated, login } = useBupAuth();
+  const { isAuthenticated, login } = useBupAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [loadingProfile, setLoadingProfile] = useState(true);
   const [loadingSuggestions, setLoadingSuggestions] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
-  const [copied, setCopied] = useState(false);
   const [requestError, setRequestError] = useState("");
 
   const fetchProfile = useCallback(async () => {
@@ -153,33 +152,9 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
     }
   }
 
-  function buildDNABrief(): string {
-    if (!profile) return "";
-    const name = user?.firstName ?? "a BUP customer";
-    const lines = [
-      `Hey Maggie! I'm ${name} and here's my Design DNA:`,
-      profile.favouriteColours.length ? `🎨 Colours: ${profile.favouriteColours.join(", ")}` : "",
-      profile.musicGenres.length ? `🎵 Music: ${profile.musicGenres.join(", ")}` : "",
-      profile.styleVibes.length ? `🔥 Style vibes: ${profile.styleVibes.join(", ")}` : "",
-      profile.designKeywords.length ? `✍️ Design keywords: ${profile.designKeywords.join(", ")}` : "",
-      profile.rawNotes ? `📝 Notes: ${profile.rawNotes}` : "",
-      "",
-      "Can you help me design some merch that matches my vibe?",
-    ];
-    return lines.filter(Boolean).join("\n");
-  }
-
-  async function handleChatWithMaggie() {
-    const brief = buildDNABrief();
-    if (brief) {
-      try {
-        await navigator.clipboard.writeText(brief);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 3000);
-      } catch { /* clipboard may be blocked */ }
-    }
+  function handleChatWithMaggie() {
     onClose();
-    setTimeout(() => onOpenMaggie?.(brief), 300);
+    setTimeout(() => onOpenMaggie?.(), 300);
   }
 
   return (
@@ -251,7 +226,6 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
                     <button
                       onClick={handleChatWithMaggie}
                       className="w-full flex items-center justify-between gap-3 border border-zinc-800 hover:border-primary/50 bg-zinc-900/50 hover:bg-primary/5 px-4 py-3 transition-all group"
-                      style={{ boxShadow: copied ? "0 0 16px rgba(249,115,22,0.2)" : "none" }}
                     >
                       <div className="flex items-center gap-2.5">
                         <MessageCircle size={16} className="text-primary shrink-0" />
@@ -260,15 +234,11 @@ export default function DesignDNAPanel({ onClose, onOpenMaggie }: Props) {
                             Chat with Maggie about my DNA
                           </p>
                           <p className="text-zinc-600 text-[10px] font-sans mt-0.5">
-                            Opens Maggie · your DNA brief is attached automatically
+                            Opens Maggie · she loads your saved DNA automatically
                           </p>
                         </div>
                       </div>
-                      {copied ? (
-                        <Check size={14} className="text-primary shrink-0" />
-                      ) : (
-                        <Copy size={12} className="text-zinc-600 shrink-0" />
-                      )}
+                      <ArrowRight size={14} className="text-zinc-600 group-hover:text-primary shrink-0 transition-colors" />
                     </button>
                   </>
                 ) : (

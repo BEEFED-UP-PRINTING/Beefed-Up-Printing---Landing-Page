@@ -1,12 +1,12 @@
 ---
-name: BUP production auth split
-description: Production Cloudflare API auth contract differs from the landing app's Replit OIDC client.
+name: BUP production boundaries
+description: GitHub Pages hosts the public site; the live Cloudflare Worker defines production account, DNA, and Maggie contracts.
 ---
 
-# BUP production auth split
+# BUP production boundaries
 
-At the time this was confirmed, the public landing page was served from GitHub Pages behind Cloudflare, while `api.beefedupp.co.za` was a Cloudflare Worker custom domain. The Worker exposed email/password routes (`/api/login`, `/api/register`) and `/api/me`, with D1/JWT-related bindings. The landing source instead expected Replit OIDC routes (`/api/auth/user` and a browser redirect to `/api/login`), and the local Replit API artifact implements that Replit flow.
+The public site `beefedupp.co.za` uses GitHub Pages from `main` at `/`. `api.beefedupp.co.za` is the production Cloudflare Worker; do not assume the local Replit API artifact matches production. The live Worker exposes saved Design DNA through `GET /api/dna/profile` for the signed-in customer and accepts Maggie chat history as `{ role, content }` entries, limited to the latest ten.
 
-**Why:** The same API hostname can serve a different runtime than the API source in the Replit workspace; local route code alone does not prove the production auth contract.
+**Why:** The frontend, local Replit API artifact, and live Worker are separate runtimes. Local route code does not prove the live API contract or account isolation.
 
-**How to apply:** Before changing login or Design DNA, re-check the live Worker and decide which identity system owns production accounts. Align the frontend and backend deliberately; do not assume that switching the API hostname or auth package preserves existing accounts.
+**How to apply:** Before changing login, Design DNA, or Maggie's backend contract, inspect the live Worker rather than inferring behavior from the local API artifact. For frontend-only DNA sync, use the existing authenticated helper and leave the Worker unchanged.
