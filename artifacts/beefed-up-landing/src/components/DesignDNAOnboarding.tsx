@@ -46,7 +46,7 @@ interface Props {
 
 const steps = ["Colours", "Music", "Vibes", "Keywords", "Notes"];
 
-export default function DesignDNAOnboarding({ onClose, onSave, saveError }: Props) {
+export default function DesignDNAOnboarding({ onClose, onSave, saveError: parentSaveError }: Props) {
   const [step, setStep] = useState(0);
   const [colours, setColours] = useState<string[]>([]);
   const [music, setMusic] = useState<string[]>([]);
@@ -54,8 +54,8 @@ export default function DesignDNAOnboarding({ onClose, onSave, saveError }: Prop
   const [keywords, setKeywords] = useState<string[]>([]);
   const [notes, setNotes] = useState("");
   const [saving, setSaving] = useState(false);
-  const [saveError, setSaveError] = useState("");
-
+  const [saveError, setSaveError] = useState("");  
+  const saveErrorMessage = saveError || parentSaveError || "";
   function toggle<T>(arr: T[], val: T, set: (v: T[]) => void, max = 5) {
     if (arr.includes(val)) set(arr.filter((x) => x !== val));
     else if (arr.length < max) set([...arr, val]);
@@ -217,18 +217,13 @@ export default function DesignDNAOnboarding({ onClose, onSave, saveError }: Prop
           </AnimatePresence>
         </div>
 
-        {saveError && (
-          <p role="alert" className="px-6 pt-3 text-red-300 text-xs font-sans">{saveError}</p>
+          {saveErrorMessage && (
+          <p role="alert" className="px-6 pt-3 text-red-300 text-xs font-sans">{saveErrorMessage}</p>
         )}
 
         {/* Footer */}
         <div className="flex items-center justify-between px-6 py-4 border-t border-zinc-800">
-          {saveError && (
-            <p role="alert" className="mr-4 text-xs leading-relaxed text-red-300">
-              {saveError}
-            </p>
-          )}
-          <button
+                                                  <button
             onClick={() => setStep((s) => s - 1)}
             disabled={step === 0}
             className="flex items-center gap-1 text-zinc-500 hover:text-white transition-colors disabled:opacity-30 text-sm font-sans"
