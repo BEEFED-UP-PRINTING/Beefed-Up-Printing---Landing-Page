@@ -3,12 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
 import { useBupAuth } from "@/hooks/use-bup-auth";
-
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
-
 type ChatMessage = { role: "user" | "assistant"; content: string; image?: string };
-
 interface DesignDnaProfile {
   favouriteColours?: string[] | null;
   musicGenres?: string[] | null;
@@ -16,13 +13,11 @@ interface DesignDnaProfile {
   designKeywords?: string[] | null;
   rawNotes?: string | null;
 }
-
 interface Props {
   forceOpen?: boolean;
   onForceClose?: () => void;
   onOpenDNA?: () => void;
 }
-
 function buildDnaBrief(profile: DesignDnaProfile, firstName: string | null | undefined): string {
   const list = (value: string[] | null | undefined) =>
     Array.isArray(value) ? value.filter((item): item is string => typeof item === "string" && item.trim().length > 0) : [];
@@ -211,6 +206,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     const content = input.trim();
     if (!content || sending || chatContextLoading) return;
     const history = isAuthenticated ? undefined : messages.slice(-10).map(({ role, content }) => ({ role, content }));
+    const history = isAuthenticated ? undefined : messages.slice(-10);
     const nextMessages: ChatMessage[] = [...messages, { role: "user", content }];
     setMessages(nextMessages);
     setInput("");
@@ -232,6 +228,13 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
         throw new Error("Maggie returned an empty reply. Please try again.");
             }
       setMessages((previous) => [...previous, { role: "assistant", content: data.reply as string, ...(typeof data.image === "string" && data.image.startsWith("data:image/") ? { image: data.image } : {}) }]);
+      const data = await res.json().catch(() => ({})) as { reply?: unknown };
+      if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
+      if (typeof data.reply !== "string" || !data.reply.trim()) {
+        throw new Error("Maggie returned an empty reply. Please try again.");
+      }
+      setMessages((previous) => [...previous, { role: "assistant", content: data.reply as string }]);
+
     } catch (error) {
       setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
     } finally {
@@ -366,6 +369,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 </p>
               </motion.div>
             </AnimatePresence>
+
                         <div className="flex-1 overflow-y-auto p-3 space-y-3">
               {messages.map((message, index) => (
                 <div key={message.role + "-" + index} className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}>
@@ -378,6 +382,13 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                       </a>
                     )}
                   </div>
+            <div className="flex-1 overflow-y-auto p-3 space-y-3">
+              {messages.map((message, index) => (
+                <div key={message.role + "-" + index} className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}>
+                  <p className={"max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed whitespace-pre-wrap " + (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")}>
+                    {message.content}
+                  </p>
+
                 </div>
               ))}
               {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}

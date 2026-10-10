@@ -34,6 +34,7 @@ const KEYWORD_OPTIONS = [
 
 interface Props {
   onClose: () => void;
+  saveError?: string | null;
   onSave: (data: {
     favouriteColours: string[];
     musicGenres: string[];
@@ -45,7 +46,7 @@ interface Props {
 
 const steps = ["Colours", "Music", "Vibes", "Keywords", "Notes"];
 
-export default function DesignDNAOnboarding({ onClose, onSave }: Props) {
+export default function DesignDNAOnboarding({ onClose, onSave, saveError }: Props) {
   const [step, setStep] = useState(0);
   const [colours, setColours] = useState<string[]>([]);
   const [music, setMusic] = useState<string[]>([]);
@@ -215,6 +216,10 @@ export default function DesignDNAOnboarding({ onClose, onSave }: Props) {
             </motion.div>
           </AnimatePresence>
         </div>
+
+        {saveError && (
+          <p role="alert" className="px-6 pt-3 text-red-300 text-xs font-sans">{saveError}</p>
+        )}
 
         {/* Footer */}
         <div className="flex items-center justify-between px-6 py-4 border-t border-zinc-800">

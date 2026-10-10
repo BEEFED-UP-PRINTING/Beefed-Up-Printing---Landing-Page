@@ -12,15 +12,11 @@ interface AuthState {
 }
 
 const PUBLIC_APP_HOSTS = new Set(["beefedupp.co.za", "www.beefedupp.co.za"]);
-const API_ORIGIN = "https://api.beefedupp.co.za";
 
+// Keep Replit auth on the app origin so its session cookie reaches the API service.
 function apiUrl(path: string): string {
-  if (typeof window !== "undefined" && PUBLIC_APP_HOSTS.has(window.location.hostname)) {
-    return `${API_ORIGIN}${path}`;
-  }
   return path;
 }
-
 export function useAuth(): AuthState {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);

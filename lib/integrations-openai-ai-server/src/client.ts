@@ -35,4 +35,4 @@ export const openai = new Proxy({} as OpenAI, {
     const value = Reflect.get(client as object, prop as PropertyKey);
     return typeof value === "function" ? value.bind(client) : value;
   },
-});
+  });
