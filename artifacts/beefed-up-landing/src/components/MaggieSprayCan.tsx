@@ -7,7 +7,7 @@ import { useBupAuth } from "@/hooks/use-bup-auth";
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
 
-type ChatMessage = { role: "user" | "assistant"; content: string };
+type ChatMessage = { role: "user" | "assistant"; content: string; image?: string };
 
 interface DesignDnaProfile {
   favouriteColours?: string[] | null;
@@ -210,7 +210,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     event.preventDefault();
     const content = input.trim();
     if (!content || sending || chatContextLoading) return;
-    const history = isAuthenticated ? undefined : messages.slice(-10);
+    const history = isAuthenticated ? undefined : messages.slice(-10).map(({ role, content }) => ({ role, content }));
     const nextMessages: ChatMessage[] = [...messages, { role: "user", content }];
     setMessages(nextMessages);
     setInput("");
@@ -226,12 +226,12 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
           ...(!isAuthenticated ? { history } : {}),
         }),
       });
-      const data = await res.json().catch(() => ({})) as { reply?: unknown };
+      const data = await res.json().catch(() => ({})) as { reply?: unknown; image?: unknown };
       if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
       if (typeof data.reply !== "string" || !data.reply.trim()) {
         throw new Error("Maggie returned an empty reply. Please try again.");
-      }
-      setMessages((previous) => [...previous, { role: "assistant", content: data.reply as string }]);
+            }
+      setMessages((previous) => [...previous, { role: "assistant", content: data.reply as string, ...(typeof data.image === "string" && data.image.startsWith("data:image/") ? { image: data.image } : {}) }]);
     } catch (error) {
       setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
     } finally {
@@ -366,12 +366,18 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 </p>
               </motion.div>
             </AnimatePresence>
-            <div className="flex-1 overflow-y-auto p-3 space-y-3">
+                        <div className="flex-1 overflow-y-auto p-3 space-y-3">
               {messages.map((message, index) => (
                 <div key={message.role + "-" + index} className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}>
-                  <p className={"max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed whitespace-pre-wrap " + (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")}>
-                    {message.content}
-                  </p>
+                  <div className={"max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed " + (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")}>
+                    <p className="whitespace-pre-wrap">{message.content}</p>
+                    {message.image && (
+                      <a href={message.image} download="maggie-design.jpg" className="mt-2 block">
+                        <img src={message.image} alt="Design concept from Maggie" className="w-full rounded border border-zinc-700" />
+                        <span className="mt-1 block text-[10px] text-orange-300 underline">Tap to save</span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
               {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}
