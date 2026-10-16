@@ -1,4 +1,4 @@
-const API_ORIGIN = "https://bup-api.beefedupp.workers.dev";";
+const API_ORIGIN = "https://bup-api.beefedupp.workers.dev";
 const SESSION_TOKEN_KEY = "bup-api-session";
 
 export const AUTH_OPEN_EVENT = "bup:auth-open";
