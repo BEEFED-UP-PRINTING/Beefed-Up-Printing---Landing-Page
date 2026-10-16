@@ -388,7 +388,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}
               {chatError && <p className="text-red-400 text-[11px] leading-relaxed">{chatError}</p>}
             </div>
-            <form onSubmit={handleSend} className="flex gap-2 border-t border-zinc-800 p-3">
+              <form onSubmit={handleSend} className="flex gap-2 border-t border-zinc-800 p-3">
               <input
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
@@ -400,6 +400,14 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 <Send size={15} />
               </button>
             </form>
+            <MaggieUploadShare
+              onImageSelected={handleSend}
+              lastImageBase64={messages[messages.length - 1]?.image}
+              apiBase="https://bup-api.beefedupp.workers.dev"
+              authToken={token}
+              disabled={sending}
+            />
+
           </motion.div>
         )}
       </AnimatePresence>
