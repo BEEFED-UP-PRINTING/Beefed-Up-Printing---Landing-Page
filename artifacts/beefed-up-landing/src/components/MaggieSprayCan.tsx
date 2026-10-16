@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage, getSessionToken } from "@/lib/bup-api";
+import MaggieUploadShare from "./MaggieUploadShare";
 import { useBupAuth } from "@/hooks/use-bup-auth";
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
@@ -181,6 +182,27 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
   function handleClose() {
     setOpen(false);
     onForceClose?.();
+  }
+
+  async function handleImageSelected(imageBase64: string) {
+    if (sending || chatContextLoading) return;
+    setMessages(prev => [...prev, { role: "user", content: "[Image uploaded]", image: imageBase64 }]);
+    setSending(true);
+    setChatError(null);
+    try {
+      const res = await bupApiFetch("/api/maggie", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: "Please suggest design ideas based on this reference image.", image: imageBase64, dnaBrief: activeDnaBrief }),
+      });
+      const data = await res.json().catch(() => ({})) as { reply?: unknown; image?: unknown };
+      if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
+      setMessages(prev => [...prev, { role: "assistant", content: data.reply as string, ...(typeof data.image === "string" ? { image: data.image } : {}) }]);
+    } catch (error) {
+      setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
+    } finally {
+      setSending(false);
+    }
   }
 
   const handleTap = () => {
@@ -387,7 +409,16 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}
               {chatError && <p className="text-red-400 text-[11px] leading-relaxed">{chatError}</p>}
             </div>
-              <form onSubmit={handleSend} className="flex gap-2 border-t border-zinc-800 p-3">
+            <div className="px-3 pt-2 pb-1 border-t border-zinc-800">
+              <MaggieUploadShare
+                onImageSelected={handleImageSelected}
+                lastImageBase64={messages[messages.length - 1]?.image}
+                apiBase="https://bup-api.beefedupp.workers.dev"
+                authToken={getSessionToken()}
+                disabled={sending}
+              />
+            </div>
+            <form onSubmit={handleSend} className="flex gap-2 px-3 pb-3">
               <input
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
@@ -399,7 +430,6 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 <Send size={15} />
               </button>
             </form>
-            
           </motion.div>
         )}
       </AnimatePresence>
