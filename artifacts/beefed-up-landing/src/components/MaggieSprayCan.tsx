@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
-import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
+import { bupApiFetch, clearSessionToken, getApiErrorMessage, getSessionToken } from "@/lib/bup-api";
 import { useBupAuth } from "@/hooks/use-bup-auth";
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
