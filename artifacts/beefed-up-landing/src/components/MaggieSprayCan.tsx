@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import MaggieUploadShare from "./MaggieUploadShare";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
@@ -400,14 +399,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 <Send size={15} />
               </button>
             </form>
-            <MaggieUploadShare
-              onImageSelected={handleSend}
-              lastImageBase64={messages[messages.length - 1]?.image}
-              apiBase="https://bup-api.beefedupp.workers.dev"
-              authToken={token}
-              disabled={sending}
-            />
-
+            
           </motion.div>
         )}
       </AnimatePresence>
