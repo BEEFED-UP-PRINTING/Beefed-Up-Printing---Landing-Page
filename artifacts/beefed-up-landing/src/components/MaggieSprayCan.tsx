@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import MaggieUploadShare from "./MaggieUploadShare";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage } from "@/lib/bup-api";
