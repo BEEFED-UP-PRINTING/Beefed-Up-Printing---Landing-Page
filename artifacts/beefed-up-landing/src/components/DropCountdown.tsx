@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Bell, CheckCircle2 } from "lucide-react";
 
-const DROP_DATE = new Date("2026-08-01T00:00:00+02:00"); // BML First Sighting Drop Date
+// 16 December 2026, midnight SAST (UTC+2)
+const DROP_DATE = new Date("2026-12-16T00:00:00+02:00");
 
 function getTimeLeft(target: Date) {
   const diff = target.getTime() - Date.now();
@@ -93,6 +94,18 @@ export default function DropCountdown() {
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
             <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
           </div>
+
+          {/* BML logo — drop a PNG at public/bml-logo.png to show it */}
+          <img
+            src={`${import.meta.env.BASE_URL}bml-logo.png`}
+            alt="BML — Dripped in Africa"
+            className="mx-auto mb-6 h-20 sm:h-24 w-auto object-contain"
+            onError={(e) => {
+              // Hide if file not uploaded yet
+              (e.currentTarget as HTMLImageElement).style.display = "none";
+            }}
+          />
+
           <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none mb-4">
             BML <span className="text-primary">First Sighting</span>
           </h2>
