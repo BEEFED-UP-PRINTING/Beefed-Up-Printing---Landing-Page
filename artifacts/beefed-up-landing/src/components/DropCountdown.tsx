@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Bell, CheckCircle2 } from "lucide-react";
 
-const DROP_DATE = new Date("2026-08-01T00:00:00+02:00"); // BUP Vol. 1 Drop Date
+const DROP_DATE = new Date("2026-08-01T00:00:00+02:00"); // BML First Sighting Drop Date
 
 function getTimeLeft(target: Date) {
   const diff = target.getTime() - Date.now();
@@ -94,7 +94,7 @@ export default function DropCountdown() {
             <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
           </div>
           <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none mb-4">
-            BUP Vol.<span className="text-primary">1</span>
+            BML <span className="text-primary">First Sighting</span>
           </h2>
           <p className="text-zinc-400 font-sans text-sm max-w-md mx-auto">
             A limited collab drop. Street culture, printed proper. Be first — sign up to get notified the moment it drops.
@@ -126,7 +126,7 @@ export default function DropCountdown() {
                 You're on the list
               </p>
               <p className="text-zinc-500 text-xs font-sans">
-                We'll hit you up the moment BUP Vol.1 drops. Stay tuned.
+                We'll hit you up the moment BML First Sighting drops. Stay tuned.
               </p>
             </motion.div>
           ) : (

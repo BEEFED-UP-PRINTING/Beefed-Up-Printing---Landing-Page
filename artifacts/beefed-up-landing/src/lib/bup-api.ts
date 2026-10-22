@@ -42,6 +42,18 @@ export function clearSessionToken(notify = true): void {
   }
 }
 
+/**
+ * Pull a human-readable message from an API error body, with a safe fallback.
+ */
+export function getApiErrorMessage(data: unknown, fallback: string): string {
+  if (data && typeof data === "object") {
+    const d = data as Record<string, unknown>;
+    if (typeof d.error === "string" && d.error.trim()) return d.error.trim();
+    if (typeof d.message === "string" && d.message.trim()) return d.message.trim();
+  }
+  return fallback;
+}
+
 type BupApiFetchOptions = RequestInit & {
   /** Skip attaching the session token (e.g. for login/signup). */
   skipAuth?: boolean;
