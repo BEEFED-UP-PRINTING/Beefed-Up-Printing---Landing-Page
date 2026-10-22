@@ -413,7 +413,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               <MaggieUploadShare
                 onImageSelected={handleImageSelected}
                 lastImageBase64={messages[messages.length - 1]?.image}
-                apiBase="https://bup-api.beefedupp.workers.dev"
+                apiBase="https://api.beefedupp.co.za"
                 authToken={getSessionToken()}
                 disabled={sending}
               />
