@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Bell, CheckCircle2 } from "lucide-react";
+import { BML_LOGO_SRC } from "@/lib/bml-logo-data";
 
 // 16 December 2026, midnight GMT (UTC)
 const DROP_DATE = new Date("2026-12-16T00:00:00.000Z");
@@ -95,14 +96,10 @@ export default function DropCountdown() {
             <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
           </div>
 
-          {/* BML logo — file must live at public/bml-logo.png */}
           <img
-            src={`${import.meta.env.BASE_URL}bml-logo.png`}
+            src={BML_LOGO_SRC}
             alt="BML — Dripped in Africa"
-            className="mx-auto mb-6 h-20 sm:h-24 w-auto object-contain"
-            onError={(e) => {
-              (e.currentTarget as HTMLImageElement).style.display = "none";
-            }}
+            className="mx-auto mb-6 h-24 sm:h-28 w-auto object-contain"
           />
 
           <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none mb-4">
