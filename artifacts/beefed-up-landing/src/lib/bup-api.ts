@@ -54,6 +54,18 @@ export function getApiErrorMessage(data: unknown, fallback: string): string {
   return fallback;
 }
 
+/**
+ * Read the error body from a failed Response and return a user-facing message.
+ */
+export async function getApiError(response: Response, fallback: string): Promise<string> {
+  try {
+    const data = await response.json();
+    return getApiErrorMessage(data, fallback);
+  } catch {
+    return fallback;
+  }
+}
+
 type BupApiFetchOptions = RequestInit & {
   /** Skip attaching the session token (e.g. for login/signup). */
   skipAuth?: boolean;

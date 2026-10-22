@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Bell, CheckCircle2 } from "lucide-react";
 
-// 16 December 2026, midnight SAST (UTC+2)
-const DROP_DATE = new Date("2026-12-16T00:00:00+02:00");
+// 16 December 2026, midnight GMT (UTC)
+const DROP_DATE = new Date("2026-12-16T00:00:00.000Z");
 
 function getTimeLeft(target: Date) {
   const diff = target.getTime() - Date.now();
@@ -95,13 +95,12 @@ export default function DropCountdown() {
             <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
           </div>
 
-          {/* BML logo — drop a PNG at public/bml-logo.png to show it */}
+          {/* BML logo — file must live at public/bml-logo.png */}
           <img
             src={`${import.meta.env.BASE_URL}bml-logo.png`}
             alt="BML — Dripped in Africa"
             className="mx-auto mb-6 h-20 sm:h-24 w-auto object-contain"
             onError={(e) => {
-              // Hide if file not uploaded yet
               (e.currentTarget as HTMLImageElement).style.display = "none";
             }}
           />
@@ -111,6 +110,9 @@ export default function DropCountdown() {
           </h2>
           <p className="text-zinc-400 font-sans text-sm max-w-md mx-auto">
             A limited collab drop. Street culture, printed proper. Be first — sign up to get notified the moment it drops.
+          </p>
+          <p className="mt-2 text-zinc-600 text-[10px] font-sans uppercase tracking-widest">
+            Drops 16 Dec 2026 · Midnight GMT
           </p>
         </div>
 
