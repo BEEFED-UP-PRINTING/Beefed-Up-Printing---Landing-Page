@@ -8,9 +8,7 @@ export const AUTH_CHANGED_EVENT = "bup:auth-changed";
 // (A relative path only works if the host also serves /api, which this static site does not.)
 export function bupApiUrl(path: string): string {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  return `${API_ORIGIN}${normalizedPath}`;
-}
-
+  return `${API_URL}${normalizedPath}`;
 // localStorage so customers stay signed in across tabs and visits (token expires after 7 days on the server).
 export function getSessionToken(): string | null {
   try {
