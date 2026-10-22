@@ -41,3 +41,41 @@ export function clearSessionToken(notify = true): void {
     window.dispatchEvent(new Event(AUTH_CHANGED_EVENT));
   }
 }
+
+type BupApiFetchOptions = RequestInit & {
+  /** Skip attaching the session token (e.g. for login/signup). */
+  skipAuth?: boolean;
+};
+
+/**
+ * Fetch wrapper for the Beefed Up API.
+ * - Prefixes the path with the API origin
+ * - Attaches the session token when present
+ * - Throws a clear error on non-2xx responses
+ */
+export async function bupApiFetch(
+  path: string,
+  options: BupApiFetchOptions = {}
+): Promise<Response> {
+  const { skipAuth = false, headers: initHeaders, ...rest } = options;
+
+  const headers = new Headers(initHeaders);
+
+  if (!skipAuth) {
+    const token = getSessionToken();
+    if (token) {
+      headers.set("Authorization", `Bearer ${token}`);
+    }
+  }
+
+  if (!headers.has("Content-Type") && rest.body && !(rest.body instanceof FormData)) {
+    headers.set("Content-Type", "application/json");
+  }
+
+  const res = await fetch(bupApiUrl(path), {
+    ...rest,
+    headers,
+  });
+
+  return res;
+}
