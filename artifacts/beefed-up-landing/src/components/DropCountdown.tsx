@@ -32,7 +32,6 @@ function Digit({ value, label }: { value: number; label: string }) {
         >
           {display}
         </span>
-        {/* Scanline */}
         <div className="absolute inset-x-0 top-1/2 h-px bg-zinc-800/60 pointer-events-none" />
       </div>
       <span className="text-zinc-600 text-[10px] font-sans uppercase tracking-widest mt-2">{label}</span>
@@ -46,6 +45,7 @@ export default function DropCountdown() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [logoOk, setLogoOk] = useState(true);
 
   useEffect(() => {
     const t = setInterval(() => setTime(getTimeLeft(DROP_DATE)), 1000);
@@ -80,7 +80,6 @@ export default function DropCountdown() {
       className="py-24 px-4 sm:px-6 relative overflow-hidden border-t border-zinc-900"
       style={{ background: "radial-gradient(ellipse at 50% 100%, rgba(249,115,22,0.06) 0%, transparent 70%)" }}
     >
-      {/* Background text */}
       <div
         className="absolute inset-0 flex items-center justify-center font-display font-black text-[120px] sm:text-[180px] md:text-[220px] text-zinc-900/30 select-none pointer-events-none leading-none"
         aria-hidden
@@ -89,18 +88,20 @@ export default function DropCountdown() {
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10">
-        {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 px-4 py-1.5 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
             <span className="text-primary text-[11px] font-sans tracking-[0.25em] uppercase font-bold">Incoming</span>
           </div>
 
-          <img
-            src={BML_LOGO_SRC}
-            alt="BML — Dripped in Africa"
-            className="mx-auto mb-6 h-24 sm:h-28 w-auto object-contain"
-          />
+          {logoOk && (
+            <img
+              src={BML_LOGO_SRC}
+              alt="BML — Dripped in Africa"
+              className="mx-auto mb-6 h-24 sm:h-28 w-auto object-contain"
+              onError={() => setLogoOk(false)}
+            />
+          )}
 
           <h2 className="font-display font-black text-4xl sm:text-5xl md:text-6xl uppercase text-white leading-none mb-4">
             BML <span className="text-primary">First Sighting</span>
@@ -113,7 +114,6 @@ export default function DropCountdown() {
           </p>
         </div>
 
-        {/* Countdown */}
         <div className="flex items-center justify-center gap-3 sm:gap-4 mb-14">
           <Digit value={time.days} label="Days" />
           <span className="font-display font-black text-3xl text-primary pb-6">:</span>
@@ -124,7 +124,6 @@ export default function DropCountdown() {
           <Digit value={time.seconds} label="Secs" />
         </div>
 
-        {/* Email notify form */}
         <div className="max-w-md mx-auto">
           {submitted ? (
             <motion.div
