@@ -6,6 +6,18 @@ import MaggieUploadShare from "./MaggieUploadShare";
 import { useBupAuth } from "@/hooks/use-bup-auth";
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
+
+/** Quick style tags sent with every generate request (optional). */
+const STYLE_CHIPS = [
+  "Street",
+  "Minimal",
+  "Afro-futurism",
+  "Typography",
+  "Graffiti",
+  "Luxury",
+  "Y2K",
+  "Sports",
+] as const;
 type ChatMessage = { role: "user" | "assistant"; content: string; image?: string };
 interface DesignDnaProfile {
   favouriteColours?: string[] | null;
@@ -45,8 +57,8 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
   const [sending, setSending] = useState(false);
   const [activeDnaBrief, setActiveDnaBrief] = useState("");
   const [hasSavedDna, setHasSavedDna] = useState(false);
-  /** OFF by default so Maggie does not force YOUR DNA onto every design. */
   const [useDna, setUseDna] = useState(false);
+  const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
   const [dnaLoading, setDnaLoading] = useState(false);
   const [dnaLoadedForUser, setDnaLoadedForUser] = useState<string | null>(null);
   const [dnaError, setDnaError] = useState<string | null>(null);
@@ -55,6 +67,22 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
 
   const chatContextLoading = authLoading || (open && isAuthenticated && (dnaLoading || !user?.id || dnaLoadedForUser !== user.id));
   const dnaBriefForRequest = useDna && activeDnaBrief ? activeDnaBrief : "";
+
+  function toggleStyleChip(chip: string) {
+    setSelectedStyles((prev) =>
+      prev.includes(chip) ? prev.filter((c) => c !== chip) : prev.length < 3 ? [...prev, chip] : prev
+    );
+  }
+
+  function buildMaggieBody(prompt: string, extra: Record<string, unknown> = {}) {
+    return {
+      prompt,
+      dnaBrief: dnaBriefForRequest,
+      styleChips: selectedStyles,
+      conceptCount: 3,
+      ...extra,
+    };
+  }
 
   useEffect(() => {
     const t = setTimeout(() => {
@@ -115,7 +143,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     async function loadSavedDna() {
       try {
         const response = await bupApiFetch("/api/dna/profile", { signal: controller.signal });
-        const data = await response.json().catch(() => ({})) as { profile?: DesignDnaProfile | null };
+        const data = (await response.json().catch(() => ({}))) as { profile?: DesignDnaProfile | null };
         if (!response.ok) {
           if (response.status === 401 || response.status === 403) clearSessionToken();
           throw new Error(getApiErrorMessage(data, "Couldn't load your saved Design DNA."));
@@ -147,7 +175,10 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
       }
     }
     void loadSavedDna();
-    return () => { cancelled = true; controller.abort(); };
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
   }, [open, authLoading, isAuthenticated, user?.id, user?.firstName]);
 
   useEffect(() => {
@@ -160,7 +191,10 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
       setVisible(true);
       setShowHint(false);
       setSpraying(true);
-      setTimeout(() => { setOpen(true); setSpraying(false); }, 1100);
+      setTimeout(() => {
+        setOpen(true);
+        setSpraying(false);
+      }, 1100);
     }
   }, [forceOpen]);
 
@@ -178,15 +212,16 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
       const res = await bupApiFetch("/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          prompt: "Please suggest design ideas based on this reference image.",
-          image: imageBase64,
-          dnaBrief: dnaBriefForRequest,
-        }),
+        body: JSON.stringify(
+          buildMaggieBody("Please suggest design ideas based on this reference image.", { image: imageBase64 })
+        ),
       });
-      const data = await res.json().catch(() => ({})) as { reply?: unknown; image?: unknown };
+      const data = (await res.json().catch(() => ({}))) as { reply?: unknown; image?: unknown };
       if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
-      setMessages((prev) => [...prev, { role: "assistant", content: data.reply as string, ...(typeof data.image === "string" ? { image: data.image } : {}) }]);
+      setMessages((prev) => [
+        ...prev,
+        { role: "assistant", content: data.reply as string, ...(typeof data.image === "string" ? { image: data.image } : {}) },
+      ]);
     } catch (error) {
       setChatError(error instanceof Error ? error.message : "Maggie is temporarily unavailable.");
     } finally {
@@ -195,7 +230,10 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
   }
 
   const handleTap = () => {
-    if (open) { handleClose(); return; }
+    if (open) {
+      handleClose();
+      return;
+    }
     setDnaError(null);
     setDnaLoadedForUser(null);
     setDnaLoading(authLoading || isAuthenticated);
@@ -203,14 +241,19 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     setHasSavedDna(false);
     setShowHint(false);
     setSpraying(true);
-    setTimeout(() => { setOpen(true); setSpraying(false); }, 1100);
+    setTimeout(() => {
+      setOpen(true);
+      setSpraying(false);
+    }, 1100);
   };
 
   async function handleSend(event: FormEvent) {
     event.preventDefault();
     const content = input.trim();
     if (!content || sending || chatContextLoading) return;
-    const history = isAuthenticated ? undefined : messages.slice(-10).map(({ role, content: c }) => ({ role, content: c }));
+    const history = isAuthenticated
+      ? undefined
+      : messages.slice(-10).map(({ role, content: c }) => ({ role, content: c }));
     setMessages((prev) => [...prev, { role: "user", content }]);
     setInput("");
     setSending(true);
@@ -219,13 +262,9 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
       const res = await bupApiFetch("/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          prompt: content,
-          dnaBrief: dnaBriefForRequest,
-          ...(!isAuthenticated ? { history } : {}),
-        }),
+        body: JSON.stringify(buildMaggieBody(content, !isAuthenticated && history ? { history } : {})),
       });
-      const data = await res.json().catch(() => ({})) as { reply?: unknown; image?: unknown };
+      const data = (await res.json().catch(() => ({}))) as { reply?: unknown; image?: unknown };
       if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
       if (typeof data.reply !== "string" || !data.reply.trim()) {
         throw new Error("Maggie returned an empty reply. Please try again.");
@@ -251,7 +290,12 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     <>
       <AnimatePresence>
         {spraying && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-40 pointer-events-none flex items-center justify-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 pointer-events-none flex items-center justify-center"
+          >
             {Array.from({ length: 24 }).map((_, i) => {
               const angle = (i / 24) * Math.PI * 2;
               const dist = 90 + Math.random() * 140;
@@ -259,13 +303,23 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 <motion.span
                   key={i}
                   initial={{ x: 0, y: 0, opacity: 0.9, scale: 0 }}
-                  animate={{ x: Math.cos(angle) * dist, y: Math.sin(angle) * dist, opacity: 0, scale: 1 + Math.random() * 1.4 }}
+                  animate={{
+                    x: Math.cos(angle) * dist,
+                    y: Math.sin(angle) * dist,
+                    opacity: 0,
+                    scale: 1 + Math.random() * 1.4,
+                  }}
                   transition={{ duration: 0.9, ease: "easeOut" }}
                   className="absolute block rounded-full"
                   style={{
                     width: 10 + Math.random() * 10,
                     height: 10 + Math.random() * 10,
-                    background: i % 3 === 0 ? "rgba(249,115,22,0.85)" : i % 3 === 1 ? "rgba(239,68,68,0.75)" : "rgba(255,255,255,0.65)",
+                    background:
+                      i % 3 === 0
+                        ? "rgba(249,115,22,0.85)"
+                        : i % 3 === 1
+                          ? "rgba(239,68,68,0.75)"
+                          : "rgba(255,255,255,0.65)",
                     filter: "blur(2px)",
                   }}
                 />
@@ -277,7 +331,11 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               exit={{ opacity: 0 }}
               transition={{ delay: 0.25, duration: 0.5, ease: "backOut" }}
               className="font-graffiti text-7xl sm:text-9xl text-orange-500 select-none"
-              style={{ textShadow: "0 0 18px rgba(249,115,22,0.95), 0 0 36px rgba(239,68,68,0.7), 4px 6px 0 rgba(0,0,0,0.8)", WebkitTextStroke: "2px rgba(0,0,0,0.6)" }}
+              style={{
+                textShadow:
+                  "0 0 18px rgba(249,115,22,0.95), 0 0 36px rgba(239,68,68,0.7), 4px 6px 0 rgba(0,0,0,0.8)",
+                WebkitTextStroke: "2px rgba(0,0,0,0.6)",
+              }}
             >
               MAGGIE
             </motion.div>
@@ -294,14 +352,25 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
             exit={{ opacity: 0, y: 40, scale: 0.95 }}
             transition={{ type: "spring", stiffness: 280, damping: 26 }}
             className="fixed inset-0 z-50 md:inset-auto md:bottom-24 md:right-6 flex flex-col overflow-hidden bg-black md:rounded-xl border-2 border-primary shadow-[0_0_40px_rgba(249,115,22,0.35)]"
-            style={{ width: "min(420px, calc(100vw - 24px))", height: "min(640px, calc(100svh - 24px))" }}
+            style={{
+              width: "min(420px, calc(100vw - 24px))",
+              height: "min(640px, calc(100svh - 24px))",
+            }}
           >
             <div className="flex items-center justify-between bg-zinc-950 px-4 py-3 border-b border-zinc-800 flex-shrink-0 pt-[calc(env(safe-area-inset-top)+12px)] md:pt-3">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="font-display font-bold text-sm tracking-widest uppercase text-white">Maggie · Custom Designs</span>
+                <span className="font-display font-bold text-sm tracking-widest uppercase text-white">
+                  Maggie · Custom Designs
+                </span>
               </div>
-              <button onClick={handleClose} className="text-zinc-500 hover:text-primary transition-colors" aria-label="Close chat"><X size={18} /></button>
+              <button
+                onClick={handleClose}
+                className="text-zinc-500 hover:text-primary transition-colors"
+                aria-label="Close chat"
+              >
+                <X size={18} />
+              </button>
             </div>
 
             <div className="bg-primary/10 border-b border-primary/20 px-4 py-2">
@@ -312,21 +381,42 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                   <p>{dnaError}</p>
                 ) : hasSavedDna ? (
                   <>
-                    <p>{useDna ? "Design DNA is ON — Maggie biases toward your saved style." : "Design DNA is OFF — Maggie designs from your prompt only."}</p>
+                    <p>
+                      {useDna
+                        ? "Design DNA is ON — Maggie biases toward your saved style."
+                        : "Design DNA is OFF — Maggie designs from your prompt only."}
+                    </p>
                     <label className="flex items-center gap-2 cursor-pointer select-none text-orange-200">
-                      <input type="checkbox" checked={useDna} onChange={(e) => setUseDna(e.target.checked)} className="accent-orange-500" />
+                      <input
+                        type="checkbox"
+                        checked={useDna}
+                        onChange={(e) => setUseDna(e.target.checked)}
+                        className="accent-orange-500"
+                      />
                       <span className="font-bold uppercase tracking-wide">Use my Design DNA</span>
                     </label>
                   </>
                 ) : isAuthenticated ? (
                   <p>
                     Build your Design DNA so Maggie can tailor merch ideas.{" "}
-                    <button type="button" onClick={onOpenDNA} className="font-bold underline underline-offset-2 hover:text-white">Open Design DNA</button>
+                    <button
+                      type="button"
+                      onClick={onOpenDNA}
+                      className="font-bold underline underline-offset-2 hover:text-white"
+                    >
+                      Open Design DNA
+                    </button>
                   </p>
                 ) : (
                   <p>
-                    <button type="button" onClick={login} className="font-bold underline underline-offset-2 hover:text-white">Log in</button>
-                    {" "}and build your Design DNA so Maggie can suggest merch from your style.
+                    <button
+                      type="button"
+                      onClick={login}
+                      className="font-bold underline underline-offset-2 hover:text-white"
+                    >
+                      Log in
+                    </button>{" "}
+                    and build your Design DNA so Maggie can suggest merch from your style.
                   </p>
                 )}
               </div>
@@ -334,12 +424,24 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
 
             <div className="flex-1 overflow-y-auto p-3 space-y-3">
               {messages.map((message, index) => (
-                <div key={message.role + "-" + index} className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}>
-                  <div className={"max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed " + (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")}>
+                <div
+                  key={message.role + "-" + index}
+                  className={"flex " + (message.role === "user" ? "justify-end" : "justify-start")}
+                >
+                  <div
+                    className={
+                      "max-w-[88%] rounded-lg px-3 py-2 text-xs leading-relaxed " +
+                      (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")
+                    }
+                  >
                     <p className="whitespace-pre-wrap">{message.content}</p>
                     {message.image && (
                       <a href={message.image} download="maggie-design.jpg" className="mt-2 block">
-                        <img src={message.image} alt="Design concept from Maggie" className="w-full rounded border border-zinc-700" />
+                        <img
+                          src={message.image}
+                          alt="Design concept from Maggie"
+                          className="w-full rounded border border-zinc-700"
+                        />
                         <span className="mt-1 block text-[10px] text-orange-300 underline">Tap to save</span>
                       </a>
                     )}
@@ -350,7 +452,31 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               {chatError && <p className="text-red-400 text-[11px] leading-relaxed">{chatError}</p>}
             </div>
 
-            <div className="px-3 pt-2 pb-1 border-t border-zinc-800">
+            <div className="px-3 pt-2 border-t border-zinc-800">
+              <p className="text-[9px] font-sans uppercase tracking-widest text-zinc-500 mb-1.5">
+                Style chips · up to 3
+              </p>
+              <div className="flex flex-wrap gap-1.5 mb-2">
+                {STYLE_CHIPS.map((chip) => {
+                  const on = selectedStyles.includes(chip);
+                  return (
+                    <button
+                      key={chip}
+                      type="button"
+                      disabled={sending}
+                      onClick={() => toggleStyleChip(chip)}
+                      className={`px-2 py-0.5 border text-[10px] font-display font-bold uppercase tracking-wide transition-colors ${
+                        on
+                          ? "border-primary text-primary bg-primary/10"
+                          : "border-zinc-700 text-zinc-500 hover:border-zinc-500"
+                      }`}
+                    >
+                      {chip}
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="text-[9px] text-zinc-600 font-sans mb-2">Maggie returns up to 3 concepts per ask.</p>
               <MaggieUploadShare
                 onImageSelected={handleImageSelected}
                 lastImageBase64={messages[messages.length - 1]?.image}
@@ -367,7 +493,12 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                 className="min-w-0 flex-1 bg-zinc-900 border border-zinc-800 rounded px-3 py-2 text-xs text-white outline-none focus:border-primary"
                 aria-label="Message Maggie"
               />
-              <button type="submit" disabled={sending || chatContextLoading || !input.trim()} className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40" aria-label="Send message">
+              <button
+                type="submit"
+                disabled={sending || chatContextLoading || !input.trim()}
+                className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40"
+                aria-label="Send message"
+              >
                 <Send size={15} />
               </button>
             </form>
@@ -377,8 +508,20 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
 
       <AnimatePresence>
         {visible && showHint && !open && !spraying && (
-          <motion.div initial={{ opacity: 0, y: 8, scale: 0.9 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.35 }} className="fixed bottom-[78px] right-3 sm:right-5 z-40 max-w-[200px] pointer-events-none">
-            <div className="px-3 py-2 rounded-lg bg-zinc-950/95 backdrop-blur-sm border border-orange-500/50 text-[11px] uppercase tracking-wider font-bold text-orange-300" style={{ textShadow: "0 0 8px rgba(249,115,22,0.6)", boxShadow: "0 0 14px rgba(249,115,22,0.3)" }}>
+          <motion.div
+            initial={{ opacity: 0, y: 8, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.35 }}
+            className="fixed bottom-[78px] right-3 sm:right-5 z-40 max-w-[200px] pointer-events-none"
+          >
+            <div
+              className="px-3 py-2 rounded-lg bg-zinc-950/95 backdrop-blur-sm border border-orange-500/50 text-[11px] uppercase tracking-wider font-bold text-orange-300"
+              style={{
+                textShadow: "0 0 8px rgba(249,115,22,0.6)",
+                boxShadow: "0 0 14px rgba(249,115,22,0.3)",
+              }}
+            >
               Need help customising? <span className="text-white">Tap the can</span>
             </div>
           </motion.div>
@@ -392,7 +535,12 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
             initial={{ y: 80, opacity: 0, scale: 0.6 }}
             animate={{ y: 0, opacity: 1, scale: 1, rotate: spraying ? [-2, -22, -22, -2] : 0 }}
             exit={{ opacity: 0, scale: 0.6 }}
-            transition={{ y: { type: "spring", stiffness: 200, damping: 22 }, opacity: { duration: 0.4 }, scale: { duration: 0.4 }, rotate: { duration: 1.0, ease: "easeInOut" } }}
+            transition={{
+              y: { type: "spring", stiffness: 200, damping: 22 },
+              opacity: { duration: 0.4 },
+              scale: { duration: 0.4 },
+              rotate: { duration: 1.0, ease: "easeInOut" },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.92 }}
             aria-label={open ? "Close Maggie" : "Tap to spray Maggie"}
@@ -400,7 +548,9 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
             style={{ transformOrigin: "bottom right" }}
           >
             {open ? (
-              <span className="flex items-center justify-center w-full h-full text-primary"><X size={22} /></span>
+              <span className="flex items-center justify-center w-full h-full text-primary">
+                <X size={22} />
+              </span>
             ) : (
               <img src={canSrc} alt="Maggie spray can" className="w-full h-full object-cover" draggable={false} />
             )}
