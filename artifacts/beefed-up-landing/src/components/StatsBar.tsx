@@ -6,11 +6,11 @@ interface Stat {
   label: string;
 }
 
+// Satisfaction rate removed until we have a number we're proud to show.
 const STATS: Stat[] = [
-  { value: 312, suffix: "+", label: "Orders completed" },
-  { value: 48, suffix: "h", label: "Avg turnaround" },
-  { value: 98, suffix: "%", label: "Satisfaction rate" },
-  { value: 7, suffix: "", label: "Years on the block" },
+  { value: 84, suffix: "+", label: "Orders completed" },
+  { value: 12, suffix: "h", label: "Avg turnaround" },
+  { value: 1, suffix: "", label: "Years on the block" },
 ];
 
 function useCountUp(target: number, duration = 1600, started = false) {
