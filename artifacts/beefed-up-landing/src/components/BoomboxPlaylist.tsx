@@ -2,8 +2,10 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Music, ChevronDown, ChevronUp } from "lucide-react";
 
-const SPOTIFY_PLAYLIST_URL = "https://open.spotify.com/embed/playlist/5bcH6RFmzLSBhdrEhxB0lG";
-const SPOTIFY_APP_URL = "https://open.spotify.com/playlist/5bcH6RFmzLSBhdrEhxB0lG";
+// Full tracks need Spotify Premium (or login). Free listeners only get ~30s previews — that's Spotify policy, not the embed.
+const SPOTIFY_PLAYLIST_ID = "2nNaLqxeihHtRqAF9JkOuB";
+const SPOTIFY_PLAYLIST_URL = `https://open.spotify.com/embed/playlist/${SPOTIFY_PLAYLIST_ID}`;
+const SPOTIFY_APP_URL = `https://open.spotify.com/playlist/${SPOTIFY_PLAYLIST_ID}`;
 
 interface BoomboxPlaylistProps {
   open?: boolean;
@@ -23,12 +25,8 @@ export default function BoomboxPlaylist({
     onOpenChange?.(nextOpen);
   };
 
-  // Auto-close when user clicks a track inside the iframe — we detect clicks on the document
   useEffect(() => {
     if (!expanded) return;
-    // Spotify iframe doesn't emit events we can listen to, so we use a heuristic:
-    // after 3 seconds of being expanded, if the user clicks anywhere outside the
-    // boombox container, we close it. Tapping inside keeps it open.
     const onDocClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const container = document.getElementById("boombox-container");
@@ -36,7 +34,6 @@ export default function BoomboxPlaylist({
         setExpanded(false);
       }
     };
-    // Delay so the initial click that opened it doesn't immediately close it
     const t = setTimeout(() => {
       document.addEventListener("click", onDocClick);
     }, 300);
@@ -48,14 +45,12 @@ export default function BoomboxPlaylist({
 
   return (
     <div id="boombox-container" className="relative max-w-md mx-auto">
-      {/* Compact header — always visible */}
       <motion.button
         onClick={() => setExpanded(!expanded)}
         whileTap={{ scale: 0.98 }}
         className="w-full flex items-center gap-3 border border-zinc-800 bg-zinc-950 px-4 py-3 text-left"
         style={{ boxShadow: "0 0 20px rgba(249,115,22,0.05)" }}
       >
-        {/* Mini speaker icon */}
         <div className="relative w-9 h-9 shrink-0">
           <div className="absolute inset-0 rounded-full border border-zinc-700" />
           <div className="absolute inset-1 rounded-full bg-zinc-900 flex items-center justify-center">
@@ -77,7 +72,6 @@ export default function BoomboxPlaylist({
         </span>
       </motion.button>
 
-      {/* Dropdown — compact Spotify embed */}
       <AnimatePresence>
         {expanded && (
           <motion.div
@@ -87,7 +81,6 @@ export default function BoomboxPlaylist({
             transition={{ duration: 0.25 }}
             className="overflow-hidden border-x border-b border-zinc-800 bg-black"
           >
-            {/* Compact embed: 80px = mini player, 152 = list view */}
             <iframe
               ref={iframeRef}
               src={`${SPOTIFY_PLAYLIST_URL}?utm_source=generator&theme=0`}
@@ -97,10 +90,11 @@ export default function BoomboxPlaylist({
               loading="lazy"
               className="border-0"
               style={{ background: "#000" }}
+              title="BUP Studio Vibes playlist"
             />
-            <div className="px-3 py-2 flex items-center justify-between border-t border-zinc-800">
+            <div className="px-3 py-2 flex items-center justify-between gap-2 border-t border-zinc-800">
               <p className="text-zinc-600 text-[9px] font-sans">
-                Want your track featured? DM us — we rotate monthly.
+                Full tracks need Spotify Premium. Free = short previews.
               </p>
               <a
                 href={SPOTIFY_APP_URL}
