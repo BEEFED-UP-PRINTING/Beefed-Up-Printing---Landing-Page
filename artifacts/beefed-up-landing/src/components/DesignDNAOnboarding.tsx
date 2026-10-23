@@ -74,7 +74,7 @@ export default function DesignDNAOnboarding({ onClose, onSave, saveError: parent
   const saveErrorMessage = saveError || parentSaveError || "";
 
   function toggle<T>(arr: T[], val: T, set: (v: T[]) => void, max = 5) {
-    if (arr.includes(val)) set(arr.filter((x) => x !== x === val ? false : true).filter((x) => x !== val));
+    if (arr.includes(val)) set(arr.filter((x) => x !== val));
     else if (arr.length < max) set([...arr, val]);
   }
 
