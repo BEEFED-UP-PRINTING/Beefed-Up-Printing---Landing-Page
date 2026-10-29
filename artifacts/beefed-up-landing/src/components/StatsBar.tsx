@@ -4,14 +4,13 @@ interface Stat {
   value: number;
   suffix: string;
   label: string;
-  /** When set, shown instead of animated number (e.g. range like 48–72h) */
   display?: string;
 }
 
 // Printing since December 2017 → 9+ years on the block.
 const STATS: Stat[] = [
   { value: 84, suffix: "+", label: "Orders this month" },
-  { value: 48, suffix: "", label: "Avg turnaround", display: "48–72h" },
+  { value: 48, suffix: "", label: "Typical turnaround", display: "48–72h" },
   { value: 9, suffix: "+", label: "Years on the block" },
 ];
 
@@ -44,9 +43,7 @@ function StatItem({ stat, started }: { stat: Stat; started: boolean }) {
         style={{ textShadow: "0 0 20px rgba(249,115,22,0.4)" }}
       >
         {stat.display ? (
-          <>
-            <span className="text-primary">{stat.display}</span>
-          </>
+          <span className="text-primary">{stat.display}</span>
         ) : (
           <>
             {started ? count : 0}
@@ -89,6 +86,9 @@ export default function StatsBar() {
             <StatItem key={s.label} stat={s} started={started} />
           ))}
         </div>
+        <p className="text-center text-zinc-600 text-[10px] font-sans px-4 pb-3 leading-relaxed">
+          48–72h turnaround depends on quantity, garment availability &amp; materials for the order.
+        </p>
       </div>
     </div>
   );
