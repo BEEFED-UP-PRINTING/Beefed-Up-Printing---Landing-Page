@@ -7,10 +7,11 @@ interface Stat {
 }
 
 // Satisfaction rate removed until we have a number we're proud to show.
+// Printing since December 2017 → 9 years on the block (as of late 2026).
 const STATS: Stat[] = [
   { value: 84, suffix: "+", label: "Orders completed" },
   { value: 12, suffix: "h", label: "Avg turnaround" },
-  { value: 1, suffix: "", label: "Years on the block" },
+  { value: 9, suffix: "+", label: "Years on the block" },
 ];
 
 function useCountUp(target: number, duration = 1600, started = false) {
@@ -59,7 +60,12 @@ export default function StatsBar() {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setStarted(true); obs.disconnect(); } },
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStarted(true);
+          obs.disconnect();
+        }
+      },
       { threshold: 0.3 }
     );
     obs.observe(el);
