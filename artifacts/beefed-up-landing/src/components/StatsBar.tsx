@@ -4,13 +4,14 @@ interface Stat {
   value: number;
   suffix: string;
   label: string;
+  /** When set, shown instead of animated number (e.g. range like 48–72h) */
+  display?: string;
 }
 
-// Satisfaction rate removed until we have a number we're proud to show.
-// Printing since December 2017 → 9 years on the block (as of late 2026).
+// Printing since December 2017 → 9+ years on the block.
 const STATS: Stat[] = [
-  { value: 84, suffix: "+", label: "Orders completed" },
-  { value: 12, suffix: "h", label: "Avg turnaround" },
+  { value: 84, suffix: "+", label: "Orders this month" },
+  { value: 48, suffix: "", label: "Avg turnaround", display: "48–72h" },
   { value: 9, suffix: "+", label: "Years on the block" },
 ];
 
@@ -35,15 +36,23 @@ function useCountUp(target: number, duration = 1600, started = false) {
 }
 
 function StatItem({ stat, started }: { stat: Stat; started: boolean }) {
-  const count = useCountUp(stat.value, 1400, started);
+  const count = useCountUp(stat.display ? 0 : stat.value, 1400, started && !stat.display);
   return (
     <div className="flex flex-col items-center text-center px-6 py-5 border-r border-zinc-800 last:border-r-0 flex-1 min-w-[120px]">
       <span
         className="font-display font-black text-3xl sm:text-4xl text-white leading-none"
         style={{ textShadow: "0 0 20px rgba(249,115,22,0.4)" }}
       >
-        {count}
-        <span className="text-primary">{stat.suffix}</span>
+        {stat.display ? (
+          <>
+            <span className="text-primary">{stat.display}</span>
+          </>
+        ) : (
+          <>
+            {started ? count : 0}
+            <span className="text-primary">{stat.suffix}</span>
+          </>
+        )}
       </span>
       <span className="text-zinc-500 text-[11px] font-sans uppercase tracking-widest mt-1.5">
         {stat.label}
