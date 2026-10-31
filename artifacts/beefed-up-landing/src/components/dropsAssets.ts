@@ -1,5 +1,21 @@
-import type { DropProject, DropCategory } from "./dropsAssetsA";
-export type { DropProject, DropCategory };
-import { DROP_PROJECTS_A } from "./dropsAssetsA";
-import { DROP_PROJECTS_B } from "./dropsAssetsB";
-export const DROP_PROJECTS: DropProject[] = [...DROP_PROJECTS_A, ...DROP_PROJECTS_B];
+export type DropCategory = "Tees" | "Hoodies" | "Caps" | "Stickers" | "Posters";
+export interface DropProject {
+  id: number;
+  category: DropCategory;
+  title: string;
+  tag: string;
+  image: string;
+}
+
+export const DROP_PROJECTS: DropProject[] = [
+  { id: 1, category: "Hoodies", title: 'Act Like a Queen', tag: 'Custom hoodie', image: "/drops/queen-boss-hoodie.jpg" },
+  { id: 2, category: "Hoodies", title: 'King & Queen', tag: 'Custom hoodie', image: "/drops/king-queen-hoodie.jpg" },
+  { id: 3, category: "Hoodies", title: 'Bare Bears Crew', tag: 'Full colour print', image: "/drops/bare-bears-hoodie.jpg" },
+  { id: 4, category: "Hoodies", title: 'Gemini Sleeve', tag: 'Hoodie + sleeve print', image: "/drops/gemini-hoodie.jpg" },
+  { id: 5, category: "Hoodies", title: 'Jesus Saves', tag: 'Back print hoodie', image: "/drops/jesus-saves-hoodie.jpg" },
+  { id: 6, category: "Tees", title: 'Orange Poster Tee', tag: 'Full colour tee', image: "/drops/orange-poster-tee.jpg" },
+  { id: 7, category: "Tees", title: 'Pisces Only', tag: 'Custom tee', image: "/drops/pisces-tee.jpg" },
+  { id: 8, category: "Tees", title: 'Moon Session', tag: 'Full colour tee', image: "/drops/astronaut-moon-tee.jpg" },
+  { id: 9, category: "Tees", title: 'Free Fall Tee', tag: 'Full colour tee', image: "/drops/astronaut-fall-tee.jpg" },
+  { id: 10, category: "Hoodies", title: 'Free Fall Hoodie', tag: 'Full colour hoodie', image: "/drops/astronaut-fall-hoodie.jpg" },
+];
