@@ -4,10 +4,11 @@ import { X, Send } from "lucide-react";
 import { bupApiFetch, clearSessionToken, getApiErrorMessage, getSessionToken } from "@/lib/bup-api";
 import MaggieUploadShare from "./MaggieUploadShare";
 import { useBupAuth } from "@/hooks/use-bup-auth";
+
 const APPEAR_DELAY_MS = 60_000;
 const INITIAL_GREETING = "I'm Maggie. Tell me what you want to print, wear, or launch.";
 
-/** Quick style tags sent with every generate request (optional). */
+/** Quick style tags sent with generate requests (optional). */
 const STYLE_CHIPS = [
   "Street",
   "Minimal",
@@ -18,7 +19,15 @@ const STYLE_CHIPS = [
   "Y2K",
   "Sports",
 ] as const;
-type ChatMessage = { role: "user" | "assistant"; content: string; image?: string };
+
+type ChatMessage = {
+  role: "user" | "assistant";
+  content: string;
+  image?: string;
+};
+
+type MaggieIntentMode = "chat" | "edit" | "generate";
+
 interface DesignDnaProfile {
   favouriteColours?: string[] | null;
   musicGenres?: string[] | null;
@@ -26,14 +35,19 @@ interface DesignDnaProfile {
   designKeywords?: string[] | null;
   rawNotes?: string | null;
 }
+
 interface Props {
   forceOpen?: boolean;
   onForceClose?: () => void;
   onOpenDNA?: () => void;
 }
+
 function buildDnaBrief(profile: DesignDnaProfile, firstName: string | null | undefined): string {
   const list = (value: string[] | null | undefined) =>
-    Array.isArray(value) ? value.filter((item): item is string => typeof item === "string" && item.trim().length > 0) : [];
+    Array.isArray(value)
+      ? value.filter((item): item is string => typeof item === "string" && item.trim().length > 0)
+      : [];
+
   const lines = [
     `Customer first name: ${firstName?.trim() || "not provided"}`,
     "Saved Design DNA:",
@@ -43,7 +57,47 @@ function buildDnaBrief(profile: DesignDnaProfile, firstName: string | null | und
     list(profile.designKeywords).length ? `Design keywords: ${list(profile.designKeywords).join(", ")}` : "",
     profile.rawNotes?.trim() ? `Customer notes: ${profile.rawNotes.trim()}` : "",
   ];
+
   return lines.filter(Boolean).join("\n");
+}
+
+/**
+ * Classifies whether the user is chatting/asking a question vs. requesting an image edit or new design.
+ */
+function classifyMaggieIntent(
+  prompt: string,
+  hasNewAttachment: boolean,
+  hasPriorImageInThread: boolean
+): MaggieIntentMode {
+  if (hasNewAttachment) return "edit";
+
+  const text = prompt.trim().toLowerCase();
+
+  // Explicit non-generation / conversational / critique / explanation intents
+  const chatOnlyPatterns = [
+    /^(hi|hello|hey|howzit|yo|sup|awe|sharp|what'?s\s+cooking|what'?s\s+up)\b[!.?\s]*$/i,
+    /\b(didn'?t|did not)\s+ask\s+(for\s+)?(a\s+)?(design|image|pic|picture|logo)\b/i,
+    /\b(describe|explain|tell me about|why did you|what did you do|what'?s wrong|check\s*in)\b/i,
+    /\bnormal\s+hello\b/i,
+  ];
+
+  if (chatOnlyPatterns.some((rx) => rx.test(text))) {
+    return "chat";
+  }
+
+  // Explicit visual generation / redesign / variation requests
+  const designActionPatterns = [
+    /\b(generate|create|design|draw|make|mock\s*up|mockup|render|sketch|illustrate)\b/i,
+    /\b(alternative\s+version|new\s+version|redesign|variation|concept|logo|badge|graphic|print|hoodie|tee|t-?shirt|cap|sticker)\b/i,
+    /\b(keep(ing)?\s+the\s+(logo|design|style)|better\s+than\s+the\s+original|change\s+(the\s+)?colou?rs?|lock\s+the)\b/i,
+  ];
+
+  if (designActionPatterns.some((rx) => rx.test(text))) {
+    return hasPriorImageInThread ? "edit" : "generate";
+  }
+
+  // Default to conversational text reply unless user asks for a visual
+  return "chat";
 }
 
 export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpenDNA }: Props) {
@@ -65,9 +119,15 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
   const [dnaError, setDnaError] = useState<string | null>(null);
   const [chatError, setChatError] = useState<string | null>(null);
   const conversationOwner = useRef<string | null>(null);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
-  const chatContextLoading = authLoading || (open && isAuthenticated && (dnaLoading || !user?.id || dnaLoadedForUser !== user.id));
+  const chatContextLoading =
+    authLoading || (open && isAuthenticated && (dnaLoading || !user?.id || dnaLoadedForUser !== user.id));
   const dnaBriefForRequest = useDna && activeDnaBrief ? activeDnaBrief : "";
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, sending]);
 
   function toggleStyleChip(chip: string) {
     setSelectedStyles((prev) =>
@@ -75,12 +135,19 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     );
   }
 
-  function buildMaggieBody(prompt: string, extra: Record<string, unknown> = {}) {
+  function buildMaggieBody(
+    prompt: string,
+    mode: MaggieIntentMode,
+    extra: Record<string, unknown> = {}
+  ) {
     return {
       prompt,
+      mode,
+      generateImage: mode !== "chat",
+      useDna: useDna && hasSavedDna,
       dnaBrief: dnaBriefForRequest,
-      styleChips: selectedStyles,
-      conceptCount: 3,
+      styleChips: mode === "chat" ? [] : selectedStyles,
+      conceptCount: mode === "chat" ? 0 : 1,
       ...extra,
     };
   }
@@ -133,6 +200,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
       setDnaError(null);
       return;
     }
+
     const currentUser = user;
     const controller = new AbortController();
     let cancelled = false;
@@ -141,6 +209,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     setActiveDnaBrief("");
     setHasSavedDna(false);
     setDnaError(null);
+
     async function loadSavedDna() {
       try {
         const response = await bupApiFetch("/api/dna/profile", { signal: controller.signal });
@@ -154,14 +223,22 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
         setHasSavedDna(!!profile);
         setActiveDnaBrief(profile ? buildDnaBrief(profile, currentUser.firstName) : "");
         setMessages((previous) => {
-          if (previous.length !== 1 || previous[0].role !== "assistant" || previous[0].content !== INITIAL_GREETING) return previous;
+          if (
+            previous.length !== 1 ||
+            previous[0].role !== "assistant" ||
+            previous[0].content !== INITIAL_GREETING
+          ) {
+            return previous;
+          }
           const firstName = currentUser.firstName?.trim() || "there";
-          return [{
-            role: "assistant",
-            content: profile
-              ? `Hey ${firstName}! Your Design DNA is saved. Turn on \"Use my Design DNA\" if you want Maggie to lean on it — otherwise she designs from your prompt only.`
-              : `Hey ${firstName}! Tell me what you want to print, wear, or launch.`,
-          }];
+          return [
+            {
+              role: "assistant",
+              content: profile
+                ? `Hey ${firstName}! Your Design DNA is saved. Turn on "Use my Design DNA" if you want Maggie to lean on it — otherwise she designs from your prompt only.`
+                : `Hey ${firstName}! Tell me what you want to print, wear, or launch.`,
+            },
+          ];
         });
       } catch (error) {
         if (cancelled) return;
@@ -175,6 +252,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
         }
       }
     }
+
     void loadSavedDna();
     return () => {
       cancelled = true;
@@ -197,7 +275,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
         setSpraying(false);
       }, 1100);
     }
-  }, [forceOpen]);
+  }, [forceOpen, open, authLoading, isAuthenticated]);
 
   function handleClose() {
     setOpen(false);
@@ -237,23 +315,35 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     event.preventDefault();
     const content = input.trim();
     if (sending || chatContextLoading) return;
-    // Need text; if image is attached, text is the instruction for that image
     if (!content) return;
+
     if (pendingAttachment && content.length < 4) {
-      setChatError("Tell Maggie what to do with your image (e.g. \"put this on a black hoodie with gold JHB text\").");
+      setChatError(
+        'Tell Maggie what to do with your image (e.g. "keep the JHB logo structure and style, give me a cleaner alternative").'
+      );
       return;
     }
 
     const attached = pendingAttachment;
-    const history = isAuthenticated
-      ? undefined
-      : messages.slice(-10).map(({ role, content: c }) => ({ role, content: c }));
+
+    // Find the original uploaded user image and the most recent generated image in this thread
+    const originalUserImage = [...messages].find((m) => m.role === "user" && m.image)?.image;
+    const lastAssistantImage = [...messages].reverse().find((m) => m.role === "assistant" && m.image)?.image;
+    const activeReferenceImage = attached || originalUserImage || lastAssistantImage;
+
+    const intentMode = classifyMaggieIntent(content, !!attached, !!activeReferenceImage);
+
+    // Always pass recent conversation history (for both logged-in and guest users)
+    const history = messages.slice(-12).map(({ role, content: c, image }) => ({
+      role,
+      content: image ? `${c}\n[Image attached in turn]` : c,
+    }));
 
     setMessages((prev) => [
       ...prev,
       {
         role: "user",
-        content: attached ? content : content,
+        content,
         ...(attached ? { image: attached } : {}),
       },
     ]);
@@ -261,27 +351,48 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
     setPendingAttachment(null);
     setSending(true);
     setChatError(null);
+
     try {
-      const extra: Record<string, unknown> = {};
-      if (!isAuthenticated && history) extra.history = history;
-      if (attached) extra.image = attached;
+      const extra: Record<string, unknown> = {
+        history,
+      };
+
+      if (attached) {
+        extra.image = attached;
+      } else if (intentMode === "edit" && activeReferenceImage) {
+        extra.image = activeReferenceImage;
+      }
+
+      if (originalUserImage) {
+        extra.originalImage = originalUserImage;
+      }
+      if (lastAssistantImage) {
+        extra.lastGeneratedImage = lastAssistantImage;
+      }
 
       const res = await bupApiFetch("/api/maggie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(buildMaggieBody(content, extra)),
+        body: JSON.stringify(buildMaggieBody(content, intentMode, extra)),
       });
+
       const data = (await res.json().catch(() => ({}))) as { reply?: unknown; image?: unknown };
       if (!res.ok) throw new Error(getApiErrorMessage(data, "Maggie is temporarily unavailable."));
       if (typeof data.reply !== "string" || !data.reply.trim()) {
         throw new Error("Maggie returned an empty reply. Please try again.");
       }
+
+      const validReturnedImage =
+        intentMode !== "chat" && typeof data.image === "string" && data.image.startsWith("data:image/")
+          ? data.image
+          : undefined;
+
       setMessages((previous) => [
         ...previous,
         {
           role: "assistant",
           content: data.reply as string,
-          ...(typeof data.image === "string" && data.image.startsWith("data:image/") ? { image: data.image } : {}),
+          ...(validReturnedImage ? { image: validReturnedImage } : {}),
         },
       ]);
     } catch (error) {
@@ -292,6 +403,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
   }
 
   const canSrc = `${import.meta.env.BASE_URL}maggie-can.jpeg`;
+  const lastAssistantImg = [...messages].reverse().find((m) => m.role === "assistant" && m.image)?.image;
 
   return (
     <>
@@ -441,8 +553,15 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                       (message.role === "user" ? "bg-primary text-black" : "bg-zinc-900 text-zinc-200")
                     }
                   >
+                    {message.image && message.role === "user" && (
+                      <img
+                        src={message.image}
+                        alt="Uploaded reference"
+                        className="mb-2 max-h-40 w-auto rounded border border-black/20"
+                      />
+                    )}
                     <p className="whitespace-pre-wrap">{message.content}</p>
-                    {message.image && (
+                    {message.image && message.role === "assistant" && (
                       <a href={message.image} download="maggie-design.jpg" className="mt-2 block">
                         <img
                           src={message.image}
@@ -457,6 +576,7 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               ))}
               {sending && <p className="text-zinc-500 text-xs">Maggie is thinking…</p>}
               {chatError && <p className="text-red-400 text-[11px] leading-relaxed">{chatError}</p>}
+              <div ref={messagesEndRef} />
             </div>
 
             <div className="px-3 pt-2 border-t border-zinc-800">
@@ -486,12 +606,13 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
               <p className="text-[9px] text-zinc-600 font-sans mb-2">Maggie returns up to 3 concepts per ask.</p>
               <MaggieUploadShare
                 onImageSelected={handleImageSelected}
-                lastImageBase64={messages[messages.length - 1]?.image}
+                lastImageBase64={lastAssistantImg}
                 apiBase="https://api.beefedupp.co.za"
                 authToken={getSessionToken()}
                 disabled={sending}
               />
             </div>
+
             {pendingAttachment && (
               <div className="mx-3 mb-2 flex items-center gap-2 rounded border border-primary/40 bg-zinc-900/80 p-2">
                 <img
@@ -500,97 +621,67 @@ export default function MaggieSprayCan({ forceOpen = false, onForceClose, onOpen
                   className="h-12 w-12 shrink-0 rounded object-cover border border-zinc-700"
                 />
                 <div className="min-w-0 flex-1">
-                  <p className="text-[11px] font-display font-bold uppercase tracking-wide text-primary">Image attached</p>
-                  <p className="text-[10px] text-zinc-400 font-sans leading-snug">
-                    Type what you want done — e.g. caption, colours, hoodie/tee, placement.
+                  <p className="text-[11px] font-display font-bold uppercase tracking-wide text-primary">
+                    Image attached
+                  </p>
+                  <p className="text-[10px] text-zinc-400 truncate">
+                    Type what you want Maggie to keep or change
                   </p>
                 </div>
                 <button
                   type="button"
                   onClick={clearPendingAttachment}
-                  className="shrink-0 text-zinc-500 hover:text-white text-xs px-2"
-                  aria-label="Remove attachment"
+                  className="text-zinc-400 hover:text-white p-1"
+                  aria-label="Remove attached image"
                 >
-                  ✕
+                  <X size={14} />
                 </button>
               </div>
             )}
-            <form onSubmit={handleSend} className="flex gap-2 px-3 pb-3">
+
+            <form onSubmit={handleSend} className="flex items-center gap-2 p-3 border-t border-zinc-800 bg-zinc-950">
               <input
+                type="text"
                 value={input}
-                onChange={(event) => setInput(event.target.value)}
+                onChange={(e) => setInput(e.target.value)}
                 placeholder={
                   pendingAttachment
-                    ? "Describe what to do with this image…"
-                    : "Ask Maggie for a concept…"
+                    ? "Tell Maggie what to keep or change on this image..."
+                    : "Chat with Maggie or ask for a concept..."
                 }
-                className="min-w-0 flex-1 bg-zinc-900 border border-zinc-800 rounded px-3 py-2 text-xs text-white outline-none focus:border-primary"
-                aria-label="Message Maggie"
+                disabled={sending || chatContextLoading}
+                className="flex-1 bg-zinc-900 border border-zinc-700 rounded px-3 py-2 text-xs text-white placeholder:text-zinc-500 focus:outline-none focus:border-primary"
               />
               <button
                 type="submit"
                 disabled={sending || chatContextLoading || !input.trim()}
-                className="shrink-0 rounded bg-primary px-3 text-black disabled:opacity-40"
+                className="bg-primary text-black px-3 py-2 rounded font-display font-bold text-xs uppercase tracking-wider hover:bg-orange-400 transition-colors disabled:opacity-40"
                 aria-label="Send message"
               >
-                <Send size={15} />
+                <Send size={14} />
               </button>
             </form>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <AnimatePresence>
-        {visible && showHint && !open && !spraying && (
-          <motion.div
-            initial={{ opacity: 0, y: 8, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.35 }}
-            className="fixed bottom-[78px] right-3 sm:right-5 z-40 max-w-[200px] pointer-events-none"
-          >
-            <div
-              className="px-3 py-2 rounded-lg bg-zinc-950/95 backdrop-blur-sm border border-orange-500/50 text-[11px] uppercase tracking-wider font-bold text-orange-300"
-              style={{
-                textShadow: "0 0 8px rgba(249,115,22,0.6)",
-                boxShadow: "0 0 14px rgba(249,115,22,0.3)",
-              }}
-            >
-              Need help customising? <span className="text-white">Tap the can</span>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {visible && (
-          <motion.button
+      {visible && (
+        <div className="fixed bottom-5 right-5 z-40 flex items-center gap-2">
+          {showHint && !open && (
+            <span className="rounded-full bg-zinc-900/95 border border-primary/40 px-3 py-1.5 text-[11px] font-sans text-orange-200 shadow-lg">
+              Tap Maggie to design 1-of-1
+            </span>
+          )}
+          <button
+            type="button"
             onClick={handleTap}
-            initial={{ y: 80, opacity: 0, scale: 0.6 }}
-            animate={{ y: 0, opacity: 1, scale: 1, rotate: spraying ? [-2, -22, -22, -2] : 0 }}
-            exit={{ opacity: 0, scale: 0.6 }}
-            transition={{
-              y: { type: "spring", stiffness: 200, damping: 22 },
-              opacity: { duration: 0.4 },
-              scale: { duration: 0.4 },
-              rotate: { duration: 1.0, ease: "easeInOut" },
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.92 }}
-            aria-label={open ? "Close Maggie" : "Tap to spray Maggie"}
-            className="fixed bottom-4 right-3 sm:right-5 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-zinc-950 border-2 border-primary shadow-[0_0_22px_rgba(249,115,22,0.5)] overflow-hidden"
-            style={{ transformOrigin: "bottom right" }}
+            className="h-14 w-14 rounded-full overflow-hidden border-2 border-primary shadow-[0_0_20px_rgba(249,115,22,0.5)] hover:scale-105 transition-transform bg-black"
+            aria-label="Open Maggie AI"
           >
-            {open ? (
-              <span className="flex items-center justify-center w-full h-full text-primary">
-                <X size={22} />
-              </span>
-            ) : (
-              <img src={canSrc} alt="Maggie spray can" className="w-full h-full object-cover" draggable={false} />
-            )}
-          </motion.button>
-        )}
-      </AnimatePresence>
+            <img src={canSrc} alt="Maggie Spray Can" className="h-full w-full object-cover" />
+          </button>
+        </div>
+      )}
     </>
   );
 }
