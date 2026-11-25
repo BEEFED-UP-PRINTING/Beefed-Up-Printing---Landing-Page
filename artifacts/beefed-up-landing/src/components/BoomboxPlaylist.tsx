@@ -15,7 +15,7 @@ interface Track {
   durationSec: number | null;
 }
 
-const API = "https://bup-api.beefedupp.workers.dev";
+const API = "https://api.beefedupp.co.za";
 
 function fmt(sec: number | null | undefined) {
   if (!sec || !isFinite(sec) || sec < 0) return "--:--";
